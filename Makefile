@@ -57,8 +57,8 @@ help:
 	@echo ""
 
 PLATFORM := `uname -o`
-REPO := "<REPO-NAME-HERE>"
-PROJECT_SRC := "<SRC-FOLDER-HERE>"
+REPO := sparv-statistics
+PROJECT_SRC := src/sparv_statistics
 
 ifeq (${VIRTUAL_ENV},)
   VENV_NAME = .venv
