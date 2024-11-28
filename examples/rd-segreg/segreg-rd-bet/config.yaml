@@ -1,0 +1,8 @@
+parent: ../config.yaml
+metadata:
+  id: segreg-rd-bet
+  name:
+    eng: 'Riksdag''s open data: Committee reports and statements'
+    swe: 'Riksdagens öppna data: Betänkande'
+  short_description:
+    swe: Utskottens betänkanden och utlåtanden, inklusive riksdagens beslut, en sammanfattning av voteringsresultaten och Beslut i korthet
