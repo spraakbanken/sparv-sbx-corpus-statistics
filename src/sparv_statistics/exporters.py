@@ -527,8 +527,8 @@ def write_all_stats(
 
 STATS_TEMPLATE: dict[str, dict[str, str]] = {
     "en": {
-        "header": "# Statistics of {corpus_id}\n",
-        "stats_header": "## Statistical overview\n",
+        "header": "# Corpus Statistics of {corpus_id}\n",
+        "stats_header": "## Overview\n",
         "stats_table_header": "Feature | Number | Mean | Standard deviation\n",
         "stats_table_readability": "READABILITY | --- | --- | ---\n",
         "POS_header": "## POS Tags\n",
@@ -565,8 +565,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "score is": "score is",
     },
     "sv": {
-        "header": "# Statistik för {corpus_id}\n",
-        "stats_header": "## Statistics översikt\n",
+        "header": "# Korpusstatistik för {corpus_id}\n",
+        "stats_header": "## Översikt\n",
         "stats_table_header": "Egenskap | Värde | Medelvärde | Standardavvikelse\n",
         "stats_table_readability": "LÄSBARHET | --- | --- | ---\n",
         "POS_header": "## POS taggar\n",
