@@ -45,14 +45,16 @@ export:
     - stats_export:sbx_freq_list_date
     - stats_export:sbx_freq_list_simple
     - stats_export:sbx_freq_list_simple_swe
-    - stats_export:freq_list
-    - sparv_statistics:stat_highlight
+    # - stats_export:freq_list
+    - sparv_statistics:stat_highlights
     # - sbx_metadata:yaml_export
   annotations:
-    # - SBX_DEFAULT.paragraph
-    - <sentence>
-    - <text>
+    - SBX_DEFAULT.paragraph
+    # - <sentence>
+    # - <text>
     - <token>
+    # - <token>:wsd.sense
+    - <token>:stanza.pos
   source_annotations:
     - text:datum as date
     - text:datumtid as date
