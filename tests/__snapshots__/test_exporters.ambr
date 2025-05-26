@@ -1718,7 +1718,7 @@
 # ---
 # name: test_write_tokenization_and_word_segmentation[sv]
   '''
-  ## Tokenisering och segmentifiering
+  ## Tokenisering och segmentering
   - Denna korpus är byggd från 4063 texter, över 87 dokument, som finns i 2 filer.
   - Denna korpus innehåller 115542 stycken i 87 dokument.
   - Denna korpus innehåller 194785 meningar och 2896932 tokens.

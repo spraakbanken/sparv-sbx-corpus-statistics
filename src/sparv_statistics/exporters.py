@@ -663,7 +663,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "stats_table_readability": "LÄSBARHET | --- | --- | ---\n",
         "text": "texter",
         "text length (characters)": "textlängd, i tecken",
-        "tokenization_header": "## Tokenisering och segmentifiering\n",
+        "tokenization_header": "## Tokenisering och segmentering\n",
         "tokenization_paragraphs": "- Denna korpus innehåller {num_paragraphs} stycken i {num_documents} dokument.\n",
         "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens.\n",
         # "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens, varav {unique_tokens} tokens är unika.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-statistics/issues/12
