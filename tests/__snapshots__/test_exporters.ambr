@@ -1,0 +1,1761 @@
+# serializer version: 1
+# name: test_write_features[en]
+  '''
+  ## Features
+  Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
+  
+  ### Features: **Abbr**
+  This feature is universal. It occurs with 1 different values: `Yes`.
+  
+  57883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35393; 1% instances), `AB` (22438; 1% instances), `VB` (18; 0% instances), `KN` (17; 0% instances), `JJ` (12; 0% instances), `PP` (5; 0% instances)
+  
+  #### NN
+  
+  35393 `NN` tokens (1% of all `NN` tokens) have a non-empty value of `Abbr`.
+  
+  `NN` tokens may have the following values of `Abbr`:
+  - `Yes` (35393; 61% of non-empty `Abbr`)
+  
+  #### AB
+  
+  22438 `AB` tokens (44% of all `AB` tokens) have a non-empty value of `Abbr`.
+  
+  `AB` tokens may have the following values of `Abbr`:
+  - `Yes` (22438; 39% of non-empty `Abbr`)
+  
+  #### VB
+  
+  18 `VB` tokens (0% of all `VB` tokens) have a non-empty value of `Abbr`.
+  
+  `VB` tokens may have the following values of `Abbr`:
+  - `Yes` (18; 0% of non-empty `Abbr`)
+  
+  #### KN
+  
+  17 `KN` tokens (100% of all `KN` tokens) have a non-empty value of `Abbr`.
+  
+  `KN` tokens may have the following values of `Abbr`:
+  - `Yes` (17; 0% of non-empty `Abbr`)
+  
+  #### JJ
+  
+  12 `JJ` tokens (0% of all `JJ` tokens) have a non-empty value of `Abbr`.
+  
+  `JJ` tokens may have the following values of `Abbr`:
+  - `Yes` (12; 0% of non-empty `Abbr`)
+  
+  #### PP
+  
+  5 `PP` tokens (100% of all `PP` tokens) have a non-empty value of `Abbr`.
+  
+  `PP` tokens may have the following values of `Abbr`:
+  - `Yes` (5; 0% of non-empty `Abbr`)
+  
+  
+  
+  ### Features: **Case**
+  This feature is universal. It occurs with 3 different values: `Acc`, `Gen`, `Nom`.
+  
+  1262438 tokens (44%) have a non-empty value of `Case`. The feature is used with 7 part-of-speech tags: `NN` (695434; 24% instances), `RG` (180310; 6% instances), `JJ` (132538; 5% instances), `PM` (106006; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `RO` (2897; 0% instances)
+   56044 tokens (4%) have multiple values of `Case`.
+  
+  #### NN
+  
+  695434 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Case`.
+  
+  `NN` tokens may have the following values of `Case`:
+  - `Nom` (661878; 52% of non-empty `Case`)
+  - `Gen` (33556; 3% of non-empty `Case`)
+  
+  #### RG
+  
+  180310 `RG` tokens (100% of all `RG` tokens) have a non-empty value of `Case`.
+  
+  `RG` tokens may have the following values of `Case`:
+  - `Nom` (180310; 14% of non-empty `Case`)
+  
+  #### JJ
+  
+  132538 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Case`.
+  
+  `JJ` tokens may have the following values of `Case`:
+  - `Nom` (132190; 10% of non-empty `Case`)
+  - `Gen` (348; 0% of non-empty `Case`)
+  
+  #### PM
+  
+  106006 `PM` tokens (100% of all `PM` tokens) have a non-empty value of `Case`.
+  
+  `PM` tokens may have the following values of `Case`:
+  - `Nom` (102800; 8% of non-empty `Case`)
+  - `Gen` (3206; 0% of non-empty `Case`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Case`.
+  
+  `PN` tokens may have the following values of `Case`:
+  - `Nom` (83736; 7% of non-empty `Case`)
+  - `Acc` (70349; 6% of non-empty `Case`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Case`.
+  
+  `PC` tokens may have the following values of `Case`:
+  - `Nom` (47182; 4% of non-empty `Case`)
+  - `Gen` (30; 0% of non-empty `Case`)
+  
+  #### RO
+  
+  2897 `RO` tokens (99% of all `RO` tokens) have a non-empty value of `Case`.
+  
+  `RO` tokens may have the following values of `Case`:
+  - `Nom` (2897; 0% of non-empty `Case`)
+  
+  
+  
+  ### Features: **Compound**
+   It occurs with 1 different values: `Yes`.
+  
+  4847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4826; 0% instances), `RG` (11; 0% instances), `PM` (10; 0% instances)
+  
+  #### NN
+  
+  4826 `NN` tokens (0% of all `NN` tokens) have a non-empty value of `Compound`.
+  
+  `NN` tokens may have the following values of `Compound`:
+  - `Yes` (4826; 100% of non-empty `Compound`)
+  
+  #### RG
+  
+  11 `RG` tokens (0% of all `RG` tokens) have a non-empty value of `Compound`.
+  
+  `RG` tokens may have the following values of `Compound`:
+  - `Yes` (11; 0% of non-empty `Compound`)
+  
+  #### PM
+  
+  10 `PM` tokens (0% of all `PM` tokens) have a non-empty value of `Compound`.
+  
+  `PM` tokens may have the following values of `Compound`:
+  - `Yes` (10; 0% of non-empty `Compound`)
+  
+  
+  
+  ### Features: **Definite**
+  This feature is universal. It occurs with 2 different values: `Def`, `Ind`.
+  
+  1089520 tokens (38%) have a non-empty value of `Definite`. The feature is used with 10 part-of-speech tags: `NN` (694413; 24% instances), `JJ` (132529; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `HS` (186; 0% instances), `RO` (5; 0% instances)
+   90435 tokens (8%) have multiple values of `Definite`.
+  
+  #### NN
+  
+  694413 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Definite`.
+  
+  `NN` tokens may have the following values of `Definite`:
+  - `Def` (246895; 23% of non-empty `Definite`)
+  - `Ind` (447518; 41% of non-empty `Definite`)
+  
+  #### JJ
+  
+  132529 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Definite`.
+  
+  `JJ` tokens may have the following values of `Definite`:
+  - `Def` (78132; 7% of non-empty `Definite`)
+  - `Ind` (113076; 10% of non-empty `Definite`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Definite`.
+  
+  `DT` tokens may have the following values of `Definite`:
+  - `Def` (44376; 4% of non-empty `Definite`)
+  - `Ind` (59909; 5% of non-empty `Definite`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Definite`.
+  
+  `PN` tokens may have the following values of `Definite`:
+  - `Def` (86869; 8% of non-empty `Definite`)
+  - `Ind` (11172; 1% of non-empty `Definite`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Definite`.
+  
+  `PC` tokens may have the following values of `Definite`:
+  - `Def` (31856; 3% of non-empty `Definite`)
+  - `Ind` (44453; 4% of non-empty `Definite`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Definite`.
+  
+  `PS` tokens may have the following values of `Definite`:
+  - `Def` (9633; 1% of non-empty `Definite`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Definite`.
+  
+  `HP` tokens may have the following values of `Definite`:
+  - `Ind` (4463; 0% of non-empty `Definite`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Definite`.
+  
+  `HD` tokens may have the following values of `Definite`:
+  - `Ind` (1407; 0% of non-empty `Definite`)
+  
+  #### HS
+  
+  186 `HS` tokens (100% of all `HS` tokens) have a non-empty value of `Definite`.
+  
+  `HS` tokens may have the following values of `Definite`:
+  - `Def` (186; 0% of non-empty `Definite`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Definite`.
+  
+  `RO` tokens may have the following values of `Definite`:
+  - `Def` (5; 0% of non-empty `Definite`)
+  - `Ind` (5; 0% of non-empty `Definite`)
+  
+  
+  
+  ### Features: **Degree**
+  This feature is universal. It occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
+  
+  160898 tokens (6%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132541; 5% instances), `AB` (28357; 1% instances)
+  
+  #### JJ
+  
+  132541 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Degree`.
+  
+  `JJ` tokens may have the following values of `Degree`:
+  - `Pos` (118931; 74% of non-empty `Degree`)
+  - `Cmp` (10868; 7% of non-empty `Degree`)
+  - `Sup` (2742; 2% of non-empty `Degree`)
+  
+  #### AB
+  
+  28357 `AB` tokens (56% of all `AB` tokens) have a non-empty value of `Degree`.
+  
+  `AB` tokens may have the following values of `Degree`:
+  - `Pos` (15480; 10% of non-empty `Degree`)
+  - `Cmp` (8987; 6% of non-empty `Degree`)
+  - `Sup` (3890; 2% of non-empty `Degree`)
+  
+  
+  
+  ### Features: **Gender**
+  This feature is universal. It occurs with 3 different values: `Com`, `Masc`, `Neut`.
+  
+  1093722 tokens (38%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698790; 24% instances), `JJ` (132540; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
+   157296 tokens (14%) have multiple values of `Gender`.
+  
+  #### NN
+  
+  698790 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Gender`.
+  
+  `NN` tokens may have the following values of `Gender`:
+  - `Neut` (234585; 21% of non-empty `Gender`)
+  - `Com` (464205; 42% of non-empty `Gender`)
+  
+  #### JJ
+  
+  132540 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Gender`.
+  
+  `JJ` tokens may have the following values of `Gender`:
+  - `Neut` (100189; 9% of non-empty `Gender`)
+  - `Com` (114242; 10% of non-empty `Gender`)
+  - `Masc` (378; 0% of non-empty `Gender`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Gender`.
+  
+  `DT` tokens may have the following values of `Gender`:
+  - `Neut` (49128; 4% of non-empty `Gender`)
+  - `Com` (71993; 7% of non-empty `Gender`)
+  - `Masc` (1; 0% of non-empty `Gender`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Gender`.
+  
+  `PN` tokens may have the following values of `Gender`:
+  - `Neut` (67082; 6% of non-empty `Gender`)
+  - `Com` (50249; 5% of non-empty `Gender`)
+  - `Masc` (31; 0% of non-empty `Gender`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Gender`.
+  
+  `PC` tokens may have the following values of `Gender`:
+  - `Neut` (37441; 3% of non-empty `Gender`)
+  - `Com` (41503; 4% of non-empty `Gender`)
+  - `Masc` (62; 0% of non-empty `Gender`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Gender`.
+  
+  `PS` tokens may have the following values of `Gender`:
+  - `Neut` (5738; 1% of non-empty `Gender`)
+  - `Com` (7288; 1% of non-empty `Gender`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Gender`.
+  
+  `HP` tokens may have the following values of `Gender`:
+  - `Neut` (4201; 0% of non-empty `Gender`)
+  - `Com` (467; 0% of non-empty `Gender`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Gender`.
+  
+  `HD` tokens may have the following values of `Gender`:
+  - `Neut` (987; 0% of non-empty `Gender`)
+  - `Com` (1243; 0% of non-empty `Gender`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Gender`.
+  
+  `RO` tokens may have the following values of `Gender`:
+  - `Masc` (5; 0% of non-empty `Gender`)
+  
+  
+  
+  ### Features: **Mood**
+  This feature is universal. It occurs with 3 different values: `Imp`, `Ind`, `Sub`.
+  
+  244612 tokens (8%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (244612; 8% instances)
+  
+  #### VB
+  
+  244612 `VB` tokens (20% of all `VB` tokens) have a non-empty value of `Mood`.
+  
+  `VB` tokens may have the following values of `Mood`:
+  - `Ind` (242835; 99% of non-empty `Mood`)
+  - `Imp` (1616; 1% of non-empty `Mood`)
+  - `Sub` (161; 0% of non-empty `Mood`)
+  
+  
+  
+  ### Features: **Number**
+  This feature is universal. It occurs with 2 different values: `Plur`, `Sing`.
+  
+  1089833 tokens (38%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (694905; 24% instances), `JJ` (132536; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
+   45832 tokens (4%) have multiple values of `Number`.
+  
+  #### NN
+  
+  694905 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Number`.
+  
+  `NN` tokens may have the following values of `Number`:
+  - `Sing` (506306; 46% of non-empty `Number`)
+  - `Plur` (188599; 17% of non-empty `Number`)
+  
+  #### JJ
+  
+  132536 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Number`.
+  
+  `JJ` tokens may have the following values of `Number`:
+  - `Sing` (83842; 8% of non-empty `Number`)
+  - `Plur` (65396; 6% of non-empty `Number`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Number`.
+  
+  `DT` tokens may have the following values of `Number`:
+  - `Sing` (84148; 8% of non-empty `Number`)
+  - `Plur` (18653; 2% of non-empty `Number`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Number`.
+  
+  `PN` tokens may have the following values of `Number`:
+  - `Sing` (76873; 7% of non-empty `Number`)
+  - `Plur` (32217; 3% of non-empty `Number`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Number`.
+  
+  `PC` tokens may have the following values of `Number`:
+  - `Sing` (33625; 3% of non-empty `Number`)
+  - `Plur` (29081; 3% of non-empty `Number`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Number`.
+  
+  `PS` tokens may have the following values of `Number`:
+  - `Sing` (7657; 1% of non-empty `Number`)
+  - `Plur` (3393; 0% of non-empty `Number`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Number`.
+  
+  `HP` tokens may have the following values of `Number`:
+  - `Sing` (4258; 0% of non-empty `Number`)
+  - `Plur` (205; 0% of non-empty `Number`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Number`.
+  
+  `HD` tokens may have the following values of `Number`:
+  - `Sing` (584; 0% of non-empty `Number`)
+  - `Plur` (823; 0% of non-empty `Number`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Number`.
+  
+  `RO` tokens may have the following values of `Number`:
+  - `Sing` (5; 0% of non-empty `Number`)
+  
+  
+  
+  ### Features: **Tense**
+  This feature is universal. It occurs with 2 different values: `Past`, `Pres`.
+  
+  290132 tokens (10%) have a non-empty value of `Tense`. The feature is used with 2 part-of-speech tags: `VB` (242920; 8% instances), `PC` (47212; 2% instances)
+  
+  #### VB
+  
+  242920 `VB` tokens (19% of all `VB` tokens) have a non-empty value of `Tense`.
+  
+  `VB` tokens may have the following values of `Tense`:
+  - `Pres` (220310; 76% of non-empty `Tense`)
+  - `Past` (22610; 8% of non-empty `Tense`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Tense`.
+  
+  `PC` tokens may have the following values of `Tense`:
+  - `Pres` (15494; 5% of non-empty `Tense`)
+  - `Past` (31718; 11% of non-empty `Tense`)
+  
+  
+  
+  ### Features: **VerbForm**
+  This feature is universal but the values `Stem` are language-specific. It occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
+  
+  427473 tokens (15%) have a non-empty value of `VerbForm`. The feature is used with 2 part-of-speech tags: `VB` (380261; 13% instances), `PC` (47212; 2% instances)
+  
+  #### VB
+  
+  380261 `VB` tokens (30% of all `VB` tokens) have a non-empty value of `VerbForm`.
+  
+  `VB` tokens may have the following values of `VerbForm`:
+  - `Fin` (245031; 57% of non-empty `VerbForm`)
+  - `Sup` (20211; 5% of non-empty `VerbForm`)
+  - `Inf` (115019; 27% of non-empty `VerbForm`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `VerbForm`.
+  
+  `PC` tokens may have the following values of `VerbForm`:
+  - `Part` (47212; 11% of non-empty `VerbForm`)
+  
+  
+  
+  ### Features: **Voice**
+  This feature is universal. It occurs with 2 different values: `Act`, `Pass`.
+  
+  380257 tokens (13%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380257; 13% instances)
+  
+  #### VB
+  
+  380257 `VB` tokens (30% of all `VB` tokens) have a non-empty value of `Voice`.
+  
+  `VB` tokens may have the following values of `Voice`:
+  - `Act` (315858; 83% of non-empty `Voice`)
+  - `Pass` (64399; 17% of non-empty `Voice`)
+  
+  
+  
+  
+  '''
+# ---
+# name: test_write_features[sv]
+  '''
+  ## Egenskaper
+  Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
+  
+  ### Egenskap: **Abbr**
+  Denna egenskap är universell. Den förekommer med 1 olika värden: `Yes`.
+  
+  57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Denna egenskap är använt tillsammans med 6 POS (part-of-speech) taggar: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
+  
+  #### NN
+  
+  35393 `NN` tokens (1% av alla `NN` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `NN` tokens har följande värden av `Abbr`:
+  - `Yes` (35393; 61% av icke-tomma `Abbr`)
+  
+  #### AB
+  
+  22438 `AB` tokens (44% av alla `AB` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `AB` tokens har följande värden av `Abbr`:
+  - `Yes` (22438; 39% av icke-tomma `Abbr`)
+  
+  #### VB
+  
+  18 `VB` tokens (0% av alla `VB` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `VB` tokens har följande värden av `Abbr`:
+  - `Yes` (18; 0% av icke-tomma `Abbr`)
+  
+  #### KN
+  
+  17 `KN` tokens (100% av alla `KN` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `KN` tokens har följande värden av `Abbr`:
+  - `Yes` (17; 0% av icke-tomma `Abbr`)
+  
+  #### JJ
+  
+  12 `JJ` tokens (0% av alla `JJ` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `JJ` tokens har följande värden av `Abbr`:
+  - `Yes` (12; 0% av icke-tomma `Abbr`)
+  
+  #### PP
+  
+  5 `PP` tokens (100% av alla `PP` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `PP` tokens har följande värden av `Abbr`:
+  - `Yes` (5; 0% av icke-tomma `Abbr`)
+  
+  
+  
+  ### Egenskap: **Case**
+  Denna egenskap är universell. Den förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
+  
+  1262438 tokens (44%) har ett icke-tomt värde av `Case`. Denna egenskap är använt tillsammans med 7 POS (part-of-speech) taggar: `NN` (695434; 24% instanser), `RG` (180310; 6% instanser), `JJ` (132538; 5% instanser), `PM` (106006; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `RO` (2897; 0% instanser)
+   56044 tokens (4%) har multipla värden av `Case`.
+  
+  #### NN
+  
+  695434 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Case`.
+  
+  `NN` tokens har följande värden av `Case`:
+  - `Nom` (661878; 52% av icke-tomma `Case`)
+  - `Gen` (33556; 3% av icke-tomma `Case`)
+  
+  #### RG
+  
+  180310 `RG` tokens (100% av alla `RG` tokens) har ett icke-tomt värde av `Case`.
+  
+  `RG` tokens har följande värden av `Case`:
+  - `Nom` (180310; 14% av icke-tomma `Case`)
+  
+  #### JJ
+  
+  132538 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Case`.
+  
+  `JJ` tokens har följande värden av `Case`:
+  - `Nom` (132190; 10% av icke-tomma `Case`)
+  - `Gen` (348; 0% av icke-tomma `Case`)
+  
+  #### PM
+  
+  106006 `PM` tokens (100% av alla `PM` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PM` tokens har följande värden av `Case`:
+  - `Nom` (102800; 8% av icke-tomma `Case`)
+  - `Gen` (3206; 0% av icke-tomma `Case`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PN` tokens har följande värden av `Case`:
+  - `Nom` (83736; 7% av icke-tomma `Case`)
+  - `Acc` (70349; 6% av icke-tomma `Case`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PC` tokens har följande värden av `Case`:
+  - `Nom` (47182; 4% av icke-tomma `Case`)
+  - `Gen` (30; 0% av icke-tomma `Case`)
+  
+  #### RO
+  
+  2897 `RO` tokens (99% av alla `RO` tokens) har ett icke-tomt värde av `Case`.
+  
+  `RO` tokens har följande värden av `Case`:
+  - `Nom` (2897; 0% av icke-tomma `Case`)
+  
+  
+  
+  ### Egenskap: **Compound**
+   Den förekommer med 1 olika värden: `Yes`.
+  
+  4847 tokens (0%) har ett icke-tomt värde av `Compound`. Denna egenskap är använt tillsammans med 3 POS (part-of-speech) taggar: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
+  
+  #### NN
+  
+  4826 `NN` tokens (0% av alla `NN` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `NN` tokens har följande värden av `Compound`:
+  - `Yes` (4826; 100% av icke-tomma `Compound`)
+  
+  #### RG
+  
+  11 `RG` tokens (0% av alla `RG` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `RG` tokens har följande värden av `Compound`:
+  - `Yes` (11; 0% av icke-tomma `Compound`)
+  
+  #### PM
+  
+  10 `PM` tokens (0% av alla `PM` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `PM` tokens har följande värden av `Compound`:
+  - `Yes` (10; 0% av icke-tomma `Compound`)
+  
+  
+  
+  ### Egenskap: **Definite**
+  Denna egenskap är universell. Den förekommer med 2 olika värden: `Def`, `Ind`.
+  
+  1089520 tokens (38%) har ett icke-tomt värde av `Definite`. Denna egenskap är använt tillsammans med 10 POS (part-of-speech) taggar: `NN` (694413; 24% instanser), `JJ` (132529; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `HS` (186; 0% instanser), `RO` (5; 0% instanser)
+   90435 tokens (8%) har multipla värden av `Definite`.
+  
+  #### NN
+  
+  694413 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `NN` tokens har följande värden av `Definite`:
+  - `Def` (246895; 23% av icke-tomma `Definite`)
+  - `Ind` (447518; 41% av icke-tomma `Definite`)
+  
+  #### JJ
+  
+  132529 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `JJ` tokens har följande värden av `Definite`:
+  - `Def` (78132; 7% av icke-tomma `Definite`)
+  - `Ind` (113076; 10% av icke-tomma `Definite`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `DT` tokens har följande värden av `Definite`:
+  - `Def` (44376; 4% av icke-tomma `Definite`)
+  - `Ind` (59909; 5% av icke-tomma `Definite`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PN` tokens har följande värden av `Definite`:
+  - `Def` (86869; 8% av icke-tomma `Definite`)
+  - `Ind` (11172; 1% av icke-tomma `Definite`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PC` tokens har följande värden av `Definite`:
+  - `Def` (31856; 3% av icke-tomma `Definite`)
+  - `Ind` (44453; 4% av icke-tomma `Definite`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PS` tokens har följande värden av `Definite`:
+  - `Def` (9633; 1% av icke-tomma `Definite`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HP` tokens har följande värden av `Definite`:
+  - `Ind` (4463; 0% av icke-tomma `Definite`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HD` tokens har följande värden av `Definite`:
+  - `Ind` (1407; 0% av icke-tomma `Definite`)
+  
+  #### HS
+  
+  186 `HS` tokens (100% av alla `HS` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HS` tokens har följande värden av `Definite`:
+  - `Def` (186; 0% av icke-tomma `Definite`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `RO` tokens har följande värden av `Definite`:
+  - `Def` (5; 0% av icke-tomma `Definite`)
+  - `Ind` (5; 0% av icke-tomma `Definite`)
+  
+  
+  
+  ### Egenskap: **Degree**
+  Denna egenskap är universell. Den förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
+  
+  160898 tokens (6%) har ett icke-tomt värde av `Degree`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `JJ` (132541; 5% instanser), `AB` (28357; 1% instanser)
+  
+  #### JJ
+  
+  132541 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Degree`.
+  
+  `JJ` tokens har följande värden av `Degree`:
+  - `Pos` (118931; 74% av icke-tomma `Degree`)
+  - `Cmp` (10868; 7% av icke-tomma `Degree`)
+  - `Sup` (2742; 2% av icke-tomma `Degree`)
+  
+  #### AB
+  
+  28357 `AB` tokens (56% av alla `AB` tokens) har ett icke-tomt värde av `Degree`.
+  
+  `AB` tokens har följande värden av `Degree`:
+  - `Pos` (15480; 10% av icke-tomma `Degree`)
+  - `Cmp` (8987; 6% av icke-tomma `Degree`)
+  - `Sup` (3890; 2% av icke-tomma `Degree`)
+  
+  
+  
+  ### Egenskap: **Gender**
+  Denna egenskap är universell. Den förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
+  
+  1093722 tokens (38%) har ett icke-tomt värde av `Gender`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (698790; 24% instanser), `JJ` (132540; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
+   157296 tokens (14%) har multipla värden av `Gender`.
+  
+  #### NN
+  
+  698790 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `NN` tokens har följande värden av `Gender`:
+  - `Neut` (234585; 21% av icke-tomma `Gender`)
+  - `Com` (464205; 42% av icke-tomma `Gender`)
+  
+  #### JJ
+  
+  132540 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `JJ` tokens har följande värden av `Gender`:
+  - `Neut` (100189; 9% av icke-tomma `Gender`)
+  - `Com` (114242; 10% av icke-tomma `Gender`)
+  - `Masc` (378; 0% av icke-tomma `Gender`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `DT` tokens har följande värden av `Gender`:
+  - `Neut` (49128; 4% av icke-tomma `Gender`)
+  - `Com` (71993; 7% av icke-tomma `Gender`)
+  - `Masc` (1; 0% av icke-tomma `Gender`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PN` tokens har följande värden av `Gender`:
+  - `Neut` (67082; 6% av icke-tomma `Gender`)
+  - `Com` (50249; 5% av icke-tomma `Gender`)
+  - `Masc` (31; 0% av icke-tomma `Gender`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PC` tokens har följande värden av `Gender`:
+  - `Neut` (37441; 3% av icke-tomma `Gender`)
+  - `Com` (41503; 4% av icke-tomma `Gender`)
+  - `Masc` (62; 0% av icke-tomma `Gender`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PS` tokens har följande värden av `Gender`:
+  - `Neut` (5738; 1% av icke-tomma `Gender`)
+  - `Com` (7288; 1% av icke-tomma `Gender`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `HP` tokens har följande värden av `Gender`:
+  - `Neut` (4201; 0% av icke-tomma `Gender`)
+  - `Com` (467; 0% av icke-tomma `Gender`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `HD` tokens har följande värden av `Gender`:
+  - `Neut` (987; 0% av icke-tomma `Gender`)
+  - `Com` (1243; 0% av icke-tomma `Gender`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `RO` tokens har följande värden av `Gender`:
+  - `Masc` (5; 0% av icke-tomma `Gender`)
+  
+  
+  
+  ### Egenskap: **Mood**
+  Denna egenskap är universell. Den förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
+  
+  244612 tokens (8%) har ett icke-tomt värde av `Mood`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (244612; 8% instanser)
+  
+  #### VB
+  
+  244612 `VB` tokens (20% av alla `VB` tokens) har ett icke-tomt värde av `Mood`.
+  
+  `VB` tokens har följande värden av `Mood`:
+  - `Ind` (242835; 99% av icke-tomma `Mood`)
+  - `Imp` (1616; 1% av icke-tomma `Mood`)
+  - `Sub` (161; 0% av icke-tomma `Mood`)
+  
+  
+  
+  ### Egenskap: **Number**
+  Denna egenskap är universell. Den förekommer med 2 olika värden: `Plur`, `Sing`.
+  
+  1089833 tokens (38%) har ett icke-tomt värde av `Number`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (694905; 24% instanser), `JJ` (132536; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
+   45832 tokens (4%) har multipla värden av `Number`.
+  
+  #### NN
+  
+  694905 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Number`.
+  
+  `NN` tokens har följande värden av `Number`:
+  - `Sing` (506306; 46% av icke-tomma `Number`)
+  - `Plur` (188599; 17% av icke-tomma `Number`)
+  
+  #### JJ
+  
+  132536 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Number`.
+  
+  `JJ` tokens har följande värden av `Number`:
+  - `Sing` (83842; 8% av icke-tomma `Number`)
+  - `Plur` (65396; 6% av icke-tomma `Number`)
+  
+  #### DT
+  
+  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Number`.
+  
+  `DT` tokens har följande värden av `Number`:
+  - `Sing` (84148; 8% av icke-tomma `Number`)
+  - `Plur` (18653; 2% av icke-tomma `Number`)
+  
+  #### PN
+  
+  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PN` tokens har följande värden av `Number`:
+  - `Sing` (76873; 7% av icke-tomma `Number`)
+  - `Plur` (32217; 3% av icke-tomma `Number`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PC` tokens har följande värden av `Number`:
+  - `Sing` (33625; 3% av icke-tomma `Number`)
+  - `Plur` (29081; 3% av icke-tomma `Number`)
+  
+  #### PS
+  
+  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PS` tokens har följande värden av `Number`:
+  - `Sing` (7657; 1% av icke-tomma `Number`)
+  - `Plur` (3393; 0% av icke-tomma `Number`)
+  
+  #### HP
+  
+  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Number`.
+  
+  `HP` tokens har följande värden av `Number`:
+  - `Sing` (4258; 0% av icke-tomma `Number`)
+  - `Plur` (205; 0% av icke-tomma `Number`)
+  
+  #### HD
+  
+  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Number`.
+  
+  `HD` tokens har följande värden av `Number`:
+  - `Sing` (584; 0% av icke-tomma `Number`)
+  - `Plur` (823; 0% av icke-tomma `Number`)
+  
+  #### RO
+  
+  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Number`.
+  
+  `RO` tokens har följande värden av `Number`:
+  - `Sing` (5; 0% av icke-tomma `Number`)
+  
+  
+  
+  ### Egenskap: **Tense**
+  Denna egenskap är universell. Den förekommer med 2 olika värden: `Past`, `Pres`.
+  
+  290132 tokens (10%) har ett icke-tomt värde av `Tense`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (242920; 8% instanser), `PC` (47212; 2% instanser)
+  
+  #### VB
+  
+  242920 `VB` tokens (19% av alla `VB` tokens) har ett icke-tomt värde av `Tense`.
+  
+  `VB` tokens har följande värden av `Tense`:
+  - `Pres` (220310; 76% av icke-tomma `Tense`)
+  - `Past` (22610; 8% av icke-tomma `Tense`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Tense`.
+  
+  `PC` tokens har följande värden av `Tense`:
+  - `Pres` (15494; 5% av icke-tomma `Tense`)
+  - `Past` (31718; 11% av icke-tomma `Tense`)
+  
+  
+  
+  ### Egenskap: **VerbForm**
+  Denna egenskap är universell men `Stem` värden är språkspecifika. Den förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
+  
+  427473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (380261; 13% instanser), `PC` (47212; 2% instanser)
+  
+  #### VB
+  
+  380261 `VB` tokens (30% av alla `VB` tokens) har ett icke-tomt värde av `VerbForm`.
+  
+  `VB` tokens har följande värden av `VerbForm`:
+  - `Fin` (245031; 57% av icke-tomma `VerbForm`)
+  - `Sup` (20211; 5% av icke-tomma `VerbForm`)
+  - `Inf` (115019; 27% av icke-tomma `VerbForm`)
+  
+  #### PC
+  
+  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `VerbForm`.
+  
+  `PC` tokens har följande värden av `VerbForm`:
+  - `Part` (47212; 11% av icke-tomma `VerbForm`)
+  
+  
+  
+  ### Egenskap: **Voice**
+  Denna egenskap är universell. Den förekommer med 2 olika värden: `Act`, `Pass`.
+  
+  380257 tokens (13%) har ett icke-tomt värde av `Voice`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (380257; 13% instanser)
+  
+  #### VB
+  
+  380257 `VB` tokens (30% av alla `VB` tokens) har ett icke-tomt värde av `Voice`.
+  
+  `VB` tokens har följande värden av `Voice`:
+  - `Act` (315858; 83% av icke-tomma `Voice`)
+  - `Pass` (64399; 17% av icke-tomma `Voice`)
+  
+  
+  
+  
+  '''
+# ---
+# name: test_write_morphology[en]
+  '''
+  ## Morphology
+  
+  ### Morphosyntactic descriptors (MSD)
+  
+  Top-level MSD | Frequency | Percent
+  --- | --- | ---
+  AB | 121224 | 4.18%
+  DT | 101631 | 3.51%
+  HA | 13218 | 0.46%
+  HD | 1407 | 0.05%
+  HP | 44722 | 1.54%
+  HS | 186 | 0.01%
+  IE | 45393 | 1.57%
+  IN | 840 | 0.03%
+  JJ | 132552 | 4.58%
+  KN | 117972 | 4.07%
+  MAD | 131026 | 4.52%
+  MID | 101646 | 3.51%
+  NN | 736544 | 25.42%
+  PAD | 93999 | 3.24%
+  PC | 47212 | 1.63%
+  PL | 15486 | 0.53%
+  PM | 106015 | 3.66%
+  PN | 98041 | 3.38%
+  PP | 358848 | 12.39%
+  PS | 9633 | 0.33%
+  RG | 180321 | 6.22%
+  RO | 2897 | 0.10%
+  SN | 53560 | 1.85%
+  UO | 2274 | 0.08%
+  VB | 380285 | 13.13%
+  
+  
+  MSD | Frequency | Percent
+  --- | --- | ---
+  AB | 70456 | 2.43%
+  AB.AN | 22440 | 0.77%
+  AB.KOM | 8987 | 0.31%
+  AB.POS | 15452 | 0.53%
+  AB.SUV | 3889 | 0.13%
+  DT.MAS.SIN.DEF | 1 | 0.00%
+  DT.NEU.SIN.DEF | 9677 | 0.33%
+  DT.NEU.SIN.IND | 19816 | 0.68%
+  DT.NEU.SIN.IND+DEF | 144 | 0.00%
+  DT.UTR+NEU.PLU.DEF | 14188 | 0.49%
+  DT.UTR+NEU.PLU.IND | 1026 | 0.04%
+  DT.UTR+NEU.PLU.IND+DEF | 2269 | 0.08%
+  DT.UTR+NEU.SIN+PLU.IND | 1170 | 0.04%
+  DT.UTR+NEU.SIN.DEF | 6 | 0.00%
+  DT.UTR+NEU.SIN.IND | 834 | 0.03%
+  DT.UTR.SIN.DEF | 17851 | 0.62%
+  DT.UTR.SIN.IND | 34408 | 1.19%
+  DT.UTR.SIN.IND+DEF | 241 | 0.01%
+  HA | 13218 | 0.46%
+  HD.NEU.SIN.IND | 164 | 0.01%
+  HD.UTR+NEU.PLU.IND | 823 | 0.03%
+  HD.UTR.SIN.IND | 420 | 0.01%
+  HP.-.-.- | 40259 | 1.39%
+  HP.NEU.SIN.IND | 3996 | 0.14%
+  HP.UTR+NEU.PLU.IND | 205 | 0.01%
+  HP.UTR.SIN.IND | 262 | 0.01%
+  HS.DEF | 186 | 0.01%
+  IE | 45393 | 1.57%
+  IN | 840 | 0.03%
+  JJ.AN | 20 | 0.00%
+  JJ.KOM.UTR+NEU.SIN+PLU.IND+DEF.NOM | 10870 | 0.38%
+  JJ.POS.MAS.SIN.DEF.GEN | 95 | 0.00%
+  JJ.POS.MAS.SIN.DEF.NOM | 268 | 0.01%
+  JJ.POS.NEU.SIN.IND+DEF.NOM | 375 | 0.01%
+  JJ.POS.NEU.SIN.IND.NOM | 17527 | 0.61%
+  JJ.POS.UTR+NEU.PLU.IND+DEF.GEN | 230 | 0.01%
+  JJ.POS.UTR+NEU.PLU.IND+DEF.NOM | 43460 | 1.50%
+  JJ.POS.UTR+NEU.PLU.IND.NOM | 4953 | 0.17%
+  JJ.POS.UTR+NEU.SIN+PLU.IND+DEF.NOM | 3307 | 0.11%
+  JJ.POS.UTR+NEU.SIN.DEF.GEN | 29 | 0.00%
+  JJ.POS.UTR+NEU.SIN.DEF.NOM | 16664 | 0.58%
+  JJ.POS.UTR.SIN.IND+DEF.NOM | 430 | 0.01%
+  JJ.POS.UTR.SIN.IND.NOM | 31584 | 1.09%
+  JJ.SUV.MAS.SIN.DEF.NOM | 1 | 0.00%
+  JJ.SUV.UTR+NEU.PLU.DEF.NOM | 187 | 0.01%
+  JJ.SUV.UTR+NEU.PLU.IND.NOM | 28 | 0.00%
+  JJ.SUV.UTR+NEU.SIN+PLU.DEF.NOM | 2228 | 0.08%
+  JJ.SUV.UTR+NEU.SIN+PLU.IND.NOM | 296 | 0.01%
+  KN | 117948 | 4.07%
+  KN.AN | 24 | 0.00%
+  MAD | 131026 | 4.52%
+  MID | 101646 | 3.51%
+  NN.-.-.-.- | 206 | 0.01%
+  NN.AN | 37351 | 1.29%
+  NN.NEU.PLU.DEF.GEN | 864 | 0.03%
+  NN.NEU.PLU.DEF.NOM | 12372 | 0.43%
+  NN.NEU.PLU.IND.GEN | 1057 | 0.04%
+  NN.NEU.PLU.IND.NOM | 43022 | 1.49%
+  NN.NEU.SIN.DEF.GEN | 7186 | 0.25%
+  NN.NEU.SIN.DEF.NOM | 59061 | 2.04%
+  NN.NEU.SIN.IND.GEN | 699 | 0.02%
+  NN.NEU.SIN.IND.NOM | 110212 | 3.80%
+  NN.UTR.-.-.- | 199 | 0.01%
+  NN.UTR.-.-.SMS | 4845 | 0.17%
+  NN.UTR.PLU.DEF.GEN | 3430 | 0.12%
+  NN.UTR.PLU.DEF.NOM | 25975 | 0.90%
+  NN.UTR.PLU.IND.GEN | 3134 | 0.11%
+  NN.UTR.PLU.IND.NOM | 101252 | 3.50%
+  NN.UTR.SIN.DEF.GEN | 14776 | 0.51%
+  NN.UTR.SIN.DEF.NOM | 123357 | 4.26%
+  NN.UTR.SIN.IND.GEN | 2338 | 0.08%
+  NN.UTR.SIN.IND.NOM | 185208 | 6.39%
+  PAD | 93999 | 3.24%
+  PC.PRF.MAS.SIN.DEF.GEN | 18 | 0.00%
+  PC.PRF.MAS.SIN.DEF.NOM | 41 | 0.00%
+  PC.PRF.NEU.SIN.IND.NOM | 5665 | 0.20%
+  PC.PRF.UTR+NEU.PLU.IND+DEF.GEN | 12 | 0.00%
+  PC.PRF.UTR+NEU.PLU.IND+DEF.NOM | 13568 | 0.47%
+  PC.PRF.UTR+NEU.SIN.DEF.NOM | 2723 | 0.09%
+  PC.PRF.UTR.SIN.IND.NOM | 9691 | 0.33%
+  PC.PRS.UTR+NEU.SIN+PLU.IND+DEF.NOM | 15494 | 0.53%
+  PL | 15486 | 0.53%
+  PM.GEN | 3258 | 0.11%
+  PM.NOM | 102747 | 3.55%
+  PM.SMS | 10 | 0.00%
+  PN.MAS.SIN.DEF.SUB+OBJ | 31 | 0.00%
+  PN.NEU.SIN.DEF.SUB+OBJ | 45180 | 1.56%
+  PN.NEU.SIN.IND.SUB+OBJ | 2581 | 0.09%
+  PN.UTR+NEU.PLU.DEF.OBJ | 1393 | 0.05%
+  PN.UTR+NEU.PLU.DEF.SUB | 3700 | 0.13%
+  PN.UTR+NEU.PLU.DEF.SUB+OBJ | 558 | 0.02%
+  PN.UTR+NEU.PLU.IND.SUB+OBJ | 2621 | 0.09%
+  PN.UTR+NEU.SIN+PLU.DEF.OBJ | 11049 | 0.38%
+  PN.UTR.PLU.DEF.OBJ | 1022 | 0.04%
+  PN.UTR.PLU.DEF.SUB | 11788 | 0.41%
+  PN.UTR.SIN.DEF.OBJ | 840 | 0.03%
+  PN.UTR.SIN.DEF.SUB | 8164 | 0.28%
+  PN.UTR.SIN.DEF.SUB+OBJ | 3143 | 0.11%
+  PN.UTR.SIN.IND.SUB | 4040 | 0.14%
+  PN.UTR.SIN.IND.SUB+OBJ | 1931 | 0.07%
+  PP | 358838 | 12.39%
+  PP.AN | 10 | 0.00%
+  PS.NEU.SIN.DEF | 2345 | 0.08%
+  PS.UTR+NEU.PLU.DEF | 1976 | 0.07%
+  PS.UTR+NEU.SIN+PLU.DEF | 1418 | 0.05%
+  PS.UTR.SIN.DEF | 3894 | 0.13%
+  RG.NOM | 180310 | 6.22%
+  RG.SMS | 11 | 0.00%
+  RO.MAS.SIN.IND+DEF.NOM | 5 | 0.00%
+  RO.NOM | 2892 | 0.10%
+  SN | 53560 | 1.85%
+  UO | 2274 | 0.08%
+  VB.AN | 28 | 0.00%
+  VB.IMP.AKT | 1765 | 0.06%
+  VB.INF.AKT | 95313 | 3.29%
+  VB.INF.SFO | 19930 | 0.69%
+  VB.KON.PRS.AKT | 44 | 0.00%
+  VB.KON.PRT.AKT | 118 | 0.00%
+  VB.PRS.AKT | 184442 | 6.37%
+  VB.PRS.SFO | 35885 | 1.24%
+  VB.PRT.AKT | 19251 | 0.66%
+  VB.PRT.SFO | 3293 | 0.11%
+  VB.SUP.AKT | 14926 | 0.52%
+  VB.SUP.SFO | 5290 | 0.18%
+  
+  '''
+# ---
+# name: test_write_morphology[sv]
+  '''
+  ## Morfologi
+  
+  ### Morfo-syntaktisk deskriptorer (MSD)
+  
+  Topp-nivå MSD | Frequency | Percent
+  --- | --- | ---
+  AB | 121224 | 4.18%
+  DT | 101631 | 3.51%
+  HA | 13218 | 0.46%
+  HD | 1407 | 0.05%
+  HP | 44722 | 1.54%
+  HS | 186 | 0.01%
+  IE | 45393 | 1.57%
+  IN | 840 | 0.03%
+  JJ | 132552 | 4.58%
+  KN | 117972 | 4.07%
+  MAD | 131026 | 4.52%
+  MID | 101646 | 3.51%
+  NN | 736544 | 25.42%
+  PAD | 93999 | 3.24%
+  PC | 47212 | 1.63%
+  PL | 15486 | 0.53%
+  PM | 106015 | 3.66%
+  PN | 98041 | 3.38%
+  PP | 358848 | 12.39%
+  PS | 9633 | 0.33%
+  RG | 180321 | 6.22%
+  RO | 2897 | 0.10%
+  SN | 53560 | 1.85%
+  UO | 2274 | 0.08%
+  VB | 380285 | 13.13%
+  
+  
+  MSD | Frequency | Percent
+  --- | --- | ---
+  AB | 70456 | 2.43%
+  AB.AN | 22440 | 0.77%
+  AB.KOM | 8987 | 0.31%
+  AB.POS | 15452 | 0.53%
+  AB.SUV | 3889 | 0.13%
+  DT.MAS.SIN.DEF | 1 | 0.00%
+  DT.NEU.SIN.DEF | 9677 | 0.33%
+  DT.NEU.SIN.IND | 19816 | 0.68%
+  DT.NEU.SIN.IND+DEF | 144 | 0.00%
+  DT.UTR+NEU.PLU.DEF | 14188 | 0.49%
+  DT.UTR+NEU.PLU.IND | 1026 | 0.04%
+  DT.UTR+NEU.PLU.IND+DEF | 2269 | 0.08%
+  DT.UTR+NEU.SIN+PLU.IND | 1170 | 0.04%
+  DT.UTR+NEU.SIN.DEF | 6 | 0.00%
+  DT.UTR+NEU.SIN.IND | 834 | 0.03%
+  DT.UTR.SIN.DEF | 17851 | 0.62%
+  DT.UTR.SIN.IND | 34408 | 1.19%
+  DT.UTR.SIN.IND+DEF | 241 | 0.01%
+  HA | 13218 | 0.46%
+  HD.NEU.SIN.IND | 164 | 0.01%
+  HD.UTR+NEU.PLU.IND | 823 | 0.03%
+  HD.UTR.SIN.IND | 420 | 0.01%
+  HP.-.-.- | 40259 | 1.39%
+  HP.NEU.SIN.IND | 3996 | 0.14%
+  HP.UTR+NEU.PLU.IND | 205 | 0.01%
+  HP.UTR.SIN.IND | 262 | 0.01%
+  HS.DEF | 186 | 0.01%
+  IE | 45393 | 1.57%
+  IN | 840 | 0.03%
+  JJ.AN | 20 | 0.00%
+  JJ.KOM.UTR+NEU.SIN+PLU.IND+DEF.NOM | 10870 | 0.38%
+  JJ.POS.MAS.SIN.DEF.GEN | 95 | 0.00%
+  JJ.POS.MAS.SIN.DEF.NOM | 268 | 0.01%
+  JJ.POS.NEU.SIN.IND+DEF.NOM | 375 | 0.01%
+  JJ.POS.NEU.SIN.IND.NOM | 17527 | 0.61%
+  JJ.POS.UTR+NEU.PLU.IND+DEF.GEN | 230 | 0.01%
+  JJ.POS.UTR+NEU.PLU.IND+DEF.NOM | 43460 | 1.50%
+  JJ.POS.UTR+NEU.PLU.IND.NOM | 4953 | 0.17%
+  JJ.POS.UTR+NEU.SIN+PLU.IND+DEF.NOM | 3307 | 0.11%
+  JJ.POS.UTR+NEU.SIN.DEF.GEN | 29 | 0.00%
+  JJ.POS.UTR+NEU.SIN.DEF.NOM | 16664 | 0.58%
+  JJ.POS.UTR.SIN.IND+DEF.NOM | 430 | 0.01%
+  JJ.POS.UTR.SIN.IND.NOM | 31584 | 1.09%
+  JJ.SUV.MAS.SIN.DEF.NOM | 1 | 0.00%
+  JJ.SUV.UTR+NEU.PLU.DEF.NOM | 187 | 0.01%
+  JJ.SUV.UTR+NEU.PLU.IND.NOM | 28 | 0.00%
+  JJ.SUV.UTR+NEU.SIN+PLU.DEF.NOM | 2228 | 0.08%
+  JJ.SUV.UTR+NEU.SIN+PLU.IND.NOM | 296 | 0.01%
+  KN | 117948 | 4.07%
+  KN.AN | 24 | 0.00%
+  MAD | 131026 | 4.52%
+  MID | 101646 | 3.51%
+  NN.-.-.-.- | 206 | 0.01%
+  NN.AN | 37351 | 1.29%
+  NN.NEU.PLU.DEF.GEN | 864 | 0.03%
+  NN.NEU.PLU.DEF.NOM | 12372 | 0.43%
+  NN.NEU.PLU.IND.GEN | 1057 | 0.04%
+  NN.NEU.PLU.IND.NOM | 43022 | 1.49%
+  NN.NEU.SIN.DEF.GEN | 7186 | 0.25%
+  NN.NEU.SIN.DEF.NOM | 59061 | 2.04%
+  NN.NEU.SIN.IND.GEN | 699 | 0.02%
+  NN.NEU.SIN.IND.NOM | 110212 | 3.80%
+  NN.UTR.-.-.- | 199 | 0.01%
+  NN.UTR.-.-.SMS | 4845 | 0.17%
+  NN.UTR.PLU.DEF.GEN | 3430 | 0.12%
+  NN.UTR.PLU.DEF.NOM | 25975 | 0.90%
+  NN.UTR.PLU.IND.GEN | 3134 | 0.11%
+  NN.UTR.PLU.IND.NOM | 101252 | 3.50%
+  NN.UTR.SIN.DEF.GEN | 14776 | 0.51%
+  NN.UTR.SIN.DEF.NOM | 123357 | 4.26%
+  NN.UTR.SIN.IND.GEN | 2338 | 0.08%
+  NN.UTR.SIN.IND.NOM | 185208 | 6.39%
+  PAD | 93999 | 3.24%
+  PC.PRF.MAS.SIN.DEF.GEN | 18 | 0.00%
+  PC.PRF.MAS.SIN.DEF.NOM | 41 | 0.00%
+  PC.PRF.NEU.SIN.IND.NOM | 5665 | 0.20%
+  PC.PRF.UTR+NEU.PLU.IND+DEF.GEN | 12 | 0.00%
+  PC.PRF.UTR+NEU.PLU.IND+DEF.NOM | 13568 | 0.47%
+  PC.PRF.UTR+NEU.SIN.DEF.NOM | 2723 | 0.09%
+  PC.PRF.UTR.SIN.IND.NOM | 9691 | 0.33%
+  PC.PRS.UTR+NEU.SIN+PLU.IND+DEF.NOM | 15494 | 0.53%
+  PL | 15486 | 0.53%
+  PM.GEN | 3258 | 0.11%
+  PM.NOM | 102747 | 3.55%
+  PM.SMS | 10 | 0.00%
+  PN.MAS.SIN.DEF.SUB+OBJ | 31 | 0.00%
+  PN.NEU.SIN.DEF.SUB+OBJ | 45180 | 1.56%
+  PN.NEU.SIN.IND.SUB+OBJ | 2581 | 0.09%
+  PN.UTR+NEU.PLU.DEF.OBJ | 1393 | 0.05%
+  PN.UTR+NEU.PLU.DEF.SUB | 3700 | 0.13%
+  PN.UTR+NEU.PLU.DEF.SUB+OBJ | 558 | 0.02%
+  PN.UTR+NEU.PLU.IND.SUB+OBJ | 2621 | 0.09%
+  PN.UTR+NEU.SIN+PLU.DEF.OBJ | 11049 | 0.38%
+  PN.UTR.PLU.DEF.OBJ | 1022 | 0.04%
+  PN.UTR.PLU.DEF.SUB | 11788 | 0.41%
+  PN.UTR.SIN.DEF.OBJ | 840 | 0.03%
+  PN.UTR.SIN.DEF.SUB | 8164 | 0.28%
+  PN.UTR.SIN.DEF.SUB+OBJ | 3143 | 0.11%
+  PN.UTR.SIN.IND.SUB | 4040 | 0.14%
+  PN.UTR.SIN.IND.SUB+OBJ | 1931 | 0.07%
+  PP | 358838 | 12.39%
+  PP.AN | 10 | 0.00%
+  PS.NEU.SIN.DEF | 2345 | 0.08%
+  PS.UTR+NEU.PLU.DEF | 1976 | 0.07%
+  PS.UTR+NEU.SIN+PLU.DEF | 1418 | 0.05%
+  PS.UTR.SIN.DEF | 3894 | 0.13%
+  RG.NOM | 180310 | 6.22%
+  RG.SMS | 11 | 0.00%
+  RO.MAS.SIN.IND+DEF.NOM | 5 | 0.00%
+  RO.NOM | 2892 | 0.10%
+  SN | 53560 | 1.85%
+  UO | 2274 | 0.08%
+  VB.AN | 28 | 0.00%
+  VB.IMP.AKT | 1765 | 0.06%
+  VB.INF.AKT | 95313 | 3.29%
+  VB.INF.SFO | 19930 | 0.69%
+  VB.KON.PRS.AKT | 44 | 0.00%
+  VB.KON.PRT.AKT | 118 | 0.00%
+  VB.PRS.AKT | 184442 | 6.37%
+  VB.PRS.SFO | 35885 | 1.24%
+  VB.PRT.AKT | 19251 | 0.66%
+  VB.PRT.SFO | 3293 | 0.11%
+  VB.SUP.AKT | 14926 | 0.52%
+  VB.SUP.SFO | 5290 | 0.18%
+  
+  '''
+# ---
+# name: test_write_pos_tags[en]
+  '''
+  ## POS Tags
+  
+  AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+  
+  ### POS Tags: **AB**
+  There are 121224 (4%) `AB` tokens. Out of 25 observed tags, the rank of `AB` is: 7 in number of tokens.
+  
+  The 5 most frequent `AB` base forms: `inte`, `även`, `därmed`, `m.m.`, `delvis`
+  
+  
+  ### POS Tags: **DT**
+  There are 101631 (4%) `DT` tokens. Out of 25 observed tags, the rank of `DT` is: 11 in number of tokens.
+  
+  The 5 most frequent `DT` base forms: `en`, `den`, `denna`, `någon`, `all`
+  
+  
+  ### POS Tags: **HA**
+  There are 13218 (0%) `HA` tokens. Out of 25 observed tags, the rank of `HA` is: 19 in number of tokens.
+  
+  The 5 most frequent `HA` base forms: `när`, `hur`, `där`, `som`, `då`
+  
+  
+  ### POS Tags: **HD**
+  There are 1407 (0%) `HD` tokens. Out of 25 observed tags, the rank of `HD` is: 23 in number of tokens.
+  
+  The 2 most frequent `HD` base forms: `i vilken mån:7`, `i vilken mån:3`
+  
+  
+  ### POS Tags: **HP**
+  There are 44722 (2%) `HP` tokens. Out of 25 observed tags, the rank of `HP` is: 17 in number of tokens.
+  
+  The 5 most frequent `HP` base forms: `vad`, `vad för`, `vem`, `vad än`, `såväl som:1`
+  
+  
+  ### POS Tags: **HS**
+  There are 186 (0%) `HS` tokens. Out of 25 observed tags, the rank of `HS` is: 25 in number of tokens.
+  
+  The 2 most frequent `HS` base forms: `vars`, `vem`
+  
+  
+  ### POS Tags: **IE**
+  There are 45393 (2%) `IE` tokens. Out of 25 observed tags, the rank of `IE` is: 16 in number of tokens.
+  
+  The 5 most frequent `IE` base forms: `att`, `ha att göra:2`, `ha att göra:12`, `ha att göra:26`, `ha att göra:15`
+  
+  
+  ### POS Tags: **IN**
+  There are 840 (0%) `IN` tokens. Out of 25 observed tags, the rank of `IN` is: 24 in number of tokens.
+  
+  The 5 most frequent `IN` base forms: `nej`, `ja`, `jo`, `tack`, `nä`
+  
+  
+  ### POS Tags: **JJ**
+  There are 132552 (5%) `JJ` tokens. Out of 25 observed tags, the rank of `JJ` is: 5 in number of tokens.
+  
+  The 5 most frequent `JJ` base forms: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
+  
+  
+  ### POS Tags: **KN**
+  There are 117972 (4%) `KN` tokens. Out of 25 observed tags, the rank of `KN` is: 8 in number of tokens.
+  
+  The 5 most frequent `KN` base forms: `och`, `eller`, `samt`, `men`, `både och`
+  
+  
+  ### POS Tags: **MAD**
+  There are 131026 (5%) `MAD` tokens. Out of 25 observed tags, the rank of `MAD` is: 6 in number of tokens.
+  
+  The 5 most frequent `MAD` tokens: `.`, `:`, `!`, `?`, `–`
+  
+  
+  ### POS Tags: **MID**
+  There are 101646 (4%) `MID` tokens. Out of 25 observed tags, the rank of `MID` is: 10 in number of tokens.
+  
+  The 5 most frequent `MID` tokens: `,`, `/`, `:`, `-`, `–`
+  
+  
+  ### POS Tags: **NN**
+  There are 736544 (25%) `NN` tokens. Out of 25 observed tags, the rank of `NN` is: 1 in number of tokens.
+  
+  The 5 most frequent `NN` base forms: `riksdag`, `anslag`, `s`, `utgiftsområde`, `utbildning`
+  
+  
+  ### POS Tags: **PAD**
+  There are 93999 (3%) `PAD` tokens. Out of 25 observed tags, the rank of `PAD` is: 13 in number of tokens.
+  
+  The 5 most frequent `PAD` tokens: `)`, `(`, `"`, `]`, `[`
+  
+  
+  ### POS Tags: **PC**
+  There are 47212 (2%) `PC` tokens. Out of 25 observed tags, the rank of `PC` is: 15 in number of tokens.
+  
+  The 5 most frequent `PC` base forms: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
+  
+  
+  ### POS Tags: **PL**
+  There are 15486 (1%) `PL` tokens. Out of 25 observed tags, the rank of `PL` is: 18 in number of tokens.
+  
+  The 5 most frequent `PL` base forms: `fram`, `upp`, `ut`, `in`, `om`
+  
+  
+  ### POS Tags: **PM**
+  There are 106015 (4%) `PM` tokens. Out of 25 observed tags, the rank of `PM` is: 9 in number of tokens.
+  
+  The 5 most frequent `PM` base forms: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
+  
+  
+  ### POS Tags: **PN**
+  There are 98041 (3%) `PN` tokens. Out of 25 observed tags, the rank of `PN` is: 12 in number of tokens.
+  
+  The 5 most frequent `PN` base forms: `den`, `sig`, `denna`, `ställa sig:2`, `man`
+  
+  
+  ### POS Tags: **PP**
+  There are 358848 (12%) `PP` tokens. Out of 25 observed tags, the rank of `PP` is: 3 in number of tokens.
+  
+  The 5 most frequent `PP` base forms: `i`, `för`, `av`, `till`, `om`
+  
+  
+  ### POS Tags: **PS**
+  There are 9633 (0%) `PS` tokens. Out of 25 observed tags, the rank of `PS` is: 20 in number of tokens.
+  
+  The 5 most frequent `PS` base forms: `sig`, `vi`, `jag`, `de`, `den`
+  
+  
+  ### POS Tags: **RG**
+  There are 180321 (6%) `RG` tokens. Out of 25 observed tags, the rank of `RG` is: 4 in number of tokens.
+  
+  The 5 most frequent `RG` base forms: `V`, `två`, `tre`, `fyra`, `sex`
+  
+  
+  ### POS Tags: **RO**
+  There are 2897 (0%) `RO` tokens. Out of 25 observed tags, the rank of `RO` is: 21 in number of tokens.
+  
+  The 5 most frequent `RO` base forms: `fyra`, `första gången`, `i första hand:4`, `i första hand:8`, `i första hand:5`
+  
+  
+  ### POS Tags: **SN**
+  There are 53560 (2%) `SN` tokens. Out of 25 observed tags, the rank of `SN` is: 14 in number of tokens.
+  
+  The 5 most frequent `SN` base forms: `att`, `om`, `eftersom`, `innan`, `medan`
+  
+  
+  ### POS Tags: **UO**
+  There are 2274 (0%) `UO` tokens. Out of 25 observed tags, the rank of `UO` is: 22 in number of tokens.
+  
+  The 5 most frequent `UO` base forms: `public service`, `au pair`, `à la:16`, `à la`, `vice versa:27`
+  
+  
+  ### POS Tags: **VB**
+  There are 380285 (13%) `VB` tokens. Out of 25 observed tags, the rank of `VB` is: 2 in number of tokens.
+  
+  The 5 most frequent `VB` base forms: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
+  
+  
+  '''
+# ---
+# name: test_write_pos_tags[sv]
+  '''
+  ## POS taggar
+  
+  AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+  
+  ### POS Taggar: **AB**
+  Det finns 121224 (4%) `AB` tokens. Av 25 observerade taggar, `AB`:s rank är: 7 i antalet tokens.
+  
+  De 5 flest frekventa `AB` grundformer: `inte`, `även`, `därmed`, `m.m.`, `delvis`
+  
+  
+  ### POS Taggar: **DT**
+  Det finns 101631 (4%) `DT` tokens. Av 25 observerade taggar, `DT`:s rank är: 11 i antalet tokens.
+  
+  De 5 flest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
+  
+  
+  ### POS Taggar: **HA**
+  Det finns 13218 (0%) `HA` tokens. Av 25 observerade taggar, `HA`:s rank är: 19 i antalet tokens.
+  
+  De 5 flest frekventa `HA` grundformer: `när`, `hur`, `där`, `som`, `då`
+  
+  
+  ### POS Taggar: **HD**
+  Det finns 1407 (0%) `HD` tokens. Av 25 observerade taggar, `HD`:s rank är: 23 i antalet tokens.
+  
+  De 2 flest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
+  
+  
+  ### POS Taggar: **HP**
+  Det finns 44722 (2%) `HP` tokens. Av 25 observerade taggar, `HP`:s rank är: 17 i antalet tokens.
+  
+  De 5 flest frekventa `HP` grundformer: `vad`, `vad för`, `vem`, `vad än`, `såväl som:1`
+  
+  
+  ### POS Taggar: **HS**
+  Det finns 186 (0%) `HS` tokens. Av 25 observerade taggar, `HS`:s rank är: 25 i antalet tokens.
+  
+  De 2 flest frekventa `HS` grundformer: `vars`, `vem`
+  
+  
+  ### POS Taggar: **IE**
+  Det finns 45393 (2%) `IE` tokens. Av 25 observerade taggar, `IE`:s rank är: 16 i antalet tokens.
+  
+  De 5 flest frekventa `IE` grundformer: `att`, `ha att göra:2`, `ha att göra:12`, `ha att göra:26`, `ha att göra:15`
+  
+  
+  ### POS Taggar: **IN**
+  Det finns 840 (0%) `IN` tokens. Av 25 observerade taggar, `IN`:s rank är: 24 i antalet tokens.
+  
+  De 5 flest frekventa `IN` grundformer: `nej`, `ja`, `jo`, `tack`, `nä`
+  
+  
+  ### POS Taggar: **JJ**
+  Det finns 132552 (5%) `JJ` tokens. Av 25 observerade taggar, `JJ`:s rank är: 5 i antalet tokens.
+  
+  De 5 flest frekventa `JJ` grundformer: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
+  
+  
+  ### POS Taggar: **KN**
+  Det finns 117972 (4%) `KN` tokens. Av 25 observerade taggar, `KN`:s rank är: 8 i antalet tokens.
+  
+  De 5 flest frekventa `KN` grundformer: `och`, `eller`, `samt`, `men`, `både och`
+  
+  
+  ### POS Taggar: **MAD**
+  Det finns 131026 (5%) `MAD` tokens. Av 25 observerade taggar, `MAD`:s rank är: 6 i antalet tokens.
+  
+  De 5 flest frekventa `MAD` tokens: `.`, `:`, `!`, `?`, `–`
+  
+  
+  ### POS Taggar: **MID**
+  Det finns 101646 (4%) `MID` tokens. Av 25 observerade taggar, `MID`:s rank är: 10 i antalet tokens.
+  
+  De 5 flest frekventa `MID` tokens: `,`, `/`, `:`, `-`, `–`
+  
+  
+  ### POS Taggar: **NN**
+  Det finns 736544 (25%) `NN` tokens. Av 25 observerade taggar, `NN`:s rank är: 1 i antalet tokens.
+  
+  De 5 flest frekventa `NN` grundformer: `riksdag`, `anslag`, `s`, `utgiftsområde`, `utbildning`
+  
+  
+  ### POS Taggar: **PAD**
+  Det finns 93999 (3%) `PAD` tokens. Av 25 observerade taggar, `PAD`:s rank är: 13 i antalet tokens.
+  
+  De 5 flest frekventa `PAD` tokens: `)`, `(`, `"`, `]`, `[`
+  
+  
+  ### POS Taggar: **PC**
+  Det finns 47212 (2%) `PC` tokens. Av 25 observerade taggar, `PC`:s rank är: 15 i antalet tokens.
+  
+  De 5 flest frekventa `PC` grundformer: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
+  
+  
+  ### POS Taggar: **PL**
+  Det finns 15486 (1%) `PL` tokens. Av 25 observerade taggar, `PL`:s rank är: 18 i antalet tokens.
+  
+  De 5 flest frekventa `PL` grundformer: `fram`, `upp`, `ut`, `in`, `om`
+  
+  
+  ### POS Taggar: **PM**
+  Det finns 106015 (4%) `PM` tokens. Av 25 observerade taggar, `PM`:s rank är: 9 i antalet tokens.
+  
+  De 5 flest frekventa `PM` grundformer: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
+  
+  
+  ### POS Taggar: **PN**
+  Det finns 98041 (3%) `PN` tokens. Av 25 observerade taggar, `PN`:s rank är: 12 i antalet tokens.
+  
+  De 5 flest frekventa `PN` grundformer: `den`, `sig`, `denna`, `ställa sig:2`, `man`
+  
+  
+  ### POS Taggar: **PP**
+  Det finns 358848 (12%) `PP` tokens. Av 25 observerade taggar, `PP`:s rank är: 3 i antalet tokens.
+  
+  De 5 flest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
+  
+  
+  ### POS Taggar: **PS**
+  Det finns 9633 (0%) `PS` tokens. Av 25 observerade taggar, `PS`:s rank är: 20 i antalet tokens.
+  
+  De 5 flest frekventa `PS` grundformer: `sig`, `vi`, `jag`, `de`, `den`
+  
+  
+  ### POS Taggar: **RG**
+  Det finns 180321 (6%) `RG` tokens. Av 25 observerade taggar, `RG`:s rank är: 4 i antalet tokens.
+  
+  De 5 flest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
+  
+  
+  ### POS Taggar: **RO**
+  Det finns 2897 (0%) `RO` tokens. Av 25 observerade taggar, `RO`:s rank är: 21 i antalet tokens.
+  
+  De 5 flest frekventa `RO` grundformer: `fyra`, `första gången`, `i första hand:4`, `i första hand:8`, `i första hand:5`
+  
+  
+  ### POS Taggar: **SN**
+  Det finns 53560 (2%) `SN` tokens. Av 25 observerade taggar, `SN`:s rank är: 14 i antalet tokens.
+  
+  De 5 flest frekventa `SN` grundformer: `att`, `om`, `eftersom`, `innan`, `medan`
+  
+  
+  ### POS Taggar: **UO**
+  Det finns 2274 (0%) `UO` tokens. Av 25 observerade taggar, `UO`:s rank är: 22 i antalet tokens.
+  
+  De 5 flest frekventa `UO` grundformer: `public service`, `au pair`, `à la:16`, `à la`, `vice versa:27`
+  
+  
+  ### POS Taggar: **VB**
+  Det finns 380285 (13%) `VB` tokens. Av 25 observerade taggar, `VB`:s rank är: 2 i antalet tokens.
+  
+  De 5 flest frekventa `VB` grundformer: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
+  
+  
+  '''
+# ---
+# name: test_write_readability[en]
+  '''
+  ## Readability
+  
+  This corpus has the following readability scores:
+  - mean value for **lix** is 56.52 and standard deviation is 28.40
+  - mean value for **ovix** is 59.19 and standard deviation is 25.17
+  - mean value for **nk** is 2.18 and standard deviation is 1.71
+  
+  '''
+# ---
+# name: test_write_readability[sv]
+  '''
+  ## Läsbarhet
+  
+  Denna korpus har följande läsbarhetsindex:
+  - medelvärdet för **lix** är 56.52 och standardavikelsen är 28.40
+  - medelvärdet för **ovix** är 59.19 och standardavikelsen är 25.17
+  - medelvärdet för **nk** är 2.18 och standardavikelsen är 1.71
+  
+  '''
+# ---
+# name: test_write_statistical_overview[en]
+  '''
+  ## Overview
+  
+  Feature | Number | Mean | Standard deviation
+  --- | --- | --- | ---
+  file count | 2 | | 
+  file length (characters) | 17940923 | 8970461.500 | 254556.320
+  text count | 4063 | | 
+  text length (characters) | 17928556 | 4412.640 | 31685.142
+  dokument count | 87 | | 
+  dokument length (characters) | 17940832 | 206216.460 | 148654.042
+  segment.paragraph count | 115542 | | 
+  segment.paragraph length (characters) | 17309621 | 149.812 | 240.162
+  segment.sentence count | 194785 | | 
+  segment.sentence length (characters) | 17228487 | 88.449 | 81.484
+  segment.sentence length (in words) | 2558418 | 13.135 | 12.046
+  segment.token count | 2896932 | | 
+  segment.token length (characters) | 14864325 | 5.131 | 3.986
+  READABILITY | --- | --- | ---
+  text:readability.lix value | - | 56.522 | 28.404
+  text:readability.ovix value | - | 59.195 | 25.167
+  text:readability.nk value | - | 2.183 | 1.712
+  
+  '''
+# ---
+# name: test_write_statistical_overview[sv]
+  '''
+  ## Översikt
+  
+  Egenskap | Värde | Medelvärde | Standardavvikelse
+  --- | --- | --- | ---
+  file antal | 2 | | 
+  file längd (tecken) | 17940923 | 8970461.500 | 254556.320
+  text antal | 4063 | | 
+  text längd (tecken) | 17928556 | 4412.640 | 31685.142
+  dokument antal | 87 | | 
+  dokument längd (tecken) | 17940832 | 206216.460 | 148654.042
+  segment.paragraph antal | 115542 | | 
+  segment.paragraph längd (tecken) | 17309621 | 149.812 | 240.162
+  segment.sentence antal | 194785 | | 
+  segment.sentence längd (tecken) | 17228487 | 88.449 | 81.484
+  segment.sentence längd (i ord) | 2558418 | 13.135 | 12.046
+  segment.token antal | 2896932 | | 
+  segment.token längd (tecken) | 14864325 | 5.131 | 3.986
+  LÄSBARHET | --- | --- | ---
+  text:readability.lix värde | - | 56.522 | 28.404
+  text:readability.ovix värde | - | 59.195 | 25.167
+  text:readability.nk värde | - | 2.183 | 1.712
+  
+  '''
+# ---
+# name: test_write_tokenization_and_word_segmentation[en]
+  '''
+  ## Tokenization and Word Segmentation
+  - This corpus is built from 4063 texts, over 87 documents, in 2 files.
+  - This corpus contains 115542 paragraphs in 87 documents.
+  - This corpus contains 194785 sentences and 2896932 tokens.
+  
+  '''
+# ---
+# name: test_write_tokenization_and_word_segmentation[sv]
+  '''
+  ## Tokenisering och segmentifiering
+  - Denna korpus är byggd från 4063 texter, över 87 dokument, som finns i 2 filer.
+  - Denna korpus innehåller 115542 stycken i 87 dokument.
+  - Denna korpus innehåller 194785 meningar och 2896932 tokens.
+  
+  '''
+# ---
+# name: test_write_top_10_lemmas[en]
+  '''
+  ## Top 10 base forms
+  
+  1. utbildningsutskott
+  2. utbildningsutskottet
+  3. s
+  4. betänkande
+  5. utgiftsområde
+  6. utbildning
+  7. och
+  8. universitetsforskning
+  9. sammanfattning
+  10. U
+  
+  '''
+# ---
+# name: test_write_top_10_lemmas[sv]
+  '''
+  ## Topp 10 grundformer
+  
+  1. utbildningsutskott
+  2. utbildningsutskottet
+  3. s
+  4. betänkande
+  5. utgiftsområde
+  6. utbildning
+  7. och
+  8. universitetsforskning
+  9. sammanfattning
+  10. U
+  
+  '''
+# ---

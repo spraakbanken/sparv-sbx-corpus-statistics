@@ -1,0 +1,403 @@
+{
+  "segment.token:saldo.baseform2": {
+    "length (characters)": {
+      "stats": {
+        "number": 2896932,
+        "mean": 6.890915285550496,
+        "M2": 100310787.03030473,
+        "variance": 34.626571026477585,
+        "standard derivation": 5.88443463949406
+      }
+    },
+    "length (in words)": {
+      "stats": {
+        "number": 2896932,
+        "mean": 1.0854324506064463,
+        "M2": 267950.15193451004,
+        "variance": 0.09249448880021997,
+        "standard derivation": 0.304129066023325
+      }
+    },
+    "length (in non-empty words)": {
+      "stats": {
+        "number": 2245834,
+        "mean": 1.1102004867678648,
+        "M2": 261820.2611288104,
+        "variance": 0.11658046752755455,
+        "standard derivation": 0.34143881959665123
+      }
+    },
+    "length (of words)": {
+      "stats": {
+        "number": 701788,
+        "mean": 0.8958545885652306,
+        "M2": 8398066.220169295,
+        "variance": 11.966688211906597,
+        "standard derivation": 3.459290131212847
+      }
+    },
+    "length (of non-empty words)": {
+      "stats": {
+        "number": 2493326,
+        "mean": 5.8445044891838975,
+        "M2": 39852051.23496282,
+        "variance": 15.983496429451765,
+        "standard derivation": 3.9979365214384988
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 2896932,
+        "mean": 6.8909152855505305,
+        "M2": 100310787.0303042,
+        "variance": 34.6265710264774,
+        "standard derivation": 5.884434639494044
+      },
+      "toplist": [
+        "|",
+        "|att|",
+        "|och|",
+        "|en|",
+        "|i|",
+        "|för|",
+        "|av|",
+        "|den|",
+        "|vara|",
+        "|till|",
+        "|om|",
+        "|ha|",
+        "|den|en|",
+        "|skola|",
+        "|regering|",
+        "|på|",
+        "|med|",
+        "|yrkande|",
+        "|denna|",
+        "|riksdag|"
+      ]
+    },
+    "words": {
+      "stats": {
+        "number": 701788,
+        "mean": 7.3902460572137665,
+        "M2": 2536423.3123108693,
+        "variance": 3.6142352484598166,
+        "standard derivation": 1.9011142123659526
+      },
+      "toplist": [
+        "<EMPTY>",
+        "utbildningsutskott",
+        "utbildningsutskottet",
+        "s",
+        "betänkande",
+        "utgiftsområde",
+        "utbildning",
+        "och",
+        "universitetsforskning",
+        "sammanfattning",
+        "U",
+        "föreslå",
+        "att",
+        "riksdag",
+        "anvisa",
+        "anslag",
+        "för",
+        "inom",
+        "i",
+        "i enlighet med"
+      ]
+    },
+    "words (non-empty)": {
+      "stats": {
+        "number": 50690,
+        "mean": 12.402840797001328,
+        "M2": 1163623.9909252415,
+        "variance": 22.956144152089042,
+        "standard derivation": 4.791257053434833
+      },
+      "toplist": [
+        "utbildningsutskott",
+        "utbildningsutskottet",
+        "s",
+        "betänkande",
+        "utgiftsområde",
+        "utbildning",
+        "och",
+        "universitetsforskning",
+        "sammanfattning",
+        "U",
+        "föreslå",
+        "att",
+        "riksdag",
+        "anvisa",
+        "anslag",
+        "för",
+        "inom",
+        "i",
+        "i enlighet med",
+        "i enlighet med:16"
+      ]
+    }
+  },
+  "file": {
+    "length (characters)": {
+      "stats": {
+        "number": 2,
+        "mean": 8970461.5,
+        "M2": 64798920004.5,
+        "variance": 64798920004.5,
+        "standard derivation": 254556.31990681356
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 2,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "segment.sentence": {
+    "length (characters)": {
+      "stats": {
+        "number": 194785,
+        "mean": 88.44873578560887,
+        "M2": 1293305008.3511643,
+        "variance": 6639.688107602084,
+        "standard derivation": 81.48428135292158
+      }
+    },
+    "length (in words)": {
+      "stats": {
+        "number": 194785,
+        "mean": 13.134574017506377,
+        "M2": 28266311.411279075,
+        "variance": 145.11618721906868,
+        "standard derivation": 12.046418024419902
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 194785,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "segment.token": {
+    "length (characters)": {
+      "stats": {
+        "number": 2896932,
+        "mean": 5.131057615436077,
+        "M2": 46030019.01043816,
+        "variance": 15.889235542868697,
+        "standard derivation": 3.986130397123092
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 2896932,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "dokument": {
+    "length (characters)": {
+      "stats": {
+        "number": 87,
+        "mean": 206216.45977011503,
+        "M2": 1900430069385.6084,
+        "variance": 22098024062.623352,
+        "standard derivation": 148654.04152805047
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 87,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "text": {
+    "length (characters)": {
+      "stats": {
+        "number": 4063,
+        "mean": 4412.639921240455,
+        "M2": 4078037800164.211,
+        "variance": 1003948252.1329913,
+        "standard derivation": 31685.14245088684
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 4063,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "segment.paragraph": {
+    "length (characters)": {
+      "stats": {
+        "number": 115542,
+        "mean": 149.81237125893648,
+        "M2": 6664176233.3965225,
+        "variance": 57678.02107820187,
+        "standard derivation": 240.16248890741008
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 115542,
+        "mean": 11.0,
+        "M2": 0.0,
+        "variance": 0.0,
+        "standard derivation": 0.0
+      },
+      "toplist": ["TOKEN_COUNT"]
+    }
+  },
+  "text:readability.lix": {
+    "value": {
+      "stats": {
+        "number": 2765,
+        "mean": 56.52193128390596,
+        "M2": 2229940.9266869416,
+        "variance": 806.7803642137994,
+        "standard derivation": 28.403879386692928
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 4063,
+        "mean": 4.428993354664033,
+        "M2": 4145.264582820599,
+        "variance": 1.020498420192171,
+        "standard derivation": 1.0101972184638854
+      },
+      "toplist": [
+        "nan",
+        "102.00",
+        "69.67",
+        "79.00",
+        "45.33",
+        "37.00",
+        "39.33",
+        "36.33",
+        "53.82",
+        "31.22",
+        "43.77",
+        "50.00",
+        "54.00",
+        "42.33",
+        "49.86",
+        "58.36",
+        "45.50",
+        "41.67",
+        "53.44",
+        "62.91"
+      ]
+    }
+  },
+  "text:readability.ovix": {
+    "value": {
+      "stats": {
+        "number": 1934,
+        "mean": 59.194544984488026,
+        "M2": 1224343.6461495894,
+        "variance": 633.3904015259128,
+        "standard derivation": 25.167248588709747
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 4063,
+        "mean": 3.9716957912872344,
+        "M2": 4299.745015997999,
+        "variance": 1.058529053667651,
+        "standard derivation": 1.0288484114132903
+      },
+      "toplist": [
+        "nan",
+        "inf",
+        "49.14",
+        "38.58",
+        "79.41",
+        "48.02",
+        "53.01",
+        "56.97",
+        "61.64",
+        "120.49",
+        "66.71",
+        "56.71",
+        "77.22",
+        "51.91",
+        "40.24",
+        "47.69",
+        "45.22",
+        "61.02",
+        "26.46",
+        "54.99"
+      ]
+    }
+  },
+  "text:readability.nk": {
+    "value": {
+      "stats": {
+        "number": 2424,
+        "mean": 2.1827392739273894,
+        "M2": 7101.79321122112,
+        "variance": 2.9309918329430955,
+        "standard derivation": 1.7120139698446084
+      }
+    },
+    "raw": {
+      "stats": {
+        "number": 4063,
+        "mean": 3.5993108540487286,
+        "M2": 997.6780703913369,
+        "variance": 0.24561252348383478,
+        "standard derivation": 0.49559310274037793
+      },
+      "toplist": [
+        "inf",
+        "2.00",
+        "3.00",
+        "2.50",
+        "4.00",
+        "2.33",
+        "2.67",
+        "3.50",
+        "5.00",
+        "0.80",
+        "6.00",
+        "0.74",
+        "0.82",
+        "0.67",
+        "0.83",
+        "0.71",
+        "2.75",
+        "0.64",
+        "0.86",
+        "0.79"
+      ]
+    }
+  }
+}
