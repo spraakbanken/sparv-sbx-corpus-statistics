@@ -1661,23 +1661,23 @@
   
   Feature | Number | Mean | Standard deviation
   --- | --- | --- | ---
-  file count | 2 | | 
-  file length (characters) | 17940923 | 8970461.500 | 254556.320
-  text count | 4063 | | 
-  text length (characters) | 17928556 | 4412.640 | 31685.142
-  dokument count | 87 | | 
-  dokument length (characters) | 17940832 | 206216.460 | 148654.042
-  segment.paragraph count | 115542 | | 
-  segment.paragraph length (characters) | 17309621 | 149.812 | 240.162
-  segment.sentence count | 194785 | | 
-  segment.sentence length (characters) | 17228487 | 88.449 | 81.484
-  segment.sentence length (in words) | 2558418 | 13.135 | 12.046
-  segment.token count | 2896932 | | 
-  segment.token length (characters) | 14864325 | 5.131 | 3.986
+  number of files (`file`) | 2 | | 
+  file length, in characters (`file`) | 17940923 | 8970461.500 | 254556.320
+  number of texts (`text`) | 4063 | | 
+  text length, in characters (`text`) | 17928556 | 4412.640 | 31685.142
+  number of documents (`dokument`) | 87 | | 
+  document length, in characters (`dokument`) | 17940832 | 206216.460 | 148654.042
+  number of paragraphs (`segment.paragraph`) | 115542 | | 
+  paragraph length, in characters (`segment.paragraph`) | 17309621 | 149.812 | 240.162
+  number of sentences (`segment.sentence`) | 194785 | | 
+  sentence length, in characters (`segment.sentence`) | 17228487 | 88.449 | 81.484
+  sentence length, in words (`segment.sentence`) | 2558418 | 13.135 | 12.046
+  number of tokens (`segment.token`) | 2896932 | | 
+  token length, in characters (`segment.token`) | 14864325 | 5.131 | 3.986
   READABILITY | --- | --- | ---
-  text:readability.lix value | - | 56.522 | 28.404
-  text:readability.ovix value | - | 59.195 | 25.167
-  text:readability.nk value | - | 2.183 | 1.712
+  LIX value (`text:readability.lix`) | - | 56.522 | 28.404
+  OVIX value (`text:readability.ovix`) | - | 59.195 | 25.167
+  NK value (`text:readability.nk`) | - | 2.183 | 1.712
   
   '''
 # ---
@@ -1687,23 +1687,23 @@
   
   Egenskap | Värde | Medelvärde | Standardavvikelse
   --- | --- | --- | ---
-  file antal | 2 | | 
-  file längd (tecken) | 17940923 | 8970461.500 | 254556.320
-  text antal | 4063 | | 
-  text längd (tecken) | 17928556 | 4412.640 | 31685.142
-  dokument antal | 87 | | 
-  dokument längd (tecken) | 17940832 | 206216.460 | 148654.042
-  segment.paragraph antal | 115542 | | 
-  segment.paragraph längd (tecken) | 17309621 | 149.812 | 240.162
-  segment.sentence antal | 194785 | | 
-  segment.sentence längd (tecken) | 17228487 | 88.449 | 81.484
-  segment.sentence längd (i ord) | 2558418 | 13.135 | 12.046
-  segment.token antal | 2896932 | | 
-  segment.token längd (tecken) | 14864325 | 5.131 | 3.986
+  antal filer (`file`) | 2 | | 
+  fillängd, i tecken (`file`) | 17940923 | 8970461.500 | 254556.320
+  antal texter (`text`) | 4063 | | 
+  textlängd, i tecken (`text`) | 17928556 | 4412.640 | 31685.142
+  antal dokument (`dokument`) | 87 | | 
+  dokumentlängd, i tecken (`dokument`) | 17940832 | 206216.460 | 148654.042
+  antal stycken (`segment.paragraph`) | 115542 | | 
+  styckeslängd, i tecken (`segment.paragraph`) | 17309621 | 149.812 | 240.162
+  antal meningar (`segment.sentence`) | 194785 | | 
+  meningslängd, i tecken (`segment.sentence`) | 17228487 | 88.449 | 81.484
+  meningslängd, i ord (`segment.sentence`) | 2558418 | 13.135 | 12.046
+  antal tokens (`segment.token`) | 2896932 | | 
+  tokenlängd, i tecken (`segment.token`) | 14864325 | 5.131 | 3.986
   LÄSBARHET | --- | --- | ---
-  text:readability.lix värde | - | 56.522 | 28.404
-  text:readability.ovix värde | - | 59.195 | 25.167
-  text:readability.nk värde | - | 2.183 | 1.712
+  LIX värde (`text:readability.lix`) | - | 56.522 | 28.404
+  OVIX värde (`text:readability.ovix`) | - | 59.195 | 25.167
+  NK värde (`text:readability.nk`) | - | 2.183 | 1.712
   
   '''
 # ---
