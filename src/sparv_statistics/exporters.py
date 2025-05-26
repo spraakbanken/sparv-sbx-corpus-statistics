@@ -667,7 +667,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "tokenization_paragraphs": "- Denna korpus innehåller {num_paragraphs} stycken i {num_documents} dokument.\n",
         "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens.\n",
         # "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens, varav {unique_tokens} tokens är unika.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-statistics/issues/12
-        "tokenization_texts": "- Denna korpus är byggd från {num_texts} texter, över {num_documents} dokument, som finns i {num_files} filer.\n",  # noqa: E501
+        "tokenization_texts": "- Denna korpus är skapad från {num_texts} texter, i {num_documents} dokument, som finns i {num_files} filer.\n",  # noqa: E501
         "top_lemmas": "## Topp 10 grundformer\n",
         "value": "värde",
     },
