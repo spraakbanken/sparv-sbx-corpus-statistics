@@ -1328,11 +1328,15 @@
   
   The 5 most frequent `AB` base forms: `inte`, `även`, `därmed`, `m.m.`, `delvis`
   
+  The 5 most frequent `AB` tokens: `inte`, `även`, `Därmed`, `m.m.`, `delvis`
+  
   
   ### POS Tags: **DT**
   There are 101631 (4%) `DT` tokens. Out of 25 observed tags, the rank of `DT` is: 11 in number of tokens.
   
   The 5 most frequent `DT` base forms: `en`, `den`, `denna`, `någon`, `all`
+  
+  The 5 most frequent `DT` tokens: `en`, `ett`, `den`, `de`, `det`
   
   
   ### POS Tags: **HA**
@@ -1340,11 +1344,15 @@
   
   The 5 most frequent `HA` base forms: `när`, `hur`, `där`, `som`, `då`
   
+  The 5 most frequent `HA` tokens: `när`, `hur`, `där`, `När`, `som`
+  
   
   ### POS Tags: **HD**
   There are 1407 (0%) `HD` tokens. Out of 25 observed tags, the rank of `HD` is: 23 in number of tokens.
   
   The 2 most frequent `HD` base forms: `i vilken mån:7`, `i vilken mån:3`
+  
+  The 5 most frequent `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
   
   
   ### POS Tags: **HP**
@@ -1352,11 +1360,15 @@
   
   The 5 most frequent `HP` base forms: `vad`, `vad för`, `vem`, `vad än`, `såväl som:1`
   
+  The 5 most frequent `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
+  
   
   ### POS Tags: **HS**
   There are 186 (0%) `HS` tokens. Out of 25 observed tags, the rank of `HS` is: 25 in number of tokens.
   
   The 2 most frequent `HS` base forms: `vars`, `vem`
+  
+  The 3 most frequent `HS` tokens: `vars`, `vilkas`, `vems`
   
   
   ### POS Tags: **IE**
@@ -1364,11 +1376,15 @@
   
   The 5 most frequent `IE` base forms: `att`, `ha att göra:2`, `ha att göra:12`, `ha att göra:26`, `ha att göra:15`
   
+  The 5 most frequent `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
+  
   
   ### POS Tags: **IN**
   There are 840 (0%) `IN` tokens. Out of 25 observed tags, the rank of `IN` is: 24 in number of tokens.
   
   The 5 most frequent `IN` base forms: `nej`, `ja`, `jo`, `tack`, `nä`
+  
+  The 5 most frequent `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
   
   
   ### POS Tags: **JJ**
@@ -1376,11 +1392,15 @@
   
   The 5 most frequent `JJ` base forms: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
   
+  The 5 most frequent `JJ` tokens: `ekonomiska`, `annan`, `allmänna`, `övriga`, `obligatorisk`
+  
   
   ### POS Tags: **KN**
   There are 117972 (4%) `KN` tokens. Out of 25 observed tags, the rank of `KN` is: 8 in number of tokens.
   
   The 5 most frequent `KN` base forms: `och`, `eller`, `samt`, `men`, `både och`
+  
+  The 5 most frequent `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
   
   
   ### POS Tags: **MAD**
@@ -1400,6 +1420,8 @@
   
   The 5 most frequent `NN` base forms: `riksdag`, `anslag`, `s`, `utgiftsområde`, `utbildning`
   
+  The 5 most frequent `NN` tokens: `riksdagen`, `utgiftsområde`, `s`, `anslag`, `enlighet`
+  
   
   ### POS Tags: **PAD**
   There are 93999 (3%) `PAD` tokens. Out of 25 observed tags, the rank of `PAD` is: 13 in number of tokens.
@@ -1412,11 +1434,15 @@
   
   The 5 most frequent `PC` base forms: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
   
+  The 5 most frequent `PC` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
+  
   
   ### POS Tags: **PL**
   There are 15486 (1%) `PL` tokens. Out of 25 observed tags, the rank of `PL` is: 18 in number of tokens.
   
   The 5 most frequent `PL` base forms: `fram`, `upp`, `ut`, `in`, `om`
+  
+  The 5 most frequent `PL` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
   
   
   ### POS Tags: **PM**
@@ -1424,11 +1450,15 @@
   
   The 5 most frequent `PM` base forms: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
   
+  The 5 most frequent `PM` tokens: `SD`, `KD`, `MP`, `Ebba`, `Erik`
+  
   
   ### POS Tags: **PN**
   There are 98041 (3%) `PN` tokens. Out of 25 observed tags, the rank of `PN` is: 12 in number of tokens.
   
   The 5 most frequent `PN` base forms: `den`, `sig`, `denna`, `ställa sig:2`, `man`
+  
+  The 5 most frequent `PN` tokens: `det`, `sig`, `detta`, `Det`, `de`
   
   
   ### POS Tags: **PP**
@@ -1436,11 +1466,15 @@
   
   The 5 most frequent `PP` base forms: `i`, `för`, `av`, `till`, `om`
   
+  The 5 most frequent `PP` tokens: `i`, `för`, `av`, `till`, `om`
+  
   
   ### POS Tags: **PS**
   There are 9633 (0%) `PS` tokens. Out of 25 observed tags, the rank of `PS` is: 20 in number of tokens.
   
   The 5 most frequent `PS` base forms: `sig`, `vi`, `jag`, `de`, `den`
+  
+  The 5 most frequent `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
   
   
   ### POS Tags: **RG**
@@ -1448,11 +1482,15 @@
   
   The 5 most frequent `RG` base forms: `V`, `två`, `tre`, `fyra`, `sex`
   
+  The 5 most frequent `RG` tokens: `2018`, `2019`, `1`, `2`, `8`
+  
   
   ### POS Tags: **RO**
   There are 2897 (0%) `RO` tokens. Out of 25 observed tags, the rank of `RO` is: 21 in number of tokens.
   
   The 5 most frequent `RO` base forms: `fyra`, `första gången`, `i första hand:4`, `i första hand:8`, `i första hand:5`
+  
+  The 5 most frequent `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
   
   
   ### POS Tags: **SN**
@@ -1460,17 +1498,23 @@
   
   The 5 most frequent `SN` base forms: `att`, `om`, `eftersom`, `innan`, `medan`
   
+  The 5 most frequent `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
+  
   
   ### POS Tags: **UO**
   There are 2274 (0%) `UO` tokens. Out of 25 observed tags, the rank of `UO` is: 22 in number of tokens.
   
   The 5 most frequent `UO` base forms: `public service`, `au pair`, `à la:16`, `à la`, `vice versa:27`
   
+  The 5 most frequent `UO` tokens: `et`, `na`, `örslag`, `S`, `kolverk`
+  
   
   ### POS Tags: **VB**
   There are 380285 (13%) `VB` tokens. Out of 25 observed tags, the rank of `VB` is: 2 in number of tokens.
   
   The 5 most frequent `VB` base forms: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
+  
+  The 5 most frequent `VB` tokens: `är`, `bör`, `föreslår`, `avstyrker`, `anvisar`
   
   
   '''
@@ -1486,11 +1530,15 @@
   
   De 5 flest frekventa `AB` grundformer: `inte`, `även`, `därmed`, `m.m.`, `delvis`
   
+  De 5 flest frekventa `AB` tokens: `inte`, `även`, `Därmed`, `m.m.`, `delvis`
+  
   
   ### Ordklass: **DT**
   Det finns 101631 (4%) `DT` tokens. Av 25 observerade ordklasser, `DT`:s rank är: 11 i antalet tokens.
   
   De 5 flest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
+  
+  De 5 flest frekventa `DT` tokens: `en`, `ett`, `den`, `de`, `det`
   
   
   ### Ordklass: **HA**
@@ -1498,11 +1546,15 @@
   
   De 5 flest frekventa `HA` grundformer: `när`, `hur`, `där`, `som`, `då`
   
+  De 5 flest frekventa `HA` tokens: `när`, `hur`, `där`, `När`, `som`
+  
   
   ### Ordklass: **HD**
   Det finns 1407 (0%) `HD` tokens. Av 25 observerade ordklasser, `HD`:s rank är: 23 i antalet tokens.
   
   De 2 flest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
+  
+  De 5 flest frekventa `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
   
   
   ### Ordklass: **HP**
@@ -1510,11 +1562,15 @@
   
   De 5 flest frekventa `HP` grundformer: `vad`, `vad för`, `vem`, `vad än`, `såväl som:1`
   
+  De 5 flest frekventa `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
+  
   
   ### Ordklass: **HS**
   Det finns 186 (0%) `HS` tokens. Av 25 observerade ordklasser, `HS`:s rank är: 25 i antalet tokens.
   
   De 2 flest frekventa `HS` grundformer: `vars`, `vem`
+  
+  De 3 flest frekventa `HS` tokens: `vars`, `vilkas`, `vems`
   
   
   ### Ordklass: **IE**
@@ -1522,11 +1578,15 @@
   
   De 5 flest frekventa `IE` grundformer: `att`, `ha att göra:2`, `ha att göra:12`, `ha att göra:26`, `ha att göra:15`
   
+  De 5 flest frekventa `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
+  
   
   ### Ordklass: **IN**
   Det finns 840 (0%) `IN` tokens. Av 25 observerade ordklasser, `IN`:s rank är: 24 i antalet tokens.
   
   De 5 flest frekventa `IN` grundformer: `nej`, `ja`, `jo`, `tack`, `nä`
+  
+  De 5 flest frekventa `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
   
   
   ### Ordklass: **JJ**
@@ -1534,11 +1594,15 @@
   
   De 5 flest frekventa `JJ` grundformer: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
   
+  De 5 flest frekventa `JJ` tokens: `ekonomiska`, `annan`, `allmänna`, `övriga`, `obligatorisk`
+  
   
   ### Ordklass: **KN**
   Det finns 117972 (4%) `KN` tokens. Av 25 observerade ordklasser, `KN`:s rank är: 8 i antalet tokens.
   
   De 5 flest frekventa `KN` grundformer: `och`, `eller`, `samt`, `men`, `både och`
+  
+  De 5 flest frekventa `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
   
   
   ### Ordklass: **MAD**
@@ -1558,6 +1622,8 @@
   
   De 5 flest frekventa `NN` grundformer: `riksdag`, `anslag`, `s`, `utgiftsområde`, `utbildning`
   
+  De 5 flest frekventa `NN` tokens: `riksdagen`, `utgiftsområde`, `s`, `anslag`, `enlighet`
+  
   
   ### Ordklass: **PAD**
   Det finns 93999 (3%) `PAD` tokens. Av 25 observerade ordklasser, `PAD`:s rank är: 13 i antalet tokens.
@@ -1570,11 +1636,15 @@
   
   De 5 flest frekventa `PC` grundformer: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
   
+  De 5 flest frekventa `PC` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
+  
   
   ### Ordklass: **PL**
   Det finns 15486 (1%) `PL` tokens. Av 25 observerade ordklasser, `PL`:s rank är: 18 i antalet tokens.
   
   De 5 flest frekventa `PL` grundformer: `fram`, `upp`, `ut`, `in`, `om`
+  
+  De 5 flest frekventa `PL` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
   
   
   ### Ordklass: **PM**
@@ -1582,11 +1652,15 @@
   
   De 5 flest frekventa `PM` grundformer: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
   
+  De 5 flest frekventa `PM` tokens: `SD`, `KD`, `MP`, `Ebba`, `Erik`
+  
   
   ### Ordklass: **PN**
   Det finns 98041 (3%) `PN` tokens. Av 25 observerade ordklasser, `PN`:s rank är: 12 i antalet tokens.
   
   De 5 flest frekventa `PN` grundformer: `den`, `sig`, `denna`, `ställa sig:2`, `man`
+  
+  De 5 flest frekventa `PN` tokens: `det`, `sig`, `detta`, `Det`, `de`
   
   
   ### Ordklass: **PP**
@@ -1594,11 +1668,15 @@
   
   De 5 flest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
   
+  De 5 flest frekventa `PP` tokens: `i`, `för`, `av`, `till`, `om`
+  
   
   ### Ordklass: **PS**
   Det finns 9633 (0%) `PS` tokens. Av 25 observerade ordklasser, `PS`:s rank är: 20 i antalet tokens.
   
   De 5 flest frekventa `PS` grundformer: `sig`, `vi`, `jag`, `de`, `den`
+  
+  De 5 flest frekventa `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
   
   
   ### Ordklass: **RG**
@@ -1606,11 +1684,15 @@
   
   De 5 flest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
   
+  De 5 flest frekventa `RG` tokens: `2018`, `2019`, `1`, `2`, `8`
+  
   
   ### Ordklass: **RO**
   Det finns 2897 (0%) `RO` tokens. Av 25 observerade ordklasser, `RO`:s rank är: 21 i antalet tokens.
   
   De 5 flest frekventa `RO` grundformer: `fyra`, `första gången`, `i första hand:4`, `i första hand:8`, `i första hand:5`
+  
+  De 5 flest frekventa `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
   
   
   ### Ordklass: **SN**
@@ -1618,17 +1700,23 @@
   
   De 5 flest frekventa `SN` grundformer: `att`, `om`, `eftersom`, `innan`, `medan`
   
+  De 5 flest frekventa `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
+  
   
   ### Ordklass: **UO**
   Det finns 2274 (0%) `UO` tokens. Av 25 observerade ordklasser, `UO`:s rank är: 22 i antalet tokens.
   
   De 5 flest frekventa `UO` grundformer: `public service`, `au pair`, `à la:16`, `à la`, `vice versa:27`
   
+  De 5 flest frekventa `UO` tokens: `et`, `na`, `örslag`, `S`, `kolverk`
+  
   
   ### Ordklass: **VB**
   Det finns 380285 (13%) `VB` tokens. Av 25 observerade ordklasser, `VB`:s rank är: 2 i antalet tokens.
   
   De 5 flest frekventa `VB` grundformer: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
+  
+  De 5 flest frekventa `VB` tokens: `är`, `bör`, `föreslår`, `avstyrker`, `anvisar`
   
   
   '''

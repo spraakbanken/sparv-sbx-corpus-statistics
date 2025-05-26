@@ -1078,7 +1078,7 @@ def _write_pos_tag(
             )
 
         fp.write("\n")
-    elif pos_tag in pos_token_freqs:
+    if pos_tag in pos_token_freqs:
         top_tokens = sorted(
             pos_token_freqs[pos_tag].items(),
             key=operator.itemgetter(1, 0),
