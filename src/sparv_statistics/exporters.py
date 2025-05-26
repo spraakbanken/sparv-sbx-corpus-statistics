@@ -639,12 +639,12 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "morphology_msd_table_header": "MSD | Frequency | Percent\n",
         "morphology_msd_top_table_header": "Topp-nivå MSD | Frequency | Percent\n",
         "morphology_no_msd": "Denna korpus innehåller inga morfosyntaktiska deskriptorer.\n",
-        "no POS": "Hittade inga POS taggar.\n",
+        "no POS": "Hittade inga ordklasser.\n",
         "of non-empty": "av icke-tomma",
-        "POS_descr": "Det finns {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Av {pos_stats_num_tags} observerade taggar, `{pos_tag}`:s rank är: {pos_stats_rank_of_tokens} i antalet tokens.\n",  # noqa: E501
-        "POS_header": "## POS taggar\n",
+        "POS_descr": "Det finns {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Av {pos_stats_num_tags} observerade ordklasser, `{pos_tag}`:s rank är: {pos_stats_rank_of_tokens} i antalet tokens.\n",  # noqa: E501
+        "POS_header": "## Ordklasser\n",
         "POS_no_lemmas": "Innhåller inga grundformer med `{pos_tag}`.\n",
-        "POS_subheader": "### POS Taggar: **{pos_tag}**\n",
+        "POS_subheader": "### Ordklass: **{pos_tag}**\n",
         "POS_top_lemmas": "De {number} flest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
         "POS_top_tokens": "De {number} flest frekventa `{pos_tag}` tokens: {top_tokens}\n",
         "readability_header": "## Läsbarhet\n",

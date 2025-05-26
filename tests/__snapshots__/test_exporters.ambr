@@ -1477,156 +1477,156 @@
 # ---
 # name: test_write_pos_tags[sv]
   '''
-  ## POS taggar
+  ## Ordklasser
   
   AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
   
-  ### POS Taggar: **AB**
-  Det finns 121224 (4%) `AB` tokens. Av 25 observerade taggar, `AB`:s rank är: 7 i antalet tokens.
+  ### Ordklass: **AB**
+  Det finns 121224 (4%) `AB` tokens. Av 25 observerade ordklasser, `AB`:s rank är: 7 i antalet tokens.
   
   De 5 flest frekventa `AB` grundformer: `inte`, `även`, `därmed`, `m.m.`, `delvis`
   
   
-  ### POS Taggar: **DT**
-  Det finns 101631 (4%) `DT` tokens. Av 25 observerade taggar, `DT`:s rank är: 11 i antalet tokens.
+  ### Ordklass: **DT**
+  Det finns 101631 (4%) `DT` tokens. Av 25 observerade ordklasser, `DT`:s rank är: 11 i antalet tokens.
   
   De 5 flest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
   
   
-  ### POS Taggar: **HA**
-  Det finns 13218 (0%) `HA` tokens. Av 25 observerade taggar, `HA`:s rank är: 19 i antalet tokens.
+  ### Ordklass: **HA**
+  Det finns 13218 (0%) `HA` tokens. Av 25 observerade ordklasser, `HA`:s rank är: 19 i antalet tokens.
   
   De 5 flest frekventa `HA` grundformer: `när`, `hur`, `där`, `som`, `då`
   
   
-  ### POS Taggar: **HD**
-  Det finns 1407 (0%) `HD` tokens. Av 25 observerade taggar, `HD`:s rank är: 23 i antalet tokens.
+  ### Ordklass: **HD**
+  Det finns 1407 (0%) `HD` tokens. Av 25 observerade ordklasser, `HD`:s rank är: 23 i antalet tokens.
   
   De 2 flest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
   
   
-  ### POS Taggar: **HP**
-  Det finns 44722 (2%) `HP` tokens. Av 25 observerade taggar, `HP`:s rank är: 17 i antalet tokens.
+  ### Ordklass: **HP**
+  Det finns 44722 (2%) `HP` tokens. Av 25 observerade ordklasser, `HP`:s rank är: 17 i antalet tokens.
   
   De 5 flest frekventa `HP` grundformer: `vad`, `vad för`, `vem`, `vad än`, `såväl som:1`
   
   
-  ### POS Taggar: **HS**
-  Det finns 186 (0%) `HS` tokens. Av 25 observerade taggar, `HS`:s rank är: 25 i antalet tokens.
+  ### Ordklass: **HS**
+  Det finns 186 (0%) `HS` tokens. Av 25 observerade ordklasser, `HS`:s rank är: 25 i antalet tokens.
   
   De 2 flest frekventa `HS` grundformer: `vars`, `vem`
   
   
-  ### POS Taggar: **IE**
-  Det finns 45393 (2%) `IE` tokens. Av 25 observerade taggar, `IE`:s rank är: 16 i antalet tokens.
+  ### Ordklass: **IE**
+  Det finns 45393 (2%) `IE` tokens. Av 25 observerade ordklasser, `IE`:s rank är: 16 i antalet tokens.
   
   De 5 flest frekventa `IE` grundformer: `att`, `ha att göra:2`, `ha att göra:12`, `ha att göra:26`, `ha att göra:15`
   
   
-  ### POS Taggar: **IN**
-  Det finns 840 (0%) `IN` tokens. Av 25 observerade taggar, `IN`:s rank är: 24 i antalet tokens.
+  ### Ordklass: **IN**
+  Det finns 840 (0%) `IN` tokens. Av 25 observerade ordklasser, `IN`:s rank är: 24 i antalet tokens.
   
   De 5 flest frekventa `IN` grundformer: `nej`, `ja`, `jo`, `tack`, `nä`
   
   
-  ### POS Taggar: **JJ**
-  Det finns 132552 (5%) `JJ` tokens. Av 25 observerade taggar, `JJ`:s rank är: 5 i antalet tokens.
+  ### Ordklass: **JJ**
+  Det finns 132552 (5%) `JJ` tokens. Av 25 observerade ordklasser, `JJ`:s rank är: 5 i antalet tokens.
   
   De 5 flest frekventa `JJ` grundformer: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
   
   
-  ### POS Taggar: **KN**
-  Det finns 117972 (4%) `KN` tokens. Av 25 observerade taggar, `KN`:s rank är: 8 i antalet tokens.
+  ### Ordklass: **KN**
+  Det finns 117972 (4%) `KN` tokens. Av 25 observerade ordklasser, `KN`:s rank är: 8 i antalet tokens.
   
   De 5 flest frekventa `KN` grundformer: `och`, `eller`, `samt`, `men`, `både och`
   
   
-  ### POS Taggar: **MAD**
-  Det finns 131026 (5%) `MAD` tokens. Av 25 observerade taggar, `MAD`:s rank är: 6 i antalet tokens.
+  ### Ordklass: **MAD**
+  Det finns 131026 (5%) `MAD` tokens. Av 25 observerade ordklasser, `MAD`:s rank är: 6 i antalet tokens.
   
   De 5 flest frekventa `MAD` tokens: `.`, `:`, `!`, `?`, `–`
   
   
-  ### POS Taggar: **MID**
-  Det finns 101646 (4%) `MID` tokens. Av 25 observerade taggar, `MID`:s rank är: 10 i antalet tokens.
+  ### Ordklass: **MID**
+  Det finns 101646 (4%) `MID` tokens. Av 25 observerade ordklasser, `MID`:s rank är: 10 i antalet tokens.
   
   De 5 flest frekventa `MID` tokens: `,`, `/`, `:`, `-`, `–`
   
   
-  ### POS Taggar: **NN**
-  Det finns 736544 (25%) `NN` tokens. Av 25 observerade taggar, `NN`:s rank är: 1 i antalet tokens.
+  ### Ordklass: **NN**
+  Det finns 736544 (25%) `NN` tokens. Av 25 observerade ordklasser, `NN`:s rank är: 1 i antalet tokens.
   
   De 5 flest frekventa `NN` grundformer: `riksdag`, `anslag`, `s`, `utgiftsområde`, `utbildning`
   
   
-  ### POS Taggar: **PAD**
-  Det finns 93999 (3%) `PAD` tokens. Av 25 observerade taggar, `PAD`:s rank är: 13 i antalet tokens.
+  ### Ordklass: **PAD**
+  Det finns 93999 (3%) `PAD` tokens. Av 25 observerade ordklasser, `PAD`:s rank är: 13 i antalet tokens.
   
   De 5 flest frekventa `PAD` tokens: `)`, `(`, `"`, `]`, `[`
   
   
-  ### POS Taggar: **PC**
-  Det finns 47212 (2%) `PC` tokens. Av 25 observerade taggar, `PC`:s rank är: 15 i antalet tokens.
+  ### Ordklass: **PC**
+  Det finns 47212 (2%) `PC` tokens. Av 25 observerade ordklasser, `PC`:s rank är: 15 i antalet tokens.
   
   De 5 flest frekventa `PC` grundformer: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
   
   
-  ### POS Taggar: **PL**
-  Det finns 15486 (1%) `PL` tokens. Av 25 observerade taggar, `PL`:s rank är: 18 i antalet tokens.
+  ### Ordklass: **PL**
+  Det finns 15486 (1%) `PL` tokens. Av 25 observerade ordklasser, `PL`:s rank är: 18 i antalet tokens.
   
   De 5 flest frekventa `PL` grundformer: `fram`, `upp`, `ut`, `in`, `om`
   
   
-  ### POS Taggar: **PM**
-  Det finns 106015 (4%) `PM` tokens. Av 25 observerade taggar, `PM`:s rank är: 9 i antalet tokens.
+  ### Ordklass: **PM**
+  Det finns 106015 (4%) `PM` tokens. Av 25 observerade ordklasser, `PM`:s rank är: 9 i antalet tokens.
   
   De 5 flest frekventa `PM` grundformer: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
   
   
-  ### POS Taggar: **PN**
-  Det finns 98041 (3%) `PN` tokens. Av 25 observerade taggar, `PN`:s rank är: 12 i antalet tokens.
+  ### Ordklass: **PN**
+  Det finns 98041 (3%) `PN` tokens. Av 25 observerade ordklasser, `PN`:s rank är: 12 i antalet tokens.
   
   De 5 flest frekventa `PN` grundformer: `den`, `sig`, `denna`, `ställa sig:2`, `man`
   
   
-  ### POS Taggar: **PP**
-  Det finns 358848 (12%) `PP` tokens. Av 25 observerade taggar, `PP`:s rank är: 3 i antalet tokens.
+  ### Ordklass: **PP**
+  Det finns 358848 (12%) `PP` tokens. Av 25 observerade ordklasser, `PP`:s rank är: 3 i antalet tokens.
   
   De 5 flest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
   
   
-  ### POS Taggar: **PS**
-  Det finns 9633 (0%) `PS` tokens. Av 25 observerade taggar, `PS`:s rank är: 20 i antalet tokens.
+  ### Ordklass: **PS**
+  Det finns 9633 (0%) `PS` tokens. Av 25 observerade ordklasser, `PS`:s rank är: 20 i antalet tokens.
   
   De 5 flest frekventa `PS` grundformer: `sig`, `vi`, `jag`, `de`, `den`
   
   
-  ### POS Taggar: **RG**
-  Det finns 180321 (6%) `RG` tokens. Av 25 observerade taggar, `RG`:s rank är: 4 i antalet tokens.
+  ### Ordklass: **RG**
+  Det finns 180321 (6%) `RG` tokens. Av 25 observerade ordklasser, `RG`:s rank är: 4 i antalet tokens.
   
   De 5 flest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
   
   
-  ### POS Taggar: **RO**
-  Det finns 2897 (0%) `RO` tokens. Av 25 observerade taggar, `RO`:s rank är: 21 i antalet tokens.
+  ### Ordklass: **RO**
+  Det finns 2897 (0%) `RO` tokens. Av 25 observerade ordklasser, `RO`:s rank är: 21 i antalet tokens.
   
   De 5 flest frekventa `RO` grundformer: `fyra`, `första gången`, `i första hand:4`, `i första hand:8`, `i första hand:5`
   
   
-  ### POS Taggar: **SN**
-  Det finns 53560 (2%) `SN` tokens. Av 25 observerade taggar, `SN`:s rank är: 14 i antalet tokens.
+  ### Ordklass: **SN**
+  Det finns 53560 (2%) `SN` tokens. Av 25 observerade ordklasser, `SN`:s rank är: 14 i antalet tokens.
   
   De 5 flest frekventa `SN` grundformer: `att`, `om`, `eftersom`, `innan`, `medan`
   
   
-  ### POS Taggar: **UO**
-  Det finns 2274 (0%) `UO` tokens. Av 25 observerade taggar, `UO`:s rank är: 22 i antalet tokens.
+  ### Ordklass: **UO**
+  Det finns 2274 (0%) `UO` tokens. Av 25 observerade ordklasser, `UO`:s rank är: 22 i antalet tokens.
   
   De 5 flest frekventa `UO` grundformer: `public service`, `au pair`, `à la:16`, `à la`, `vice versa:27`
   
   
-  ### POS Taggar: **VB**
-  Det finns 380285 (13%) `VB` tokens. Av 25 observerade taggar, `VB`:s rank är: 2 i antalet tokens.
+  ### Ordklass: **VB**
+  Det finns 380285 (13%) `VB` tokens. Av 25 observerade ordklasser, `VB`:s rank är: 2 i antalet tokens.
   
   De 5 flest frekventa `VB` grundformer: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
   
