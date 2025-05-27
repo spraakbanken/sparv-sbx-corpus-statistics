@@ -9,48 +9,6 @@
   
   57883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35393; 1% instances), `AB` (22438; 1% instances), `VB` (18; 0% instances), `KN` (17; 0% instances), `JJ` (12; 0% instances), `PP` (5; 0% instances)
   
-  #### NN
-  
-  35393 `NN` tokens (1% of all `NN` tokens) have a non-empty value of `Abbr`.
-  
-  `NN` tokens may have the following values of `Abbr`:
-  - `Yes` (35393; 61% of non-empty `Abbr`)
-  
-  #### AB
-  
-  22438 `AB` tokens (44% of all `AB` tokens) have a non-empty value of `Abbr`.
-  
-  `AB` tokens may have the following values of `Abbr`:
-  - `Yes` (22438; 39% of non-empty `Abbr`)
-  
-  #### VB
-  
-  18 `VB` tokens (0% of all `VB` tokens) have a non-empty value of `Abbr`.
-  
-  `VB` tokens may have the following values of `Abbr`:
-  - `Yes` (18; 0% of non-empty `Abbr`)
-  
-  #### KN
-  
-  17 `KN` tokens (100% of all `KN` tokens) have a non-empty value of `Abbr`.
-  
-  `KN` tokens may have the following values of `Abbr`:
-  - `Yes` (17; 0% of non-empty `Abbr`)
-  
-  #### JJ
-  
-  12 `JJ` tokens (0% of all `JJ` tokens) have a non-empty value of `Abbr`.
-  
-  `JJ` tokens may have the following values of `Abbr`:
-  - `Yes` (12; 0% of non-empty `Abbr`)
-  
-  #### PP
-  
-  5 `PP` tokens (100% of all `PP` tokens) have a non-empty value of `Abbr`.
-  
-  `PP` tokens may have the following values of `Abbr`:
-  - `Yes` (5; 0% of non-empty `Abbr`)
-  
   
   
   ### Features: **Case**
@@ -59,87 +17,12 @@
   1262438 tokens (44%) have a non-empty value of `Case`. The feature is used with 7 part-of-speech tags: `NN` (695434; 24% instances), `RG` (180310; 6% instances), `JJ` (132538; 5% instances), `PM` (106006; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `RO` (2897; 0% instances)
    56044 tokens (4%) have multiple values of `Case`.
   
-  #### NN
-  
-  695434 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Case`.
-  
-  `NN` tokens may have the following values of `Case`:
-  - `Nom` (661878; 52% of non-empty `Case`)
-  - `Gen` (33556; 3% of non-empty `Case`)
-  
-  #### RG
-  
-  180310 `RG` tokens (100% of all `RG` tokens) have a non-empty value of `Case`.
-  
-  `RG` tokens may have the following values of `Case`:
-  - `Nom` (180310; 14% of non-empty `Case`)
-  
-  #### JJ
-  
-  132538 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Case`.
-  
-  `JJ` tokens may have the following values of `Case`:
-  - `Nom` (132190; 10% of non-empty `Case`)
-  - `Gen` (348; 0% of non-empty `Case`)
-  
-  #### PM
-  
-  106006 `PM` tokens (100% of all `PM` tokens) have a non-empty value of `Case`.
-  
-  `PM` tokens may have the following values of `Case`:
-  - `Nom` (102800; 8% of non-empty `Case`)
-  - `Gen` (3206; 0% of non-empty `Case`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Case`.
-  
-  `PN` tokens may have the following values of `Case`:
-  - `Nom` (83736; 7% of non-empty `Case`)
-  - `Acc` (70349; 6% of non-empty `Case`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Case`.
-  
-  `PC` tokens may have the following values of `Case`:
-  - `Nom` (47182; 4% of non-empty `Case`)
-  - `Gen` (30; 0% of non-empty `Case`)
-  
-  #### RO
-  
-  2897 `RO` tokens (99% of all `RO` tokens) have a non-empty value of `Case`.
-  
-  `RO` tokens may have the following values of `Case`:
-  - `Nom` (2897; 0% of non-empty `Case`)
-  
   
   
   ### Features: **Compound**
    It occurs with 1 different values: `Yes`.
   
   4847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4826; 0% instances), `RG` (11; 0% instances), `PM` (10; 0% instances)
-  
-  #### NN
-  
-  4826 `NN` tokens (0% of all `NN` tokens) have a non-empty value of `Compound`.
-  
-  `NN` tokens may have the following values of `Compound`:
-  - `Yes` (4826; 100% of non-empty `Compound`)
-  
-  #### RG
-  
-  11 `RG` tokens (0% of all `RG` tokens) have a non-empty value of `Compound`.
-  
-  `RG` tokens may have the following values of `Compound`:
-  - `Yes` (11; 0% of non-empty `Compound`)
-  
-  #### PM
-  
-  10 `PM` tokens (0% of all `PM` tokens) have a non-empty value of `Compound`.
-  
-  `PM` tokens may have the following values of `Compound`:
-  - `Yes` (10; 0% of non-empty `Compound`)
   
   
   
@@ -149,106 +32,12 @@
   1089520 tokens (38%) have a non-empty value of `Definite`. The feature is used with 10 part-of-speech tags: `NN` (694413; 24% instances), `JJ` (132529; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `HS` (186; 0% instances), `RO` (5; 0% instances)
    90435 tokens (8%) have multiple values of `Definite`.
   
-  #### NN
-  
-  694413 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Definite`.
-  
-  `NN` tokens may have the following values of `Definite`:
-  - `Def` (246895; 23% of non-empty `Definite`)
-  - `Ind` (447518; 41% of non-empty `Definite`)
-  
-  #### JJ
-  
-  132529 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Definite`.
-  
-  `JJ` tokens may have the following values of `Definite`:
-  - `Def` (78132; 7% of non-empty `Definite`)
-  - `Ind` (113076; 10% of non-empty `Definite`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Definite`.
-  
-  `DT` tokens may have the following values of `Definite`:
-  - `Def` (44376; 4% of non-empty `Definite`)
-  - `Ind` (59909; 5% of non-empty `Definite`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Definite`.
-  
-  `PN` tokens may have the following values of `Definite`:
-  - `Def` (86869; 8% of non-empty `Definite`)
-  - `Ind` (11172; 1% of non-empty `Definite`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Definite`.
-  
-  `PC` tokens may have the following values of `Definite`:
-  - `Def` (31856; 3% of non-empty `Definite`)
-  - `Ind` (44453; 4% of non-empty `Definite`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Definite`.
-  
-  `PS` tokens may have the following values of `Definite`:
-  - `Def` (9633; 1% of non-empty `Definite`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Definite`.
-  
-  `HP` tokens may have the following values of `Definite`:
-  - `Ind` (4463; 0% of non-empty `Definite`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Definite`.
-  
-  `HD` tokens may have the following values of `Definite`:
-  - `Ind` (1407; 0% of non-empty `Definite`)
-  
-  #### HS
-  
-  186 `HS` tokens (100% of all `HS` tokens) have a non-empty value of `Definite`.
-  
-  `HS` tokens may have the following values of `Definite`:
-  - `Def` (186; 0% of non-empty `Definite`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Definite`.
-  
-  `RO` tokens may have the following values of `Definite`:
-  - `Def` (5; 0% of non-empty `Definite`)
-  - `Ind` (5; 0% of non-empty `Definite`)
-  
   
   
   ### Features: **Degree**
   This feature is universal. It occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
   
   160898 tokens (6%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132541; 5% instances), `AB` (28357; 1% instances)
-  
-  #### JJ
-  
-  132541 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Degree`.
-  
-  `JJ` tokens may have the following values of `Degree`:
-  - `Pos` (118931; 74% of non-empty `Degree`)
-  - `Cmp` (10868; 7% of non-empty `Degree`)
-  - `Sup` (2742; 2% of non-empty `Degree`)
-  
-  #### AB
-  
-  28357 `AB` tokens (56% of all `AB` tokens) have a non-empty value of `Degree`.
-  
-  `AB` tokens may have the following values of `Degree`:
-  - `Pos` (15480; 10% of non-empty `Degree`)
-  - `Cmp` (8987; 6% of non-empty `Degree`)
-  - `Sup` (3890; 2% of non-empty `Degree`)
   
   
   
@@ -258,96 +47,12 @@
   1093722 tokens (38%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698790; 24% instances), `JJ` (132540; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
    157296 tokens (14%) have multiple values of `Gender`.
   
-  #### NN
-  
-  698790 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Gender`.
-  
-  `NN` tokens may have the following values of `Gender`:
-  - `Neut` (234585; 21% of non-empty `Gender`)
-  - `Com` (464205; 42% of non-empty `Gender`)
-  
-  #### JJ
-  
-  132540 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Gender`.
-  
-  `JJ` tokens may have the following values of `Gender`:
-  - `Neut` (100189; 9% of non-empty `Gender`)
-  - `Com` (114242; 10% of non-empty `Gender`)
-  - `Masc` (378; 0% of non-empty `Gender`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Gender`.
-  
-  `DT` tokens may have the following values of `Gender`:
-  - `Neut` (49128; 4% of non-empty `Gender`)
-  - `Com` (71993; 7% of non-empty `Gender`)
-  - `Masc` (1; 0% of non-empty `Gender`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Gender`.
-  
-  `PN` tokens may have the following values of `Gender`:
-  - `Neut` (67082; 6% of non-empty `Gender`)
-  - `Com` (50249; 5% of non-empty `Gender`)
-  - `Masc` (31; 0% of non-empty `Gender`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Gender`.
-  
-  `PC` tokens may have the following values of `Gender`:
-  - `Neut` (37441; 3% of non-empty `Gender`)
-  - `Com` (41503; 4% of non-empty `Gender`)
-  - `Masc` (62; 0% of non-empty `Gender`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Gender`.
-  
-  `PS` tokens may have the following values of `Gender`:
-  - `Neut` (5738; 1% of non-empty `Gender`)
-  - `Com` (7288; 1% of non-empty `Gender`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Gender`.
-  
-  `HP` tokens may have the following values of `Gender`:
-  - `Neut` (4201; 0% of non-empty `Gender`)
-  - `Com` (467; 0% of non-empty `Gender`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Gender`.
-  
-  `HD` tokens may have the following values of `Gender`:
-  - `Neut` (987; 0% of non-empty `Gender`)
-  - `Com` (1243; 0% of non-empty `Gender`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Gender`.
-  
-  `RO` tokens may have the following values of `Gender`:
-  - `Masc` (5; 0% of non-empty `Gender`)
-  
   
   
   ### Features: **Mood**
   This feature is universal. It occurs with 3 different values: `Imp`, `Ind`, `Sub`.
   
   244612 tokens (8%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (244612; 8% instances)
-  
-  #### VB
-  
-  244612 `VB` tokens (20% of all `VB` tokens) have a non-empty value of `Mood`.
-  
-  `VB` tokens may have the following values of `Mood`:
-  - `Ind` (242835; 99% of non-empty `Mood`)
-  - `Imp` (1616; 1% of non-empty `Mood`)
-  - `Sub` (161; 0% of non-empty `Mood`)
   
   
   
@@ -357,99 +62,12 @@
   1089833 tokens (38%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (694905; 24% instances), `JJ` (132536; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
    45832 tokens (4%) have multiple values of `Number`.
   
-  #### NN
-  
-  694905 `NN` tokens (25% of all `NN` tokens) have a non-empty value of `Number`.
-  
-  `NN` tokens may have the following values of `Number`:
-  - `Sing` (506306; 46% of non-empty `Number`)
-  - `Plur` (188599; 17% of non-empty `Number`)
-  
-  #### JJ
-  
-  132536 `JJ` tokens (20% of all `JJ` tokens) have a non-empty value of `Number`.
-  
-  `JJ` tokens may have the following values of `Number`:
-  - `Sing` (83842; 8% of non-empty `Number`)
-  - `Plur` (65396; 6% of non-empty `Number`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% of all `DT` tokens) have a non-empty value of `Number`.
-  
-  `DT` tokens may have the following values of `Number`:
-  - `Sing` (84148; 8% of non-empty `Number`)
-  - `Plur` (18653; 2% of non-empty `Number`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% of all `PN` tokens) have a non-empty value of `Number`.
-  
-  `PN` tokens may have the following values of `Number`:
-  - `Sing` (76873; 7% of non-empty `Number`)
-  - `Plur` (32217; 3% of non-empty `Number`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Number`.
-  
-  `PC` tokens may have the following values of `Number`:
-  - `Sing` (33625; 3% of non-empty `Number`)
-  - `Plur` (29081; 3% of non-empty `Number`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% of all `PS` tokens) have a non-empty value of `Number`.
-  
-  `PS` tokens may have the following values of `Number`:
-  - `Sing` (7657; 1% of non-empty `Number`)
-  - `Plur` (3393; 0% of non-empty `Number`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% of all `HP` tokens) have a non-empty value of `Number`.
-  
-  `HP` tokens may have the following values of `Number`:
-  - `Sing` (4258; 0% of non-empty `Number`)
-  - `Plur` (205; 0% of non-empty `Number`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% of all `HD` tokens) have a non-empty value of `Number`.
-  
-  `HD` tokens may have the following values of `Number`:
-  - `Sing` (584; 0% of non-empty `Number`)
-  - `Plur` (823; 0% of non-empty `Number`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Number`.
-  
-  `RO` tokens may have the following values of `Number`:
-  - `Sing` (5; 0% of non-empty `Number`)
-  
   
   
   ### Features: **Tense**
   This feature is universal. It occurs with 2 different values: `Past`, `Pres`.
   
   290132 tokens (10%) have a non-empty value of `Tense`. The feature is used with 2 part-of-speech tags: `VB` (242920; 8% instances), `PC` (47212; 2% instances)
-  
-  #### VB
-  
-  242920 `VB` tokens (19% of all `VB` tokens) have a non-empty value of `Tense`.
-  
-  `VB` tokens may have the following values of `Tense`:
-  - `Pres` (220310; 76% of non-empty `Tense`)
-  - `Past` (22610; 8% of non-empty `Tense`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `Tense`.
-  
-  `PC` tokens may have the following values of `Tense`:
-  - `Pres` (15494; 5% of non-empty `Tense`)
-  - `Past` (31718; 11% of non-empty `Tense`)
   
   
   
@@ -458,36 +76,12 @@
   
   427473 tokens (15%) have a non-empty value of `VerbForm`. The feature is used with 2 part-of-speech tags: `VB` (380261; 13% instances), `PC` (47212; 2% instances)
   
-  #### VB
-  
-  380261 `VB` tokens (30% of all `VB` tokens) have a non-empty value of `VerbForm`.
-  
-  `VB` tokens may have the following values of `VerbForm`:
-  - `Fin` (245031; 57% of non-empty `VerbForm`)
-  - `Sup` (20211; 5% of non-empty `VerbForm`)
-  - `Inf` (115019; 27% of non-empty `VerbForm`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% of all `PC` tokens) have a non-empty value of `VerbForm`.
-  
-  `PC` tokens may have the following values of `VerbForm`:
-  - `Part` (47212; 11% of non-empty `VerbForm`)
-  
   
   
   ### Features: **Voice**
   This feature is universal. It occurs with 2 different values: `Act`, `Pass`.
   
   380257 tokens (13%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380257; 13% instances)
-  
-  #### VB
-  
-  380257 `VB` tokens (30% of all `VB` tokens) have a non-empty value of `Voice`.
-  
-  `VB` tokens may have the following values of `Voice`:
-  - `Act` (315858; 83% of non-empty `Voice`)
-  - `Pass` (64399; 17% of non-empty `Voice`)
   
   
   
@@ -504,48 +98,6 @@
   
   57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Denna egenskap är använt tillsammans med 6 POS (part-of-speech) taggar: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
   
-  #### NN
-  
-  35393 `NN` tokens (1% av alla `NN` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `NN` tokens har följande värden av `Abbr`:
-  - `Yes` (35393; 61% av icke-tomma `Abbr`)
-  
-  #### AB
-  
-  22438 `AB` tokens (44% av alla `AB` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `AB` tokens har följande värden av `Abbr`:
-  - `Yes` (22438; 39% av icke-tomma `Abbr`)
-  
-  #### VB
-  
-  18 `VB` tokens (0% av alla `VB` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `VB` tokens har följande värden av `Abbr`:
-  - `Yes` (18; 0% av icke-tomma `Abbr`)
-  
-  #### KN
-  
-  17 `KN` tokens (100% av alla `KN` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `KN` tokens har följande värden av `Abbr`:
-  - `Yes` (17; 0% av icke-tomma `Abbr`)
-  
-  #### JJ
-  
-  12 `JJ` tokens (0% av alla `JJ` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `JJ` tokens har följande värden av `Abbr`:
-  - `Yes` (12; 0% av icke-tomma `Abbr`)
-  
-  #### PP
-  
-  5 `PP` tokens (100% av alla `PP` tokens) har ett icke-tomt värde av `Abbr`.
-  
-  `PP` tokens har följande värden av `Abbr`:
-  - `Yes` (5; 0% av icke-tomma `Abbr`)
-  
   
   
   ### Egenskap: **Case**
@@ -554,87 +106,12 @@
   1262438 tokens (44%) har ett icke-tomt värde av `Case`. Denna egenskap är använt tillsammans med 7 POS (part-of-speech) taggar: `NN` (695434; 24% instanser), `RG` (180310; 6% instanser), `JJ` (132538; 5% instanser), `PM` (106006; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `RO` (2897; 0% instanser)
    56044 tokens (4%) har multipla värden av `Case`.
   
-  #### NN
-  
-  695434 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Case`.
-  
-  `NN` tokens har följande värden av `Case`:
-  - `Nom` (661878; 52% av icke-tomma `Case`)
-  - `Gen` (33556; 3% av icke-tomma `Case`)
-  
-  #### RG
-  
-  180310 `RG` tokens (100% av alla `RG` tokens) har ett icke-tomt värde av `Case`.
-  
-  `RG` tokens har följande värden av `Case`:
-  - `Nom` (180310; 14% av icke-tomma `Case`)
-  
-  #### JJ
-  
-  132538 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Case`.
-  
-  `JJ` tokens har följande värden av `Case`:
-  - `Nom` (132190; 10% av icke-tomma `Case`)
-  - `Gen` (348; 0% av icke-tomma `Case`)
-  
-  #### PM
-  
-  106006 `PM` tokens (100% av alla `PM` tokens) har ett icke-tomt värde av `Case`.
-  
-  `PM` tokens har följande värden av `Case`:
-  - `Nom` (102800; 8% av icke-tomma `Case`)
-  - `Gen` (3206; 0% av icke-tomma `Case`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Case`.
-  
-  `PN` tokens har följande värden av `Case`:
-  - `Nom` (83736; 7% av icke-tomma `Case`)
-  - `Acc` (70349; 6% av icke-tomma `Case`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Case`.
-  
-  `PC` tokens har följande värden av `Case`:
-  - `Nom` (47182; 4% av icke-tomma `Case`)
-  - `Gen` (30; 0% av icke-tomma `Case`)
-  
-  #### RO
-  
-  2897 `RO` tokens (99% av alla `RO` tokens) har ett icke-tomt värde av `Case`.
-  
-  `RO` tokens har följande värden av `Case`:
-  - `Nom` (2897; 0% av icke-tomma `Case`)
-  
   
   
   ### Egenskap: **Compound**
    Den förekommer med 1 olika värden: `Yes`.
   
   4847 tokens (0%) har ett icke-tomt värde av `Compound`. Denna egenskap är använt tillsammans med 3 POS (part-of-speech) taggar: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
-  
-  #### NN
-  
-  4826 `NN` tokens (0% av alla `NN` tokens) har ett icke-tomt värde av `Compound`.
-  
-  `NN` tokens har följande värden av `Compound`:
-  - `Yes` (4826; 100% av icke-tomma `Compound`)
-  
-  #### RG
-  
-  11 `RG` tokens (0% av alla `RG` tokens) har ett icke-tomt värde av `Compound`.
-  
-  `RG` tokens har följande värden av `Compound`:
-  - `Yes` (11; 0% av icke-tomma `Compound`)
-  
-  #### PM
-  
-  10 `PM` tokens (0% av alla `PM` tokens) har ett icke-tomt värde av `Compound`.
-  
-  `PM` tokens har följande värden av `Compound`:
-  - `Yes` (10; 0% av icke-tomma `Compound`)
   
   
   
@@ -644,106 +121,12 @@
   1089520 tokens (38%) har ett icke-tomt värde av `Definite`. Denna egenskap är använt tillsammans med 10 POS (part-of-speech) taggar: `NN` (694413; 24% instanser), `JJ` (132529; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `HS` (186; 0% instanser), `RO` (5; 0% instanser)
    90435 tokens (8%) har multipla värden av `Definite`.
   
-  #### NN
-  
-  694413 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `NN` tokens har följande värden av `Definite`:
-  - `Def` (246895; 23% av icke-tomma `Definite`)
-  - `Ind` (447518; 41% av icke-tomma `Definite`)
-  
-  #### JJ
-  
-  132529 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `JJ` tokens har följande värden av `Definite`:
-  - `Def` (78132; 7% av icke-tomma `Definite`)
-  - `Ind` (113076; 10% av icke-tomma `Definite`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `DT` tokens har följande värden av `Definite`:
-  - `Def` (44376; 4% av icke-tomma `Definite`)
-  - `Ind` (59909; 5% av icke-tomma `Definite`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `PN` tokens har följande värden av `Definite`:
-  - `Def` (86869; 8% av icke-tomma `Definite`)
-  - `Ind` (11172; 1% av icke-tomma `Definite`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `PC` tokens har följande värden av `Definite`:
-  - `Def` (31856; 3% av icke-tomma `Definite`)
-  - `Ind` (44453; 4% av icke-tomma `Definite`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `PS` tokens har följande värden av `Definite`:
-  - `Def` (9633; 1% av icke-tomma `Definite`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `HP` tokens har följande värden av `Definite`:
-  - `Ind` (4463; 0% av icke-tomma `Definite`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `HD` tokens har följande värden av `Definite`:
-  - `Ind` (1407; 0% av icke-tomma `Definite`)
-  
-  #### HS
-  
-  186 `HS` tokens (100% av alla `HS` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `HS` tokens har följande värden av `Definite`:
-  - `Def` (186; 0% av icke-tomma `Definite`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Definite`.
-  
-  `RO` tokens har följande värden av `Definite`:
-  - `Def` (5; 0% av icke-tomma `Definite`)
-  - `Ind` (5; 0% av icke-tomma `Definite`)
-  
   
   
   ### Egenskap: **Degree**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
   
   160898 tokens (6%) har ett icke-tomt värde av `Degree`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `JJ` (132541; 5% instanser), `AB` (28357; 1% instanser)
-  
-  #### JJ
-  
-  132541 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Degree`.
-  
-  `JJ` tokens har följande värden av `Degree`:
-  - `Pos` (118931; 74% av icke-tomma `Degree`)
-  - `Cmp` (10868; 7% av icke-tomma `Degree`)
-  - `Sup` (2742; 2% av icke-tomma `Degree`)
-  
-  #### AB
-  
-  28357 `AB` tokens (56% av alla `AB` tokens) har ett icke-tomt värde av `Degree`.
-  
-  `AB` tokens har följande värden av `Degree`:
-  - `Pos` (15480; 10% av icke-tomma `Degree`)
-  - `Cmp` (8987; 6% av icke-tomma `Degree`)
-  - `Sup` (3890; 2% av icke-tomma `Degree`)
   
   
   
@@ -753,96 +136,12 @@
   1093722 tokens (38%) har ett icke-tomt värde av `Gender`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (698790; 24% instanser), `JJ` (132540; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    157296 tokens (14%) har multipla värden av `Gender`.
   
-  #### NN
-  
-  698790 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `NN` tokens har följande värden av `Gender`:
-  - `Neut` (234585; 21% av icke-tomma `Gender`)
-  - `Com` (464205; 42% av icke-tomma `Gender`)
-  
-  #### JJ
-  
-  132540 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `JJ` tokens har följande värden av `Gender`:
-  - `Neut` (100189; 9% av icke-tomma `Gender`)
-  - `Com` (114242; 10% av icke-tomma `Gender`)
-  - `Masc` (378; 0% av icke-tomma `Gender`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `DT` tokens har följande värden av `Gender`:
-  - `Neut` (49128; 4% av icke-tomma `Gender`)
-  - `Com` (71993; 7% av icke-tomma `Gender`)
-  - `Masc` (1; 0% av icke-tomma `Gender`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `PN` tokens har följande värden av `Gender`:
-  - `Neut` (67082; 6% av icke-tomma `Gender`)
-  - `Com` (50249; 5% av icke-tomma `Gender`)
-  - `Masc` (31; 0% av icke-tomma `Gender`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `PC` tokens har följande värden av `Gender`:
-  - `Neut` (37441; 3% av icke-tomma `Gender`)
-  - `Com` (41503; 4% av icke-tomma `Gender`)
-  - `Masc` (62; 0% av icke-tomma `Gender`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `PS` tokens har följande värden av `Gender`:
-  - `Neut` (5738; 1% av icke-tomma `Gender`)
-  - `Com` (7288; 1% av icke-tomma `Gender`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `HP` tokens har följande värden av `Gender`:
-  - `Neut` (4201; 0% av icke-tomma `Gender`)
-  - `Com` (467; 0% av icke-tomma `Gender`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `HD` tokens har följande värden av `Gender`:
-  - `Neut` (987; 0% av icke-tomma `Gender`)
-  - `Com` (1243; 0% av icke-tomma `Gender`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Gender`.
-  
-  `RO` tokens har följande värden av `Gender`:
-  - `Masc` (5; 0% av icke-tomma `Gender`)
-  
   
   
   ### Egenskap: **Mood**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
   
   244612 tokens (8%) har ett icke-tomt värde av `Mood`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (244612; 8% instanser)
-  
-  #### VB
-  
-  244612 `VB` tokens (20% av alla `VB` tokens) har ett icke-tomt värde av `Mood`.
-  
-  `VB` tokens har följande värden av `Mood`:
-  - `Ind` (242835; 99% av icke-tomma `Mood`)
-  - `Imp` (1616; 1% av icke-tomma `Mood`)
-  - `Sub` (161; 0% av icke-tomma `Mood`)
   
   
   
@@ -852,99 +151,12 @@
   1089833 tokens (38%) har ett icke-tomt värde av `Number`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (694905; 24% instanser), `JJ` (132536; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    45832 tokens (4%) har multipla värden av `Number`.
   
-  #### NN
-  
-  694905 `NN` tokens (25% av alla `NN` tokens) har ett icke-tomt värde av `Number`.
-  
-  `NN` tokens har följande värden av `Number`:
-  - `Sing` (506306; 46% av icke-tomma `Number`)
-  - `Plur` (188599; 17% av icke-tomma `Number`)
-  
-  #### JJ
-  
-  132536 `JJ` tokens (20% av alla `JJ` tokens) har ett icke-tomt värde av `Number`.
-  
-  `JJ` tokens har följande värden av `Number`:
-  - `Sing` (83842; 8% av icke-tomma `Number`)
-  - `Plur` (65396; 6% av icke-tomma `Number`)
-  
-  #### DT
-  
-  101631 `DT` tokens (33% av alla `DT` tokens) har ett icke-tomt värde av `Number`.
-  
-  `DT` tokens har följande värden av `Number`:
-  - `Sing` (84148; 8% av icke-tomma `Number`)
-  - `Plur` (18653; 2% av icke-tomma `Number`)
-  
-  #### PN
-  
-  98041 `PN` tokens (25% av alla `PN` tokens) har ett icke-tomt värde av `Number`.
-  
-  `PN` tokens har följande värden av `Number`:
-  - `Sing` (76873; 7% av icke-tomma `Number`)
-  - `Plur` (32217; 3% av icke-tomma `Number`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Number`.
-  
-  `PC` tokens har följande värden av `Number`:
-  - `Sing` (33625; 3% av icke-tomma `Number`)
-  - `Plur` (29081; 3% av icke-tomma `Number`)
-  
-  #### PS
-  
-  9633 `PS` tokens (33% av alla `PS` tokens) har ett icke-tomt värde av `Number`.
-  
-  `PS` tokens har följande värden av `Number`:
-  - `Sing` (7657; 1% av icke-tomma `Number`)
-  - `Plur` (3393; 0% av icke-tomma `Number`)
-  
-  #### HP
-  
-  4463 `HP` tokens (33% av alla `HP` tokens) har ett icke-tomt värde av `Number`.
-  
-  `HP` tokens har följande värden av `Number`:
-  - `Sing` (4258; 0% av icke-tomma `Number`)
-  - `Plur` (205; 0% av icke-tomma `Number`)
-  
-  #### HD
-  
-  1407 `HD` tokens (33% av alla `HD` tokens) har ett icke-tomt värde av `Number`.
-  
-  `HD` tokens har följande värden av `Number`:
-  - `Sing` (584; 0% av icke-tomma `Number`)
-  - `Plur` (823; 0% av icke-tomma `Number`)
-  
-  #### RO
-  
-  5 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Number`.
-  
-  `RO` tokens har följande värden av `Number`:
-  - `Sing` (5; 0% av icke-tomma `Number`)
-  
   
   
   ### Egenskap: **Tense**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Past`, `Pres`.
   
   290132 tokens (10%) har ett icke-tomt värde av `Tense`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (242920; 8% instanser), `PC` (47212; 2% instanser)
-  
-  #### VB
-  
-  242920 `VB` tokens (19% av alla `VB` tokens) har ett icke-tomt värde av `Tense`.
-  
-  `VB` tokens har följande värden av `Tense`:
-  - `Pres` (220310; 76% av icke-tomma `Tense`)
-  - `Past` (22610; 8% av icke-tomma `Tense`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `Tense`.
-  
-  `PC` tokens har följande värden av `Tense`:
-  - `Pres` (15494; 5% av icke-tomma `Tense`)
-  - `Past` (31718; 11% av icke-tomma `Tense`)
   
   
   
@@ -953,36 +165,12 @@
   
   427473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (380261; 13% instanser), `PC` (47212; 2% instanser)
   
-  #### VB
-  
-  380261 `VB` tokens (30% av alla `VB` tokens) har ett icke-tomt värde av `VerbForm`.
-  
-  `VB` tokens har följande värden av `VerbForm`:
-  - `Fin` (245031; 57% av icke-tomma `VerbForm`)
-  - `Sup` (20211; 5% av icke-tomma `VerbForm`)
-  - `Inf` (115019; 27% av icke-tomma `VerbForm`)
-  
-  #### PC
-  
-  47212 `PC` tokens (17% av alla `PC` tokens) har ett icke-tomt värde av `VerbForm`.
-  
-  `PC` tokens har följande värden av `VerbForm`:
-  - `Part` (47212; 11% av icke-tomma `VerbForm`)
-  
   
   
   ### Egenskap: **Voice**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Act`, `Pass`.
   
   380257 tokens (13%) har ett icke-tomt värde av `Voice`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (380257; 13% instanser)
-  
-  #### VB
-  
-  380257 `VB` tokens (30% av alla `VB` tokens) har ett icke-tomt värde av `Voice`.
-  
-  `VB` tokens har följande värden av `Voice`:
-  - `Act` (315858; 83% av icke-tomma `Voice`)
-  - `Pass` (64399; 17% av icke-tomma `Voice`)
   
   
   
@@ -1331,12 +519,71 @@
   The 5 most frequent `AB` tokens: `inte`, `även`, `Därmed`, `m.m.`, `delvis`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### AB and Abbr
+  
+  121224 `AB` tokens (19% of all `AB` tokens) have a non-empty value of `Abbr`.
+  
+  `AB` tokens may have the following values of `Abbr`:
+  - `Yes` (22438; 100% of non-empty `Abbr`)
+  
+  ##### AB and Degree
+  
+  121224 `AB` tokens (23% of all `AB` tokens) have a non-empty value of `Degree`.
+  
+  `AB` tokens may have the following values of `Degree`:
+  - `Sup` (3890; 14% of non-empty `Degree`)
+  
+  - `Cmp` (8987; 32% of non-empty `Degree`)
+  
+  - `Pos` (15480; 55% of non-empty `Degree`)
+  
+  
   ### POS Tags: **DT**
   There are 101631 (4%) `DT` tokens. Out of 25 observed tags, the rank of `DT` is: 11 in number of tokens.
   
   The 5 most frequent `DT` base forms: `en`, `den`, `denna`, `någon`, `all`
   
   The 5 most frequent `DT` tokens: `en`, `ett`, `den`, `de`, `det`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### DT and Definite
+  
+  101631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Definite`.
+  
+  `DT` tokens may have the following values of `Definite`:
+  - `Def,Ind` (2654; 3% of non-empty `Definite`)
+  
+  - `Def` (41722; 41% of non-empty `Definite`)
+  
+  - `Ind` (57255; 56% of non-empty `Definite`)
+  
+  ##### DT and Gender
+  
+  101631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Gender`.
+  
+  `DT` tokens may have the following values of `Gender`:
+  - `Masc` (1; 0% of non-empty `Gender`)
+  
+  - `Com,Neut` (19491; 19% of non-empty `Gender`)
+  
+  - `Neut` (29637; 29% of non-empty `Gender`)
+  
+  - `Com` (52502; 52% of non-empty `Gender`)
+  
+  ##### DT and Number
+  
+  101631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Number`.
+  
+  `DT` tokens may have the following values of `Number`:
+  - `Plur,Sing` (1170; 1% of non-empty `Number`)
+  
+  - `Plur` (17483; 17% of non-empty `Number`)
+  
+  - `Sing` (82978; 82% of non-empty `Number`)
   
   
   ### POS Tags: **HA**
@@ -1347,12 +594,46 @@
   The 5 most frequent `HA` tokens: `när`, `hur`, `där`, `När`, `som`
   
   
+  #### Overview of features for POS tags
+  ---
+  HA not present among features
+  
   ### POS Tags: **HD**
   There are 1407 (0%) `HD` tokens. Out of 25 observed tags, the rank of `HD` is: 23 in number of tokens.
   
   The 2 most frequent `HD` base forms: `i vilken mån:7`, `i vilken mån:3`
   
   The 5 most frequent `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### HD and Definite
+  
+  1407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Definite`.
+  
+  `HD` tokens may have the following values of `Definite`:
+  - `Ind` (1407; 100% of non-empty `Definite`)
+  
+  ##### HD and Gender
+  
+  1407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Gender`.
+  
+  `HD` tokens may have the following values of `Gender`:
+  - `Neut` (164; 12% of non-empty `Gender`)
+  
+  - `Com` (420; 30% of non-empty `Gender`)
+  
+  - `Com,Neut` (823; 58% of non-empty `Gender`)
+  
+  ##### HD and Number
+  
+  1407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Number`.
+  
+  `HD` tokens may have the following values of `Number`:
+  - `Sing` (584; 42% of non-empty `Number`)
+  
+  - `Plur` (823; 58% of non-empty `Number`)
   
   
   ### POS Tags: **HP**
@@ -1363,12 +644,52 @@
   The 5 most frequent `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### HP and Definite
+  
+  44722 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Definite`.
+  
+  `HP` tokens may have the following values of `Definite`:
+  - `Ind` (4463; 100% of non-empty `Definite`)
+  
+  ##### HP and Gender
+  
+  44722 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Gender`.
+  
+  `HP` tokens may have the following values of `Gender`:
+  - `Com,Neut` (205; 5% of non-empty `Gender`)
+  
+  - `Com` (262; 6% of non-empty `Gender`)
+  
+  - `Neut` (3996; 90% of non-empty `Gender`)
+  
+  ##### HP and Number
+  
+  44722 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Number`.
+  
+  `HP` tokens may have the following values of `Number`:
+  - `Plur` (205; 5% of non-empty `Number`)
+  
+  - `Sing` (4258; 95% of non-empty `Number`)
+  
+  
   ### POS Tags: **HS**
   There are 186 (0%) `HS` tokens. Out of 25 observed tags, the rank of `HS` is: 25 in number of tokens.
   
   The 2 most frequent `HS` base forms: `vars`, `vem`
   
   The 3 most frequent `HS` tokens: `vars`, `vilkas`, `vems`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### HS and Definite
+  
+  186 `HS` tokens (100% of all `HS` tokens) have a non-empty value of `Definite`.
+  
+  `HS` tokens may have the following values of `Definite`:
+  - `Def` (186; 100% of non-empty `Definite`)
   
   
   ### POS Tags: **IE**
@@ -1379,6 +700,10 @@
   The 5 most frequent `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
   
   
+  #### Overview of features for POS tags
+  ---
+  IE not present among features
+  
   ### POS Tags: **IN**
   There are 840 (0%) `IN` tokens. Out of 25 observed tags, the rank of `IN` is: 24 in number of tokens.
   
@@ -1387,12 +712,81 @@
   The 5 most frequent `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
   
   
+  #### Overview of features for POS tags
+  ---
+  IN not present among features
+  
   ### POS Tags: **JJ**
   There are 132552 (5%) `JJ` tokens. Out of 25 observed tags, the rank of `JJ` is: 5 in number of tokens.
   
   The 5 most frequent `JJ` base forms: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
   
   The 5 most frequent `JJ` tokens: `ekonomiska`, `annan`, `allmänna`, `övriga`, `obligatorisk`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### JJ and Abbr
+  
+  132552 `JJ` tokens (0% of all `JJ` tokens) have a non-empty value of `Abbr`.
+  
+  `JJ` tokens may have the following values of `Abbr`:
+  - `Yes` (12; 100% of non-empty `Abbr`)
+  
+  ##### JJ and Case
+  
+  132552 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Case`.
+  
+  `JJ` tokens may have the following values of `Case`:
+  - `Gen` (348; 0% of non-empty `Case`)
+  
+  - `Nom` (132190; 100% of non-empty `Case`)
+  
+  ##### JJ and Definite
+  
+  132552 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Definite`.
+  
+  `JJ` tokens may have the following values of `Definite`:
+  - `Def` (19453; 15% of non-empty `Definite`)
+  
+  - `Ind` (54397; 41% of non-empty `Definite`)
+  
+  - `Def,Ind` (58679; 44% of non-empty `Definite`)
+  
+  ##### JJ and Degree
+  
+  132552 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Degree`.
+  
+  `JJ` tokens may have the following values of `Degree`:
+  - `Sup` (2742; 2% of non-empty `Degree`)
+  
+  - `Cmp` (10868; 8% of non-empty `Degree`)
+  
+  - `Pos` (118931; 90% of non-empty `Degree`)
+  
+  ##### JJ and Gender
+  
+  132552 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Gender`.
+  
+  `JJ` tokens may have the following values of `Gender`:
+  - `Masc` (378; 0% of non-empty `Gender`)
+  
+  - `Neut` (17920; 14% of non-empty `Gender`)
+  
+  - `Com` (31973; 24% of non-empty `Gender`)
+  
+  - `Com,Neut` (82269; 62% of non-empty `Gender`)
+  
+  ##### JJ and Number
+  
+  132552 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Number`.
+  
+  `JJ` tokens may have the following values of `Number`:
+  - `Plur,Sing` (16702; 13% of non-empty `Number`)
+  
+  - `Plur` (48694; 37% of non-empty `Number`)
+  
+  - `Sing` (67140; 51% of non-empty `Number`)
   
   
   ### POS Tags: **KN**
@@ -1403,17 +797,35 @@
   The 5 most frequent `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### KN and Abbr
+  
+  117972 `KN` tokens (0% of all `KN` tokens) have a non-empty value of `Abbr`.
+  
+  `KN` tokens may have the following values of `Abbr`:
+  - `Yes` (17; 100% of non-empty `Abbr`)
+  
+  
   ### POS Tags: **MAD**
   There are 131026 (5%) `MAD` tokens. Out of 25 observed tags, the rank of `MAD` is: 6 in number of tokens.
   
   The 5 most frequent `MAD` tokens: `.`, `:`, `!`, `?`, `–`
   
   
+  #### Overview of features for POS tags
+  ---
+  MAD not present among features
+  
   ### POS Tags: **MID**
   There are 101646 (4%) `MID` tokens. Out of 25 observed tags, the rank of `MID` is: 10 in number of tokens.
   
   The 5 most frequent `MID` tokens: `,`, `/`, `:`, `-`, `–`
   
+  
+  #### Overview of features for POS tags
+  ---
+  MID not present among features
   
   ### POS Tags: **NN**
   There are 736544 (25%) `NN` tokens. Out of 25 observed tags, the rank of `NN` is: 1 in number of tokens.
@@ -1423,11 +835,68 @@
   The 5 most frequent `NN` tokens: `riksdagen`, `utgiftsområde`, `s`, `anslag`, `enlighet`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### NN and Abbr
+  
+  736544 `NN` tokens (5% of all `NN` tokens) have a non-empty value of `Abbr`.
+  
+  `NN` tokens may have the following values of `Abbr`:
+  - `Yes` (35393; 100% of non-empty `Abbr`)
+  
+  ##### NN and Case
+  
+  736544 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Case`.
+  
+  `NN` tokens may have the following values of `Case`:
+  - `Gen` (33556; 5% of non-empty `Case`)
+  
+  - `Nom` (661878; 95% of non-empty `Case`)
+  
+  ##### NN and Compound
+  
+  736544 `NN` tokens (1% of all `NN` tokens) have a non-empty value of `Compound`.
+  
+  `NN` tokens may have the following values of `Compound`:
+  - `Yes` (4826; 100% of non-empty `Compound`)
+  
+  ##### NN and Definite
+  
+  736544 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Definite`.
+  
+  `NN` tokens may have the following values of `Definite`:
+  - `Def` (246895; 36% of non-empty `Definite`)
+  
+  - `Ind` (447518; 64% of non-empty `Definite`)
+  
+  ##### NN and Gender
+  
+  736544 `NN` tokens (95% of all `NN` tokens) have a non-empty value of `Gender`.
+  
+  `NN` tokens may have the following values of `Gender`:
+  - `Neut` (234585; 34% of non-empty `Gender`)
+  
+  - `Com` (464205; 66% of non-empty `Gender`)
+  
+  ##### NN and Number
+  
+  736544 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Number`.
+  
+  `NN` tokens may have the following values of `Number`:
+  - `Plur` (188599; 27% of non-empty `Number`)
+  
+  - `Sing` (506306; 73% of non-empty `Number`)
+  
+  
   ### POS Tags: **PAD**
   There are 93999 (3%) `PAD` tokens. Out of 25 observed tags, the rank of `PAD` is: 13 in number of tokens.
   
   The 5 most frequent `PAD` tokens: `)`, `(`, `"`, `]`, `[`
   
+  
+  #### Overview of features for POS tags
+  ---
+  PAD not present among features
   
   ### POS Tags: **PC**
   There are 47212 (2%) `PC` tokens. Out of 25 observed tags, the rank of `PC` is: 15 in number of tokens.
@@ -1435,6 +904,69 @@
   The 5 most frequent `PC` base forms: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
   
   The 5 most frequent `PC` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### PC and Case
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Case`.
+  
+  `PC` tokens may have the following values of `Case`:
+  - `Gen` (30; 0% of non-empty `Case`)
+  
+  - `Nom` (47182; 100% of non-empty `Case`)
+  
+  ##### PC and Definite
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Definite`.
+  
+  `PC` tokens may have the following values of `Definite`:
+  - `Def` (2759; 6% of non-empty `Definite`)
+  
+  - `Ind` (15356; 33% of non-empty `Definite`)
+  
+  - `Def,Ind` (29097; 62% of non-empty `Definite`)
+  
+  ##### PC and Gender
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Gender`.
+  
+  `PC` tokens may have the following values of `Gender`:
+  - `Masc` (62; 0% of non-empty `Gender`)
+  
+  - `Neut` (5647; 12% of non-empty `Gender`)
+  
+  - `Com` (9709; 21% of non-empty `Gender`)
+  
+  - `Com,Neut` (31794; 67% of non-empty `Gender`)
+  
+  ##### PC and Number
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Number`.
+  
+  `PC` tokens may have the following values of `Number`:
+  - `Plur` (13587; 29% of non-empty `Number`)
+  
+  - `Plur,Sing` (15494; 33% of non-empty `Number`)
+  
+  - `Sing` (18131; 38% of non-empty `Number`)
+  
+  ##### PC and Tense
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Tense`.
+  
+  `PC` tokens may have the following values of `Tense`:
+  - `Pres` (15494; 33% of non-empty `Tense`)
+  
+  - `Past` (31718; 67% of non-empty `Tense`)
+  
+  ##### PC and VerbForm
+  
+  47212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `VerbForm`.
+  
+  `PC` tokens may have the following values of `VerbForm`:
+  - `Part` (47212; 100% of non-empty `VerbForm`)
   
   
   ### POS Tags: **PL**
@@ -1445,12 +977,35 @@
   The 5 most frequent `PL` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
   
   
+  #### Overview of features for POS tags
+  ---
+  PL not present among features
+  
   ### POS Tags: **PM**
   There are 106015 (4%) `PM` tokens. Out of 25 observed tags, the rank of `PM` is: 9 in number of tokens.
   
   The 5 most frequent `PM` base forms: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
   
   The 5 most frequent `PM` tokens: `SD`, `KD`, `MP`, `Ebba`, `Erik`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### PM and Case
+  
+  106015 `PM` tokens (100% of all `PM` tokens) have a non-empty value of `Case`.
+  
+  `PM` tokens may have the following values of `Case`:
+  - `Gen` (3206; 3% of non-empty `Case`)
+  
+  - `Nom` (102800; 97% of non-empty `Case`)
+  
+  ##### PM and Compound
+  
+  106015 `PM` tokens (0% of all `PM` tokens) have a non-empty value of `Compound`.
+  
+  `PM` tokens may have the following values of `Compound`:
+  - `Yes` (10; 100% of non-empty `Compound`)
   
   
   ### POS Tags: **PN**
@@ -1461,12 +1016,69 @@
   The 5 most frequent `PN` tokens: `det`, `sig`, `detta`, `Det`, `de`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### PN and Case
+  
+  98041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Case`.
+  
+  `PN` tokens may have the following values of `Case`:
+  - `Acc` (14305; 15% of non-empty `Case`)
+  
+  - `Nom` (27692; 28% of non-empty `Case`)
+  
+  - `Acc,Nom` (56044; 57% of non-empty `Case`)
+  
+  ##### PN and Definite
+  
+  98041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Definite`.
+  
+  `PN` tokens may have the following values of `Definite`:
+  - `Ind` (11172; 11% of non-empty `Definite`)
+  
+  - `Def` (86869; 89% of non-empty `Definite`)
+  
+  ##### PN and Gender
+  
+  98041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Gender`.
+  
+  `PN` tokens may have the following values of `Gender`:
+  - `Masc` (31; 0% of non-empty `Gender`)
+  
+  - `Com,Neut` (19321; 20% of non-empty `Gender`)
+  
+  - `Com` (30928; 32% of non-empty `Gender`)
+  
+  - `Neut` (47761; 49% of non-empty `Gender`)
+  
+  ##### PN and Number
+  
+  98041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Number`.
+  
+  `PN` tokens may have the following values of `Number`:
+  - `Plur,Sing` (11049; 11% of non-empty `Number`)
+  
+  - `Plur` (21168; 22% of non-empty `Number`)
+  
+  - `Sing` (65824; 67% of non-empty `Number`)
+  
+  
   ### POS Tags: **PP**
   There are 358848 (12%) `PP` tokens. Out of 25 observed tags, the rank of `PP` is: 3 in number of tokens.
   
   The 5 most frequent `PP` base forms: `i`, `för`, `av`, `till`, `om`
   
   The 5 most frequent `PP` tokens: `i`, `för`, `av`, `till`, `om`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### PP and Abbr
+  
+  358848 `PP` tokens (0% of all `PP` tokens) have a non-empty value of `Abbr`.
+  
+  `PP` tokens may have the following values of `Abbr`:
+  - `Yes` (5; 100% of non-empty `Abbr`)
   
   
   ### POS Tags: **PS**
@@ -1477,12 +1089,61 @@
   The 5 most frequent `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### PS and Definite
+  
+  9633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Definite`.
+  
+  `PS` tokens may have the following values of `Definite`:
+  - `Def` (9633; 100% of non-empty `Definite`)
+  
+  ##### PS and Gender
+  
+  9633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Gender`.
+  
+  `PS` tokens may have the following values of `Gender`:
+  - `Neut` (2345; 24% of non-empty `Gender`)
+  
+  - `Com,Neut` (3393; 35% of non-empty `Gender`)
+  
+  - `Com` (3895; 40% of non-empty `Gender`)
+  
+  ##### PS and Number
+  
+  9633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Number`.
+  
+  `PS` tokens may have the following values of `Number`:
+  - `Plur,Sing` (1417; 15% of non-empty `Number`)
+  
+  - `Plur` (1976; 21% of non-empty `Number`)
+  
+  - `Sing` (6240; 65% of non-empty `Number`)
+  
+  
   ### POS Tags: **RG**
   There are 180321 (6%) `RG` tokens. Out of 25 observed tags, the rank of `RG` is: 4 in number of tokens.
   
   The 5 most frequent `RG` base forms: `V`, `två`, `tre`, `fyra`, `sex`
   
   The 5 most frequent `RG` tokens: `2018`, `2019`, `1`, `2`, `8`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### RG and Case
+  
+  180321 `RG` tokens (100% of all `RG` tokens) have a non-empty value of `Case`.
+  
+  `RG` tokens may have the following values of `Case`:
+  - `Nom` (180310; 100% of non-empty `Case`)
+  
+  ##### RG and Compound
+  
+  180321 `RG` tokens (0% of all `RG` tokens) have a non-empty value of `Compound`.
+  
+  `RG` tokens may have the following values of `Compound`:
+  - `Yes` (11; 100% of non-empty `Compound`)
   
   
   ### POS Tags: **RO**
@@ -1493,6 +1154,37 @@
   The 5 most frequent `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
   
   
+  #### Overview of features for POS tags
+  ---
+  ##### RO and Case
+  
+  2897 `RO` tokens (100% of all `RO` tokens) have a non-empty value of `Case`.
+  
+  `RO` tokens may have the following values of `Case`:
+  - `Nom` (2897; 100% of non-empty `Case`)
+  
+  ##### RO and Definite
+  
+  2897 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Definite`.
+  
+  `RO` tokens may have the following values of `Definite`:
+  - `Def,Ind` (5; 100% of non-empty `Definite`)
+  
+  ##### RO and Gender
+  
+  2897 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Gender`.
+  
+  `RO` tokens may have the following values of `Gender`:
+  - `Masc` (5; 100% of non-empty `Gender`)
+  
+  ##### RO and Number
+  
+  2897 `RO` tokens (0% of all `RO` tokens) have a non-empty value of `Number`.
+  
+  `RO` tokens may have the following values of `Number`:
+  - `Sing` (5; 100% of non-empty `Number`)
+  
+  
   ### POS Tags: **SN**
   There are 53560 (2%) `SN` tokens. Out of 25 observed tags, the rank of `SN` is: 14 in number of tokens.
   
@@ -1500,6 +1192,10 @@
   
   The 5 most frequent `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
   
+  
+  #### Overview of features for POS tags
+  ---
+  SN not present among features
   
   ### POS Tags: **UO**
   There are 2274 (0%) `UO` tokens. Out of 25 observed tags, the rank of `UO` is: 22 in number of tokens.
@@ -1509,12 +1205,66 @@
   The 5 most frequent `UO` tokens: `et`, `na`, `örslag`, `S`, `kolverk`
   
   
+  #### Overview of features for POS tags
+  ---
+  UO not present among features
+  
   ### POS Tags: **VB**
   There are 380285 (13%) `VB` tokens. Out of 25 observed tags, the rank of `VB` is: 2 in number of tokens.
   
   The 5 most frequent `VB` base forms: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
   
   The 5 most frequent `VB` tokens: `är`, `bör`, `föreslår`, `avstyrker`, `anvisar`
+  
+  
+  #### Overview of features for POS tags
+  ---
+  ##### VB and Abbr
+  
+  380285 `VB` tokens (0% of all `VB` tokens) have a non-empty value of `Abbr`.
+  
+  `VB` tokens may have the following values of `Abbr`:
+  - `Yes` (18; 100% of non-empty `Abbr`)
+  
+  ##### VB and Mood
+  
+  380285 `VB` tokens (64% of all `VB` tokens) have a non-empty value of `Mood`.
+  
+  `VB` tokens may have the following values of `Mood`:
+  - `Sub` (161; 0% of non-empty `Mood`)
+  
+  - `Imp` (1616; 1% of non-empty `Mood`)
+  
+  - `Ind` (242835; 99% of non-empty `Mood`)
+  
+  ##### VB and Tense
+  
+  380285 `VB` tokens (64% of all `VB` tokens) have a non-empty value of `Tense`.
+  
+  `VB` tokens may have the following values of `Tense`:
+  - `Past` (22610; 9% of non-empty `Tense`)
+  
+  - `Pres` (220310; 91% of non-empty `Tense`)
+  
+  ##### VB and VerbForm
+  
+  380285 `VB` tokens (100% of all `VB` tokens) have a non-empty value of `VerbForm`.
+  
+  `VB` tokens may have the following values of `VerbForm`:
+  - `Sup` (20211; 5% of non-empty `VerbForm`)
+  
+  - `Inf` (115019; 30% of non-empty `VerbForm`)
+  
+  - `Fin` (245031; 64% of non-empty `VerbForm`)
+  
+  ##### VB and Voice
+  
+  380285 `VB` tokens (100% of all `VB` tokens) have a non-empty value of `Voice`.
+  
+  `VB` tokens may have the following values of `Voice`:
+  - `Pass` (64399; 17% of non-empty `Voice`)
+  
+  - `Act` (315858; 83% of non-empty `Voice`)
   
   
   '''
@@ -1533,12 +1283,71 @@
   De 5 flest frekventa `AB` tokens: `inte`, `även`, `Därmed`, `m.m.`, `delvis`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### AB och Abbr
+  
+  121224 `AB` tokens (19% av alla `AB` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `AB` tokens har följande värden av `Abbr`:
+  - `Yes` (22438; 100% av icke-tomma `Abbr`)
+  
+  ##### AB och Degree
+  
+  121224 `AB` tokens (23% av alla `AB` tokens) har ett icke-tomt värde av `Degree`.
+  
+  `AB` tokens har följande värden av `Degree`:
+  - `Sup` (3890; 14% av icke-tomma `Degree`)
+  
+  - `Cmp` (8987; 32% av icke-tomma `Degree`)
+  
+  - `Pos` (15480; 55% av icke-tomma `Degree`)
+  
+  
   ### Ordklass: **DT**
   Det finns 101631 (4%) `DT` tokens. Av 25 observerade ordklasser, `DT`:s rank är: 11 i antalet tokens.
   
   De 5 flest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
   
   De 5 flest frekventa `DT` tokens: `en`, `ett`, `den`, `de`, `det`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### DT och Definite
+  
+  101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `DT` tokens har följande värden av `Definite`:
+  - `Def,Ind` (2654; 3% av icke-tomma `Definite`)
+  
+  - `Def` (41722; 41% av icke-tomma `Definite`)
+  
+  - `Ind` (57255; 56% av icke-tomma `Definite`)
+  
+  ##### DT och Gender
+  
+  101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `DT` tokens har följande värden av `Gender`:
+  - `Masc` (1; 0% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (19491; 19% av icke-tomma `Gender`)
+  
+  - `Neut` (29637; 29% av icke-tomma `Gender`)
+  
+  - `Com` (52502; 52% av icke-tomma `Gender`)
+  
+  ##### DT och Number
+  
+  101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Number`.
+  
+  `DT` tokens har följande värden av `Number`:
+  - `Plur,Sing` (1170; 1% av icke-tomma `Number`)
+  
+  - `Plur` (17483; 17% av icke-tomma `Number`)
+  
+  - `Sing` (82978; 82% av icke-tomma `Number`)
   
   
   ### Ordklass: **HA**
@@ -1549,12 +1358,46 @@
   De 5 flest frekventa `HA` tokens: `när`, `hur`, `där`, `När`, `som`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  HA not present among features
+  
   ### Ordklass: **HD**
   Det finns 1407 (0%) `HD` tokens. Av 25 observerade ordklasser, `HD`:s rank är: 23 i antalet tokens.
   
   De 2 flest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
   
   De 5 flest frekventa `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### HD och Definite
+  
+  1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HD` tokens har följande värden av `Definite`:
+  - `Ind` (1407; 100% av icke-tomma `Definite`)
+  
+  ##### HD och Gender
+  
+  1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `HD` tokens har följande värden av `Gender`:
+  - `Neut` (164; 12% av icke-tomma `Gender`)
+  
+  - `Com` (420; 30% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (823; 58% av icke-tomma `Gender`)
+  
+  ##### HD och Number
+  
+  1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Number`.
+  
+  `HD` tokens har följande värden av `Number`:
+  - `Sing` (584; 42% av icke-tomma `Number`)
+  
+  - `Plur` (823; 58% av icke-tomma `Number`)
   
   
   ### Ordklass: **HP**
@@ -1565,12 +1408,52 @@
   De 5 flest frekventa `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### HP och Definite
+  
+  44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HP` tokens har följande värden av `Definite`:
+  - `Ind` (4463; 100% av icke-tomma `Definite`)
+  
+  ##### HP och Gender
+  
+  44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `HP` tokens har följande värden av `Gender`:
+  - `Com,Neut` (205; 5% av icke-tomma `Gender`)
+  
+  - `Com` (262; 6% av icke-tomma `Gender`)
+  
+  - `Neut` (3996; 90% av icke-tomma `Gender`)
+  
+  ##### HP och Number
+  
+  44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Number`.
+  
+  `HP` tokens har följande värden av `Number`:
+  - `Plur` (205; 5% av icke-tomma `Number`)
+  
+  - `Sing` (4258; 95% av icke-tomma `Number`)
+  
+  
   ### Ordklass: **HS**
   Det finns 186 (0%) `HS` tokens. Av 25 observerade ordklasser, `HS`:s rank är: 25 i antalet tokens.
   
   De 2 flest frekventa `HS` grundformer: `vars`, `vem`
   
   De 3 flest frekventa `HS` tokens: `vars`, `vilkas`, `vems`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### HS och Definite
+  
+  186 `HS` tokens (100% av alla `HS` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `HS` tokens har följande värden av `Definite`:
+  - `Def` (186; 100% av icke-tomma `Definite`)
   
   
   ### Ordklass: **IE**
@@ -1581,6 +1464,10 @@
   De 5 flest frekventa `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  IE not present among features
+  
   ### Ordklass: **IN**
   Det finns 840 (0%) `IN` tokens. Av 25 observerade ordklasser, `IN`:s rank är: 24 i antalet tokens.
   
@@ -1589,12 +1476,81 @@
   De 5 flest frekventa `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  IN not present among features
+  
   ### Ordklass: **JJ**
   Det finns 132552 (5%) `JJ` tokens. Av 25 observerade ordklasser, `JJ`:s rank är: 5 i antalet tokens.
   
   De 5 flest frekventa `JJ` grundformer: `ekonomisk`, `statlig`, `allmän`, `övrig`, `samtlig`
   
   De 5 flest frekventa `JJ` tokens: `ekonomiska`, `annan`, `allmänna`, `övriga`, `obligatorisk`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### JJ och Abbr
+  
+  132552 `JJ` tokens (0% av alla `JJ` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `JJ` tokens har följande värden av `Abbr`:
+  - `Yes` (12; 100% av icke-tomma `Abbr`)
+  
+  ##### JJ och Case
+  
+  132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Case`.
+  
+  `JJ` tokens har följande värden av `Case`:
+  - `Gen` (348; 0% av icke-tomma `Case`)
+  
+  - `Nom` (132190; 100% av icke-tomma `Case`)
+  
+  ##### JJ och Definite
+  
+  132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `JJ` tokens har följande värden av `Definite`:
+  - `Def` (19453; 15% av icke-tomma `Definite`)
+  
+  - `Ind` (54397; 41% av icke-tomma `Definite`)
+  
+  - `Def,Ind` (58679; 44% av icke-tomma `Definite`)
+  
+  ##### JJ och Degree
+  
+  132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Degree`.
+  
+  `JJ` tokens har följande värden av `Degree`:
+  - `Sup` (2742; 2% av icke-tomma `Degree`)
+  
+  - `Cmp` (10868; 8% av icke-tomma `Degree`)
+  
+  - `Pos` (118931; 90% av icke-tomma `Degree`)
+  
+  ##### JJ och Gender
+  
+  132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `JJ` tokens har följande värden av `Gender`:
+  - `Masc` (378; 0% av icke-tomma `Gender`)
+  
+  - `Neut` (17920; 14% av icke-tomma `Gender`)
+  
+  - `Com` (31973; 24% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (82269; 62% av icke-tomma `Gender`)
+  
+  ##### JJ och Number
+  
+  132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Number`.
+  
+  `JJ` tokens har följande värden av `Number`:
+  - `Plur,Sing` (16702; 13% av icke-tomma `Number`)
+  
+  - `Plur` (48694; 37% av icke-tomma `Number`)
+  
+  - `Sing` (67140; 51% av icke-tomma `Number`)
   
   
   ### Ordklass: **KN**
@@ -1605,17 +1561,35 @@
   De 5 flest frekventa `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### KN och Abbr
+  
+  117972 `KN` tokens (0% av alla `KN` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `KN` tokens har följande värden av `Abbr`:
+  - `Yes` (17; 100% av icke-tomma `Abbr`)
+  
+  
   ### Ordklass: **MAD**
   Det finns 131026 (5%) `MAD` tokens. Av 25 observerade ordklasser, `MAD`:s rank är: 6 i antalet tokens.
   
   De 5 flest frekventa `MAD` tokens: `.`, `:`, `!`, `?`, `–`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  MAD not present among features
+  
   ### Ordklass: **MID**
   Det finns 101646 (4%) `MID` tokens. Av 25 observerade ordklasser, `MID`:s rank är: 10 i antalet tokens.
   
   De 5 flest frekventa `MID` tokens: `,`, `/`, `:`, `-`, `–`
   
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  MID not present among features
   
   ### Ordklass: **NN**
   Det finns 736544 (25%) `NN` tokens. Av 25 observerade ordklasser, `NN`:s rank är: 1 i antalet tokens.
@@ -1625,11 +1599,68 @@
   De 5 flest frekventa `NN` tokens: `riksdagen`, `utgiftsområde`, `s`, `anslag`, `enlighet`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### NN och Abbr
+  
+  736544 `NN` tokens (5% av alla `NN` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `NN` tokens har följande värden av `Abbr`:
+  - `Yes` (35393; 100% av icke-tomma `Abbr`)
+  
+  ##### NN och Case
+  
+  736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Case`.
+  
+  `NN` tokens har följande värden av `Case`:
+  - `Gen` (33556; 5% av icke-tomma `Case`)
+  
+  - `Nom` (661878; 95% av icke-tomma `Case`)
+  
+  ##### NN och Compound
+  
+  736544 `NN` tokens (1% av alla `NN` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `NN` tokens har följande värden av `Compound`:
+  - `Yes` (4826; 100% av icke-tomma `Compound`)
+  
+  ##### NN och Definite
+  
+  736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `NN` tokens har följande värden av `Definite`:
+  - `Def` (246895; 36% av icke-tomma `Definite`)
+  
+  - `Ind` (447518; 64% av icke-tomma `Definite`)
+  
+  ##### NN och Gender
+  
+  736544 `NN` tokens (95% av alla `NN` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `NN` tokens har följande värden av `Gender`:
+  - `Neut` (234585; 34% av icke-tomma `Gender`)
+  
+  - `Com` (464205; 66% av icke-tomma `Gender`)
+  
+  ##### NN och Number
+  
+  736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Number`.
+  
+  `NN` tokens har följande värden av `Number`:
+  - `Plur` (188599; 27% av icke-tomma `Number`)
+  
+  - `Sing` (506306; 73% av icke-tomma `Number`)
+  
+  
   ### Ordklass: **PAD**
   Det finns 93999 (3%) `PAD` tokens. Av 25 observerade ordklasser, `PAD`:s rank är: 13 i antalet tokens.
   
   De 5 flest frekventa `PAD` tokens: `)`, `(`, `"`, `]`, `[`
   
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  PAD not present among features
   
   ### Ordklass: **PC**
   Det finns 47212 (2%) `PC` tokens. Av 25 observerade ordklasser, `PC`:s rank är: 15 i antalet tokens.
@@ -1637,6 +1668,69 @@
   De 5 flest frekventa `PC` grundformer: `särskilja`, `särskild`, `stärka`, `behandla`, `föreslå`
   
   De 5 flest frekventa `PC` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### PC och Case
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PC` tokens har följande värden av `Case`:
+  - `Gen` (30; 0% av icke-tomma `Case`)
+  
+  - `Nom` (47182; 100% av icke-tomma `Case`)
+  
+  ##### PC och Definite
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PC` tokens har följande värden av `Definite`:
+  - `Def` (2759; 6% av icke-tomma `Definite`)
+  
+  - `Ind` (15356; 33% av icke-tomma `Definite`)
+  
+  - `Def,Ind` (29097; 62% av icke-tomma `Definite`)
+  
+  ##### PC och Gender
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PC` tokens har följande värden av `Gender`:
+  - `Masc` (62; 0% av icke-tomma `Gender`)
+  
+  - `Neut` (5647; 12% av icke-tomma `Gender`)
+  
+  - `Com` (9709; 21% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (31794; 67% av icke-tomma `Gender`)
+  
+  ##### PC och Number
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PC` tokens har följande värden av `Number`:
+  - `Plur` (13587; 29% av icke-tomma `Number`)
+  
+  - `Plur,Sing` (15494; 33% av icke-tomma `Number`)
+  
+  - `Sing` (18131; 38% av icke-tomma `Number`)
+  
+  ##### PC och Tense
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Tense`.
+  
+  `PC` tokens har följande värden av `Tense`:
+  - `Pres` (15494; 33% av icke-tomma `Tense`)
+  
+  - `Past` (31718; 67% av icke-tomma `Tense`)
+  
+  ##### PC och VerbForm
+  
+  47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `VerbForm`.
+  
+  `PC` tokens har följande värden av `VerbForm`:
+  - `Part` (47212; 100% av icke-tomma `VerbForm`)
   
   
   ### Ordklass: **PL**
@@ -1647,12 +1741,35 @@
   De 5 flest frekventa `PL` tokens: `följande`, `särskilda`, `särskild`, `stärkt`, `Särskilda`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  PL not present among features
+  
   ### Ordklass: **PM**
   Det finns 106015 (4%) `PM` tokens. Av 25 observerade ordklasser, `PM`:s rank är: 9 i antalet tokens.
   
   De 5 flest frekventa `PM` grundformer: `Jonas`, `Fredrik`, `Stockholm`, `Roger`, `Ebba`
   
   De 5 flest frekventa `PM` tokens: `SD`, `KD`, `MP`, `Ebba`, `Erik`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### PM och Case
+  
+  106015 `PM` tokens (100% av alla `PM` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PM` tokens har följande värden av `Case`:
+  - `Gen` (3206; 3% av icke-tomma `Case`)
+  
+  - `Nom` (102800; 97% av icke-tomma `Case`)
+  
+  ##### PM och Compound
+  
+  106015 `PM` tokens (0% av alla `PM` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `PM` tokens har följande värden av `Compound`:
+  - `Yes` (10; 100% av icke-tomma `Compound`)
   
   
   ### Ordklass: **PN**
@@ -1663,12 +1780,69 @@
   De 5 flest frekventa `PN` tokens: `det`, `sig`, `detta`, `Det`, `de`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### PN och Case
+  
+  98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Case`.
+  
+  `PN` tokens har följande värden av `Case`:
+  - `Acc` (14305; 15% av icke-tomma `Case`)
+  
+  - `Nom` (27692; 28% av icke-tomma `Case`)
+  
+  - `Acc,Nom` (56044; 57% av icke-tomma `Case`)
+  
+  ##### PN och Definite
+  
+  98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PN` tokens har följande värden av `Definite`:
+  - `Ind` (11172; 11% av icke-tomma `Definite`)
+  
+  - `Def` (86869; 89% av icke-tomma `Definite`)
+  
+  ##### PN och Gender
+  
+  98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PN` tokens har följande värden av `Gender`:
+  - `Masc` (31; 0% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (19321; 20% av icke-tomma `Gender`)
+  
+  - `Com` (30928; 32% av icke-tomma `Gender`)
+  
+  - `Neut` (47761; 49% av icke-tomma `Gender`)
+  
+  ##### PN och Number
+  
+  98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PN` tokens har följande värden av `Number`:
+  - `Plur,Sing` (11049; 11% av icke-tomma `Number`)
+  
+  - `Plur` (21168; 22% av icke-tomma `Number`)
+  
+  - `Sing` (65824; 67% av icke-tomma `Number`)
+  
+  
   ### Ordklass: **PP**
   Det finns 358848 (12%) `PP` tokens. Av 25 observerade ordklasser, `PP`:s rank är: 3 i antalet tokens.
   
   De 5 flest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
   
   De 5 flest frekventa `PP` tokens: `i`, `för`, `av`, `till`, `om`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### PP och Abbr
+  
+  358848 `PP` tokens (0% av alla `PP` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `PP` tokens har följande värden av `Abbr`:
+  - `Yes` (5; 100% av icke-tomma `Abbr`)
   
   
   ### Ordklass: **PS**
@@ -1679,12 +1853,61 @@
   De 5 flest frekventa `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### PS och Definite
+  
+  9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `PS` tokens har följande värden av `Definite`:
+  - `Def` (9633; 100% av icke-tomma `Definite`)
+  
+  ##### PS och Gender
+  
+  9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `PS` tokens har följande värden av `Gender`:
+  - `Neut` (2345; 24% av icke-tomma `Gender`)
+  
+  - `Com,Neut` (3393; 35% av icke-tomma `Gender`)
+  
+  - `Com` (3895; 40% av icke-tomma `Gender`)
+  
+  ##### PS och Number
+  
+  9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Number`.
+  
+  `PS` tokens har följande värden av `Number`:
+  - `Plur,Sing` (1417; 15% av icke-tomma `Number`)
+  
+  - `Plur` (1976; 21% av icke-tomma `Number`)
+  
+  - `Sing` (6240; 65% av icke-tomma `Number`)
+  
+  
   ### Ordklass: **RG**
   Det finns 180321 (6%) `RG` tokens. Av 25 observerade ordklasser, `RG`:s rank är: 4 i antalet tokens.
   
   De 5 flest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
   
   De 5 flest frekventa `RG` tokens: `2018`, `2019`, `1`, `2`, `8`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### RG och Case
+  
+  180321 `RG` tokens (100% av alla `RG` tokens) har ett icke-tomt värde av `Case`.
+  
+  `RG` tokens har följande värden av `Case`:
+  - `Nom` (180310; 100% av icke-tomma `Case`)
+  
+  ##### RG och Compound
+  
+  180321 `RG` tokens (0% av alla `RG` tokens) har ett icke-tomt värde av `Compound`.
+  
+  `RG` tokens har följande värden av `Compound`:
+  - `Yes` (11; 100% av icke-tomma `Compound`)
   
   
   ### Ordklass: **RO**
@@ -1695,6 +1918,37 @@
   De 5 flest frekventa `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### RO och Case
+  
+  2897 `RO` tokens (100% av alla `RO` tokens) har ett icke-tomt värde av `Case`.
+  
+  `RO` tokens har följande värden av `Case`:
+  - `Nom` (2897; 100% av icke-tomma `Case`)
+  
+  ##### RO och Definite
+  
+  2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Definite`.
+  
+  `RO` tokens har följande värden av `Definite`:
+  - `Def,Ind` (5; 100% av icke-tomma `Definite`)
+  
+  ##### RO och Gender
+  
+  2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Gender`.
+  
+  `RO` tokens har följande värden av `Gender`:
+  - `Masc` (5; 100% av icke-tomma `Gender`)
+  
+  ##### RO och Number
+  
+  2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Number`.
+  
+  `RO` tokens har följande värden av `Number`:
+  - `Sing` (5; 100% av icke-tomma `Number`)
+  
+  
   ### Ordklass: **SN**
   Det finns 53560 (2%) `SN` tokens. Av 25 observerade ordklasser, `SN`:s rank är: 14 i antalet tokens.
   
@@ -1702,6 +1956,10 @@
   
   De 5 flest frekventa `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
   
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  SN not present among features
   
   ### Ordklass: **UO**
   Det finns 2274 (0%) `UO` tokens. Av 25 observerade ordklasser, `UO`:s rank är: 22 i antalet tokens.
@@ -1711,12 +1969,66 @@
   De 5 flest frekventa `UO` tokens: `et`, `na`, `örslag`, `S`, `kolverk`
   
   
+  #### Översikt av särdrag hos ordklasser
+  ---
+  UO not present among features
+  
   ### Ordklass: **VB**
   Det finns 380285 (13%) `VB` tokens. Av 25 observerade ordklasser, `VB`:s rank är: 2 i antalet tokens.
   
   De 5 flest frekventa `VB` grundformer: `vara`, `böra`, `föreslå`, `lägga`, `avstyrka`
   
   De 5 flest frekventa `VB` tokens: `är`, `bör`, `föreslår`, `avstyrker`, `anvisar`
+  
+  
+  #### Översikt av särdrag hos ordklasser
+  ---
+  ##### VB och Abbr
+  
+  380285 `VB` tokens (0% av alla `VB` tokens) har ett icke-tomt värde av `Abbr`.
+  
+  `VB` tokens har följande värden av `Abbr`:
+  - `Yes` (18; 100% av icke-tomma `Abbr`)
+  
+  ##### VB och Mood
+  
+  380285 `VB` tokens (64% av alla `VB` tokens) har ett icke-tomt värde av `Mood`.
+  
+  `VB` tokens har följande värden av `Mood`:
+  - `Sub` (161; 0% av icke-tomma `Mood`)
+  
+  - `Imp` (1616; 1% av icke-tomma `Mood`)
+  
+  - `Ind` (242835; 99% av icke-tomma `Mood`)
+  
+  ##### VB och Tense
+  
+  380285 `VB` tokens (64% av alla `VB` tokens) har ett icke-tomt värde av `Tense`.
+  
+  `VB` tokens har följande värden av `Tense`:
+  - `Past` (22610; 9% av icke-tomma `Tense`)
+  
+  - `Pres` (220310; 91% av icke-tomma `Tense`)
+  
+  ##### VB och VerbForm
+  
+  380285 `VB` tokens (100% av alla `VB` tokens) har ett icke-tomt värde av `VerbForm`.
+  
+  `VB` tokens har följande värden av `VerbForm`:
+  - `Sup` (20211; 5% av icke-tomma `VerbForm`)
+  
+  - `Inf` (115019; 30% av icke-tomma `VerbForm`)
+  
+  - `Fin` (245031; 64% av icke-tomma `VerbForm`)
+  
+  ##### VB och Voice
+  
+  380285 `VB` tokens (100% av alla `VB` tokens) har ett icke-tomt värde av `Voice`.
+  
+  `VB` tokens har följande värden av `Voice`:
+  - `Pass` (64399; 17% av icke-tomma `Voice`)
+  
+  - `Act` (315858; 83% av icke-tomma `Voice`)
   
   
   '''

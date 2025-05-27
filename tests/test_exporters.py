@@ -56,6 +56,7 @@ def test_write_pos_tags(
     freqs: dict[str, dict[str, dict[str, int]]],
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
+    ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
 ) -> None:
     data = io.StringIO()
 
@@ -64,6 +65,7 @@ def test_write_pos_tags(
         token_freqs=freqs["segment.token"],
         pos_token_freqs=pos_token_freqs,
         pos_lemma_freqs_flat=pos_lemma_freqs_flat,
+        feat_pos_freqs_flat=ufeat_pos_freqs_flat,
         lang=lang,
     )
 
@@ -101,9 +103,7 @@ def test_write_readability(
 
 
 @pytest.mark.parametrize("lang", ("en", "sv"))
-def test_write_morphology(
-    lang: str, snapshot: SnapshotAssertion, freqs: dict[str, dict[str, dict[str, int]]]
-) -> None:
+def test_write_morphology(lang: str, snapshot: SnapshotAssertion, freqs: dict[str, dict[str, dict[str, int]]]) -> None:
     data = io.StringIO()
 
     exporters._write_morphology(data, token_freqs=freqs["segment.token"], lang=lang)

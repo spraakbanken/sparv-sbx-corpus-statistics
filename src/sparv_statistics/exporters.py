@@ -565,6 +565,7 @@ def write_all_stats(
 
 STATS_TEMPLATE: dict[str, dict[str, str]] = {
     "en": {
+        "and": "and",
         "count": "number of",
         "dokument": "documents",
         "dokument length (characters)": "document length, in characters",
@@ -594,6 +595,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_subheader": "### POS Tags: **{pos_tag}**\n",
         "POS_top_lemmas": "The {number} most frequent `{pos_tag}` base forms: {top_lemmas}\n",
         "POS_top_tokens": "The {number} most frequent `{pos_tag}` tokens: {top_tokens}\n",
+        "pos_feature_overview": "Overview of features for POS tags\n",
+        "pos_feature_text": "---\n",
         "readability_header": "## Readability\n",
         "readability_scores": "This corpus has the following readability scores:\n",
         "readability_value_row": "- mean value for **{score}** is {mean:.2f} and standard deviation is {std:.2f}\n",
@@ -619,6 +622,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "value": "value",
     },
     "sv": {
+        "and": "och",
         "count": "antal",
         "dokument length (characters)": "dokumentlängd, i tecken",
         "features_diff_values": " Den förekommer med {num_diff_values} olika värden: ",
@@ -647,6 +651,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_subheader": "### Ordklass: **{pos_tag}**\n",
         "POS_top_lemmas": "De {number} flest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
         "POS_top_tokens": "De {number} flest frekventa `{pos_tag}` tokens: {top_tokens}\n",
+        "pos_feature_overview": "Översikt av särdrag hos ordklasser\n",
+        "pos_feature_text": "---\n",
         "readability_header": "## Läsbarhet\n",
         "readability_scores": "Denna korpus har följande läsbarhetsindex:\n",
         "readability_value_row": "- medelvärdet för **{score}** är {mean:.2f} och standardavikelsen är {std:.2f}\n",
@@ -720,6 +726,7 @@ def write_stat_highlights(
             token_freqs=freqs["segment.token"],
             pos_token_freqs=pos_token_freqs,
             pos_lemma_freqs_flat=pos_lemma_freqs_flat,
+            feat_pos_freqs_flat=pos_ufeats_freqs_flat,
             lang=lang,
         )
         fp.write("\n")
@@ -830,6 +837,7 @@ def _write_pos_tags(
     token_freqs: dict[str, dict[str, int]],
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
+    feat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
 ) -> None:
     logger.debug("token_freqs=%s", token_freqs)
@@ -849,6 +857,7 @@ def _write_pos_tags(
         return
 
     pos_stats = PosStats(pos_freqs)
+    pos_feature_stats = PosFeatureStats(feat_pos_freqs_flat)
     fp.write(" - ".join(pos_stats.tags))
     fp.write("\n")
     for pos_tag in pos_stats.tags:
@@ -859,9 +868,13 @@ def _write_pos_tags(
             pos_stats=pos_stats,
             pos_token_freqs=pos_token_freqs,
             pos_lemma_freqs_flat=pos_lemma_freqs_flat,
+            pos_feature_stats=pos_feature_stats,
             lang=lang,
         )
-        # fp.write("\n")
+        fp.write("\n")
+        _write_pos_feature_overview(
+            fp, pos_tag=pos_tag, pos_stats=pos_stats, pos_feature_stats=pos_feature_stats, lang=lang
+        )
 
 
 FEATURE_DESCRIPTION: dict[str, dict[str, str]] = {
@@ -995,24 +1008,24 @@ def _write_features(
                 )
             )
         fp.write("\n")
-        for pos, freqs, perc in pos_tags:
-            fp.write(f"#### {pos}\n\n")
+        # for pos, freqs, perc in pos_tags:
+        #     fp.write(f"#### {pos}\n\n")
 
-            fp.write(
-                STATS_TEMPLATE[lang]["features_pos_feat"].format(
-                    freqs=freqs,
-                    pos=pos,
-                    freq_percent=freqs / pos_freqs[pos] * 100.0,
-                    feat=feat,
-                )
-            )
-            fp.write("\n")
-            fp.write(STATS_TEMPLATE[lang]["features_pos_values"].format(pos=pos, feat=feat))
-            for value, count in pos_value_freqs[pos].items():
-                fp.write(
-                    f"- `{value}` ({count}; {count / feat_token * 100:.0f}% {STATS_TEMPLATE[lang]['of non-empty']} `{feat}`)\n"
-                )
-            fp.write("\n")
+        #     fp.write(
+        #         STATS_TEMPLATE[lang]["features_pos_feat"].format(
+        #             freqs=freqs,
+        #             pos=pos,
+        #             freq_percent=freqs / pos_freqs[pos] * 100.0,
+        #             feat=feat,
+        #         )
+        #     )
+        #     fp.write("\n")
+        #     fp.write(STATS_TEMPLATE[lang]["features_pos_values"].format(pos=pos, feat=feat))
+        #     for value, count in pos_value_freqs[pos].items():
+        #         fp.write(
+        #             f"- `{value}` ({count}; {count / feat_token * 100:.0f}% {STATS_TEMPLATE[lang]['of non-empty']} `{feat}`)\n"
+        #         )
+        #     fp.write("\n")
         fp.write("\n\n")
 
 
@@ -1036,12 +1049,30 @@ class PosStats:
         raise KeyError(f"Unknown tag '{tag}'")
 
 
+class PosFeatureStats:
+    """POS stats divided per feature."""
+
+    def __init__(self, feat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]]) -> None:  # noqa: D107
+        pos_feat_stats: dict[str, dict[str, dict[str, int]]] = {}
+        for feat, feat_values in feat_pos_freqs_flat.items():
+            for feat_value, pos_values in feat_values.items():
+                for pos, pos_feat_value in pos_values.items():
+                    pos_feat_stats_ = pos_feat_stats.get(pos, {})
+                    feat_stats_ = pos_feat_stats_.get(feat, {})
+                    feat_stats_[feat_value] = pos_feat_value
+                    pos_feat_stats_[feat] = feat_stats_
+                    pos_feat_stats[pos] = pos_feat_stats_
+        self.stats = pos_feat_stats
+        logger.debug("pos_feature_stats=%s", self.stats)
+
+
 def _write_pos_tag(
     fp: TextIO,
     pos_tag: str,
     pos_stats: PosStats,
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
+    pos_feature_stats: PosFeatureStats,
     lang: str,
 ) -> None:
     # fp.write(f"### POS Tags: **{pos_tag}**\n")
@@ -1093,6 +1124,46 @@ def _write_pos_tag(
             )
         )
         fp.write("\n")
+
+
+def _write_pos_feature_overview(
+    fp: TextIO, pos_tag: str, pos_stats: PosStats, pos_feature_stats: PosFeatureStats, lang: str
+) -> None:
+    fp.write("#### ")
+    fp.write(STATS_TEMPLATE[lang]["pos_feature_overview"])
+
+    fp.write(STATS_TEMPLATE[lang]["pos_feature_text"])
+
+    # pos_freqs = defaultdict(int)
+    # for feat, feat_values in pos_feature_stats.stats[pos_tag].items():
+    #     for values_pos_freq in ufeat_pos_freqs_flat.values():
+    #         for pos_freq in values_pos_freq.values():
+    #             for pos, freq in pos_freq.items():
+    #                 pos_freqs[pos] += freq
+    if pos_tag not in pos_feature_stats.stats:
+        fp.write(f"{pos_tag} not present among features\n")
+        return
+    for feat, feat_values in sorted(pos_feature_stats.stats[pos_tag].items()):
+        logger.debug("feat=%s, feat_values=%s", feat, feat_values)
+        freqs = sum(feat_values.values())
+        fp.write(f"##### {pos_tag} {STATS_TEMPLATE[lang]['and']} {feat}\n")
+        fp.write("\n")
+        fp.write(
+            STATS_TEMPLATE[lang]["features_pos_feat"].format(
+                freqs=pos_stats.freqs[pos_tag],
+                pos=pos_tag,
+                freq_percent=freqs / pos_stats.freqs[pos_tag] * 100.0,
+                feat=feat,
+            )
+        )
+        fp.write("\n")
+        fp.write(STATS_TEMPLATE[lang]["features_pos_values"].format(pos=pos_tag, feat=feat))
+        feat_token = sum(feat_values.values())
+        for feat_category, feat_value in sorted(feat_values.items(), key=lambda item: item[1]):
+            fp.write(
+                f"- `{feat_category}` ({feat_value}; {feat_value / feat_token * 100:.0f}% {STATS_TEMPLATE[lang]['of non-empty']} `{feat}`)\n"
+            )
+            fp.write("\n")
 
 
 def _write_tokenization_and_word_segmentation(
