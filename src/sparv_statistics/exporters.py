@@ -649,8 +649,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_header": "## Ordklasser\n",
         "POS_no_lemmas": "Innhåller inga grundformer med `{pos_tag}`.\n",
         "POS_subheader": "### Ordklass: **{pos_tag}**\n",
-        "POS_top_lemmas": "De {number} flest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
-        "POS_top_tokens": "De {number} flest frekventa `{pos_tag}` tokens: {top_tokens}\n",
+        "POS_top_lemmas": "De {number} mest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
+        "POS_top_tokens": "De {number} mest frekventa `{pos_tag}` tokens: {top_tokens}\n",
         "pos_feature_overview": "Översikt av särdrag hos ordklasser\n",
         "pos_feature_text": "---\n",
         "readability_header": "## Läsbarhet\n",
@@ -1030,7 +1030,9 @@ def _write_features(
 
 
 class PosStats:
-    def __init__(self, pos_freqs: dict[str, int]) -> None:
+    """Statistics of POS."""
+
+    def __init__(self, pos_freqs: dict[str, int]) -> None:  # noqa: D107
         self.freqs = pos_freqs
         self.tags = sorted(pos_freqs.keys())
         sum_freqs = sum(pos_freqs.values())
