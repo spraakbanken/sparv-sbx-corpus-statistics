@@ -90,87 +90,87 @@
 # ---
 # name: test_write_features[sv]
   '''
-  ## Egenskaper
+  ## Särdrag
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
-  ### Egenskap: **Abbr**
+  ### Särdrag: **Abbr**
   Denna egenskap är universell. Den förekommer med 1 olika värden: `Yes`.
   
-  57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Denna egenskap är använt tillsammans med 6 POS (part-of-speech) taggar: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
+  57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
   
   
   
-  ### Egenskap: **Case**
+  ### Särdrag: **Case**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
   
-  1262438 tokens (44%) har ett icke-tomt värde av `Case`. Denna egenskap är använt tillsammans med 7 POS (part-of-speech) taggar: `NN` (695434; 24% instanser), `RG` (180310; 6% instanser), `JJ` (132538; 5% instanser), `PM` (106006; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `RO` (2897; 0% instanser)
+  1262438 tokens (44%) har ett icke-tomt värde av `Case`. Detta särdrag är använt tillsammans med 7 ordklasser: `NN` (695434; 24% instanser), `RG` (180310; 6% instanser), `JJ` (132538; 5% instanser), `PM` (106006; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `RO` (2897; 0% instanser)
    56044 tokens (4%) har multipla värden av `Case`.
   
   
   
-  ### Egenskap: **Compound**
+  ### Särdrag: **Compound**
    Den förekommer med 1 olika värden: `Yes`.
   
-  4847 tokens (0%) har ett icke-tomt värde av `Compound`. Denna egenskap är använt tillsammans med 3 POS (part-of-speech) taggar: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
+  4847 tokens (0%) har ett icke-tomt värde av `Compound`. Detta särdrag är använt tillsammans med 3 ordklasser: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
   
   
   
-  ### Egenskap: **Definite**
+  ### Särdrag: **Definite**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Def`, `Ind`.
   
-  1089520 tokens (38%) har ett icke-tomt värde av `Definite`. Denna egenskap är använt tillsammans med 10 POS (part-of-speech) taggar: `NN` (694413; 24% instanser), `JJ` (132529; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `HS` (186; 0% instanser), `RO` (5; 0% instanser)
+  1089520 tokens (38%) har ett icke-tomt värde av `Definite`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (694413; 24% instanser), `JJ` (132529; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `HS` (186; 0% instanser), `RO` (5; 0% instanser)
    90435 tokens (8%) har multipla värden av `Definite`.
   
   
   
-  ### Egenskap: **Degree**
+  ### Särdrag: **Degree**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
   
-  160898 tokens (6%) har ett icke-tomt värde av `Degree`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `JJ` (132541; 5% instanser), `AB` (28357; 1% instanser)
+  160898 tokens (6%) har ett icke-tomt värde av `Degree`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132541; 5% instanser), `AB` (28357; 1% instanser)
   
   
   
-  ### Egenskap: **Gender**
+  ### Särdrag: **Gender**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
   
-  1093722 tokens (38%) har ett icke-tomt värde av `Gender`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (698790; 24% instanser), `JJ` (132540; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
+  1093722 tokens (38%) har ett icke-tomt värde av `Gender`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698790; 24% instanser), `JJ` (132540; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    157296 tokens (14%) har multipla värden av `Gender`.
   
   
   
-  ### Egenskap: **Mood**
+  ### Särdrag: **Mood**
   Denna egenskap är universell. Den förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
   
-  244612 tokens (8%) har ett icke-tomt värde av `Mood`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (244612; 8% instanser)
+  244612 tokens (8%) har ett icke-tomt värde av `Mood`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (244612; 8% instanser)
   
   
   
-  ### Egenskap: **Number**
+  ### Särdrag: **Number**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Plur`, `Sing`.
   
-  1089833 tokens (38%) har ett icke-tomt värde av `Number`. Denna egenskap är använt tillsammans med 9 POS (part-of-speech) taggar: `NN` (694905; 24% instanser), `JJ` (132536; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
+  1089833 tokens (38%) har ett icke-tomt värde av `Number`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (694905; 24% instanser), `JJ` (132536; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    45832 tokens (4%) har multipla värden av `Number`.
   
   
   
-  ### Egenskap: **Tense**
+  ### Särdrag: **Tense**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Past`, `Pres`.
   
-  290132 tokens (10%) har ett icke-tomt värde av `Tense`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (242920; 8% instanser), `PC` (47212; 2% instanser)
+  290132 tokens (10%) har ett icke-tomt värde av `Tense`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (242920; 8% instanser), `PC` (47212; 2% instanser)
   
   
   
-  ### Egenskap: **VerbForm**
+  ### Särdrag: **VerbForm**
   Denna egenskap är universell men `Stem` värden är språkspecifika. Den förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
   
-  427473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Denna egenskap är använt tillsammans med 2 POS (part-of-speech) taggar: `VB` (380261; 13% instanser), `PC` (47212; 2% instanser)
+  427473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (380261; 13% instanser), `PC` (47212; 2% instanser)
   
   
   
-  ### Egenskap: **Voice**
+  ### Särdrag: **Voice**
   Denna egenskap är universell. Den förekommer med 2 olika värden: `Act`, `Pass`.
   
-  380257 tokens (13%) har ett icke-tomt värde av `Voice`. Denna egenskap är använt tillsammans med 1 POS (part-of-speech) taggar: `VB` (380257; 13% instanser)
+  380257 tokens (13%) har ett icke-tomt värde av `Voice`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380257; 13% instanser)
   
   
   

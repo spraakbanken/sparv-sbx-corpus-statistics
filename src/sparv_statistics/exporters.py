@@ -626,12 +626,12 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "count": "antal",
         "dokument length (characters)": "dokumentlängd, i tecken",
         "features_diff_values": " Den förekommer med {num_diff_values} olika värden: ",
-        "features_header": "## Egenskaper\n",
+        "features_header": "## Särdrag\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av `{feat}`.\n",  # noqa: E501
-        "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Denna egenskap är använt tillsammans med {num_pos_tags} POS (part-of-speech) taggar: {pos_tags}\n",  # noqa: E501
+        "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser: {pos_tags}\n",  # noqa: E501
         "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent:.0f}% av alla `{pos}` tokens) har ett icke-tomt värde av `{feat}`.\n",  # noqa: E501
         "features_pos_values": "`{pos}` tokens har följande värden av `{feat}`:\n",
-        "features_subheader": "### Egenskap: **{feat}**\n",
+        "features_subheader": "### Särdrag: **{feat}**\n",
         "file": "filer",
         "file length (characters)": "fillängd, i tecken",
         "header": "# Korpusstatistik för {corpus_id}\n",
