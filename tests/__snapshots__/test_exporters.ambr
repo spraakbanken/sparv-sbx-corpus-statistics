@@ -183,33 +183,6 @@
   
   ### Morphosyntactic descriptors (MSD)
   
-  Top-level MSD | Frequency | Percent
-  --- | --- | ---
-  AB | 121224 | 4.18%
-  DT | 101631 | 3.51%
-  HA | 13218 | 0.46%
-  HD | 1407 | 0.05%
-  HP | 44722 | 1.54%
-  HS | 186 | 0.01%
-  IE | 45393 | 1.57%
-  IN | 840 | 0.03%
-  JJ | 132552 | 4.58%
-  KN | 117972 | 4.07%
-  MAD | 131026 | 4.52%
-  MID | 101646 | 3.51%
-  NN | 736544 | 25.42%
-  PAD | 93999 | 3.24%
-  PC | 47212 | 1.63%
-  PL | 15486 | 0.53%
-  PM | 106015 | 3.66%
-  PN | 98041 | 3.38%
-  PP | 358848 | 12.39%
-  PS | 9633 | 0.33%
-  RG | 180321 | 6.22%
-  RO | 2897 | 0.10%
-  SN | 53560 | 1.85%
-  UO | 2274 | 0.08%
-  VB | 380285 | 13.13%
   
   
   MSD | Frequency | Percent
@@ -347,33 +320,6 @@
   
   ### Morfo-syntaktisk deskriptorer (MSD)
   
-  Topp-nivå MSD | Frequency | Percent
-  --- | --- | ---
-  AB | 121224 | 4.18%
-  DT | 101631 | 3.51%
-  HA | 13218 | 0.46%
-  HD | 1407 | 0.05%
-  HP | 44722 | 1.54%
-  HS | 186 | 0.01%
-  IE | 45393 | 1.57%
-  IN | 840 | 0.03%
-  JJ | 132552 | 4.58%
-  KN | 117972 | 4.07%
-  MAD | 131026 | 4.52%
-  MID | 101646 | 3.51%
-  NN | 736544 | 25.42%
-  PAD | 93999 | 3.24%
-  PC | 47212 | 1.63%
-  PL | 15486 | 0.53%
-  PM | 106015 | 3.66%
-  PN | 98041 | 3.38%
-  PP | 358848 | 12.39%
-  PS | 9633 | 0.33%
-  RG | 180321 | 6.22%
-  RO | 2897 | 0.10%
-  SN | 53560 | 1.85%
-  UO | 2274 | 0.08%
-  VB | 380285 | 13.13%
   
   
   MSD | Frequency | Percent
@@ -510,6 +456,37 @@
   ## POS Tags
   
   AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+  
+  ### Distribution of POS-tags
+  
+  Part-Of-Speech | Frequency | Percent(%)
+  --- | --- | ---
+  NN | 736544 | 25.42%
+  VB | 380285 | 13.13%
+  PP | 358848 | 12.39%
+  RG | 180321 | 6.22%
+  JJ | 132552 | 4.58%
+  MAD | 131026 | 4.52%
+  AB | 121224 | 4.18%
+  KN | 117972 | 4.07%
+  PM | 106015 | 3.66%
+  MID | 101646 | 3.51%
+  DT | 101631 | 3.51%
+  PN | 98041 | 3.38%
+  PAD | 93999 | 3.24%
+  SN | 53560 | 1.85%
+  PC | 47212 | 1.63%
+  IE | 45393 | 1.57%
+  HP | 44722 | 1.54%
+  PL | 15486 | 0.53%
+  HA | 13218 | 0.46%
+  PS | 9633 | 0.33%
+  RO | 2897 | 0.10%
+  UO | 2274 | 0.08%
+  HD | 1407 | 0.05%
+  IN | 840 | 0.03%
+  HS | 186 | 0.01%
+  
   
   ### POS Tags: **AB**
   There are 121224 (4%) `AB` tokens. Out of 25 observed tags, the rank of `AB` is: 7 in number of tokens.
@@ -1274,6 +1251,37 @@
   ## Ordklasser
   
   AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+  
+  ### Fördelning av ordklasser
+  
+  Ordklass | Antal | Andel(%)
+  --- | --- | ---
+  NN | 736544 | 25.42%
+  VB | 380285 | 13.13%
+  PP | 358848 | 12.39%
+  RG | 180321 | 6.22%
+  JJ | 132552 | 4.58%
+  MAD | 131026 | 4.52%
+  AB | 121224 | 4.18%
+  KN | 117972 | 4.07%
+  PM | 106015 | 3.66%
+  MID | 101646 | 3.51%
+  DT | 101631 | 3.51%
+  PN | 98041 | 3.38%
+  PAD | 93999 | 3.24%
+  SN | 53560 | 1.85%
+  PC | 47212 | 1.63%
+  IE | 45393 | 1.57%
+  HP | 44722 | 1.54%
+  PL | 15486 | 0.53%
+  HA | 13218 | 0.46%
+  PS | 9633 | 0.33%
+  RO | 2897 | 0.10%
+  UO | 2274 | 0.08%
+  HD | 1407 | 0.05%
+  IN | 840 | 0.03%
+  HS | 186 | 0.01%
+  
   
   ### Ordklass: **AB**
   Det finns 121224 (4%) `AB` tokens. Av 25 observerade ordklasser, `AB`:s rank är: 7 i antalet tokens.

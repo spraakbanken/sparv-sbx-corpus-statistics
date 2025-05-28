@@ -585,7 +585,6 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "morphology_header": "## Morphology\n",
         "morphology_msd_header": "### Morphosyntactic descriptors (MSD)\n",
         "morphology_msd_table_header": "MSD | Frequency | Percent\n",
-        "morphology_msd_top_table_header": "Top-level MSD | Frequency | Percent\n",
         "morphology_no_msd": "This corpus does not contain any morphosyntactic descriptors.\n",
         "no POS": "Found no POS tags.\n",
         "of non-empty": "of non-empty",
@@ -595,6 +594,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_subheader": "### POS Tags: **{pos_tag}**\n",
         "POS_top_lemmas": "The {number} most frequent `{pos_tag}` base forms: {top_lemmas}\n",
         "POS_top_tokens": "The {number} most frequent `{pos_tag}` tokens: {top_tokens}\n",
+        "pos_distribution_header": "### Distribution of POS-tags\n",
+        "pos_distribution_table_header": "Part-Of-Speech | Frequency | Percent(%)\n",
         "pos_feature_overview": "Overview of features for POS tags\n",
         "pos_feature_text": "---\n",
         "readability_header": "## Readability\n",
@@ -641,7 +642,6 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "morphology_header": "## Morfologi\n",
         "morphology_msd_header": "### Morfo-syntaktisk deskriptorer (MSD)\n",
         "morphology_msd_table_header": "MSD | Frequency | Percent\n",
-        "morphology_msd_top_table_header": "Topp-nivå MSD | Frequency | Percent\n",
         "morphology_no_msd": "Denna korpus innehåller inga morfosyntaktiska deskriptorer.\n",
         "no POS": "Hittade inga ordklasser.\n",
         "of non-empty": "av icke-tomma",
@@ -651,6 +651,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_subheader": "### Ordklass: **{pos_tag}**\n",
         "POS_top_lemmas": "De {number} mest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
         "POS_top_tokens": "De {number} mest frekventa `{pos_tag}` tokens: {top_tokens}\n",
+        "pos_distribution_header": "### Fördelning av ordklasser\n",
+        "pos_distribution_table_header": "Ordklass | Antal | Andel(%)\n",
         "pos_feature_overview": "Översikt av särdrag hos ordklasser\n",
         "pos_feature_text": "---\n",
         "readability_header": "## Läsbarhet\n",
@@ -860,6 +862,9 @@ def _write_pos_tags(
     pos_feature_stats = PosFeatureStats(feat_pos_freqs_flat)
     fp.write(" - ".join(pos_stats.tags))
     fp.write("\n")
+    fp.write("\n")
+    _write_pos_distribution(fp, pos_stats=pos_stats, lang=lang)
+    fp.write("\n")
     for pos_tag in pos_stats.tags:
         fp.write("\n")
         _write_pos_tag(
@@ -992,8 +997,8 @@ class PosStats:
     def __init__(self, pos_freqs: dict[str, int]) -> None:  # noqa: D107
         self.freqs = pos_freqs
         self.tags = sorted(pos_freqs.keys())
-        sum_freqs = sum(pos_freqs.values())
-        self.stats = {tag: pos_freqs[tag] / sum_freqs * 100 for tag in self.tags}
+        self.sum_freqs = sum(pos_freqs.values())
+        self.stats = {tag: pos_freqs[tag] / self.sum_freqs * 100 for tag in self.tags}
         self.stats = dict(sorted(self.stats.items(), key=operator.itemgetter(1), reverse=True))
 
     @property
@@ -1023,6 +1028,18 @@ class PosFeatureStats:
                     pos_feat_stats[pos] = pos_feat_stats_
         self.stats = pos_feat_stats
         logger.debug("pos_feature_stats=%s", self.stats)
+
+
+def _write_pos_distribution(fp: TextIO, pos_stats: PosStats, lang: str) -> None:
+    fp.write(STATS_TEMPLATE[lang]["pos_distribution_header"])
+
+    fp.write("\n")
+    fp.write(STATS_TEMPLATE[lang]["pos_distribution_table_header"])
+    fp.write("--- | --- | ---\n")
+    fp.writelines(
+        f"{pos_tag} | {pos_stats.freqs[pos_tag]} | {pos_tag_percent:.2f}%\n"
+        for pos_tag, pos_tag_percent in pos_stats.stats.items()
+    )
 
 
 def _write_pos_tag(
@@ -1218,11 +1235,11 @@ def _write_msd(fp: TextIO, token_freqs: dict[str, dict[str, int]], lang: str) ->
     msds_sorted = sorted(msd_freqs.keys())
 
     # fp.write("Top-level MSD | Frequency | Percent\n")
-    fp.write(STATS_TEMPLATE[lang]["morphology_msd_top_table_header"])
-    fp.write("--- | --- | ---\n")
-    for msd in sorted(toplevel_freqs.keys()):
-        msd_percent = toplevel_freqs[msd] / num_toplevels * 100
-        fp.write(f"{msd} | {toplevel_freqs[msd]} | {msd_percent:.2f}%\n")
+    # fp.write(STATS_TEMPLATE[lang]["morphology_msd_top_table_header"])
+    # fp.write("--- | --- | ---\n")
+    # for msd in sorted(toplevel_freqs.keys()):
+    #     msd_percent = toplevel_freqs[msd] / num_toplevels * 100
+    #     fp.write(f"{msd} | {toplevel_freqs[msd]} | {msd_percent:.2f}%\n")
 
     fp.write("\n")
     fp.write("\n")
