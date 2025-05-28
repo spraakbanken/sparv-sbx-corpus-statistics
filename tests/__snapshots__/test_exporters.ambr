@@ -5,14 +5,14 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Features: **Abbr**
-  This feature is universal. It occurs with 1 different values: `Yes`.
+  `Abbr` occurs with 1 different values: `Yes`.
   
   57883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35393; 1% instances), `AB` (22438; 1% instances), `VB` (18; 0% instances), `KN` (17; 0% instances), `JJ` (12; 0% instances), `PP` (5; 0% instances)
   
   
   
   ### Features: **Case**
-  This feature is universal. It occurs with 3 different values: `Acc`, `Gen`, `Nom`.
+  `Case` occurs with 3 different values: `Acc`, `Gen`, `Nom`.
   
   1262438 tokens (44%) have a non-empty value of `Case`. The feature is used with 7 part-of-speech tags: `NN` (695434; 24% instances), `RG` (180310; 6% instances), `JJ` (132538; 5% instances), `PM` (106006; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `RO` (2897; 0% instances)
    56044 tokens (4%) have multiple values of `Case`.
@@ -20,14 +20,14 @@
   
   
   ### Features: **Compound**
-   It occurs with 1 different values: `Yes`.
+  `Compound` occurs with 1 different values: `Yes`.
   
   4847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4826; 0% instances), `RG` (11; 0% instances), `PM` (10; 0% instances)
   
   
   
   ### Features: **Definite**
-  This feature is universal. It occurs with 2 different values: `Def`, `Ind`.
+  `Definite` occurs with 2 different values: `Def`, `Ind`.
   
   1089520 tokens (38%) have a non-empty value of `Definite`. The feature is used with 10 part-of-speech tags: `NN` (694413; 24% instances), `JJ` (132529; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `HS` (186; 0% instances), `RO` (5; 0% instances)
    90435 tokens (8%) have multiple values of `Definite`.
@@ -35,14 +35,14 @@
   
   
   ### Features: **Degree**
-  This feature is universal. It occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
+  `Degree` occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
   
   160898 tokens (6%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132541; 5% instances), `AB` (28357; 1% instances)
   
   
   
   ### Features: **Gender**
-  This feature is universal. It occurs with 3 different values: `Com`, `Masc`, `Neut`.
+  `Gender` occurs with 3 different values: `Com`, `Masc`, `Neut`.
   
   1093722 tokens (38%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698790; 24% instances), `JJ` (132540; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
    157296 tokens (14%) have multiple values of `Gender`.
@@ -50,14 +50,14 @@
   
   
   ### Features: **Mood**
-  This feature is universal. It occurs with 3 different values: `Imp`, `Ind`, `Sub`.
+  `Mood` occurs with 3 different values: `Imp`, `Ind`, `Sub`.
   
   244612 tokens (8%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (244612; 8% instances)
   
   
   
   ### Features: **Number**
-  This feature is universal. It occurs with 2 different values: `Plur`, `Sing`.
+  `Number` occurs with 2 different values: `Plur`, `Sing`.
   
   1089833 tokens (38%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (694905; 24% instances), `JJ` (132536; 5% instances), `DT` (101631; 4% instances), `PN` (98041; 3% instances), `PC` (47212; 2% instances), `PS` (9633; 0% instances), `HP` (4463; 0% instances), `HD` (1407; 0% instances), `RO` (5; 0% instances)
    45832 tokens (4%) have multiple values of `Number`.
@@ -65,21 +65,21 @@
   
   
   ### Features: **Tense**
-  This feature is universal. It occurs with 2 different values: `Past`, `Pres`.
+  `Tense` occurs with 2 different values: `Past`, `Pres`.
   
   290132 tokens (10%) have a non-empty value of `Tense`. The feature is used with 2 part-of-speech tags: `VB` (242920; 8% instances), `PC` (47212; 2% instances)
   
   
   
   ### Features: **VerbForm**
-  This feature is universal but the values `Stem` are language-specific. It occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
+  `VerbForm` occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
   
   427473 tokens (15%) have a non-empty value of `VerbForm`. The feature is used with 2 part-of-speech tags: `VB` (380261; 13% instances), `PC` (47212; 2% instances)
   
   
   
   ### Features: **Voice**
-  This feature is universal. It occurs with 2 different values: `Act`, `Pass`.
+  `Voice` occurs with 2 different values: `Act`, `Pass`.
   
   380257 tokens (13%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380257; 13% instances)
   
@@ -94,14 +94,14 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Särdrag: **Abbr**
-  Denna egenskap är universell. Den förekommer med 1 olika värden: `Yes`.
+  `Abbr` förekommer med 1 olika värden: `Yes`.
   
   57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
   
   
   
   ### Särdrag: **Case**
-  Denna egenskap är universell. Den förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
+  `Case` förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
   
   1262438 tokens (44%) har ett icke-tomt värde av `Case`. Detta särdrag är använt tillsammans med 7 ordklasser: `NN` (695434; 24% instanser), `RG` (180310; 6% instanser), `JJ` (132538; 5% instanser), `PM` (106006; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `RO` (2897; 0% instanser)
    56044 tokens (4%) har multipla värden av `Case`.
@@ -109,14 +109,14 @@
   
   
   ### Särdrag: **Compound**
-   Den förekommer med 1 olika värden: `Yes`.
+  `Compound` förekommer med 1 olika värden: `Yes`.
   
   4847 tokens (0%) har ett icke-tomt värde av `Compound`. Detta särdrag är använt tillsammans med 3 ordklasser: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
   
   
   
   ### Särdrag: **Definite**
-  Denna egenskap är universell. Den förekommer med 2 olika värden: `Def`, `Ind`.
+  `Definite` förekommer med 2 olika värden: `Def`, `Ind`.
   
   1089520 tokens (38%) har ett icke-tomt värde av `Definite`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (694413; 24% instanser), `JJ` (132529; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `HS` (186; 0% instanser), `RO` (5; 0% instanser)
    90435 tokens (8%) har multipla värden av `Definite`.
@@ -124,14 +124,14 @@
   
   
   ### Särdrag: **Degree**
-  Denna egenskap är universell. Den förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
+  `Degree` förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
   
   160898 tokens (6%) har ett icke-tomt värde av `Degree`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132541; 5% instanser), `AB` (28357; 1% instanser)
   
   
   
   ### Särdrag: **Gender**
-  Denna egenskap är universell. Den förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
+  `Gender` förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
   
   1093722 tokens (38%) har ett icke-tomt värde av `Gender`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698790; 24% instanser), `JJ` (132540; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    157296 tokens (14%) har multipla värden av `Gender`.
@@ -139,14 +139,14 @@
   
   
   ### Särdrag: **Mood**
-  Denna egenskap är universell. Den förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
+  `Mood` förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
   
   244612 tokens (8%) har ett icke-tomt värde av `Mood`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (244612; 8% instanser)
   
   
   
   ### Särdrag: **Number**
-  Denna egenskap är universell. Den förekommer med 2 olika värden: `Plur`, `Sing`.
+  `Number` förekommer med 2 olika värden: `Plur`, `Sing`.
   
   1089833 tokens (38%) har ett icke-tomt värde av `Number`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (694905; 24% instanser), `JJ` (132536; 5% instanser), `DT` (101631; 4% instanser), `PN` (98041; 3% instanser), `PC` (47212; 2% instanser), `PS` (9633; 0% instanser), `HP` (4463; 0% instanser), `HD` (1407; 0% instanser), `RO` (5; 0% instanser)
    45832 tokens (4%) har multipla värden av `Number`.
@@ -154,21 +154,21 @@
   
   
   ### Särdrag: **Tense**
-  Denna egenskap är universell. Den förekommer med 2 olika värden: `Past`, `Pres`.
+  `Tense` förekommer med 2 olika värden: `Past`, `Pres`.
   
   290132 tokens (10%) har ett icke-tomt värde av `Tense`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (242920; 8% instanser), `PC` (47212; 2% instanser)
   
   
   
   ### Särdrag: **VerbForm**
-  Denna egenskap är universell men `Stem` värden är språkspecifika. Den förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
+  `VerbForm` förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
   
   427473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (380261; 13% instanser), `PC` (47212; 2% instanser)
   
   
   
   ### Särdrag: **Voice**
-  Denna egenskap är universell. Den förekommer med 2 olika värden: `Act`, `Pass`.
+  `Voice` förekommer med 2 olika värden: `Act`, `Pass`.
   
   380257 tokens (13%) har ett icke-tomt värde av `Voice`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380257; 13% instanser)
   

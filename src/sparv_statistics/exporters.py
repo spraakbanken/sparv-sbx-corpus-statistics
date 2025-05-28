@@ -569,7 +569,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "count": "number of",
         "dokument": "documents",
         "dokument length (characters)": "document length, in characters",
-        "features_diff_values": " It occurs with {num_diff_values} different values: ",
+        "features_diff_values": "`{feat}` occurs with {num_diff_values} different values: ",
         "features_header": "## Features\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) have multiple values of `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) have a non-empty value of `{feat}`. The feature is used with {num_pos_tags} part-of-speech tags: {pos_tags}\n",  # noqa: E501
@@ -625,7 +625,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "and": "och",
         "count": "antal",
         "dokument length (characters)": "dokumentlängd, i tecken",
-        "features_diff_values": " Den förekommer med {num_diff_values} olika värden: ",
+        "features_diff_values": "`{feat}` förekommer med {num_diff_values} olika värden: ",
         "features_header": "## Särdrag\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser: {pos_tags}\n",  # noqa: E501
@@ -877,48 +877,6 @@ def _write_pos_tags(
         )
 
 
-FEATURE_DESCRIPTION: dict[str, dict[str, str]] = {
-    "en": {
-        "Abbr": "This feature is universal.",
-        "Case": "This feature is universal.",
-        "Compound": "",
-        "Definite": "This feature is universal.",
-        "Degree": "This feature is universal.",
-        "Foreign": "This feature is universal.",
-        "Gender": "This feature is universal.",
-        "Mood": "This feature is universal.",
-        "Number": "This feature is universal.",
-        "NumType": "This feature is universal.",
-        "Polarity": "This feature is universal.",
-        "Poss": "This feature is universal.",
-        "PronType": "This feature is universal.",
-        "Tense": "This feature is universal.",
-        "Typo": "This feature is language-specific.",
-        "VerbForm": "This feature is universal but the values `Stem` are language-specific.",
-        "Voice": "This feature is universal.",
-    },
-    "sv": {
-        "Abbr": "Denna egenskap är universell.",
-        "Case": "Denna egenskap är universell.",
-        "Compound": "",
-        "Definite": "Denna egenskap är universell.",
-        "Degree": "Denna egenskap är universell.",
-        "Foreign": "Denna egenskap är universell.",
-        "Gender": "Denna egenskap är universell.",
-        "Mood": "Denna egenskap är universell.",
-        "Number": "Denna egenskap är universell.",
-        "NumType": "Denna egenskap är universell.",
-        "Polarity": "Denna egenskap är universell.",
-        "Poss": "Denna egenskap är universell.",
-        "PronType": "Denna egenskap är universell.",
-        "Tense": "Denna egenskap är universell.",
-        "Typo": "Denna egenskap är språkspecifik.",
-        "VerbForm": "Denna egenskap är universell men `Stem` värden är språkspecifika.",
-        "Voice": "Denna egenskap är universell.",
-    },
-}
-
-
 def _write_features(
     fp: TextIO,
     token_freqs: dict[str, dict[str, int]],
@@ -954,13 +912,12 @@ def _write_features(
         logger.debug("writing ### Features: %s", feat)
         # fp.write(f"### Features: **{feat}**\n")
         fp.write(STATS_TEMPLATE[lang]["features_subheader"].format(feat=feat))
-        fp.write(FEATURE_DESCRIPTION[lang][feat])
         feat_values = set()
         for values in features[feat]:
             feat_values.update(f"`{value}`" for value in values.split(","))
 
         # fp.write(f" It occurs with {len(feat_values)} different values: ")
-        fp.write(STATS_TEMPLATE[lang]["features_diff_values"].format(num_diff_values=len(feat_values)))
+        fp.write(STATS_TEMPLATE[lang]["features_diff_values"].format(feat=feat, num_diff_values=len(feat_values)))
         fp.write(", ".join(sorted(feat_values)))
         fp.write(".\n")
         fp.write("\n")
