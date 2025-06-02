@@ -83,25 +83,27 @@ De 5 mest frekventa `AB` grundformer: `m.fl.`, `inte`, `också`, `även`, `bl.a.
 De 5 mest frekventa `AB` tokens: `m.fl.`, `inte`, `också`, `även`, `bl.a.`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **AB**, särdrag
+
 ##### AB och Abbr
 
-121224 `AB` tokens (19% av alla `AB` tokens) har ett icke-tomt värde av `Abbr`.
+121224 `AB` tokens (19% av alla `AB` tokens) har `Abbr`.
 
 `AB` tokens har följande värden av `Abbr`:
-- `Yes` (22438; 100% av icke-tomma `Abbr`)
+
+- `Yes` (22438; 19%)
+- `<saknas>` (98786; 81%)
 
 ##### AB och Degree
 
-121224 `AB` tokens (23% av alla `AB` tokens) har ett icke-tomt värde av `Degree`.
+121224 `AB` tokens (23% av alla `AB` tokens) har `Degree`.
 
 `AB` tokens har följande värden av `Degree`:
-- `Sup` (3890; 14% av icke-tomma `Degree`)
 
-- `Cmp` (8987; 32% av icke-tomma `Degree`)
-
-- `Pos` (15480; 55% av icke-tomma `Degree`)
+- `Sup` (3890; 3%)
+- `Cmp` (8987; 7%)
+- `Pos` (15480; 13%)
+- `<saknas>` (92867; 77%)
 
 
 ### Ordklass: **DT**
@@ -112,42 +114,41 @@ De 5 mest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
 De 5 mest frekventa `DT` tokens: `en`, `ett`, `den`, `de`, `det`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **DT**, särdrag
+
 ##### DT och Definite
 
-101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Definite`.
+101631 `DT` tokens (100% av alla `DT` tokens) har `Definite`.
 
 `DT` tokens har följande värden av `Definite`:
-- `Def,Ind` (2654; 3% av icke-tomma `Definite`)
 
-- `Def` (41722; 41% av icke-tomma `Definite`)
-
-- `Ind` (57255; 56% av icke-tomma `Definite`)
+- `Def,Ind` (2654; 3%)
+- `Def` (41722; 41%)
+- `Ind` (57255; 56%)
+- `<saknas>` (0; 0%)
 
 ##### DT och Gender
 
-101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Gender`.
+101631 `DT` tokens (100% av alla `DT` tokens) har `Gender`.
 
 `DT` tokens har följande värden av `Gender`:
-- `Masc` (1; 0% av icke-tomma `Gender`)
 
-- `Com,Neut` (19491; 19% av icke-tomma `Gender`)
-
-- `Neut` (29637; 29% av icke-tomma `Gender`)
-
-- `Com` (52502; 52% av icke-tomma `Gender`)
+- `Masc` (1; 0%)
+- `Com,Neut` (19491; 19%)
+- `Neut` (29637; 29%)
+- `Com` (52502; 52%)
+- `<saknas>` (0; 0%)
 
 ##### DT och Number
 
-101631 `DT` tokens (100% av alla `DT` tokens) har ett icke-tomt värde av `Number`.
+101631 `DT` tokens (100% av alla `DT` tokens) har `Number`.
 
 `DT` tokens har följande värden av `Number`:
-- `Plur,Sing` (1170; 1% av icke-tomma `Number`)
 
-- `Plur` (17483; 17% av icke-tomma `Number`)
-
-- `Sing` (82978; 82% av icke-tomma `Number`)
+- `Plur,Sing` (1170; 1%)
+- `Plur` (17483; 17%)
+- `Sing` (82978; 82%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **HA**
@@ -158,8 +159,8 @@ De 5 mest frekventa `HA` grundformer: `när`, `hur`, `där`, `som`, `då`
 De 5 mest frekventa `HA` tokens: `när`, `hur`, `där`, `När`, `som`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **HA**, särdrag
+
 HA not present among features
 
 ### Ordklass: **HD**
@@ -170,34 +171,37 @@ De 2 mest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
 De 5 mest frekventa `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **HD**, särdrag
+
 ##### HD och Definite
 
-1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Definite`.
+1407 `HD` tokens (100% av alla `HD` tokens) har `Definite`.
 
 `HD` tokens har följande värden av `Definite`:
-- `Ind` (1407; 100% av icke-tomma `Definite`)
+
+- `Ind` (1407; 100%)
+- `<saknas>` (0; 0%)
 
 ##### HD och Gender
 
-1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Gender`.
+1407 `HD` tokens (100% av alla `HD` tokens) har `Gender`.
 
 `HD` tokens har följande värden av `Gender`:
-- `Neut` (164; 12% av icke-tomma `Gender`)
 
-- `Com` (420; 30% av icke-tomma `Gender`)
-
-- `Com,Neut` (823; 58% av icke-tomma `Gender`)
+- `Neut` (164; 12%)
+- `Com` (420; 30%)
+- `Com,Neut` (823; 58%)
+- `<saknas>` (0; 0%)
 
 ##### HD och Number
 
-1407 `HD` tokens (100% av alla `HD` tokens) har ett icke-tomt värde av `Number`.
+1407 `HD` tokens (100% av alla `HD` tokens) har `Number`.
 
 `HD` tokens har följande värden av `Number`:
-- `Sing` (584; 42% av icke-tomma `Number`)
 
-- `Plur` (823; 58% av icke-tomma `Number`)
+- `Sing` (584; 42%)
+- `Plur` (823; 58%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **HP**
@@ -208,34 +212,37 @@ De 5 mest frekventa `HP` grundformer: `vad`, `vad för`, `vem`, `vad än`, `vad 
 De 5 mest frekventa `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **HP**, särdrag
+
 ##### HP och Definite
 
-44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Definite`.
+44722 `HP` tokens (10% av alla `HP` tokens) har `Definite`.
 
 `HP` tokens har följande värden av `Definite`:
-- `Ind` (4463; 100% av icke-tomma `Definite`)
+
+- `Ind` (4463; 10%)
+- `<saknas>` (40259; 90%)
 
 ##### HP och Gender
 
-44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Gender`.
+44722 `HP` tokens (10% av alla `HP` tokens) har `Gender`.
 
 `HP` tokens har följande värden av `Gender`:
-- `Com,Neut` (205; 5% av icke-tomma `Gender`)
 
-- `Com` (262; 6% av icke-tomma `Gender`)
-
-- `Neut` (3996; 90% av icke-tomma `Gender`)
+- `Com,Neut` (205; 0%)
+- `Com` (262; 1%)
+- `Neut` (3996; 9%)
+- `<saknas>` (40259; 90%)
 
 ##### HP och Number
 
-44722 `HP` tokens (10% av alla `HP` tokens) har ett icke-tomt värde av `Number`.
+44722 `HP` tokens (10% av alla `HP` tokens) har `Number`.
 
 `HP` tokens har följande värden av `Number`:
-- `Plur` (205; 5% av icke-tomma `Number`)
 
-- `Sing` (4258; 95% av icke-tomma `Number`)
+- `Plur` (205; 0%)
+- `Sing` (4258; 10%)
+- `<saknas>` (40259; 90%)
 
 
 ### Ordklass: **HS**
@@ -246,14 +253,16 @@ De 2 mest frekventa `HS` grundformer: `vars`, `vem`
 De 3 mest frekventa `HS` tokens: `vars`, `vilkas`, `vems`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **HS**, särdrag
+
 ##### HS och Definite
 
-186 `HS` tokens (100% av alla `HS` tokens) har ett icke-tomt värde av `Definite`.
+186 `HS` tokens (100% av alla `HS` tokens) har `Definite`.
 
 `HS` tokens har följande värden av `Definite`:
-- `Def` (186; 100% av icke-tomma `Definite`)
+
+- `Def` (186; 100%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **IE**
@@ -264,8 +273,8 @@ De 5 mest frekventa `IE` grundformer: `att`, `ha att göra:2`, `ha att göra:3`,
 De 5 mest frekventa `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **IE**, särdrag
+
 IE not present among features
 
 ### Ordklass: **IN**
@@ -276,8 +285,8 @@ De 5 mest frekventa `IN` grundformer: `nej`, `ja`, `jo`, `tack`, `nä`
 De 5 mest frekventa `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **IN**, särdrag
+
 IN not present among features
 
 ### Ordklass: **JJ**
@@ -288,69 +297,71 @@ De 5 mest frekventa `JJ` grundformer: `annan`, `stor`, `ny`, `andra`, `viktig`
 De 5 mest frekventa `JJ` tokens: `andra`, `olika`, `fler`, `vissa`, `nya`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **JJ**, särdrag
+
 ##### JJ och Abbr
 
-132552 `JJ` tokens (0% av alla `JJ` tokens) har ett icke-tomt värde av `Abbr`.
+132552 `JJ` tokens (0% av alla `JJ` tokens) har `Abbr`.
 
 `JJ` tokens har följande värden av `Abbr`:
-- `Yes` (12; 100% av icke-tomma `Abbr`)
+
+- `Yes` (12; 0%)
+- `<saknas>` (132540; 100%)
 
 ##### JJ och Case
 
-132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Case`.
+132552 `JJ` tokens (100% av alla `JJ` tokens) har `Case`.
 
 `JJ` tokens har följande värden av `Case`:
-- `Gen` (348; 0% av icke-tomma `Case`)
 
-- `Nom` (132190; 100% av icke-tomma `Case`)
+- `Gen` (348; 0%)
+- `Nom` (132190; 100%)
+- `<saknas>` (14; 0%)
 
 ##### JJ och Definite
 
-132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Definite`.
+132552 `JJ` tokens (100% av alla `JJ` tokens) har `Definite`.
 
 `JJ` tokens har följande värden av `Definite`:
-- `Def` (19453; 15% av icke-tomma `Definite`)
 
-- `Ind` (54397; 41% av icke-tomma `Definite`)
-
-- `Def,Ind` (58679; 44% av icke-tomma `Definite`)
+- `Def` (19453; 15%)
+- `Ind` (54397; 41%)
+- `Def,Ind` (58679; 44%)
+- `<saknas>` (23; 0%)
 
 ##### JJ och Degree
 
-132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Degree`.
+132552 `JJ` tokens (100% av alla `JJ` tokens) har `Degree`.
 
 `JJ` tokens har följande värden av `Degree`:
-- `Sup` (2742; 2% av icke-tomma `Degree`)
 
-- `Cmp` (10868; 8% av icke-tomma `Degree`)
-
-- `Pos` (118931; 90% av icke-tomma `Degree`)
+- `Sup` (2742; 2%)
+- `Cmp` (10868; 8%)
+- `Pos` (118931; 90%)
+- `<saknas>` (11; 0%)
 
 ##### JJ och Gender
 
-132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Gender`.
+132552 `JJ` tokens (100% av alla `JJ` tokens) har `Gender`.
 
 `JJ` tokens har följande värden av `Gender`:
-- `Masc` (378; 0% av icke-tomma `Gender`)
 
-- `Neut` (17920; 14% av icke-tomma `Gender`)
-
-- `Com` (31973; 24% av icke-tomma `Gender`)
-
-- `Com,Neut` (82269; 62% av icke-tomma `Gender`)
+- `Masc` (378; 0%)
+- `Neut` (17920; 14%)
+- `Com` (31973; 24%)
+- `Com,Neut` (82269; 62%)
+- `<saknas>` (12; 0%)
 
 ##### JJ och Number
 
-132552 `JJ` tokens (100% av alla `JJ` tokens) har ett icke-tomt värde av `Number`.
+132552 `JJ` tokens (100% av alla `JJ` tokens) har `Number`.
 
 `JJ` tokens har följande värden av `Number`:
-- `Plur,Sing` (16702; 13% av icke-tomma `Number`)
 
-- `Plur` (48694; 37% av icke-tomma `Number`)
-
-- `Sing` (67140; 51% av icke-tomma `Number`)
+- `Plur,Sing` (16702; 13%)
+- `Plur` (48694; 37%)
+- `Sing` (67140; 51%)
+- `<saknas>` (16; 0%)
 
 
 ### Ordklass: **KN**
@@ -361,14 +372,16 @@ De 5 mest frekventa `KN` grundformer: `och`, `eller`, `samt`, `men`, `både och`
 De 5 mest frekventa `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **KN**, särdrag
+
 ##### KN och Abbr
 
-117972 `KN` tokens (0% av alla `KN` tokens) har ett icke-tomt värde av `Abbr`.
+117972 `KN` tokens (0% av alla `KN` tokens) har `Abbr`.
 
 `KN` tokens har följande värden av `Abbr`:
-- `Yes` (17; 100% av icke-tomma `Abbr`)
+
+- `Yes` (17; 0%)
+- `<saknas>` (117955; 100%)
 
 
 ### Ordklass: **MAD**
@@ -377,8 +390,8 @@ Det finns 131026 (5%) `MAD` tokens. Av 25 observerade ordklasser, `MAD`:s rank �
 De 5 mest frekventa `MAD` tokens: `.`, `:`, `!`, `?`, `–`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **MAD**, särdrag
+
 MAD not present among features
 
 ### Ordklass: **MID**
@@ -387,8 +400,8 @@ Det finns 101646 (4%) `MID` tokens. Av 25 observerade ordklasser, `MID`:s rank �
 De 5 mest frekventa `MID` tokens: `,`, `/`, `:`, `-`, `–`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **MID**, särdrag
+
 MID not present among features
 
 ### Ordklass: **NN**
@@ -399,57 +412,65 @@ De 5 mest frekventa `NN` grundformer: `regering`, `yrkande`, `riksdag`, `motion`
 De 5 mest frekventa `NN` tokens: `regeringen`, `yrkande`, `Riksdagen`, `M`, `förslag`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **NN**, särdrag
+
 ##### NN och Abbr
 
-736544 `NN` tokens (5% av alla `NN` tokens) har ett icke-tomt värde av `Abbr`.
+736544 `NN` tokens (5% av alla `NN` tokens) har `Abbr`.
 
 `NN` tokens har följande värden av `Abbr`:
-- `Yes` (35393; 100% av icke-tomma `Abbr`)
+
+- `Yes` (35393; 5%)
+- `<saknas>` (701151; 95%)
 
 ##### NN och Case
 
-736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Case`.
+736544 `NN` tokens (94% av alla `NN` tokens) har `Case`.
 
 `NN` tokens har följande värden av `Case`:
-- `Gen` (33556; 5% av icke-tomma `Case`)
 
-- `Nom` (661878; 95% av icke-tomma `Case`)
+- `Gen` (33556; 5%)
+- `Nom` (661878; 90%)
+- `<saknas>` (41110; 6%)
 
 ##### NN och Compound
 
-736544 `NN` tokens (1% av alla `NN` tokens) har ett icke-tomt värde av `Compound`.
+736544 `NN` tokens (1% av alla `NN` tokens) har `Compound`.
 
 `NN` tokens har följande värden av `Compound`:
-- `Yes` (4826; 100% av icke-tomma `Compound`)
+
+- `Yes` (4826; 1%)
+- `<saknas>` (731718; 99%)
 
 ##### NN och Definite
 
-736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Definite`.
+736544 `NN` tokens (94% av alla `NN` tokens) har `Definite`.
 
 `NN` tokens har följande värden av `Definite`:
-- `Def` (246895; 36% av icke-tomma `Definite`)
 
-- `Ind` (447518; 64% av icke-tomma `Definite`)
+- `Def` (246895; 34%)
+- `Ind` (447518; 61%)
+- `<saknas>` (42131; 6%)
 
 ##### NN och Gender
 
-736544 `NN` tokens (95% av alla `NN` tokens) har ett icke-tomt värde av `Gender`.
+736544 `NN` tokens (95% av alla `NN` tokens) har `Gender`.
 
 `NN` tokens har följande värden av `Gender`:
-- `Neut` (234585; 34% av icke-tomma `Gender`)
 
-- `Com` (464205; 66% av icke-tomma `Gender`)
+- `Neut` (234585; 32%)
+- `Com` (464205; 63%)
+- `<saknas>` (37754; 5%)
 
 ##### NN och Number
 
-736544 `NN` tokens (94% av alla `NN` tokens) har ett icke-tomt värde av `Number`.
+736544 `NN` tokens (94% av alla `NN` tokens) har `Number`.
 
 `NN` tokens har följande värden av `Number`:
-- `Plur` (188599; 27% av icke-tomma `Number`)
 
-- `Sing` (506306; 73% av icke-tomma `Number`)
+- `Plur` (188599; 26%)
+- `Sing` (506306; 69%)
+- `<saknas>` (41639; 6%)
 
 
 ### Ordklass: **PAD**
@@ -458,8 +479,8 @@ Det finns 93999 (3%) `PAD` tokens. Av 25 observerade ordklasser, `PAD`:s rank ä
 De 5 mest frekventa `PAD` tokens: `)`, `(`, `"`, `]`, `[`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PAD**, särdrag
+
 PAD not present among features
 
 ### Ordklass: **PC**
@@ -470,67 +491,70 @@ De 5 mest frekventa `PC` grundformer: `särskilja`, `särskild`, `följa`, `föl
 De 5 mest frekventa `PC` tokens: `följande`, `nyanlända`, `särskilda`, `ökad`, `utsatta`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PC**, särdrag
+
 ##### PC och Case
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Case`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `Case`.
 
 `PC` tokens har följande värden av `Case`:
-- `Gen` (30; 0% av icke-tomma `Case`)
 
-- `Nom` (47182; 100% av icke-tomma `Case`)
+- `Gen` (30; 0%)
+- `Nom` (47182; 100%)
+- `<saknas>` (0; 0%)
 
 ##### PC och Definite
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Definite`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `Definite`.
 
 `PC` tokens har följande värden av `Definite`:
-- `Def` (2759; 6% av icke-tomma `Definite`)
 
-- `Ind` (15356; 33% av icke-tomma `Definite`)
-
-- `Def,Ind` (29097; 62% av icke-tomma `Definite`)
+- `Def` (2759; 6%)
+- `Ind` (15356; 33%)
+- `Def,Ind` (29097; 62%)
+- `<saknas>` (0; 0%)
 
 ##### PC och Gender
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Gender`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `Gender`.
 
 `PC` tokens har följande värden av `Gender`:
-- `Masc` (62; 0% av icke-tomma `Gender`)
 
-- `Neut` (5647; 12% av icke-tomma `Gender`)
-
-- `Com` (9709; 21% av icke-tomma `Gender`)
-
-- `Com,Neut` (31794; 67% av icke-tomma `Gender`)
+- `Masc` (62; 0%)
+- `Neut` (5647; 12%)
+- `Com` (9709; 21%)
+- `Com,Neut` (31794; 67%)
+- `<saknas>` (0; 0%)
 
 ##### PC och Number
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Number`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `Number`.
 
 `PC` tokens har följande värden av `Number`:
-- `Plur` (13587; 29% av icke-tomma `Number`)
 
-- `Plur,Sing` (15494; 33% av icke-tomma `Number`)
-
-- `Sing` (18131; 38% av icke-tomma `Number`)
+- `Plur` (13587; 29%)
+- `Plur,Sing` (15494; 33%)
+- `Sing` (18131; 38%)
+- `<saknas>` (0; 0%)
 
 ##### PC och Tense
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `Tense`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `Tense`.
 
 `PC` tokens har följande värden av `Tense`:
-- `Pres` (15494; 33% av icke-tomma `Tense`)
 
-- `Past` (31718; 67% av icke-tomma `Tense`)
+- `Pres` (15494; 33%)
+- `Past` (31718; 67%)
+- `<saknas>` (0; 0%)
 
 ##### PC och VerbForm
 
-47212 `PC` tokens (100% av alla `PC` tokens) har ett icke-tomt värde av `VerbForm`.
+47212 `PC` tokens (100% av alla `PC` tokens) har `VerbForm`.
 
 `PC` tokens har följande värden av `VerbForm`:
-- `Part` (47212; 100% av icke-tomma `VerbForm`)
+
+- `Part` (47212; 100%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **PL**
@@ -541,8 +565,8 @@ De 5 mest frekventa `PL` grundformer: `fram`, `upp`, `ut`, `över`, `in`
 De 5 mest frekventa `PL` tokens: `fram`, `upp`, `ut`, `över`, `in`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PL**, särdrag
+
 PL not present among features
 
 ### Ordklass: **PM**
@@ -553,23 +577,26 @@ De 5 mest frekventa `PM` grundformer: `SD`, `Sverige`, `Johan`, `Jan`, `Johansso
 De 5 mest frekventa `PM` tokens: `SD`, `KD`, `Sverige`, `MP`, `Johan`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PM**, särdrag
+
 ##### PM och Case
 
-106015 `PM` tokens (100% av alla `PM` tokens) har ett icke-tomt värde av `Case`.
+106015 `PM` tokens (100% av alla `PM` tokens) har `Case`.
 
 `PM` tokens har följande värden av `Case`:
-- `Gen` (3206; 3% av icke-tomma `Case`)
 
-- `Nom` (102800; 97% av icke-tomma `Case`)
+- `Gen` (3206; 3%)
+- `Nom` (102800; 97%)
+- `<saknas>` (9; 0%)
 
 ##### PM och Compound
 
-106015 `PM` tokens (0% av alla `PM` tokens) har ett icke-tomt värde av `Compound`.
+106015 `PM` tokens (0% av alla `PM` tokens) har `Compound`.
 
 `PM` tokens har följande värden av `Compound`:
-- `Yes` (10; 100% av icke-tomma `Compound`)
+
+- `Yes` (10; 0%)
+- `<saknas>` (106005; 100%)
 
 
 ### Ordklass: **PN**
@@ -580,51 +607,51 @@ De 5 mest frekventa `PN` grundformer: `den`, `vi`, `sig`, `denna`, `jag`
 De 5 mest frekventa `PN` tokens: `det`, `sig`, `detta`, `Det`, `vi`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PN**, särdrag
+
 ##### PN och Case
 
-98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Case`.
+98041 `PN` tokens (100% av alla `PN` tokens) har `Case`.
 
 `PN` tokens har följande värden av `Case`:
-- `Acc` (14305; 15% av icke-tomma `Case`)
 
-- `Nom` (27692; 28% av icke-tomma `Case`)
-
-- `Acc,Nom` (56044; 57% av icke-tomma `Case`)
+- `Acc` (14305; 15%)
+- `Nom` (27692; 28%)
+- `Acc,Nom` (56044; 57%)
+- `<saknas>` (0; 0%)
 
 ##### PN och Definite
 
-98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Definite`.
+98041 `PN` tokens (100% av alla `PN` tokens) har `Definite`.
 
 `PN` tokens har följande värden av `Definite`:
-- `Ind` (11172; 11% av icke-tomma `Definite`)
 
-- `Def` (86869; 89% av icke-tomma `Definite`)
+- `Ind` (11172; 11%)
+- `Def` (86869; 89%)
+- `<saknas>` (0; 0%)
 
 ##### PN och Gender
 
-98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Gender`.
+98041 `PN` tokens (100% av alla `PN` tokens) har `Gender`.
 
 `PN` tokens har följande värden av `Gender`:
-- `Masc` (31; 0% av icke-tomma `Gender`)
 
-- `Com,Neut` (19321; 20% av icke-tomma `Gender`)
-
-- `Com` (30928; 32% av icke-tomma `Gender`)
-
-- `Neut` (47761; 49% av icke-tomma `Gender`)
+- `Masc` (31; 0%)
+- `Com,Neut` (19321; 20%)
+- `Com` (30928; 32%)
+- `Neut` (47761; 49%)
+- `<saknas>` (0; 0%)
 
 ##### PN och Number
 
-98041 `PN` tokens (100% av alla `PN` tokens) har ett icke-tomt värde av `Number`.
+98041 `PN` tokens (100% av alla `PN` tokens) har `Number`.
 
 `PN` tokens har följande värden av `Number`:
-- `Plur,Sing` (11049; 11% av icke-tomma `Number`)
 
-- `Plur` (21168; 22% av icke-tomma `Number`)
-
-- `Sing` (65824; 67% av icke-tomma `Number`)
+- `Plur,Sing` (11049; 11%)
+- `Plur` (21168; 22%)
+- `Sing` (65824; 67%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **PP**
@@ -635,14 +662,16 @@ De 5 mest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
 De 5 mest frekventa `PP` tokens: `i`, `för`, `av`, `till`, `om`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PP**, särdrag
+
 ##### PP och Abbr
 
-358848 `PP` tokens (0% av alla `PP` tokens) har ett icke-tomt värde av `Abbr`.
+358848 `PP` tokens (0% av alla `PP` tokens) har `Abbr`.
 
 `PP` tokens har följande värden av `Abbr`:
-- `Yes` (5; 100% av icke-tomma `Abbr`)
+
+- `Yes` (5; 0%)
+- `<saknas>` (358843; 100%)
 
 
 ### Ordklass: **PS**
@@ -653,36 +682,38 @@ De 5 mest frekventa `PS` grundformer: `sig`, `vi`, `jag`, `de`, `den`
 De 5 mest frekventa `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **PS**, särdrag
+
 ##### PS och Definite
 
-9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Definite`.
+9633 `PS` tokens (100% av alla `PS` tokens) har `Definite`.
 
 `PS` tokens har följande värden av `Definite`:
-- `Def` (9633; 100% av icke-tomma `Definite`)
+
+- `Def` (9633; 100%)
+- `<saknas>` (0; 0%)
 
 ##### PS och Gender
 
-9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Gender`.
+9633 `PS` tokens (100% av alla `PS` tokens) har `Gender`.
 
 `PS` tokens har följande värden av `Gender`:
-- `Neut` (2345; 24% av icke-tomma `Gender`)
 
-- `Com,Neut` (3393; 35% av icke-tomma `Gender`)
-
-- `Com` (3895; 40% av icke-tomma `Gender`)
+- `Neut` (2345; 24%)
+- `Com,Neut` (3393; 35%)
+- `Com` (3895; 40%)
+- `<saknas>` (0; 0%)
 
 ##### PS och Number
 
-9633 `PS` tokens (100% av alla `PS` tokens) har ett icke-tomt värde av `Number`.
+9633 `PS` tokens (100% av alla `PS` tokens) har `Number`.
 
 `PS` tokens har följande värden av `Number`:
-- `Plur,Sing` (1417; 15% av icke-tomma `Number`)
 
-- `Plur` (1976; 21% av icke-tomma `Number`)
-
-- `Sing` (6240; 65% av icke-tomma `Number`)
+- `Plur,Sing` (1417; 15%)
+- `Plur` (1976; 21%)
+- `Sing` (6240; 65%)
+- `<saknas>` (0; 0%)
 
 
 ### Ordklass: **RG**
@@ -693,21 +724,25 @@ De 5 mest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
 De 5 mest frekventa `RG` tokens: `2018`, `2019`, `1`, `2`, `000`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **RG**, särdrag
+
 ##### RG och Case
 
-180321 `RG` tokens (100% av alla `RG` tokens) har ett icke-tomt värde av `Case`.
+180321 `RG` tokens (100% av alla `RG` tokens) har `Case`.
 
 `RG` tokens har följande värden av `Case`:
-- `Nom` (180310; 100% av icke-tomma `Case`)
+
+- `Nom` (180310; 100%)
+- `<saknas>` (11; 0%)
 
 ##### RG och Compound
 
-180321 `RG` tokens (0% av alla `RG` tokens) har ett icke-tomt värde av `Compound`.
+180321 `RG` tokens (0% av alla `RG` tokens) har `Compound`.
 
 `RG` tokens har följande värden av `Compound`:
-- `Yes` (11; 100% av icke-tomma `Compound`)
+
+- `Yes` (11; 0%)
+- `<saknas>` (180310; 100%)
 
 
 ### Ordklass: **RO**
@@ -718,35 +753,43 @@ De 5 mest frekventa `RO` grundformer: `fyra`, `första gången`, `i första hand
 De 5 mest frekventa `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **RO**, särdrag
+
 ##### RO och Case
 
-2897 `RO` tokens (100% av alla `RO` tokens) har ett icke-tomt värde av `Case`.
+2897 `RO` tokens (100% av alla `RO` tokens) har `Case`.
 
 `RO` tokens har följande värden av `Case`:
-- `Nom` (2897; 100% av icke-tomma `Case`)
+
+- `Nom` (2897; 100%)
+- `<saknas>` (0; 0%)
 
 ##### RO och Definite
 
-2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Definite`.
+2897 `RO` tokens (0% av alla `RO` tokens) har `Definite`.
 
 `RO` tokens har följande värden av `Definite`:
-- `Def,Ind` (5; 100% av icke-tomma `Definite`)
+
+- `Def,Ind` (5; 0%)
+- `<saknas>` (2892; 100%)
 
 ##### RO och Gender
 
-2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Gender`.
+2897 `RO` tokens (0% av alla `RO` tokens) har `Gender`.
 
 `RO` tokens har följande värden av `Gender`:
-- `Masc` (5; 100% av icke-tomma `Gender`)
+
+- `Masc` (5; 0%)
+- `<saknas>` (2892; 100%)
 
 ##### RO och Number
 
-2897 `RO` tokens (0% av alla `RO` tokens) har ett icke-tomt värde av `Number`.
+2897 `RO` tokens (0% av alla `RO` tokens) har `Number`.
 
 `RO` tokens har följande värden av `Number`:
-- `Sing` (5; 100% av icke-tomma `Number`)
+
+- `Sing` (5; 0%)
+- `<saknas>` (2892; 100%)
 
 
 ### Ordklass: **SN**
@@ -757,8 +800,8 @@ De 5 mest frekventa `SN` grundformer: `att`, `om`, `eftersom`, `innan`, `medan`
 De 5 mest frekventa `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **SN**, särdrag
+
 SN not present among features
 
 ### Ordklass: **UO**
@@ -769,8 +812,8 @@ De 5 mest frekventa `UO` grundformer: `public service`, `au pair`, `à la:16`, `
 De 5 mest frekventa `UO` tokens: `et`, `na`, `public`, `science`, `as`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **UO**, särdrag
+
 UO not present among features
 
 ### Ordklass: **VB**
@@ -781,54 +824,58 @@ De 5 mest frekventa `VB` grundformer: `vara`, `ha`, `skola`, `kunna`, `böra`
 De 5 mest frekventa `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
 
 
-#### Översikt av särdrag hos ordklasser
----
+#### Ordklass: **VB**, särdrag
+
 ##### VB och Abbr
 
-380285 `VB` tokens (0% av alla `VB` tokens) har ett icke-tomt värde av `Abbr`.
+380285 `VB` tokens (0% av alla `VB` tokens) har `Abbr`.
 
 `VB` tokens har följande värden av `Abbr`:
-- `Yes` (18; 100% av icke-tomma `Abbr`)
+
+- `Yes` (18; 0%)
+- `<saknas>` (380267; 100%)
 
 ##### VB och Mood
 
-380285 `VB` tokens (64% av alla `VB` tokens) har ett icke-tomt värde av `Mood`.
+380285 `VB` tokens (64% av alla `VB` tokens) har `Mood`.
 
 `VB` tokens har följande värden av `Mood`:
-- `Sub` (161; 0% av icke-tomma `Mood`)
 
-- `Imp` (1616; 1% av icke-tomma `Mood`)
-
-- `Ind` (242835; 99% av icke-tomma `Mood`)
+- `Sub` (161; 0%)
+- `Imp` (1616; 0%)
+- `Ind` (242835; 64%)
+- `<saknas>` (135673; 36%)
 
 ##### VB och Tense
 
-380285 `VB` tokens (64% av alla `VB` tokens) har ett icke-tomt värde av `Tense`.
+380285 `VB` tokens (64% av alla `VB` tokens) har `Tense`.
 
 `VB` tokens har följande värden av `Tense`:
-- `Past` (22610; 9% av icke-tomma `Tense`)
 
-- `Pres` (220310; 91% av icke-tomma `Tense`)
+- `Past` (22610; 6%)
+- `Pres` (220310; 58%)
+- `<saknas>` (137365; 36%)
 
 ##### VB och VerbForm
 
-380285 `VB` tokens (100% av alla `VB` tokens) har ett icke-tomt värde av `VerbForm`.
+380285 `VB` tokens (100% av alla `VB` tokens) har `VerbForm`.
 
 `VB` tokens har följande värden av `VerbForm`:
-- `Sup` (20211; 5% av icke-tomma `VerbForm`)
 
-- `Inf` (115019; 30% av icke-tomma `VerbForm`)
-
-- `Fin` (245031; 64% av icke-tomma `VerbForm`)
+- `Sup` (20211; 5%)
+- `Inf` (115019; 30%)
+- `Fin` (245031; 64%)
+- `<saknas>` (24; 0%)
 
 ##### VB och Voice
 
-380285 `VB` tokens (100% av alla `VB` tokens) har ett icke-tomt värde av `Voice`.
+380285 `VB` tokens (100% av alla `VB` tokens) har `Voice`.
 
 `VB` tokens har följande värden av `Voice`:
-- `Pass` (64399; 17% av icke-tomma `Voice`)
 
-- `Act` (315858; 83% av icke-tomma `Voice`)
+- `Pass` (64399; 17%)
+- `Act` (315858; 83%)
+- `<saknas>` (28; 0%)
 
 
 ## Särdrag
@@ -918,11 +965,11 @@ Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - Ve
 
 ## Morfologi
 
-### Morfo-syntaktisk deskriptorer (MSD)
+### Fördelning av ordklassernas särdrag
 
 
 
-MSD | Frequency | Percent
+Ordklassernas särdrag | Frequency | Percent
 --- | --- | ---
 AB | 70456 | 2.43%
 AB.AN | 22440 | 0.77%
