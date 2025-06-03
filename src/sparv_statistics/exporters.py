@@ -1030,7 +1030,7 @@ def _write_pos_feature_overview(
         fp.write(STATS_TEMPLATE[lang]["features_pos_values"].format(pos=pos_tag, feat=feat))
         fp.write("\n")
         fp.writelines(
-            f"- `{feat_category}` ({feat_value}; {feat_value / total_pos_freqs * 100:.0f}%)\n"
+            f"- `{STATS_TEMPLATE[lang].get(feat_category) or feat_category}` ({feat_value}; {feat_value / total_pos_freqs * 100:.0f}%)\n"
             for feat_category, feat_value in sorted(feat_values.items(), key=operator.itemgetter(1))
         )
         fp.write(
