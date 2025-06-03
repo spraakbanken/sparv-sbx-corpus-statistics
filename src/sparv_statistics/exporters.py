@@ -515,7 +515,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "segment.token length (characters)": "token length, in characters",
         "stats_header": "## Overview\n",
         "stats_table_header": "Feature | Number | Mean | Standard deviation\n",
-        "stats_table_readability": "READABILITY | --- | --- | ---\n",
+        "stats_table_readability": "READABILITY | ---: | ---: | ---:\n",
         "text": "texts",
         "text length (characters)": "text length, in characters",
         "tokenization_header": "## Tokenization and Word Segmentation\n",
@@ -576,7 +576,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "segment.token length (characters)": "tokenlängd, i tecken",
         "stats_header": "## Översikt\n",
         "stats_table_header": "Egenskap | Värde | Medelvärde | Standardavvikelse\n",
-        "stats_table_readability": "LÄSBARHET | --- | --- | ---\n",
+        "stats_table_readability": "LÄSBARHET | ---: | ---: | ---:\n",
         "text": "texter",
         "text length (characters)": "textlängd, i tecken",
         "tokenization_header": "## Tokenisering och segmentering\n",
@@ -658,7 +658,7 @@ def _write_statistical_overview(
     fp.write(STATS_TEMPLATE[lang]["stats_header"])
     fp.write("\n")
     fp.write(STATS_TEMPLATE[lang]["stats_table_header"])
-    fp.write("--- | --- | --- | ---\n")
+    fp.write("--- | ---: | ---: | ---:\n")
     _write_attr_stats(fp, "file", stats, lang=lang)
     _write_attr_stats(fp, "text", stats, lang=lang)
     _write_attr_stats(fp, "dokument", stats, lang=lang)
@@ -930,7 +930,7 @@ def _write_pos_distribution(fp: TextIO, pos_stats: PosStats, lang: str) -> None:
 
     fp.write("\n")
     fp.write(STATS_TEMPLATE[lang]["pos_distribution_table_header"])
-    fp.write("--- | --- | ---\n")
+    fp.write("--- | ---: | ---:\n")
     fp.writelines(
         f"{pos_tag} | {pos_stats.freqs[pos_tag]} | {pos_tag_percent:.2f}%\n"
         for pos_tag, pos_tag_percent in pos_stats.stats.items()
@@ -1145,7 +1145,7 @@ def _write_msd(fp: TextIO, token_freqs: dict[str, dict[str, int]], lang: str) ->
     num_msds = sum(msd_freqs.values())
     # fp.write("MSD | Frequency | Percent\n")
     fp.write(STATS_TEMPLATE[lang]["morphology_msd_table_header"])
-    fp.write("--- | --- | ---\n")
+    fp.write("--- | ---: | ---:\n")
     for msd in msds_sorted:
         msd_percent = msd_freqs[msd] / num_msds * 100
         fp.write(f"{msd} | {msd_freqs[msd]} | {msd_percent:.2f}%\n")
