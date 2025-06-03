@@ -5,7 +5,7 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Features: **Abbr**
-  `Abbr` occurs with 1 different values: `Yes`.
+  `Abbr` occurs with 1 value: `Yes`.
   
   57883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35393; 1% instances), `AB` (22438; 1% instances), `VB` (18; 0% instances), `KN` (17; 0% instances), `JJ` (12; 0% instances), `PP` (5; 0% instances)
   
@@ -20,7 +20,7 @@
   
   
   ### Features: **Compound**
-  `Compound` occurs with 1 different values: `Yes`.
+  `Compound` occurs with 1 value: `Yes`.
   
   4847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4826; 0% instances), `RG` (11; 0% instances), `PM` (10; 0% instances)
   
@@ -94,7 +94,7 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Särdrag: **Abbr**
-  `Abbr` förekommer med 1 olika värden: `Yes`.
+  `Abbr` förekommer med 1 värde: `Yes`.
   
   57883 tokens (2%) har ett icke-tomt värde av `Abbr`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (35393; 1% instanser), `AB` (22438; 1% instanser), `VB` (18; 0% instanser), `KN` (17; 0% instanser), `JJ` (12; 0% instanser), `PP` (5; 0% instanser)
   
@@ -109,7 +109,7 @@
   
   
   ### Särdrag: **Compound**
-  `Compound` förekommer med 1 olika värden: `Yes`.
+  `Compound` förekommer med 1 värde: `Yes`.
   
   4847 tokens (0%) har ett icke-tomt värde av `Compound`. Detta särdrag är använt tillsammans med 3 ordklasser: `NN` (4826; 0% instanser), `RG` (11; 0% instanser), `PM` (10; 0% instanser)
   

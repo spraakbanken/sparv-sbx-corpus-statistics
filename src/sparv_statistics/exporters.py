@@ -469,7 +469,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "count": "number of",
         "dokument": "documents",
         "dokument length (characters)": "document length, in characters",
-        "features_diff_values": "`{feat}` occurs with {num_diff_values} different values: ",
+        "features_diff_values, singular": "`{feat}` occurs with {num_diff_values} value: ",
+        "features_diff_values, plural": "`{feat}` occurs with {num_diff_values} different values: ",
         "features_header": "## Features\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) have multiple values of `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) have a non-empty value of `{feat}`. The feature is used with {num_pos_tags} part-of-speech tags: {pos_tags}\n",  # noqa: E501
@@ -528,7 +529,8 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "and": "och",
         "count": "antal",
         "dokument length (characters)": "dokumentlängd, i tecken",
-        "features_diff_values": "`{feat}` förekommer med {num_diff_values} olika värden: ",
+        "features_diff_values, singular": "`{feat}` förekommer med {num_diff_values} värde: ",
+        "features_diff_values, plural": "`{feat}` förekommer med {num_diff_values} olika värden: ",
         "features_header": "## Särdrag\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser: {pos_tags}\n",  # noqa: E501
@@ -582,6 +584,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "tokenization_texts": "- Denna korpus är skapad från {num_texts} texter, i {num_documents} dokument, som finns i {num_files} filer.\n",  # noqa: E501
         "top_lemmas": "## Topp-10 grundformer\n",
         "value": "värde",
+        "Yes": "Ja (`Yes`)",
     },
 }
 
@@ -825,7 +828,17 @@ def _write_features(
             feat_values.update(f"`{value}`" for value in values.split(","))
 
         # fp.write(f" It occurs with {len(feat_values)} different values: ")
-        fp.write(STATS_TEMPLATE[lang]["features_diff_values"].format(feat=feat, num_diff_values=len(feat_values)))
+        num_feat_values = len(feat_values)
+        if num_feat_values == 1:
+            fp.write(
+                STATS_TEMPLATE[lang]["features_diff_values, singular"].format(
+                    feat=feat, num_diff_values=num_feat_values
+                )
+            )
+        else:
+            fp.write(
+                STATS_TEMPLATE[lang]["features_diff_values, plural"].format(feat=feat, num_diff_values=num_feat_values)
+            )
         fp.write(", ".join(sorted(feat_values)))
         fp.write(".\n")
         fp.write("\n")
