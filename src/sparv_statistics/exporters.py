@@ -636,7 +636,6 @@ def write_stat_highlights(
             token_freqs=freqs["segment.token"],
             pos_token_freqs=pos_token_freqs,
             pos_lemma_freqs_flat=pos_lemma_freqs_flat,
-            feat_pos_freqs_flat=pos_ufeats_freqs_flat,
             pos_feats_freqs_flat=pos_ufeats_freqs_flat,
             lang=lang,
         )
@@ -745,7 +744,6 @@ def _write_pos_tags(
     token_freqs: dict[str, dict[str, int]],
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
-    feat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
     pos_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
 ) -> None:
