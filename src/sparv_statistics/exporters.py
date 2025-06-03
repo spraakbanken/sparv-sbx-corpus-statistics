@@ -495,6 +495,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_header": "## POS Tags\n",
         "POS_no_lemmas": "Contains no base forms with `{pos_tag}`.\n",
         "POS_subheader": "### POS Tag: **{pos_tag}**\n",
+        "POS_tags_description": "The following POS tags is present in this corpus:\n",
         "POS_top_lemmas": "The {number} most frequent `{pos_tag}` base forms: {top_lemmas}\n",
         "POS_top_tokens": "The {number} most frequent `{pos_tag}` tokens: {top_tokens}\n",
         "pos_distribution_header": "### Distribution of POS-tags\n",
@@ -555,6 +556,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "POS_header": "## Ordklasser\n",
         "POS_no_lemmas": "Innhåller inga grundformer med `{pos_tag}`.\n",
         "POS_subheader": "### Ordklass: **{pos_tag}**\n",
+        "POS_tags_description": "Följande ordklasser förekommer i korpusen:\n",
         "POS_top_lemmas": "De {number} mest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
         "POS_top_tokens": "De {number} mest frekventa `{pos_tag}` tokens: {top_tokens}\n",
         "pos_distribution_header": "### Fördelning av ordklasser\n",
@@ -751,6 +753,7 @@ def _write_pos_tags(
     # fp.write("## POS Tags\n")
     fp.write(STATS_TEMPLATE[lang]["POS_header"])
     fp.write("\n")
+    fp.write(STATS_TEMPLATE[lang]["POS_tags_description"])
     pos_freqs = None
     for key, freqs in token_freqs.items():
         if key.startswith("segment.token:stanza.pos"):
