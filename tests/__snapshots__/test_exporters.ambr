@@ -1346,7 +1346,7 @@
   
   `AB` tokens har följande värden av `Abbr`:
   
-  - `Yes` (22438; 19%)
+  - `Ja (`Yes`)` (22438; 19%)
   - `<saknas>` (98786; 81%)
   
   ##### AB och Degree
@@ -1560,7 +1560,7 @@
   
   `JJ` tokens har följande värden av `Abbr`:
   
-  - `Yes` (12; 0%)
+  - `Ja (`Yes`)` (12; 0%)
   - `<saknas>` (132540; 100%)
   
   ##### JJ och Case
@@ -1635,7 +1635,7 @@
   
   `KN` tokens har följande värden av `Abbr`:
   
-  - `Yes` (17; 0%)
+  - `Ja (`Yes`)` (17; 0%)
   - `<saknas>` (117955; 100%)
   
   
@@ -1675,7 +1675,7 @@
   
   `NN` tokens har följande värden av `Abbr`:
   
-  - `Yes` (35393; 5%)
+  - `Ja (`Yes`)` (35393; 5%)
   - `<saknas>` (701151; 95%)
   
   ##### NN och Case
@@ -1694,7 +1694,7 @@
   
   `NN` tokens har följande värden av `Compound`:
   
-  - `Yes` (4826; 1%)
+  - `Ja (`Yes`)` (4826; 1%)
   - `<saknas>` (731718; 99%)
   
   ##### NN och Definite
@@ -1850,7 +1850,7 @@
   
   `PM` tokens har följande värden av `Compound`:
   
-  - `Yes` (10; 0%)
+  - `Ja (`Yes`)` (10; 0%)
   - `<saknas>` (106005; 100%)
   
   
@@ -1925,7 +1925,7 @@
   
   `PP` tokens har följande värden av `Abbr`:
   
-  - `Yes` (5; 0%)
+  - `Ja (`Yes`)` (5; 0%)
   - `<saknas>` (358843; 100%)
   
   
@@ -1996,7 +1996,7 @@
   
   `RG` tokens har följande värden av `Compound`:
   
-  - `Yes` (11; 0%)
+  - `Ja (`Yes`)` (11; 0%)
   - `<saknas>` (180310; 100%)
   
   
@@ -2087,7 +2087,7 @@
   
   `VB` tokens har följande värden av `Abbr`:
   
-  - `Yes` (18; 0%)
+  - `Ja (`Yes`)` (18; 0%)
   - `<saknas>` (380267; 100%)
   
   ##### VB och Mood
