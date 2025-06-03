@@ -487,6 +487,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "morphology_msd_header": "### Morphosyntactic descriptors (MSD)\n",
         "morphology_msd_table_header": "MSD | Frequency | Percent\n",
         "morphology_no_msd": "This corpus does not contain any morphosyntactic descriptors.\n",
+        "no features for pos": "{pos_tag} not present among features\n",
         "no POS": "Found no POS tags.\n",
         "of non-empty": "of non-empty",
         "POS_descr": "There are {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Out of {pos_stats_num_tags} observed tags, the rank of `{pos_tag}` is: {pos_stats_rank_of_tokens} in number of tokens.\n",  # noqa: E501
@@ -545,6 +546,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "morphology_msd_header": "### Fördelning av ordklassernas särdrag\n",
         "morphology_msd_table_header": "Ordklassernas särdrag | Frequency | Percent\n",
         "morphology_no_msd": "Denna korpus innehåller inga morfosyntaktiska deskriptorer.\n",
+        "no features for pos": "Hittade inga särdrag för {pos_tag}\n",
         "no POS": "Hittade inga ordklasser.\n",
         "of non-empty": "av icke-tomma",
         "POS_descr": "Det finns {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Av {pos_stats_num_tags} observerade ordklasser, `{pos_tag}`:s rank är: {pos_stats_rank_of_tokens} i antalet tokens.\n",  # noqa: E501
@@ -994,7 +996,8 @@ def _write_pos_feature_overview(
     fp.write(STATS_TEMPLATE[lang]["pos_feature_text"])
 
     if pos_tag not in pos_feats_freqs_flat:
-        fp.write(f"{pos_tag} not present among features\n")
+        # fp.write(f"{pos_tag} not present among features\n")
+        fp.write(STATS_TEMPLATE[lang]["no features for pos"].format(pos_tag=pos_tag))
         return
     for feat, feat_values in sorted(pos_feats_freqs_flat[pos_tag].items()):
         logger.debug("feat=%s, feat_values=%s", feat, feat_values)

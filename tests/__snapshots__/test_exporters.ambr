@@ -1416,7 +1416,7 @@
   
   #### Ordklass: **HA**, särdrag
   
-  HA not present among features
+  Hittade inga särdrag för HA
   
   ### Ordklass: **HD**
   Det finns 1407 (0%) `HD` tokens. Av 25 observerade ordklasser, `HD`:s rank är: 23 i antalet tokens.
@@ -1530,7 +1530,7 @@
   
   #### Ordklass: **IE**, särdrag
   
-  IE not present among features
+  Hittade inga särdrag för IE
   
   ### Ordklass: **IN**
   Det finns 840 (0%) `IN` tokens. Av 25 observerade ordklasser, `IN`:s rank är: 24 i antalet tokens.
@@ -1542,7 +1542,7 @@
   
   #### Ordklass: **IN**, särdrag
   
-  IN not present among features
+  Hittade inga särdrag för IN
   
   ### Ordklass: **JJ**
   Det finns 132552 (5%) `JJ` tokens. Av 25 observerade ordklasser, `JJ`:s rank är: 5 i antalet tokens.
@@ -1647,7 +1647,7 @@
   
   #### Ordklass: **MAD**, särdrag
   
-  MAD not present among features
+  Hittade inga särdrag för MAD
   
   ### Ordklass: **MID**
   Det finns 101646 (4%) `MID` tokens. Av 25 observerade ordklasser, `MID`:s rank är: 10 i antalet tokens.
@@ -1657,7 +1657,7 @@
   
   #### Ordklass: **MID**, särdrag
   
-  MID not present among features
+  Hittade inga särdrag för MID
   
   ### Ordklass: **NN**
   Det finns 736544 (25%) `NN` tokens. Av 25 observerade ordklasser, `NN`:s rank är: 1 i antalet tokens.
@@ -1736,7 +1736,7 @@
   
   #### Ordklass: **PAD**, särdrag
   
-  PAD not present among features
+  Hittade inga särdrag för PAD
   
   ### Ordklass: **PC**
   Det finns 47212 (2%) `PC` tokens. Av 25 observerade ordklasser, `PC`:s rank är: 15 i antalet tokens.
@@ -1822,7 +1822,7 @@
   
   #### Ordklass: **PL**, särdrag
   
-  PL not present among features
+  Hittade inga särdrag för PL
   
   ### Ordklass: **PM**
   Det finns 106015 (4%) `PM` tokens. Av 25 observerade ordklasser, `PM`:s rank är: 9 i antalet tokens.
@@ -2057,7 +2057,7 @@
   
   #### Ordklass: **SN**, särdrag
   
-  SN not present among features
+  Hittade inga särdrag för SN
   
   ### Ordklass: **UO**
   Det finns 2274 (0%) `UO` tokens. Av 25 observerade ordklasser, `UO`:s rank är: 22 i antalet tokens.
@@ -2069,7 +2069,7 @@
   
   #### Ordklass: **UO**, särdrag
   
-  UO not present among features
+  Hittade inga särdrag för UO
   
   ### Ordklass: **VB**
   Det finns 380285 (13%) `VB` tokens. Av 25 observerade ordklasser, `VB`:s rank är: 2 i antalet tokens.
