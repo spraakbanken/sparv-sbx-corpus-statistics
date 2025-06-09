@@ -1,7 +1,9 @@
 import json
+import locale
 import math
 import operator
 import os
+import typing as t
 from collections import defaultdict
 from collections.abc import Iterable
 from pathlib import Path
@@ -21,6 +23,10 @@ from sparv.api import (
     util,
 )
 from sparv.api.classes import Annotation
+
+from sparv_statistics import formatting as f
+
+__all__ = ["set_locale_from_lang"]
 
 logger = sparv_api.get_logger(__name__)
 
@@ -474,7 +480,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "features_header": "## Features\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) have multiple values of `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) have a non-empty value of `{feat}`. The feature is used with {num_pos_tags} part-of-speech tags: {pos_tags}\n",  # noqa: E501
-        "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent:.0f}% of all `{pos}` tokens) have a non-empty value of `{feat}`.\n",  # noqa: E501
+        "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent}% of all `{pos}` tokens) have a non-empty value of `{feat}`.\n",  # noqa: E501
         "features_pos_values": "`{pos}` tokens may have the following values of `{feat}`:\n",
         "features_subheader": "### Features: **{feat}**\n",
         "file": "files",
@@ -535,7 +541,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "features_header": "## Särdrag\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser: {pos_tags}\n",  # noqa: E501
-        "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent:.0f}% av alla `{pos}` tokens) har `{feat}`.\n",
+        "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent}% av alla `{pos}` tokens) har `{feat}`.\n",
         "features_pos_values": "`{pos}` tokens har följande värden av `{feat}`:\n",
         "features_subheader": "### Särdrag: **{feat}**\n",
         "file": "filer",
@@ -605,6 +611,21 @@ def _format_description_long(name: str, measure: str, lang: str) -> str:
     return f"{key_formatted} (`{name}`)"
 
 
+_LANG_TO_LOCALE_MAP: dict[str, str] = {
+    "sv": "sv_SE.UTF-8",
+    "en": "en_US.UTF-8",
+}
+
+
+def set_locale_from_lang(lang: str) -> str:
+    """Set locale based on lang code.
+
+    Args:
+        lang: language code
+    """
+    return locale.setlocale(locale.LC_ALL, _LANG_TO_LOCALE_MAP[lang])
+
+
 def write_stat_highlights(
     out: Export,
     corpus_id: Corpus,
@@ -616,11 +637,14 @@ def write_stat_highlights(
     ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
     stats2: dict[str, dict[str, Stats]],
-    lemma_attribute: Any,
+    lemma_attribute: t.Any,
 ) -> None:
     """Write statistcs highlights."""
     out_path = Path(out)
     # logger.debug("freqs=%s", freqs)
+    old_locale = locale.getlocale(locale.LC_CTYPE)
+    loc = set_locale_from_lang(lang)
+    logger.debug("locale.setlocale=%s", loc)
     with open("freqs.json", mode="w") as fp:
         json.dump(freqs, fp)
     with out_path.open("w") as fp:
@@ -648,6 +672,7 @@ def write_stat_highlights(
         fp.write("\n")
         _write_morphology(fp, token_freqs=freqs["segment.token"], lang=lang)
         fp.write("\n")
+    locale.setlocale(locale.LC_ALL, old_locale)
 
 
 def _write_statistical_overview(
@@ -691,12 +716,15 @@ def _write_attr_stats(
             # attr_count = f"{attr} {STATS_TEMPLATE[lang]['count']}"
             attr_count = _format_description(attr, "count", lang=lang)
             if attr_count not in written_stats:
-                fp.write(f"{attr_count} | {stats_.num_values} | | \n")
+                formatted_number = f.format_number(stats_.num_values, 0)
+                fp.write(f"{attr_count} | {formatted_number} | | \n")
                 written_stats.add(attr_count)
             attr_level = _format_description_long(attr, level, lang=lang)
-            fp.write(
-                f"{attr_level} | {stats_.num_values * stats_.mean():.0f} | {stats_.mean():.3f} | {stats_.standard_deviation():.3f}\n"  # noqa: E501
-            )
+
+            formatted_number = f.format_number(stats_.num_values * stats_.mean(), 0)
+            formatted_mean = f.format_number(stats_.mean(), 3)
+            formatted_std = f.format_number(stats_.standard_deviation(), 3)
+            fp.write(f"{attr_level} | {formatted_number} | {formatted_mean} | {formatted_std}\n")
 
 
 def _write_readability_attr_stats(
@@ -717,9 +745,9 @@ def _write_readability_attr_stats(
             stats_ = level_stats["stats"]
 
             index = attr.rsplit(".", maxsplit=1)[-1].upper()
-            fp.write(
-                f"{index} {STATS_TEMPLATE[lang][level]} (`{attr}`) | - | {stats_.mean():.3f} | {stats_.standard_deviation():.3f}\n"  # noqa: E501
-            )
+            formatted_mean = f.format_number(stats_.mean(), 3)
+            formatted_std = f.format_number(stats_.standard_deviation(), 3)
+            fp.write(f"{index} {STATS_TEMPLATE[lang][level]} (`{attr}`) | - | {formatted_mean} | {formatted_std}\n")
 
 
 def _write_top_10_lemmas(
@@ -837,8 +865,11 @@ def _write_features(
                 )
             )
         else:
+            num_feat_values_str = f.format_number(num_feat_values, 0)
             fp.write(
-                STATS_TEMPLATE[lang]["features_diff_values, plural"].format(feat=feat, num_diff_values=num_feat_values)
+                STATS_TEMPLATE[lang]["features_diff_values, plural"].format(
+                    feat=feat, num_diff_values=num_feat_values_str
+                )
             )
         fp.write(", ".join(sorted(feat_values)))
         fp.write(".\n")
@@ -861,12 +892,15 @@ def _write_features(
         for pos, freqs in feat_pos_freqs.items():
             tmp1.append((pos, freqs, freqs / total * 100))
         pos_tags = sorted(tmp1, key=operator.itemgetter(1), reverse=True)
-        tmp3 = (f"`{pos}` ({count}; {perc:.0f}% {STATS_TEMPLATE[lang]['instances']})" for pos, count, perc in pos_tags)
+        tmp3 = (
+            f"`{pos}` ({f.format_number(count)}; {f.format_percent(perc, 0)}% {STATS_TEMPLATE[lang]['instances']})"
+            for pos, count, perc in pos_tags
+        )
         pos_tags_str = ", ".join(tmp3)
 
         fp.write(
             STATS_TEMPLATE[lang]["features_nonempty_tokens"].format(
-                feat_token=feat_token,
+                feat_token=f.format_number(feat_token),
                 feat_token_percent=feat_token_percent,
                 feat=feat,
                 num_pos_tags=len(pos_tags),
@@ -876,8 +910,8 @@ def _write_features(
         if multi_feat_token > 0:
             fp.write(
                 STATS_TEMPLATE[lang]["features_multi_tokens"].format(
-                    multi_feat_token=multi_feat_token,
-                    multi_feat_token_percent=multi_feat_token_percent,
+                    multi_feat_token=f.format_number(multi_feat_token),
+                    multi_feat_token_percent=f.format_percent(multi_feat_token_percent, 0),
                     feat=feat,
                 )
             )
@@ -889,7 +923,7 @@ def _write_features(
 class PosStats:
     """Statistics of POS."""
 
-    def __init__(self, pos_freqs: dict[str, int]) -> None:  # noqa: D107
+    def __init__(self, pos_freqs: dict[str, int]) -> None:
         self.freqs = pos_freqs
         self.tags = sorted(pos_freqs.keys())
         self.sum_freqs = sum(pos_freqs.values())
@@ -911,7 +945,7 @@ class PosStats:
 class PosFeatureStats:
     """POS stats divided per feature."""
 
-    def __init__(self, feat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]]) -> None:  # noqa: D107
+    def __init__(self, feat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]]) -> None:
         pos_feat_stats: dict[str, dict[str, dict[str, int]]] = {}
         for feat, feat_values in feat_pos_freqs_flat.items():
             for feat_value, pos_values in feat_values.items():
@@ -947,11 +981,11 @@ def _write_pos_tag(
 ) -> None:
     # fp.write(f"### POS Tags: **{pos_tag}**\n")
     fp.write(STATS_TEMPLATE[lang]["POS_subheader"].format(pos_tag=pos_tag))
-    pos_tag_precent = round(pos_stats.stats[pos_tag])
+    pos_tag_precent = f.format_percent(pos_stats.stats[pos_tag], 0)
 
     fp.write(
         STATS_TEMPLATE[lang]["POS_descr"].format(
-            pos_tag_freqs=pos_stats.freqs[pos_tag],
+            pos_tag_freqs=f.format_number(pos_stats.freqs[pos_tag], 0),
             pos_tag_precent=pos_tag_precent,
             pos_tag=pos_tag,
             pos_stats_num_tags=pos_stats.num_tags,
@@ -1019,11 +1053,12 @@ def _write_pos_feature_overview(
         total_pos_freqs = pos_stats.freqs[pos_tag]
         fp.write(f"##### {pos_tag} {STATS_TEMPLATE[lang]['and']} {feat}\n")
         fp.write("\n")
+        freq_precent_str = f.format_percent(freqs / total_pos_freqs * 100.0, 0)
         fp.write(
             STATS_TEMPLATE[lang]["features_pos_feat"].format(
-                freqs=pos_stats.freqs[pos_tag],
+                freqs=f.format_number(freqs, 0),
                 pos=pos_tag,
-                freq_percent=freqs / total_pos_freqs * 100.0,
+                freq_percent=freq_precent_str,
                 feat=feat,
             )
         )
@@ -1031,12 +1066,18 @@ def _write_pos_feature_overview(
         fp.write(STATS_TEMPLATE[lang]["features_pos_values"].format(pos=pos_tag, feat=feat))
         fp.write("\n")
         fp.writelines(
-            f"- `{STATS_TEMPLATE[lang].get(feat_category) or feat_category}` ({feat_value}; {feat_value / total_pos_freqs * 100:.0f}%)\n"
+            f"- `{STATS_TEMPLATE[lang].get(feat_category) or feat_category}` ({f.format_number(feat_value, 0)}; {f.format_percent(feat_value / total_pos_freqs * 100, 0)}%)\n"  # noqa: E501
             for feat_category, feat_value in sorted(feat_values.items(), key=operator.itemgetter(1))
         )
-        fp.write(
-            f"- `{STATS_TEMPLATE[lang]['missing']}` ({total_pos_freqs - freqs}; {(total_pos_freqs - freqs) / total_pos_freqs * 100:.0f}%)\n"  # noqa: E501
-        )
+        num_missing_tags = total_pos_freqs - freqs
+        num_missing_tags_str = f.format_number(num_missing_tags, 0)
+        if num_missing_tags > 0:
+            num_missing_percent = num_missing_tags / total_pos_freqs * 100.0
+            num_missing_percent_str = f.format_percent(num_missing_percent, 0)
+        else:
+            num_missing_percent_str = "0"
+
+        fp.write(f"- `{STATS_TEMPLATE[lang]['missing']}` ({num_missing_tags_str}; {num_missing_percent_str}%)\n")
         fp.write("\n")
 
 
@@ -1048,17 +1089,17 @@ def _write_tokenization_and_word_segmentation(
 ) -> None:
     # fp.write("## Tokenization and Word Segmentation\n")
     fp.write(STATS_TEMPLATE[lang]["tokenization_header"])
-    num_sentences = all_stats["segment.sentence"]["raw"]["stats"].num_values
+    num_sentences = f.format_number(all_stats["segment.sentence"]["raw"]["stats"].num_values, 0)
     # num_tokens, unique_tokens = filter_and_count_total_and_unique(
     #     "segment.token", freqs["segment.token"]
     # )
-    num_tokens = all_stats["segment.token"]["raw"]["stats"].num_values
-    num_documents = all_stats["dokument"]["raw"]["stats"].num_values
-    num_files = all_stats["file"]["raw"]["stats"].num_values
+    num_tokens = f.format_number(all_stats["segment.token"]["raw"]["stats"].num_values, 0)
+    num_documents = f.format_number(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+    num_files = f.format_number(all_stats["file"]["raw"]["stats"].num_values, 0)
     num_paragraphs = (
         all_stats["segment.paragraph"]["raw"]["stats"].num_values if "segment.paragraph" in all_stats else 0
     )
-    num_texts = all_stats["text"]["raw"]["stats"].num_values
+    num_texts = f.format_number(all_stats["text"]["raw"]["stats"].num_values, 0)
 
     fp.write(
         STATS_TEMPLATE[lang]["tokenization_texts"].format(
@@ -1066,9 +1107,10 @@ def _write_tokenization_and_word_segmentation(
         )
     )
     if num_paragraphs > 0:
+        num_paragraphs_str = f.format_number(num_paragraphs, 0)
         fp.write(
             STATS_TEMPLATE[lang]["tokenization_paragraphs"].format(
-                num_paragraphs=num_paragraphs, num_documents=num_documents
+                num_paragraphs=num_paragraphs_str, num_documents=num_documents
             )
         )
 
@@ -1081,21 +1123,19 @@ def _write_tokenization_and_word_segmentation(
     )
 
 
-def _write_readability(fp: TextIO, stats: dict[str, dict[str, Stats]], lang: str) -> None:
-    # fp.write("## Readability\n")
-    fp.write(STATS_TEMPLATE[lang]["readability_header"])
-    fp.write("\n")
-    # fp.write("This corpus has the following readability scores:\n")
-    fp.write(STATS_TEMPLATE[lang]["readability_scores"])
-    for annot, freqs in stats.items():
-        if annot.startswith("text:readability"):
-            score = annot.rsplit(".", maxsplit=1)[-1]
-            annot_stats: RunningMeanVar = freqs["value"]["stats"]
-            fp.writelines(
-                STATS_TEMPLATE[lang]["readability_value_row"].format(
-                    score=score, mean=annot_stats.mean(), std=annot_stats.standard_deviation()
-                )
-            )
+# def _write_readability(fp: TextIO, stats: dict[str, dict[str, Stats]], lang: str) -> None:
+#     fp.write(STATS_TEMPLATE[lang]["readability_header"])
+#     fp.write("\n")
+#     fp.write(STATS_TEMPLATE[lang]["readability_scores"])
+#     for annot, freqs in stats.items():
+#         if annot.startswith("text:readability"):
+#             score = annot.rsplit(".", maxsplit=1)[-1]
+#             annot_stats: RunningMeanVar = freqs["value"]["stats"]
+#             fp.writelines(
+#                 STATS_TEMPLATE[lang]["readability_value_row"].format(
+#                     score=score, mean=annot_stats.mean(), std=annot_stats.standard_deviation()
+#                 )
+#             )
 
 
 def _write_morphology(
@@ -1147,8 +1187,9 @@ def _write_msd(fp: TextIO, token_freqs: dict[str, dict[str, int]], lang: str) ->
     fp.write(STATS_TEMPLATE[lang]["morphology_msd_table_header"])
     fp.write("--- | ---: | ---:\n")
     for msd in msds_sorted:
-        msd_percent = msd_freqs[msd] / num_msds * 100
-        fp.write(f"{msd} | {msd_freqs[msd]} | {msd_percent:.2f}%\n")
+        msd_percent = f.format_percent(msd_freqs[msd] / num_msds * 100, 2)
+        msd_freqs_str = f.format_number(msd_freqs[msd], 0)
+        fp.write(f"{msd} | {msd_freqs_str} | {msd_percent}%\n")
 
 
 def filter_and_count_total_and_unique(label: str, items: dict[str, dict[str, int]]) -> tuple[int, int]:

@@ -3,7 +3,7 @@
 import locale
 import typing as t
 
-__all__ = ["format_number"]
+__all__ = ["format_number", "format_percent"]
 
 
 _LOCALE_MAP: dict[int, str] = {
