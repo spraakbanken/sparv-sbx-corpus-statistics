@@ -1,0 +1,295 @@
+# serializer version: 1
+# name: test_format_float[0.11-en]
+  '0.110'
+# ---
+# name: test_format_float[0.11-sv]
+  '0,110'
+# ---
+# name: test_format_float[1.1-en]
+  '1.10'
+# ---
+# name: test_format_float[1.1-sv]
+  '1,10'
+# ---
+# name: test_format_float[11-en]
+  '11.0'
+# ---
+# name: test_format_float[11-sv]
+  '11,0'
+# ---
+# name: test_format_float[111-en]
+  '111'
+# ---
+# name: test_format_float[111-sv]
+  '111'
+# ---
+# name: test_format_float[1111-en]
+  '1,111'
+# ---
+# name: test_format_float[1111-sv]
+  '1\u202f111'
+# ---
+# name: test_format_float_with_significant_digits[1.1-0-en]
+  '1'
+# ---
+# name: test_format_float_with_significant_digits[1.1-0-sv]
+  '1'
+# ---
+# name: test_format_float_with_significant_digits[1.1-5-en]
+  '1.1000'
+# ---
+# name: test_format_float_with_significant_digits[1.1-5-sv]
+  '1,1000'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.0001111-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.0001111-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.001111-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.001111-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.011111-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.011111-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.111111-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-0.111111-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.11111-en]
+  '1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.11111-sv]
+  '1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.111e-05-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.111e-05-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.111e-06-en]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[0-1.111e-06-sv]
+  '< 1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.0001111-en]
+  '< 0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.0001111-sv]
+  '< 0,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.001111-en]
+  '< 0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.001111-sv]
+  '< 0,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.011111-en]
+  '< 0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.011111-sv]
+  '< 0,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.111111-en]
+  '0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-0.111111-sv]
+  '0,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.11111-en]
+  '1.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.11111-sv]
+  '1,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.111e-05-en]
+  '< 0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.111e-05-sv]
+  '< 0,1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.111e-06-en]
+  '< 0.1'
+# ---
+# name: test_format_percent_with_n_decimals[1-1.111e-06-sv]
+  '< 0,1'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.0001111-en]
+  '< 0.01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.0001111-sv]
+  '< 0,01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.001111-en]
+  '< 0.01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.001111-sv]
+  '< 0,01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.011111-en]
+  '0.01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.011111-sv]
+  '0,01'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.111111-en]
+  '0.11'
+# ---
+# name: test_format_percent_with_n_decimals[2-0.111111-sv]
+  '0,11'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.11111-en]
+  '1.11'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.11111-sv]
+  '1,11'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.111e-05-en]
+  '< 0.01'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.111e-05-sv]
+  '< 0,01'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.111e-06-en]
+  '< 0.01'
+# ---
+# name: test_format_percent_with_n_decimals[2-1.111e-06-sv]
+  '< 0,01'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.0001111-en]
+  '< 0.001'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.0001111-sv]
+  '< 0,001'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.001111-en]
+  '0.001'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.001111-sv]
+  '0,001'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.011111-en]
+  '0.011'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.011111-sv]
+  '0,011'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.111111-en]
+  '0.111'
+# ---
+# name: test_format_percent_with_n_decimals[3-0.111111-sv]
+  '0,111'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.11111-en]
+  '1.111'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.11111-sv]
+  '1,111'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.111e-05-en]
+  '< 0.001'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.111e-05-sv]
+  '< 0,001'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.111e-06-en]
+  '< 0.001'
+# ---
+# name: test_format_percent_with_n_decimals[3-1.111e-06-sv]
+  '< 0,001'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.0001111-en]
+  '0.0001'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.0001111-sv]
+  '0,0001'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.001111-en]
+  '0.0011'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.001111-sv]
+  '0,0011'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.011111-en]
+  '0.0111'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.011111-sv]
+  '0,0111'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.111111-en]
+  '0.1111'
+# ---
+# name: test_format_percent_with_n_decimals[4-0.111111-sv]
+  '0,1111'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.11111-en]
+  '1.1111'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.11111-sv]
+  '1,1111'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.111e-05-en]
+  '< 0.0001'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.111e-05-sv]
+  '< 0,0001'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.111e-06-en]
+  '< 0.0001'
+# ---
+# name: test_format_percent_with_n_decimals[4-1.111e-06-sv]
+  '< 0,0001'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.0001111-en]
+  '0.00011'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.0001111-sv]
+  '0,00011'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.001111-en]
+  '0.00111'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.001111-sv]
+  '0,00111'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.011111-en]
+  '0.01111'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.011111-sv]
+  '0,01111'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.111111-en]
+  '0.11111'
+# ---
+# name: test_format_percent_with_n_decimals[5-0.111111-sv]
+  '0,11111'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.11111-en]
+  '1.11111'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.11111-sv]
+  '1,11111'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.111e-05-en]
+  '0.00001'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.111e-05-sv]
+  '0,00001'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.111e-06-en]
+  '< 0.00001'
+# ---
+# name: test_format_percent_with_n_decimals[5-1.111e-06-sv]
+  '< 0,00001'
+# ---
