@@ -42,16 +42,16 @@ class SucDelimiter(StrEnum):
     PAD = auto()
 
 
-class SucComparation(StrEnum):
-    """Comparation in SUC."""
+class SucDegree(StrEnum):
+    """Degree in SUC."""
 
     POS = auto()
     KOM = auto()
     SUV = auto()
 
 
-class SucGenus(StrEnum):
-    """Genus in SUC."""
+class SucGender(StrEnum):
+    """Gender in SUC."""
 
     UTR = auto()
     NEU = auto()
@@ -59,24 +59,24 @@ class SucGenus(StrEnum):
     UTR_NEU = "UTR/NEU"
 
 
-class SucNumerus(StrEnum):
-    """Numerus in SUC."""
+class SucNumber(StrEnum):
+    """Number in SUC."""
 
     SIN = auto()
     PLU = auto()
     SIN_PLU = "SIN/PLU"
 
 
-class SucDefinite(StrEnum):
-    """Definite in SUC."""
+class SucDefiniteness(StrEnum):
+    """Definiteness in SUC."""
 
     IND = auto()
     DEF = auto()
     IND_DEF = "IND/DEF"
 
 
-class SucNounForm(StrEnum):
-    """Noun form in SUC."""
+class SucCase(StrEnum):
+    """Case in SUC."""
 
     NOM = auto()
     GEN = auto()
@@ -97,12 +97,42 @@ class SucVerbForm(StrEnum):
     PRF = auto()
 
 
-class SucPartOfSentence(StrEnum):
-    """Part of Sentence in SUC."""
+class SucPronounForm(StrEnum):
+    """Pronoun form in SUC."""
 
     SUB = auto()
     OBJ = auto()
     SUB_OBJ = "SUB/OBJ"
+
+
+class SucVoice(StrEnum):
+    """Voice in SUC."""
+
+    AKT = auto()
+    SFO = auto()
+
+
+class SucTense(StrEnum):
+    """Tense in SUC."""
+
+    IMP = auto()
+    INF = auto()
+    PRS = auto()
+    PRT = auto()
+    SUP = auto()
+
+
+class SucMood(StrEnum):
+    """Mood in SUC."""
+
+    KON = auto()
+
+
+class SucParticleForm(StrEnum):
+    """Particle form in SUC."""
+
+    PRS = auto()
+    PRF = auto()
 
 
 @attrs.define
@@ -122,25 +152,23 @@ class MsdWPos(Msd):
     """MSD with POS."""
 
     pos: SucPos
-    comparation: t.Optional[SucComparation] = None
-    genus: t.Optional[SucGenus] = None
-    numerus: t.Optional[SucNumerus] = None
-    definite: t.Optional[SucDefinite] = None
-    noun_form: t.Optional[SucNounForm] = None
+    degree: t.Optional[SucDegree] = None
+    gender: t.Optional[SucGender] = None
+    number: t.Optional[SucNumber] = None
+    definiteness: t.Optional[SucDefiniteness] = None
+    case: t.Optional[SucCase] = None
+    tense: t.Optional[SucTense] = None
+    voice: t.Optional[SucVoice] = None
+    mood: t.Optional[SucMood] = None
+    particle_form: t.Optional[SucParticleForm] = None
+    pronoun_form: t.Optional[SucPronounForm] = None
     is_abbreviation: bool = False
-    verb_forms: t.Optional[list[SucVerbForm]] = None
-    part_of_sentence: t.Optional[SucPartOfSentence] = None
-
-    @property
-    def verb_form(self) -> t.Optional[SucVerbForm]:
-        """Get first verb form if present."""
-        return self.verb_forms[0] if self.verb_forms else None
 
     @classmethod
-    def pos_ab(cls, pos: SucPos, comparation: t.Optional[SucComparation]) -> "MsdWPos":
+    def pos_ab(cls, pos: SucPos, degree: t.Optional[SucDegree]) -> "MsdWPos":
         """Create MSD with POS='AB'."""
         _check_given_pos(pos, SucPos.AB)
-        return cls(pos=pos, comparation=comparation)
+        return cls(pos=pos, degree=degree)
 
     @classmethod
     def pos_abbr(cls, pos: SucPos) -> "MsdWPos":
@@ -151,160 +179,165 @@ class MsdWPos(Msd):
     def pos_dt(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
+        gender: SucGender,
+        number: SucNumber,
+        definiteness: SucDefiniteness,
     ) -> "MsdWPos":
         """Create MSD with POS='DT'."""
         _check_given_pos(pos, SucPos.DT)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness)
 
     @classmethod
     def pos_hd(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
+        gender: SucGender,
+        number: SucNumber,
+        definiteness: t.Optional[SucDefiniteness],
     ) -> "MsdWPos":
         """Create MSD with POS='HD'."""
         _check_given_pos(pos, SucPos.HD)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness)
 
     @classmethod
     def pos_hp(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
+        gender: t.Optional[SucGender],
+        number: t.Optional[SucNumber],
+        definiteness: t.Optional[SucDefiniteness],
     ) -> "MsdWPos":
         """Create MSD with POS='HP'."""
         _check_given_pos(pos, SucPos.HP)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness)
 
     @classmethod
     def pos_hs(
         cls,
         pos: SucPos,
-        definite: t.Optional[SucDefinite],
+        definiteness: t.Optional[SucDefiniteness],
     ) -> "MsdWPos":
         """Create MSD with POS='HS'."""
         _check_given_pos(pos, SucPos.HS)
-        return cls(pos=pos, definite=definite)
+        return cls(pos=pos, definiteness=definiteness)
 
     @classmethod
     def pos_jj(
         cls,
         pos: SucPos,
-        comparation: SucComparation,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
-        noun_form: t.Optional[SucNounForm],
+        degree: SucDegree,
+        gender: SucGender,
+        number: SucNumber,
+        definiteness: SucDefiniteness,
+        case: SucCase,
     ) -> "MsdWPos":
         """Create MSD with POS='JJ'."""
         _check_given_pos(pos, SucPos.JJ)
-        return cls(
-            pos=pos, comparation=comparation, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form
-        )
+        return cls(pos=pos, degree=degree, gender=gender, number=number, definiteness=definiteness, case=case)
 
     @classmethod
     def pos_nn(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
-        noun_form: t.Optional[SucNounForm],
+        gender: t.Optional[SucGender],
+        number: t.Optional[SucNumber],
+        definiteness: t.Optional[SucDefiniteness],
+        case: t.Optional[SucCase],
     ) -> "MsdWPos":
         """Create MSD with POS='NN'."""
         _check_given_pos(pos, SucPos.NN)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
 
     @classmethod
     def pos_pc(
         cls,
         pos: SucPos,
-        verb_form: SucVerbForm,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
-        noun_form: t.Optional[SucNounForm],
+        particle_form: SucParticleForm,
+        gender: SucGender,
+        number: SucNumber,
+        definiteness: SucDefiniteness,
+        case: SucCase,
     ) -> "MsdWPos":
         """Create MSD with POS='PC'."""
         _check_given_pos(pos, SucPos.PC)
         return cls(
-            pos=pos, verb_forms=[verb_form], genus=genus, numerus=numerus, definite=definite, noun_form=noun_form
+            pos=pos,
+            particle_form=particle_form,
+            gender=gender,
+            number=number,
+            definiteness=definiteness,
+            case=case,
         )
 
     @classmethod
     def pos_pm(
         cls,
         pos: SucPos,
-        noun_form: SucNounForm,
+        case: SucCase,
     ) -> "MsdWPos":
         """Create MSD with POS='PM'."""
         _check_given_pos(pos, SucPos.PM)
-        return cls(pos=pos, noun_form=noun_form)
+        return cls(pos=pos, case=case)
 
     @classmethod
     def pos_pn(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
-        part_of_sentence: SucPartOfSentence,
+        gender: t.Optional[SucGender],
+        number: t.Optional[SucNumber],
+        definiteness: t.Optional[SucDefiniteness],
+        pronoun_form: SucPronounForm,
     ) -> "MsdWPos":
         """Create MSD with POS='PN'."""
         _check_given_pos(pos, SucPos.PN)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite, part_of_sentence=part_of_sentence)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness, pronoun_form=pronoun_form)
 
     @classmethod
     def pos_ps(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
+        gender: SucGender,
+        number: SucNumber,
+        definiteness: t.Optional[SucDefiniteness],
     ) -> "MsdWPos":
         """Create MSD with POS='PS'."""
         _check_given_pos(pos, SucPos.PS)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness)
 
     @classmethod
     def pos_rg(
         cls,
         pos: SucPos,
-        noun_form: SucNounForm,
+        case: t.Optional[SucCase],
     ) -> "MsdWPos":
         """Create MSD with POS='RG'."""
         _check_given_pos(pos, SucPos.RG)
-        return cls(pos=pos, noun_form=noun_form)
+        return cls(pos=pos, case=case)
 
     @classmethod
     def pos_ro(
         cls,
         pos: SucPos,
-        genus: t.Optional[SucGenus],
-        numerus: t.Optional[SucNumerus],
-        definite: t.Optional[SucDefinite],
-        noun_form: t.Optional[SucNounForm],
+        gender: t.Optional[SucGender],
+        number: t.Optional[SucNumber],
+        definiteness: t.Optional[SucDefiniteness],
+        case: t.Optional[SucCase],
     ) -> "MsdWPos":
         """Create MSD with POS='RO'."""
         _check_given_pos(pos, SucPos.RO)
-        return cls(pos=pos, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
 
     @classmethod
     def pos_vb(
         cls,
         pos: SucPos,
-        verb_forms: list[SucVerbForm],
+        tense: SucTense,
+        mood: t.Optional[SucMood],
+        voice: SucVoice,
     ) -> "MsdWPos":
         """Create MSD with POS='VB'."""
         _check_given_pos(pos, SucPos.VB)
-        return cls(pos=pos, verb_forms=verb_forms)
+        return cls(pos=pos, tense=tense, voice=voice, mood=mood)
 
     @classmethod
     def with_pos(cls, pos: SucPos) -> "MsdWPos":
@@ -338,102 +371,108 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
     if msds and msds[0] == "AN":
         return MsdWPos.pos_abbr(pos=pos)
     if pos == SucPos.AB:
-        comparation = SucComparation(msds[0]) if msds else None
-        return MsdWPos.pos_ab(pos=pos, comparation=comparation)
+        degree = SucDegree(msds[0]) if msds else None
+        return MsdWPos.pos_ab(pos=pos, degree=degree)
     if pos == SucPos.DT:
-        genus = SucGenus(msds[0].replace("+", "/"))
-        numerus = SucNumerus(msds[1].replace("+", "/"))
-        definite = SucDefinite(msds[2].replace("+", "/"))
-        return MsdWPos.pos_dt(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        gender = SucGender(msds[0].replace("+", "/"))
+        number = SucNumber(msds[1].replace("+", "/"))
+        definiteness = SucDefiniteness(msds[2].replace("+", "/"))
+        return MsdWPos.pos_dt(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.HD:
-        genus = SucGenus(msds[0].replace("+", "/"))
-        numerus = SucNumerus(msds[1].replace("+", "/"))
-        definite = SucDefinite(msds[2].replace("+", "/"))
-        return MsdWPos.pos_hd(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        gender = SucGender(msds[0].replace("+", "/"))
+        number = SucNumber(msds[1].replace("+", "/"))
+        definiteness = SucDefiniteness(msds[2].replace("+", "/"))
+        return MsdWPos.pos_hd(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.HP:
-        genus = SucGenus(msds[0].replace("+", "/")) if msds[0] != "-" else None
-        numerus = SucNumerus(msds[1].replace("+", "/")) if msds[1] != "-" else None
-        definite = SucDefinite(msds[2].replace("+", "/")) if msds[2] != "-" else None
-        return MsdWPos.pos_hp(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
+        number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
+        definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+        return MsdWPos.pos_hp(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.HS:
-        definite = SucDefinite(msds[0].replace("+", "/"))
-        return MsdWPos.pos_hs(pos=pos, definite=definite)
+        definiteness = SucDefiniteness(msds[0].replace("+", "/"))
+        return MsdWPos.pos_hs(pos=pos, definiteness=definiteness)
     if pos == SucPos.JJ:
-        comparation = SucComparation(msds[0])
-        genus = SucGenus(msds[1].replace("+", "/"))
-        numerus = SucNumerus(msds[2].replace("+", "/"))
-        definite = SucDefinite(msds[3].replace("+", "/"))
-        noun_form = SucNounForm(msds[4])
+        degree = SucDegree(msds[0])
+        gender = SucGender(msds[1].replace("+", "/"))
+        number = SucNumber(msds[2].replace("+", "/"))
+        definiteness = SucDefiniteness(msds[3].replace("+", "/"))
+        case = SucCase(msds[4])
         return MsdWPos.pos_jj(
-            pos=pos, comparation=comparation, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form
+            pos=pos, degree=degree, gender=gender, number=number, definiteness=definiteness, case=case
         )
     if pos == SucPos.NN:
         try:
-            genus = SucGenus(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            numerus = SucNumerus(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definite = SucDefinite(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            noun_form = SucNounForm(msds[3]) if msds[3] != "-" else None
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+            case = SucCase(msds[3]) if msds[3] != "-" else None
         except ValueError as exc:
             raise UnsupportedValueError from exc
-        return MsdWPos.pos_nn(pos=pos, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form)
+        return MsdWPos.pos_nn(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
     if pos == SucPos.PC:
         try:
-            verb_form = SucVerbForm(msds[0])
-            genus = SucGenus(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            numerus = SucNumerus(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            definite = SucDefinite(msds[3].replace("+", "/")) if msds[3] != "-" else None
-            noun_form = SucNounForm(msds[4]) if msds[3] != "-" else None
+            particle_form = SucParticleForm(msds[0])
+            gender = SucGender(msds[1].replace("+", "/"))
+            number = SucNumber(msds[2].replace("+", "/"))
+            definiteness = SucDefiniteness(msds[3].replace("+", "/"))
+            case = SucCase(msds[4])
         except ValueError as exc:
             raise UnsupportedValueError from exc
         return MsdWPos.pos_pc(
-            pos=pos, verb_form=verb_form, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form
+            pos=pos, particle_form=particle_form, gender=gender, number=number, definiteness=definiteness, case=case
         )
     if pos == SucPos.PM:
-        noun_form = SucNounForm(msds[0])
-        return MsdWPos.pos_pm(pos=pos, noun_form=noun_form)
+        case = SucCase(msds[0])
+        return MsdWPos.pos_pm(pos=pos, case=case)
     if pos == SucPos.PN:
         try:
-            genus = SucGenus(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            numerus = SucNumerus(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definite = SucDefinite(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            part_of_sentence = SucPartOfSentence(msds[3].replace("+", "/"))
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+            pronoun_form = SucPronounForm(msds[3].replace("+", "/"))
         except ValueError as exc:
             raise UnsupportedValueError from exc
         return MsdWPos.pos_pn(
-            pos=pos, genus=genus, numerus=numerus, definite=definite, part_of_sentence=part_of_sentence
+            pos=pos, gender=gender, number=number, definiteness=definiteness, pronoun_form=pronoun_form
         )
     if pos == SucPos.PS:
-        genus = SucGenus(msds[0].replace("+", "/"))
-        numerus = SucNumerus(msds[1].replace("+", "/"))
-        definite = SucDefinite(msds[2].replace("+", "/"))
-        return MsdWPos.pos_ps(pos=pos, genus=genus, numerus=numerus, definite=definite)
+        gender = SucGender(msds[0].replace("+", "/"))
+        number = SucNumber(msds[1].replace("+", "/"))
+        definiteness = SucDefiniteness(msds[2].replace("+", "/"))
+        return MsdWPos.pos_ps(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.RG:
-        noun_form = SucNounForm(msds[0])
-        return MsdWPos.pos_rg(pos=pos, noun_form=noun_form)
+        case = SucCase(msds[0])
+        return MsdWPos.pos_rg(pos=pos, case=case)
     if pos == SucPos.RO:
         try:
-            genus = SucGenus(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            numerus = SucNumerus(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definite = SucDefinite(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            noun_form = SucNounForm(msds[3]) if msds[3] != "-" else None
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+            case = SucCase(msds[3]) if msds[3] != "-" else None
         except ValueError as exc:
             try:
-                noun_form = SucNounForm(msds[0])
-                return MsdWPos.pos_ro(pos=pos, genus=None, numerus=None, definite=None, noun_form=noun_form)
+                case = SucCase(msds[0])
+                return MsdWPos.pos_ro(pos=pos, gender=None, number=None, definiteness=None, case=case)
             except ValueError as exc:
                 raise UnsupportedValueError from exc
             raise UnsupportedValueError from exc
-        return MsdWPos.pos_ro(pos=pos, genus=genus, numerus=numerus, definite=definite, noun_form=noun_form)
+        return MsdWPos.pos_ro(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
 
     if pos == SucPos.VB:
         try:
-            verb_forms = [SucVerbForm(msds[0])]
-            verb_forms.append(SucVerbForm(msds[1]))
-            if verb_forms[0] == SucVerbForm.KON:
-                verb_forms.append(SucVerbForm(msds[2]))
+            tense = SucTense(msds[0])
+            mood = None
+        except ValueError:
+            try:
+                mood = SucMood(msds[0])
+                tense = SucTense(msds[1])
+            except ValueError as exc:
+                raise UnsupportedValueError from exc
+        try:
+            voice = SucVoice(msds[2]) if mood else SucVoice(msds[1])
         except ValueError as exc:
             raise UnsupportedValueError from exc
-        return MsdWPos.pos_vb(pos=pos, verb_forms=verb_forms)
+        return MsdWPos.pos_vb(pos=pos, tense=tense, mood=mood, voice=voice)
     return MsdWPos.with_pos(pos=pos)
 
 
