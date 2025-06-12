@@ -4,7 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["numpy>1.24.4", "running-stats>=0.1.3", "sparv-pipeline>=5.2.0"]
+dependencies = [
+    "attrs>=25.3.0",
+    "numpy>1.24.4",
+    "running-stats>=0.1.3",
+    "sparv-pipeline>=5.2.0",
+    "strenum>=0.4.15",
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     # "Development Status :: 4 - Beta",

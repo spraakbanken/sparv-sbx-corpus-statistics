@@ -1,0 +1,373 @@
+# serializer version: 1
+# name: test_parse[AB.AN]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[AB.KOM]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, comparation=<SucComparation.KOM: 'KOM'>, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[AB.POS]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, comparation=<SucComparation.POS: 'POS'>, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[AB.SUV]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, comparation=<SucComparation.SUV: 'SUV'>, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[AB]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.MAS.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.NEU.SIN.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN+PLU.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR.SIN.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[DT.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HA]
+  MsdWPos(pos=<SucPos.HA: 'HA'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HD.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HD.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HD.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HP.-.-.-]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HP.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HP.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HP.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[HS.DEF]
+  MsdWPos(pos=<SucPos.HS: 'HS'>, comparation=None, genus=None, numerus=None, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[IE]
+  MsdWPos(pos=<SucPos.IE: 'IE'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[IN]
+  MsdWPos(pos=<SucPos.IN: 'IN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.AN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.KOM.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.KOM: 'KOM'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.MAS.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.NEU.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND+DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.POS.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.POS: 'POS'>, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.SUV.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.SUV: 'SUV'>, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.SUV: 'SUV'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.SUV: 'SUV'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.SIN+PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.SUV: 'SUV'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.SIN+PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, comparation=<SucComparation.SUV: 'SUV'>, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[KN.AN]
+  MsdWPos(pos=<SucPos.KN: 'KN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[KN]
+  MsdWPos(pos=<SucPos.KN: 'KN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[MAD]
+  MsdWDelimiter(delimiter=<SucDelimiter.MAD: 'MAD'>)
+# ---
+# name: test_parse[MID]
+  MsdWDelimiter(delimiter=<SucDelimiter.MID: 'MID'>)
+# ---
+# name: test_parse[NN.-.-.-.-]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.AN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.PLU.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.PLU.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.SIN.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.-.-.-]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.-.-.SMS]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=None, definite=None, noun_form=<SucNounForm.SMS: 'SMS'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.PLU.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.PLU.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.SIN.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[NN.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PAD]
+  MsdWDelimiter(delimiter=<SucDelimiter.PAD: 'PAD'>)
+# ---
+# name: test_parse[PC.PRF.MAS.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.PLU.IND+DEF.GEN]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRF.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRF: 'PRF'>], part_of_sentence=None)
+# ---
+# name: test_parse[PC.PRS.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=[<SucVerbForm.PRS: 'PRS'>], part_of_sentence=None)
+# ---
+# name: test_parse[PL]
+  MsdWPos(pos=<SucPos.PL: 'PL'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PM.GEN]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.GEN: 'GEN'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PM.NOM]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PM.SMS]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.SMS: 'SMS'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PN.MAS.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.NEU.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.NEU.SIN.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.OBJ: 'OBJ'>)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB: 'SUB'>)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.UTR+NEU.SIN+PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.OBJ: 'OBJ'>)
+# ---
+# name: test_parse[PN.UTR.PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.OBJ: 'OBJ'>)
+# ---
+# name: test_parse[PN.UTR.PLU.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB: 'SUB'>)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.OBJ: 'OBJ'>)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB: 'SUB'>)
+# ---
+# name: test_parse[PN.UTR.SIN.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB_OBJ: 'SUB/OBJ'>)
+# ---
+# name: test_parse[PN.UTR.SIN.IND.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND: 'IND'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=<SucPartOfSentence.SUB: 'SUB'>)
+# ---
+# name: test_parse[PP.AN]
+  MsdWPos(pos=<SucPos.PP: 'PP'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PP]
+  MsdWPos(pos=<SucPos.PP: 'PP'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PS.NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, comparation=None, genus=<SucGenus.NEU: 'NEU'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PS.UTR+NEU.PLU.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.PLU: 'PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PS.UTR+NEU.SIN+PLU.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, comparation=None, genus=<SucGenus.UTR_NEU: 'UTR/NEU'>, numerus=<SucNumerus.SIN_PLU: 'SIN/PLU'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[PS.UTR.SIN.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, comparation=None, genus=<SucGenus.UTR: 'UTR'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.DEF: 'DEF'>, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[RG.NOM]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[RG.SMS]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.SMS: 'SMS'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[RO.MAS.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.RO: 'RO'>, comparation=None, genus=<SucGenus.MAS: 'MAS'>, numerus=<SucNumerus.SIN: 'SIN'>, definite=<SucDefinite.IND_DEF: 'IND/DEF'>, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[RO.NOM]
+  MsdWPos(pos=<SucPos.RO: 'RO'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=<SucNounForm.NOM: 'NOM'>, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[SN]
+  MsdWPos(pos=<SucPos.SN: 'SN'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[UO]
+  MsdWPos(pos=<SucPos.UO: 'UO'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[VB.AN]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=True, verb_forms=None, part_of_sentence=None)
+# ---
+# name: test_parse[VB.IMP.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.IMP: 'IMP'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.INF.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.INF: 'INF'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.INF.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.INF: 'INF'>, <SucVerbForm.SFO: 'SFO'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.KON.PRS.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.KON: 'KON'>, <SucVerbForm.PRS: 'PRS'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.KON.PRT.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.KON: 'KON'>, <SucVerbForm.PRT: 'PRT'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.PRS.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.PRS: 'PRS'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.PRS.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.PRS: 'PRS'>, <SucVerbForm.SFO: 'SFO'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.PRT.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.PRT: 'PRT'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.PRT.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.PRT: 'PRT'>, <SucVerbForm.SFO: 'SFO'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.SUP.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.SUP: 'SUP'>, <SucVerbForm.AKT: 'AKT'>], part_of_sentence=None)
+# ---
+# name: test_parse[VB.SUP.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, comparation=None, genus=None, numerus=None, definite=None, noun_form=None, is_abbreviation=False, verb_forms=[<SucVerbForm.SUP: 'SUP'>, <SucVerbForm.SFO: 'SFO'>], part_of_sentence=None)
+# ---
