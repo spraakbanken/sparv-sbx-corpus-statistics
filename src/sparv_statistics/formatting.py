@@ -25,7 +25,7 @@ _PERCENT_LIMIT_MAP: dict[int, float] = {
 }
 
 
-def format_number(number: t.Union[float, int], significant_digits: int = 3) -> str:
+def fmt_number_signific(number: t.Union[float, int], significant_digits: int = 3) -> str:
     """Format a number with given number of significant digits with locale."""
     if number >= 100:
         significant_digits -= 3
@@ -42,7 +42,8 @@ def format_number(number: t.Union[float, int], significant_digits: int = 3) -> s
     return formatted_number
 
 
-def format_percent(number: t.Union[float, int], n_decimals: int) -> str:
+def fmt_number_decimals(number: t.Union[float, int], n_decimals: int) -> str:
+    """Format a number with given number decimals with locale."""
     try:
         limit = _PERCENT_LIMIT_MAP[n_decimals]
     except KeyError:
