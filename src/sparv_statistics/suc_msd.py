@@ -1,6 +1,5 @@
 """Parse SUC MSD."""
 
-import typing as t
 from enum import auto
 
 import attrs
@@ -152,20 +151,20 @@ class MsdWPos(Msd):
     """MSD with POS."""
 
     pos: SucPos
-    degree: t.Optional[SucDegree] = None
-    gender: t.Optional[SucGender] = None
-    number: t.Optional[SucNumber] = None
-    definiteness: t.Optional[SucDefiniteness] = None
-    case: t.Optional[SucCase] = None
-    tense: t.Optional[SucTense] = None
-    voice: t.Optional[SucVoice] = None
-    mood: t.Optional[SucMood] = None
-    particle_form: t.Optional[SucParticleForm] = None
-    pronoun_form: t.Optional[SucPronounForm] = None
+    degree: SucDegree | None = None
+    gender: SucGender | None = None
+    number: SucNumber | None = None
+    definiteness: SucDefiniteness | None = None
+    case: SucCase | None = None
+    tense: SucTense | None = None
+    voice: SucVoice | None = None
+    mood: SucMood | None = None
+    particle_form: SucParticleForm | None = None
+    pronoun_form: SucPronounForm | None = None
     is_abbreviation: bool = False
 
     @classmethod
-    def pos_ab(cls, pos: SucPos, degree: t.Optional[SucDegree]) -> "MsdWPos":
+    def pos_ab(cls, pos: SucPos, degree: SucDegree | None) -> "MsdWPos":
         """Create MSD with POS='AB'."""
         _check_given_pos(pos, SucPos.AB)
         return cls(pos=pos, degree=degree)
@@ -193,7 +192,7 @@ class MsdWPos(Msd):
         pos: SucPos,
         gender: SucGender,
         number: SucNumber,
-        definiteness: t.Optional[SucDefiniteness],
+        definiteness: SucDefiniteness | None,
     ) -> "MsdWPos":
         """Create MSD with POS='HD'."""
         _check_given_pos(pos, SucPos.HD)
@@ -203,9 +202,9 @@ class MsdWPos(Msd):
     def pos_hp(
         cls,
         pos: SucPos,
-        gender: t.Optional[SucGender],
-        number: t.Optional[SucNumber],
-        definiteness: t.Optional[SucDefiniteness],
+        gender: SucGender | None,
+        number: SucNumber | None,
+        definiteness: SucDefiniteness | None,
     ) -> "MsdWPos":
         """Create MSD with POS='HP'."""
         _check_given_pos(pos, SucPos.HP)
@@ -215,7 +214,7 @@ class MsdWPos(Msd):
     def pos_hs(
         cls,
         pos: SucPos,
-        definiteness: t.Optional[SucDefiniteness],
+        definiteness: SucDefiniteness | None,
     ) -> "MsdWPos":
         """Create MSD with POS='HS'."""
         _check_given_pos(pos, SucPos.HS)
@@ -239,10 +238,10 @@ class MsdWPos(Msd):
     def pos_nn(
         cls,
         pos: SucPos,
-        gender: t.Optional[SucGender],
-        number: t.Optional[SucNumber],
-        definiteness: t.Optional[SucDefiniteness],
-        case: t.Optional[SucCase],
+        gender: SucGender | None,
+        number: SucNumber | None,
+        definiteness: SucDefiniteness | None,
+        case: SucCase | None,
     ) -> "MsdWPos":
         """Create MSD with POS='NN'."""
         _check_given_pos(pos, SucPos.NN)
@@ -283,9 +282,9 @@ class MsdWPos(Msd):
     def pos_pn(
         cls,
         pos: SucPos,
-        gender: t.Optional[SucGender],
-        number: t.Optional[SucNumber],
-        definiteness: t.Optional[SucDefiniteness],
+        gender: SucGender | None,
+        number: SucNumber | None,
+        definiteness: SucDefiniteness | None,
         pronoun_form: SucPronounForm,
     ) -> "MsdWPos":
         """Create MSD with POS='PN'."""
@@ -298,7 +297,7 @@ class MsdWPos(Msd):
         pos: SucPos,
         gender: SucGender,
         number: SucNumber,
-        definiteness: t.Optional[SucDefiniteness],
+        definiteness: SucDefiniteness | None,
     ) -> "MsdWPos":
         """Create MSD with POS='PS'."""
         _check_given_pos(pos, SucPos.PS)
@@ -308,7 +307,7 @@ class MsdWPos(Msd):
     def pos_rg(
         cls,
         pos: SucPos,
-        case: t.Optional[SucCase],
+        case: SucCase | None,
     ) -> "MsdWPos":
         """Create MSD with POS='RG'."""
         _check_given_pos(pos, SucPos.RG)
@@ -318,10 +317,10 @@ class MsdWPos(Msd):
     def pos_ro(
         cls,
         pos: SucPos,
-        gender: t.Optional[SucGender],
-        number: t.Optional[SucNumber],
-        definiteness: t.Optional[SucDefiniteness],
-        case: t.Optional[SucCase],
+        gender: SucGender | None,
+        number: SucNumber | None,
+        definiteness: SucDefiniteness | None,
+        case: SucCase | None,
     ) -> "MsdWPos":
         """Create MSD with POS='RO'."""
         _check_given_pos(pos, SucPos.RO)
@@ -332,7 +331,7 @@ class MsdWPos(Msd):
         cls,
         pos: SucPos,
         tense: SucTense,
-        mood: t.Optional[SucMood],
+        mood: SucMood | None,
         voice: SucVoice,
     ) -> "MsdWPos":
         """Create MSD with POS='VB'."""

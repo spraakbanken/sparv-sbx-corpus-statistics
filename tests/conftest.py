@@ -1,5 +1,4 @@
 import json
-import typing as t
 from pathlib import Path
 
 import pytest
@@ -32,7 +31,7 @@ def lemma_attribute() -> Annotation:
     return Annotation(name="segment.token:saldo.baseform2")
 
 
-def dict_to_running_mean_var(a: dict[str, t.Union[int, float]]) -> RunningMeanVar:
+def dict_to_running_mean_var(a: dict[str, int | float]) -> RunningMeanVar:
     return RunningMeanVar(num_values=int(a["number"]), M1=a["mean"], M2=a["M2"])
 
 

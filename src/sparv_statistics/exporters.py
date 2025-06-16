@@ -1,3 +1,5 @@
+"""Sparv exporter computing corpus statistics."""
+
 import json
 import locale
 import math
@@ -5,10 +7,9 @@ import operator
 import os
 import typing as t
 from collections import defaultdict
-from collections.abc import Iterable
 from pathlib import Path
 from tempfile import NamedTemporaryFile, _TemporaryFileWrapper
-from typing import Any, Callable, TextIO, TypedDict, TypeVar, Union
+from typing import Any, TextIO, TypedDict, TypeVar
 
 import sparv.api as sparv_api
 from running_stats.running_stats import RunningMeanVar
@@ -48,19 +49,6 @@ class Stats(TypedDict):
 
 
 T = TypeVar("T")
-
-
-def suppress_exception_for_iterable(f: Callable[[], Iterable[T]], exc_to_suppress: type[BaseException]) -> Iterable[T]:
-    """Suppress the exception given.
-
-    If an expression is suppressed an empty list is returned.
-    """
-    try:
-        logger.debug("Calling '%s'", f.__name__)
-        return f()
-    except FileNotFoundError as exc:
-        logger.warning("Suppressed error: %s", repr(exc))
-        return []
 
 
 _SUC_FEAT_MAP: dict[str, str] = {
@@ -216,9 +204,9 @@ _MSD_MAP: dict[str, dict[str, str]] = {
 def stat_highlights(
     corpus_id: Corpus = Corpus(),
     token: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<token>"),
-    paragraph: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<paragraph>"),
-    sentence: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<sentence>"),
-    word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("[export.word]"),
+    # paragraph: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<paragraph>"),
+    # sentence: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<sentence>"),
+    # word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("[export.word]"),
     # token_word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<token:word>"),
     source_files: AllSourceFilenames = AllSourceFilenames(),
     export_annotations: ExportAnnotationsAllSourceFiles = ExportAnnotationsAllSourceFiles("export.annotations"),
@@ -420,7 +408,7 @@ def stat_highlights(
                                 attribute_stats[WORDS_NON_EMPTY] = {}
                             words = annot.split("|")
 
-                            if len(words) < 3:
+                            if len(words) < 3:  # noqa: PLR2004
                                 if EMPTY not in attribute_stats[WORDS]:
                                     attribute_stats[WORDS][EMPTY] = 0
                                 attribute_stats[WORDS][EMPTY] += 1
@@ -482,12 +470,13 @@ def stat_highlights(
                 attribute_temp_stat_file[attribute.name].seek(0, os.SEEK_SET)
                 json.dump(attribute_stats, attribute_temp_stat_file[attribute.name])
         if pos_attribute is not None:
-            for pos, token_ in zip(pos_attribute(source_file).read(), token(source_file).read()):
+            for pos, token_ in zip(pos_attribute(source_file).read(), token(source_file).read(), strict=True):
                 pos_token_freqs[pos][token_] += 1
             if lemma_attribute is not None:
                 for pos, lemma in zip(
                     pos_attribute(source_file).read(),
                     lemma_attribute(source_file).read(),
+                    strict=True,
                 ):
                     pos_lemma_freqs[pos][lemma] += 1
                     for lemma_ in lemma.split("|"):
@@ -498,6 +487,7 @@ def stat_highlights(
                 for pos, ufeats in zip(
                     pos_attribute(source_file).read(),
                     ufeats_attribute(source_file).read(),
+                    strict=True,
                 ):
                     for ufeat_value in ufeats.split("|"):
                         if ufeat_value:
@@ -571,23 +561,23 @@ def stat_highlights(
     logger.debug("pos_lemma_freqs = %s", pos_lemma_freqs)
 
     all_stats = _combine_all_stats(stats, stats_2)
-    with open("all_stats.json", mode="w") as fp:
+    with Path("all_stats.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(all_stats, fp, cls=StatsJsonEncoder)
-    with open("stats2.json", mode="w") as fp:
+    with Path("stats2.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(stats_2, fp, cls=StatsJsonEncoder)
-    with open("freqs.json", mode="w") as fp:
+    with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(freqs, fp, cls=StatsJsonEncoder)
-    with open("pos_token_freqs.json", mode="w") as fp:
+    with Path("pos_token_freqs.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(pos_token_freqs, fp, cls=StatsJsonEncoder)
-    with open("pos_lemma_freqs.json", mode="w") as fp:
+    with Path("pos_lemma_freqs.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(pos_lemma_freqs, fp, cls=StatsJsonEncoder)
-    with open("pos_lemma_freqs_flat.json", mode="w") as fp:
+    with Path("pos_lemma_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(pos_lemma_freqs_flat, fp, cls=StatsJsonEncoder)
-    with open("ufeat_pos_freqs_flat.json", mode="w") as fp:
+    with Path("ufeat_pos_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(ufeat_pos_freqs_flat, fp, cls=StatsJsonEncoder)
-    with open("pos_ufeats_freqs_flat.json", mode="w") as fp:
+    with Path("pos_ufeats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(pos_ufeats_freqs_flat, fp, cls=StatsJsonEncoder)
-    with open("pos_suc_feats_freqs_flat.json", mode="w") as fp:
+    with Path("pos_suc_feats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(pos_suc_feats_freqs_flat, fp, cls=StatsJsonEncoder)
     write_all_stats(
         out_all,
@@ -602,7 +592,6 @@ def stat_highlights(
         pos_token_freqs=pos_token_freqs,
         pos_lemma_freqs_flat=pos_lemma_freqs_flat,
         pos_ufeats_freqs_flat=pos_ufeats_freqs_flat,
-        ufeat_pos_freqs_flat=ufeat_pos_freqs_flat,
         pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
@@ -616,14 +605,13 @@ def stat_highlights(
         pos_token_freqs=pos_token_freqs,
         pos_lemma_freqs_flat=pos_lemma_freqs_flat,
         pos_ufeats_freqs_flat=pos_ufeats_freqs_flat,
-        ufeat_pos_freqs_flat=ufeat_pos_freqs_flat,
         pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
     )
 
 
-def running_mean_var_to_dict(m: RunningMeanVar) -> dict[str, Union[int, float]]:
+def running_mean_var_to_dict(m: RunningMeanVar) -> dict[str, int | float]:
     return {
         "number": m.num_values,
         "mean": m.mean(),
@@ -862,7 +850,6 @@ def write_stat_highlights(
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
     pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]],
-    ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
     pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
     stats2: dict[str, dict[str, Stats]],
@@ -874,7 +861,7 @@ def write_stat_highlights(
     old_locale = locale.getlocale(locale.LC_CTYPE)
     loc = set_locale_from_lang(lang)
     logger.debug("locale.setlocale=%s", loc)
-    with open("freqs.json", mode="w") as fp:
+    with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(freqs, fp)
     with out_path.open("w") as fp:
         # fp.write(f"# Statistics of {corpus_id}\n")
@@ -897,7 +884,7 @@ def write_stat_highlights(
         # fp.write("\n")
         # _write_features(fp, freqs["segment.token"], ufeat_pos_freqs_flat, lang=lang)
         fp.write("\n")
-        _write_suc_features(fp, freqs["segment.token"], pos_suc_feats_freqs_flat, lang=lang)
+        _write_suc_features(fp, pos_suc_feats_freqs_flat, lang=lang)
         # fp.write("\n")
         # _write_readability(fp, all_stats, lang=lang)
         fp.write("\n")
@@ -1124,7 +1111,7 @@ def _write_features(
             tmp1.append((pos, freqs, freqs / total * 100))
         pos_tags = sorted(tmp1, key=operator.itemgetter(1), reverse=True)
         tmp3 = (
-            f"`{pos}` ({f.fmt_number_signific(count)}; {f.fmt_number_decimals(perc, 0)}% {STATS_TEMPLATE[lang]['instances']})"
+            f"`{pos}` ({f.fmt_number_signific(count)}; {f.fmt_number_decimals(perc, 0)}% {STATS_TEMPLATE[lang]['instances']})"  # noqa: E501
             for pos, count, perc in pos_tags
         )
         pos_tags_str = ", ".join(tmp3)
@@ -1153,7 +1140,6 @@ def _write_features(
 
 def _write_suc_features(
     fp: TextIO,
-    token_freqs: dict[str, dict[str, int]],
     pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
 ) -> None:
@@ -1173,7 +1159,6 @@ def _write_suc_features(
                 features[suc_feat][value] += freq
         # features.update(STATS_TEMPLATE[lang][suc_feat] for suc_feat in suc_feats)
 
-    print(f"{features=}")
     logger.debug("features=%s", features)
     features_sorted = sorted(features.keys(), key=lambda x: _T[lang][x])
     fp.write("-".join(_T[lang][suc_feat] for suc_feat in features_sorted))
@@ -1226,9 +1211,7 @@ def _write_suc_features(
         #         for value in values.split(","):
         #             pos_value_freqs[pos][value] += pos_freq
         logger.debug("feat_pos_freqs=%s", feat_pos_freqs)
-        print(f"{feat_pos_freqs=}")
         logger.debug("pos_value_freqs=%s", pos_value_freqs)
-        print(f"{pos_value_freqs=}")
         tmp1 = []
         for pos, freqs in feat_pos_freqs.items():
             tmp1.append((pos, freqs, freqs / total * 100))

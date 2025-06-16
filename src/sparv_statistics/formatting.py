@@ -1,9 +1,8 @@
 """Formatting help functions."""
 
 import locale
-import typing as t
 
-__all__ = ["format_number", "format_percent"]
+__all__ = ["fmt_number_decimals", "fmt_number_signific"]
 
 
 _LOCALE_MAP: dict[int, str] = {
@@ -24,12 +23,15 @@ _PERCENT_LIMIT_MAP: dict[int, float] = {
     5: 0.00001,
 }
 
+_SIGN_3: int = 100
+_SIGN_2: int = 10
 
-def fmt_number_signific(number: t.Union[float, int], significant_digits: int = 3) -> str:
+
+def fmt_number_signific(number: float | int, significant_digits: int = 3) -> str:
     """Format a number with given number of significant digits with locale."""
-    if number >= 100:
+    if number >= _SIGN_3:
         significant_digits -= 3
-    elif number >= 10:
+    elif number >= _SIGN_2:
         significant_digits -= 2
     elif number >= 1:
         significant_digits -= 1
@@ -42,7 +44,7 @@ def fmt_number_signific(number: t.Union[float, int], significant_digits: int = 3
     return formatted_number
 
 
-def fmt_number_decimals(number: t.Union[float, int], n_decimals: int) -> str:
+def fmt_number_decimals(number: float | int, n_decimals: int) -> str:
     """Format a number with given number decimals with locale."""
     try:
         limit = _PERCENT_LIMIT_MAP[n_decimals]

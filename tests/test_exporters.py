@@ -106,7 +106,6 @@ def test_write_suc_features(
     exporters.set_locale_from_lang(lang)
     exporters._write_suc_features(
         data,
-        token_freqs=None,
         pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         lang=lang,
     )

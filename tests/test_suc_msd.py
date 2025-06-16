@@ -1,4 +1,5 @@
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from sparv_statistics import suc_msd
 
@@ -131,7 +132,7 @@ SUC_MSD_FREQ: dict[str, int] = {
 
 
 @pytest.mark.parametrize("msd", list(SUC_MSD_FREQ))
-def test_parse(msd: str, snapshot) -> None:
+def test_parse(msd: str, snapshot: SnapshotAssertion) -> None:
     answer = suc_msd.parse(msd)
 
     assert answer == snapshot
