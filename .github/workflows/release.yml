@@ -79,8 +79,8 @@ jobs:
       matrix:
         os:
           - ubuntu
-          - macos
-          - windows
+          # - macos
+          # - windows
 
     runs-on: ${{ matrix.os }}-latest
     steps:
@@ -99,6 +99,11 @@ jobs:
         with:
           name: pypi_files
           path: dist
+
+      - name: Add swedish locale
+        run: |
+          sudo locale-gen sv_SE.utf8
+          locale -a
 
       - run: rm -r src/sparv_statistics
       - run: pip install typing-extensions

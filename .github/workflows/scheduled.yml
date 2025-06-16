@@ -54,6 +54,12 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Add swedish locale
+        if: hashFiles('uv.lock') != ''
+        run: |
+          sudo locale-gen sv_SE.utf8
+          locale -a
+
       - name: uv sync --dev --upgrade
         if: hashFiles('uv.lock') != ''
         run: uv sync --dev --upgrade --all-packages --all-extras
