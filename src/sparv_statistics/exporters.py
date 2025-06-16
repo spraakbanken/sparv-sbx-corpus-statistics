@@ -216,7 +216,7 @@ def stat_highlights(
     out_highlights_sv: Export = Export("sparv_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
     out_all: Export = Export("sparv_statistics.stat_highlights/all_stats_[metadata.id].json"),
 ) -> None:
-    logger.progress(total=len(source_files) + 1)
+    logger.progress(total=len(source_files) + 1)  # type: ignore
     logger.debug("export_annotations = %s", export_annotations)
     logger.debug("export_annotations.items = %s", export_annotations.items)
     logger.debug("source_annotations = %s", source_annotations)
@@ -225,7 +225,9 @@ def stat_highlights(
     # annotations = [(word, None)]
     # Get annotations list and export names
     annotation_list, token_attribute_names, export_names = util.export.get_annotation_names(
-        export_annotations, source_annotations or [], token_name=token.name
+        export_annotations,
+        source_annotations or [],  # type: ignore
+        token_name=token.name,
     )
     logger.debug("annotation_list = %s", annotation_list)
     logger.debug("export_names = %s", export_names)
@@ -237,10 +239,10 @@ def stat_highlights(
             lemma_name = name
 
     attributes = defaultdict(list)
-    pos_attribute = None
-    lemma_attribute = None
-    ufeats_attribute = None
-    suc_feats_attribute = None
+    pos_attribute: AnnotationAllSourceFiles | None = None
+    lemma_attribute: AnnotationAllSourceFiles | None = None
+    ufeats_attribute: AnnotationAllSourceFiles | None = None
+    suc_feats_attribute: AnnotationAllSourceFiles | None = None
     for a in annotation_list:
         if ":" not in a.name:
             attributes["spans"].append(a)
@@ -252,7 +254,7 @@ def stat_highlights(
                     pos_attribute.name,
                     a.name,
                 )
-            pos_attribute = a
+            pos_attribute = t.cast(AnnotationAllSourceFiles, a)
         elif a.name.startswith(f"{token.name}:stanza.ufeats"):
             if ufeats_attribute is not None:
                 logger.warning(
@@ -260,7 +262,7 @@ def stat_highlights(
                     ufeats_attribute.name,
                     a.name,
                 )
-            ufeats_attribute = a
+            ufeats_attribute = t.cast(AnnotationAllSourceFiles, a)
         elif a.name.startswith(f"{token.name}:stanza.msd"):
             if suc_feats_attribute is not None:
                 if a.name.endswith("info"):
@@ -270,7 +272,7 @@ def stat_highlights(
                     suc_feats_attribute.name,
                     a.name,
                 )
-            suc_feats_attribute = a
+            suc_feats_attribute = t.cast(AnnotationAllSourceFiles, a)
         elif a.name == lemma_name:
             if lemma_attribute is not None:
                 logger.warning(
@@ -278,7 +280,7 @@ def stat_highlights(
                     lemma_attribute.name,
                     a.name,
                 )
-            lemma_attribute = a
+            lemma_attribute = t.cast(AnnotationAllSourceFiles, a)
         annotation, _attribute = a.name.split(":")
         attributes[annotation].append(a)
 
@@ -529,7 +531,7 @@ def stat_highlights(
                 else:
                     raise RuntimeError(f"Unknown MSD={msd}")
 
-        logger.progress()
+        logger.progress()  # type: ignore
 
     # Collect statistics
     stats_2: dict[str, dict[str, Stats]] = defaultdict(
