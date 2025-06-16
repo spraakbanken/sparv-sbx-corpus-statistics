@@ -33,7 +33,7 @@ def lemma_attribute() -> Annotation:
 
 
 def dict_to_running_mean_var(a: dict[str, t.Union[int, float]]) -> RunningMeanVar:
-    return RunningMeanVar(num_values=a["number"], M1=a["mean"], M2=a["M2"])
+    return RunningMeanVar(num_values=int(a["number"]), M1=a["mean"], M2=a["M2"])
 
 
 @pytest.fixture(scope="session")
@@ -57,6 +57,12 @@ def ufeat_pos_freqs_flat() -> dict[str, dict[str, int]]:
 @pytest.fixture(scope="session")
 def pos_ufeats_freqs_flat() -> dict[str, dict[str, int]]:
     with Path("assets/pos_ufeats_freqs_flat.json").open(encoding="utf-8") as fp:
+        return json.load(fp)
+
+
+@pytest.fixture(scope="session")
+def pos_suc_feats_freqs_flat() -> dict[str, dict[str, int]]:
+    with Path("assets/pos_suc_feats_freqs_flat.json").open(encoding="utf-8") as fp:
         return json.load(fp)
 
 

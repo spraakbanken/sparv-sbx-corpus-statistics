@@ -1,5 +1,4 @@
 import io
-import typing as t
 
 import pytest
 from sparv.api.classes import Annotation
@@ -81,7 +80,7 @@ def test_write_features(
     lang: str,
     snapshot: SnapshotAssertion,
     freqs: dict[str, dict[str, dict[str, int]]],
-    ufeat_pos_freqs_flat: dict[str, t.Any],
+    ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
 ) -> None:
     data = io.StringIO()
 
@@ -90,6 +89,25 @@ def test_write_features(
         data,
         token_freqs=freqs["segment.token"],
         ufeat_pos_freqs_flat=ufeat_pos_freqs_flat,
+        lang=lang,
+    )
+
+    assert data.getvalue() == snapshot
+
+
+@pytest.mark.parametrize("lang", ("en", "sv"))
+def test_write_suc_features(
+    lang: str,
+    snapshot: SnapshotAssertion,
+    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
+) -> None:
+    data = io.StringIO()
+
+    exporters.set_locale_from_lang(lang)
+    exporters._write_suc_features(
+        data,
+        token_freqs=None,
+        pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         lang=lang,
     )
 

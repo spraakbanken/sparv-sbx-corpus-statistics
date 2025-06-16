@@ -2189,6 +2189,300 @@
   
   '''
 # ---
+# name: test_write_suc_features[en]
+  '''
+  ## Features
+  
+  This corpus contains the following features:
+  
+  Abbreviation-Case-Definiteness-Degree-Delimiter-Gender-Mood-Number-Particle Form-Pronoun Form-Tense-Voice
+  
+  <details>
+  <summary>
+  ### Features: **Abbreviation**
+  `Abbreviation` occurs with 1 value: `AN`.
+  
+  </summary>
+  59,873 tokens (1%) have a non-empty value of `Abbreviation`. The feature is used with 6 part-of-speech tags: `NN` (37,351; < 1% instances), `AB` (22,440; < 1% instances), `VB` (28; < 1% instances), `KN` (24; < 1% instances), `JJ` (20; < 1% instances), `PP` (10; < 1% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Case**
+  `Case` occurs with 3 different values: `GEN`, `NOM`, `SMS`.
+  
+  </summary>
+  1,167,765 tokens (20%) have a non-empty value of `Case`. The feature is used with 6 part-of-speech tags: `NN` (698,788; 12% instances), `RG` (180,321; 3% instances), `JJ` (132,532; 2% instances), `PM` (106,015; 2% instances), `PC` (47,212; < 1% instances), `RO` (2,897; < 1% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Definiteness**
+  `Definiteness` occurs with 2 different values: `DEF`, `IND`.
+  
+  </summary>
+  1,089,053 tokens (18%) have a non-empty value of `Definiteness`. The feature is used with 10 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5; < 1% instances)
+   90,405 tokens (8%) have multiple values of `Definiteness`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Degree**
+  `Degree` occurs with 3 different values: `KOM`, `POS`, `SUV`.
+  
+  </summary>
+  160,860 tokens (3%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,532; 2% instances), `AB` (28,328; < 1% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Delimiter**
+  `Delimiter` occurs with 3 different values: `MAD`, `MID`, `PAD`.
+  
+  </summary>
+  326,671 tokens (6%) have a non-empty value of `Delimiter`. The feature is used with 1 part-of-speech tags: `Delimiter` (326,671; 6% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Gender**
+  `Gender` occurs with 3 different values: `MAS`, `NEU`, `UTR`.
+  
+  </summary>
+  1,093,911 tokens (19%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,987; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+   157,285 tokens (14%) have multiple values of `Gender`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Mood**
+  `Mood` occurs with 1 value: `KON`.
+  
+  </summary>
+  162 tokens (0%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (162; < 1% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Number**
+  `Number` occurs with 2 different values: `PLU`, `SIN`.
+  
+  </summary>
+  1,088,867 tokens (18%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+   45,832 tokens (4%) have multiple values of `Number`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Particle Form**
+  `Particle Form` occurs with 2 different values: `PRF`, `PRS`.
+  
+  </summary>
+  47,212 tokens (1%) have a non-empty value of `Particle Form`. The feature is used with 1 part-of-speech tags: `PC` (47,212; < 1% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Pronoun Form**
+  `Pronoun Form` occurs with 2 different values: `OBJ`, `SUB`.
+  
+  </summary>
+  98,041 tokens (2%) have a non-empty value of `Pronoun Form`. The feature is used with 1 part-of-speech tags: `PN` (98,041; 2% instances)
+   56,045 tokens (57%) have multiple values of `Pronoun Form`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Tense**
+  `Tense` occurs with 5 different values: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+  
+  </summary>
+  380,257 tokens (6%) have a non-empty value of `Tense`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Features: **Voice**
+  `Voice` occurs with 2 different values: `AKT`, `SFO`.
+  
+  </summary>
+  380,257 tokens (6%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+  
+  </details>
+  
+  
+  
+  '''
+# ---
+# name: test_write_suc_features[sv]
+  '''
+  ## Särdrag
+  
+  Denna korpus innehåller följande särdrag:
+  
+  Bestämdhet-Diates-Förkortning-Genus-Interpunktion-Kasus-Komparation-Modus-Numerus-Partikelform-Pronomform-Tempus
+  
+  <details>
+  <summary>
+  ### Särdrag: **Bestämdhet**
+  `Bestämdhet` förekommer med 2 olika värden: `DEF`, `IND`.
+  
+  </summary>
+  1 089 053 tokens (18%) har ett icke-tomt värde av `Bestämdhet`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5; < 1% instanser)
+   90 405 tokens (8%) har multipla värden av `Bestämdhet`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Diates**
+  `Diates` förekommer med 2 olika värden: `AKT`, `SFO`.
+  
+  </summary>
+  380 257 tokens (6%) har ett icke-tomt värde av `Diates`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Förkortning**
+  `Förkortning` förekommer med 1 värde: `AN`.
+  
+  </summary>
+  59 873 tokens (1%) har ett icke-tomt värde av `Förkortning`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (37 351; < 1% instanser), `AB` (22 440; < 1% instanser), `VB` (28; < 1% instanser), `KN` (24; < 1% instanser), `JJ` (20; < 1% instanser), `PP` (10; < 1% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Genus**
+  `Genus` förekommer med 3 olika värden: `MAS`, `NEU`, `UTR`.
+  
+  </summary>
+  1 093 911 tokens (19%) har ett icke-tomt värde av `Genus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 987; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
+   157 285 tokens (14%) har multipla värden av `Genus`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Interpunktion**
+  `Interpunktion` förekommer med 3 olika värden: `MAD`, `MID`, `PAD`.
+  
+  </summary>
+  326 671 tokens (6%) har ett icke-tomt värde av `Interpunktion`. Detta särdrag är använt tillsammans med 1 ordklasser: `Delimiter` (326 671; 6% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Kasus**
+  `Kasus` förekommer med 3 olika värden: `GEN`, `NOM`, `SMS`.
+  
+  </summary>
+  1 167 765 tokens (20%) har ett icke-tomt värde av `Kasus`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (698 788; 12% instanser), `RG` (180 321; 3% instanser), `JJ` (132 532; 2% instanser), `PM` (106 015; 2% instanser), `PC` (47 212; < 1% instanser), `RO` (2 897; < 1% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Komparation**
+  `Komparation` förekommer med 3 olika värden: `KOM`, `POS`, `SUV`.
+  
+  </summary>
+  160 860 tokens (3%) har ett icke-tomt värde av `Komparation`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 532; 2% instanser), `AB` (28 328; < 1% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Modus**
+  `Modus` förekommer med 1 värde: `KON`.
+  
+  </summary>
+  162 tokens (0%) har ett icke-tomt värde av `Modus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (162; < 1% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Numerus**
+  `Numerus` förekommer med 2 olika värden: `PLU`, `SIN`.
+  
+  </summary>
+  1 088 867 tokens (18%) har ett icke-tomt värde av `Numerus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
+   45 832 tokens (4%) har multipla värden av `Numerus`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Partikelform**
+  `Partikelform` förekommer med 2 olika värden: `PRF`, `PRS`.
+  
+  </summary>
+  47 212 tokens (1%) har ett icke-tomt värde av `Partikelform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PC` (47 212; < 1% instanser)
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Pronomform**
+  `Pronomform` förekommer med 2 olika värden: `OBJ`, `SUB`.
+  
+  </summary>
+  98 041 tokens (2%) har ett icke-tomt värde av `Pronomform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PN` (98 041; 2% instanser)
+   56 045 tokens (57%) har multipla värden av `Pronomform`.
+  
+  </details>
+  
+  
+  <details>
+  <summary>
+  ### Särdrag: **Tempus**
+  `Tempus` förekommer med 5 olika värden: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+  
+  </summary>
+  380 257 tokens (6%) har ett icke-tomt värde av `Tempus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+  
+  </details>
+  
+  
+  
+  '''
+# ---
 # name: test_write_tokenization_and_word_segmentation[en]
   '''
   ## Tokenization and Word Segmentation

@@ -880,87 +880,145 @@ The 5 most frequent `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
 
 
 ## Features
-Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
 
-### Features: **Abbr**
-`Abbr` occurs with 1 value: `Yes`.
+This corpus contains the following features:
 
-57,883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35,393; 1% instances), `AB` (22,438; < 1% instances), `VB` (18.0; < 1% instances), `KN` (17.0; < 1% instances), `JJ` (12.0; < 1% instances), `PP` (5.00; < 1% instances)
+Abbreviation-Case-Definiteness-Degree-Delimiter-Gender-Mood-Number-Particle Form-Pronoun Form-Tense-Voice
+
+<details>
+<summary>
+### Features: **Abbreviation**
+`Abbreviation` occurs with 1 value: `AN`.
+
+</summary>
+59,873 tokens (1%) have a non-empty value of `Abbreviation`. The feature is used with 6 part-of-speech tags: `NN` (37,351; < 1% instances), `AB` (22,440; < 1% instances), `VB` (28; < 1% instances), `KN` (24; < 1% instances), `JJ` (20; < 1% instances), `PP` (10; < 1% instances)
+
+</details>
 
 
-
+<details>
+<summary>
 ### Features: **Case**
-`Case` occurs with 3 different values: `Acc`, `Gen`, `Nom`.
+`Case` occurs with 3 different values: `GEN`, `NOM`, `SMS`.
 
-1,262,438 tokens (44%) have a non-empty value of `Case`. The feature is used with 7 part-of-speech tags: `NN` (695,434; 24% instances), `RG` (180,310; 6% instances), `JJ` (132,538; 5% instances), `PM` (106,006; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `RO` (2,897; < 1% instances)
- 56,044 tokens (4%) have multiple values of `Case`.
+</summary>
+1,167,765 tokens (20%) have a non-empty value of `Case`. The feature is used with 6 part-of-speech tags: `NN` (698,788; 12% instances), `RG` (180,321; 3% instances), `JJ` (132,532; 2% instances), `PM` (106,015; 2% instances), `PC` (47,212; < 1% instances), `RO` (2,897; < 1% instances)
 
-
-
-### Features: **Compound**
-`Compound` occurs with 1 value: `Yes`.
-
-4,847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4,826; < 1% instances), `RG` (11.0; < 1% instances), `PM` (10.0; < 1% instances)
+</details>
 
 
+<details>
+<summary>
+### Features: **Definiteness**
+`Definiteness` occurs with 2 different values: `DEF`, `IND`.
 
-### Features: **Definite**
-`Definite` occurs with 2 different values: `Def`, `Ind`.
+</summary>
+1,089,053 tokens (18%) have a non-empty value of `Definiteness`. The feature is used with 10 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5; < 1% instances)
+ 90,405 tokens (8%) have multiple values of `Definiteness`.
 
-1,089,520 tokens (38%) have a non-empty value of `Definite`. The feature is used with 10 part-of-speech tags: `NN` (694,413; 24% instances), `JJ` (132,529; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5.00; < 1% instances)
- 90,435 tokens (8%) have multiple values of `Definite`.
+</details>
 
 
-
+<details>
+<summary>
 ### Features: **Degree**
-`Degree` occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
+`Degree` occurs with 3 different values: `KOM`, `POS`, `SUV`.
 
-160,898 tokens (6%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,541; 5% instances), `AB` (28,357; < 1% instances)
+</summary>
+160,860 tokens (3%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,532; 2% instances), `AB` (28,328; < 1% instances)
+
+</details>
 
 
+<details>
+<summary>
+### Features: **Delimiter**
+`Delimiter` occurs with 3 different values: `MAD`, `MID`, `PAD`.
 
+</summary>
+326,671 tokens (6%) have a non-empty value of `Delimiter`. The feature is used with 1 part-of-speech tags: `Delimiter` (326,671; 6% instances)
+
+</details>
+
+
+<details>
+<summary>
 ### Features: **Gender**
-`Gender` occurs with 3 different values: `Com`, `Masc`, `Neut`.
+`Gender` occurs with 3 different values: `MAS`, `NEU`, `UTR`.
 
-1,093,722 tokens (38%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,790; 24% instances), `JJ` (132,540; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5.00; < 1% instances)
- 157,296 tokens (14%) have multiple values of `Gender`.
+</summary>
+1,093,911 tokens (19%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,987; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+ 157,285 tokens (14%) have multiple values of `Gender`.
+
+</details>
 
 
-
+<details>
+<summary>
 ### Features: **Mood**
-`Mood` occurs with 3 different values: `Imp`, `Ind`, `Sub`.
+`Mood` occurs with 1 value: `KON`.
 
-244,612 tokens (8%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (244,612; 8% instances)
+</summary>
+162 tokens (0%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (162; < 1% instances)
+
+</details>
 
 
-
+<details>
+<summary>
 ### Features: **Number**
-`Number` occurs with 2 different values: `Plur`, `Sing`.
+`Number` occurs with 2 different values: `PLU`, `SIN`.
 
-1,089,833 tokens (38%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (694,905; 24% instances), `JJ` (132,536; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5.00; < 1% instances)
+</summary>
+1,088,867 tokens (18%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
  45,832 tokens (4%) have multiple values of `Number`.
 
+</details>
 
 
+<details>
+<summary>
+### Features: **Particle Form**
+`Particle Form` occurs with 2 different values: `PRF`, `PRS`.
+
+</summary>
+47,212 tokens (1%) have a non-empty value of `Particle Form`. The feature is used with 1 part-of-speech tags: `PC` (47,212; < 1% instances)
+
+</details>
+
+
+<details>
+<summary>
+### Features: **Pronoun Form**
+`Pronoun Form` occurs with 2 different values: `OBJ`, `SUB`.
+
+</summary>
+98,041 tokens (2%) have a non-empty value of `Pronoun Form`. The feature is used with 1 part-of-speech tags: `PN` (98,041; 2% instances)
+ 56,045 tokens (57%) have multiple values of `Pronoun Form`.
+
+</details>
+
+
+<details>
+<summary>
 ### Features: **Tense**
-`Tense` occurs with 2 different values: `Past`, `Pres`.
+`Tense` occurs with 5 different values: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
 
-290,132 tokens (10%) have a non-empty value of `Tense`. The feature is used with 2 part-of-speech tags: `VB` (242,920; 8% instances), `PC` (47,212; 2% instances)
+</summary>
+380,257 tokens (6%) have a non-empty value of `Tense`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
 
-
-
-### Features: **VerbForm**
-`VerbForm` occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
-
-427,473 tokens (15%) have a non-empty value of `VerbForm`. The feature is used with 2 part-of-speech tags: `VB` (380,261; 13% instances), `PC` (47,212; 2% instances)
+</details>
 
 
-
+<details>
+<summary>
 ### Features: **Voice**
-`Voice` occurs with 2 different values: `Act`, `Pass`.
+`Voice` occurs with 2 different values: `AKT`, `SFO`.
 
-380,257 tokens (13%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 13% instances)
+</summary>
+380,257 tokens (6%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
 
+</details>
 
 
 

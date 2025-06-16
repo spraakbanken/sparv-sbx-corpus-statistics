@@ -880,87 +880,145 @@ De 5 mest frekventa `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
 
 
 ## Särdrag
-Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
 
-### Särdrag: **Abbr**
-`Abbr` förekommer med 1 värde: `Yes`.
+Denna korpus innehåller följande särdrag:
 
-57 883 tokens (2%) har ett icke-tomt värde av `Abbr`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (35 393; 1% instanser), `AB` (22 438; < 1% instanser), `VB` (18,0; < 1% instanser), `KN` (17,0; < 1% instanser), `JJ` (12,0; < 1% instanser), `PP` (5,00; < 1% instanser)
+Bestämdhet-Diates-Förkortning-Genus-Interpunktion-Kasus-Komparation-Modus-Numerus-Partikelform-Pronomform-Tempus
 
+<details>
+<summary>
+### Särdrag: **Bestämdhet**
+`Bestämdhet` förekommer med 2 olika värden: `DEF`, `IND`.
 
+</summary>
+1 089 053 tokens (18%) har ett icke-tomt värde av `Bestämdhet`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5; < 1% instanser)
+ 90 405 tokens (8%) har multipla värden av `Bestämdhet`.
 
-### Särdrag: **Case**
-`Case` förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
-
-1 262 438 tokens (44%) har ett icke-tomt värde av `Case`. Detta särdrag är använt tillsammans med 7 ordklasser: `NN` (695 434; 24% instanser), `RG` (180 310; 6% instanser), `JJ` (132 538; 5% instanser), `PM` (106 006; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `RO` (2 897; < 1% instanser)
- 56 044 tokens (4%) har multipla värden av `Case`.
-
-
-
-### Särdrag: **Compound**
-`Compound` förekommer med 1 värde: `Yes`.
-
-4 847 tokens (0%) har ett icke-tomt värde av `Compound`. Detta särdrag är använt tillsammans med 3 ordklasser: `NN` (4 826; < 1% instanser), `RG` (11,0; < 1% instanser), `PM` (10,0; < 1% instanser)
+</details>
 
 
+<details>
+<summary>
+### Särdrag: **Diates**
+`Diates` förekommer med 2 olika värden: `AKT`, `SFO`.
 
-### Särdrag: **Definite**
-`Definite` förekommer med 2 olika värden: `Def`, `Ind`.
+</summary>
+380 257 tokens (6%) har ett icke-tomt värde av `Diates`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
 
-1 089 520 tokens (38%) har ett icke-tomt värde av `Definite`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (694 413; 24% instanser), `JJ` (132 529; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5,00; < 1% instanser)
- 90 435 tokens (8%) har multipla värden av `Definite`.
-
-
-
-### Särdrag: **Degree**
-`Degree` förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
-
-160 898 tokens (6%) har ett icke-tomt värde av `Degree`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 541; 5% instanser), `AB` (28 357; < 1% instanser)
+</details>
 
 
+<details>
+<summary>
+### Särdrag: **Förkortning**
+`Förkortning` förekommer med 1 värde: `AN`.
 
-### Särdrag: **Gender**
-`Gender` förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
+</summary>
+59 873 tokens (1%) har ett icke-tomt värde av `Förkortning`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (37 351; < 1% instanser), `AB` (22 440; < 1% instanser), `VB` (28; < 1% instanser), `KN` (24; < 1% instanser), `JJ` (20; < 1% instanser), `PP` (10; < 1% instanser)
 
-1 093 722 tokens (38%) har ett icke-tomt värde av `Gender`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 790; 24% instanser), `JJ` (132 540; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5,00; < 1% instanser)
- 157 296 tokens (14%) har multipla värden av `Gender`.
-
-
-
-### Särdrag: **Mood**
-`Mood` förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
-
-244 612 tokens (8%) har ett icke-tomt värde av `Mood`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (244 612; 8% instanser)
+</details>
 
 
+<details>
+<summary>
+### Särdrag: **Genus**
+`Genus` förekommer med 3 olika värden: `MAS`, `NEU`, `UTR`.
 
-### Särdrag: **Number**
-`Number` förekommer med 2 olika värden: `Plur`, `Sing`.
+</summary>
+1 093 911 tokens (19%) har ett icke-tomt värde av `Genus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 987; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
+ 157 285 tokens (14%) har multipla värden av `Genus`.
 
-1 089 833 tokens (38%) har ett icke-tomt värde av `Number`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (694 905; 24% instanser), `JJ` (132 536; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5,00; < 1% instanser)
- 45 832 tokens (4%) har multipla värden av `Number`.
-
-
-
-### Särdrag: **Tense**
-`Tense` förekommer med 2 olika värden: `Past`, `Pres`.
-
-290 132 tokens (10%) har ett icke-tomt värde av `Tense`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (242 920; 8% instanser), `PC` (47 212; 2% instanser)
+</details>
 
 
+<details>
+<summary>
+### Särdrag: **Interpunktion**
+`Interpunktion` förekommer med 3 olika värden: `MAD`, `MID`, `PAD`.
 
-### Särdrag: **VerbForm**
-`VerbForm` förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
+</summary>
+326 671 tokens (6%) har ett icke-tomt värde av `Interpunktion`. Detta särdrag är använt tillsammans med 1 ordklasser: `Delimiter` (326 671; 6% instanser)
 
-427 473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (380 261; 13% instanser), `PC` (47 212; 2% instanser)
+</details>
 
 
+<details>
+<summary>
+### Särdrag: **Kasus**
+`Kasus` förekommer med 3 olika värden: `GEN`, `NOM`, `SMS`.
 
-### Särdrag: **Voice**
-`Voice` förekommer med 2 olika värden: `Act`, `Pass`.
+</summary>
+1 167 765 tokens (20%) har ett icke-tomt värde av `Kasus`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (698 788; 12% instanser), `RG` (180 321; 3% instanser), `JJ` (132 532; 2% instanser), `PM` (106 015; 2% instanser), `PC` (47 212; < 1% instanser), `RO` (2 897; < 1% instanser)
 
-380 257 tokens (13%) har ett icke-tomt värde av `Voice`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 13% instanser)
+</details>
 
+
+<details>
+<summary>
+### Särdrag: **Komparation**
+`Komparation` förekommer med 3 olika värden: `KOM`, `POS`, `SUV`.
+
+</summary>
+160 860 tokens (3%) har ett icke-tomt värde av `Komparation`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 532; 2% instanser), `AB` (28 328; < 1% instanser)
+
+</details>
+
+
+<details>
+<summary>
+### Särdrag: **Modus**
+`Modus` förekommer med 1 värde: `KON`.
+
+</summary>
+162 tokens (0%) har ett icke-tomt värde av `Modus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (162; < 1% instanser)
+
+</details>
+
+
+<details>
+<summary>
+### Särdrag: **Numerus**
+`Numerus` förekommer med 2 olika värden: `PLU`, `SIN`.
+
+</summary>
+1 088 867 tokens (18%) har ett icke-tomt värde av `Numerus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
+ 45 832 tokens (4%) har multipla värden av `Numerus`.
+
+</details>
+
+
+<details>
+<summary>
+### Särdrag: **Partikelform**
+`Partikelform` förekommer med 2 olika värden: `PRF`, `PRS`.
+
+</summary>
+47 212 tokens (1%) har ett icke-tomt värde av `Partikelform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PC` (47 212; < 1% instanser)
+
+</details>
+
+
+<details>
+<summary>
+### Särdrag: **Pronomform**
+`Pronomform` förekommer med 2 olika värden: `OBJ`, `SUB`.
+
+</summary>
+98 041 tokens (2%) har ett icke-tomt värde av `Pronomform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PN` (98 041; 2% instanser)
+ 56 045 tokens (57%) har multipla värden av `Pronomform`.
+
+</details>
+
+
+<details>
+<summary>
+### Särdrag: **Tempus**
+`Tempus` förekommer med 5 olika värden: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+
+</summary>
+380 257 tokens (6%) har ett icke-tomt värde av `Tempus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+
+</details>
 
 
 

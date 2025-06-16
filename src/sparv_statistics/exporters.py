@@ -25,6 +25,7 @@ from sparv.api import (
 from sparv.api.classes import Annotation
 
 from sparv_statistics import formatting as f
+from sparv_statistics import suc_msd
 
 __all__ = ["set_locale_from_lang"]
 
@@ -60,6 +61,155 @@ def suppress_exception_for_iterable(f: Callable[[], Iterable[T]], exc_to_suppres
     except FileNotFoundError as exc:
         logger.warning("Suppressed error: %s", repr(exc))
         return []
+
+
+_SUC_FEAT_MAP: dict[str, str] = {
+    "UTR": "Genus",
+    "NEU": "Genus",
+    "MAS": "Genus",
+    "UTR/NEU": "Genus",
+    "SIN": "Numerus",
+    "PLU": "Numerus",
+    "SIN/PLU": "Numerus",
+    "IND": "Definite",
+    "DEF": "Definite",
+    "IND/DEF": "Definite",
+    "NOM": "Noun form",
+    "GEN": "Noun form",
+    "SMS": "Noun form",
+    "POS": "Comparation",
+    "KOM": "Comparation",
+    "SUV": "Comparation",
+    "SUB": "Part of Sentence",
+    "OBJ": "Part of Sentence",
+    "SUB/OBJ": "Part of Sentence",
+    "PRS": "Verb form",
+    "PRT": "Verb form",
+    "INF": "Verb form",
+    "SUP": "Verb form",
+    "IMP": "Verb form",
+    "AKT": "Verb form",
+    "SFO": "Verb form",
+    "KON": "Verb form",
+    "PRF": "Verb form",
+}
+
+_MSD_MAP: dict[str, dict[str, str]] = {
+    "en": {
+        "AB": "Adverb",
+        "DT": "Determiner",
+        "HA": "Interrogative/Relative Adverb",
+        "HD": "Interrogative/Relative Determiner",
+        "HP": "Interrogative/Relative Pronoun",
+        "HS": "Interrogative/Relative Possessive",
+        "IE": "Infinitive Marker",
+        "IN": "Interjection",
+        "JJ": "Adjective",
+        "KN": "Conjunction",
+        "NN": "Noun",
+        "PC": "Participle",
+        "PL": "Particle",
+        "PM": "Proper Noun",
+        "PN": "Pronoun",
+        "PP": "Preposition",
+        "PS": "Possessive",
+        "RG": "Cardinal Number",
+        "RO": "Ordinal Number",
+        "SN": "Subjunction",
+        "UO": "Foreign Word",
+        "VB": "Verb",
+        "UTR": "Non-neuter (Uter)",
+        "NEU": "Neuter",
+        "MAS": "Masculine",
+        "UTR/NEU": "Underspecified",
+        "SIN": "Singular",
+        "PLU": "Plural",
+        "SIN/PLU": "Underspecified",
+        "IND": "Indefinite",
+        "DEF": "Definite",
+        "IND/DEF": "Underspecified",
+        "-": "Unspecified",
+        "NOM": "Nominative",
+        "GEN": "Genitive",
+        "SMS": "Compound",
+        "POS": "Positive",
+        "KOM": "Comparative",
+        "SUV": "Superlative",
+        "SUB": "Subject",
+        "OBJ": "Object",
+        "SUB/OBJ": "Underspecified",
+        "PRS": "Present",
+        "PRT": "Preterite",
+        "INF": "Infinitive",
+        "SUP": "Supine",
+        "IMP": "Imperative",
+        "AKT": "Active",
+        "SFO": "S-form",
+        "KON": "Subjunctive",
+        "PRF": "Perfect participle",
+        "AN": "Abbreviation",
+        "MAD": "Major Delimiter",
+        "MID": "Minor Delimiter",
+        "PAD": "Pairwise Delimiter",
+    },
+    "sv": {
+        "AB": "Adverb",
+        "DT": "Determinerare, bestämningsord",
+        "HA": "Frågande/relativt adverb",
+        "HD": "Frågande/relativ bestämning",
+        "HP": "Frågande/relativt pronomen",
+        "HS": "Frågande/relativt possessivuttryck",
+        "IE": "Infinitivmärke",
+        "IN": "Interjektion",
+        "JJ": "Adjektiv",
+        "KN": "Konjunktion",
+        "NN": "Substantiv",
+        "PC": "Particip",
+        "PL": "Partikel",
+        "PM": "Egennamn",
+        "PN": "Pronomen",
+        "PP": "Preposition",
+        "PS": "Possessivuttryck",
+        "RG": "Räkneord: grundtal",
+        "RO": "Räkneord: ordningstal",
+        "SN": "Subjunktion",
+        "UO": "Utländskt ord",
+        "VB": "Verb",
+        "UTR": "Utrum",
+        "NEU": "Neutrum",
+        "MAS": "Maskulinum",
+        "UTR/NEU": "Underspecificerat",
+        "-": "Ospecificerat",
+        "SIN": "Singularis",
+        "PLU": "Pluralis",
+        "SIN/PLU": "Underspecificerat",
+        "IND": "Obestämd form",
+        "DEF": "Bestämd form",
+        "IND/DEF": "Underspecificerat",
+        "NOM": "Grundform",
+        "GEN": "Genitiv",
+        "SMS": "Sammansättning",
+        "POS": "Positiv",
+        "KOM": "Komparativ",
+        "SUV": "Superlativ",
+        "SUB": "Subjekt",
+        "OBJ": "Objekt",
+        "SUB/OBJ": "Underspecificerat",
+        "PRS": "Presens",
+        "PRT": "Preteritum (imperfekt)",
+        "INF": "Infinitiv",
+        "SUP": "Supinum",
+        "IMP": "Imperativ",
+        "AKT": "Aktiv diates",
+        "SFO": "S-form (passivum, deponens)",
+        "KON": "Konjunktiv",
+        "PRF": "Perfekt particip",
+        "AN": "Förkortning",
+        "MAD": "Meningsskiljande interpunktion",
+        "MID": "Interpunktion",
+        "PAD": "Interpunktion",
+    },
+}
 
 
 @exporter("Statistics highlights")
@@ -102,6 +252,7 @@ def stat_highlights(
     pos_attribute = None
     lemma_attribute = None
     ufeats_attribute = None
+    suc_feats_attribute = None
     for a in annotation_list:
         if ":" not in a.name:
             attributes["spans"].append(a)
@@ -122,6 +273,16 @@ def stat_highlights(
                     a.name,
                 )
             ufeats_attribute = a
+        elif a.name.startswith(f"{token.name}:stanza.msd"):
+            if suc_feats_attribute is not None:
+                if a.name.endswith("info"):
+                    continue
+                logger.warning(
+                    "suc_feats_attribute '%s' already found, overwriting with '%s'",
+                    suc_feats_attribute.name,
+                    a.name,
+                )
+            suc_feats_attribute = a
         elif a.name == lemma_name:
             if lemma_attribute is not None:
                 logger.warning(
@@ -164,6 +325,9 @@ def stat_highlights(
         lambda: defaultdict(lambda: defaultdict(int))
     )
     pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(int))
+    )
+    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]] = defaultdict(
         lambda: defaultdict(lambda: defaultdict(int))
     )
     pos_token_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
@@ -343,6 +507,38 @@ def stat_highlights(
                         # else:
                         #     pos_ufeats_freqs_flat[pos][ufeat_value]["MISSING"] += 1
 
+        if suc_feats_attribute is not None:
+            for msd_raw in suc_feats_attribute(source_file).read():
+                msd = suc_msd.parse(msd_raw)
+                if isinstance(msd, suc_msd.MsdWPos):
+                    if msd.is_abbreviation:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Abbreviation"]["AN"] += 1
+                        continue
+                    if msd.degree:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Degree"][str(msd.degree)] += 1
+                    if msd.gender:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Gender"][str(msd.gender)] += 1
+                    if msd.number:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Number"][str(msd.number)] += 1
+                    if msd.definiteness:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Definiteness"][str(msd.definiteness)] += 1
+                    if msd.case:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Case"][str(msd.case)] += 1
+                    if msd.tense:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Tense"][str(msd.tense)] += 1
+                    if msd.voice:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Voice"][str(msd.voice)] += 1
+                    if msd.mood:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Mood"][str(msd.mood)] += 1
+                    if msd.particle_form:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Particle Form"][str(msd.particle_form)] += 1
+                    if msd.pronoun_form:
+                        pos_suc_feats_freqs_flat[str(msd.pos)]["Pronoun Form"][str(msd.pronoun_form)] += 1
+                elif isinstance(msd, suc_msd.MsdWDelimiter):
+                    pos_suc_feats_freqs_flat["Delimiter"]["Delimiter"][str(msd.delimiter)] += 1
+                else:
+                    raise RuntimeError(f"Unknown MSD={msd}")
+
         logger.progress()
 
     # Collect statistics
@@ -391,6 +587,8 @@ def stat_highlights(
         json.dump(ufeat_pos_freqs_flat, fp, cls=StatsJsonEncoder)
     with open("pos_ufeats_freqs_flat.json", mode="w") as fp:
         json.dump(pos_ufeats_freqs_flat, fp, cls=StatsJsonEncoder)
+    with open("pos_suc_feats_freqs_flat.json", mode="w") as fp:
+        json.dump(pos_suc_feats_freqs_flat, fp, cls=StatsJsonEncoder)
     write_all_stats(
         out_all,
         all_stats=all_stats,
@@ -405,6 +603,7 @@ def stat_highlights(
         pos_lemma_freqs_flat=pos_lemma_freqs_flat,
         pos_ufeats_freqs_flat=pos_ufeats_freqs_flat,
         ufeat_pos_freqs_flat=ufeat_pos_freqs_flat,
+        pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
     )
@@ -418,6 +617,7 @@ def stat_highlights(
         pos_lemma_freqs_flat=pos_lemma_freqs_flat,
         pos_ufeats_freqs_flat=pos_ufeats_freqs_flat,
         ufeat_pos_freqs_flat=ufeat_pos_freqs_flat,
+        pos_suc_feats_freqs_flat=pos_suc_feats_freqs_flat,
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
     )
@@ -469,7 +669,7 @@ def write_all_stats(
         json.dump(all_stats, fp, cls=StatsJsonEncoder)
 
 
-STATS_TEMPLATE: dict[str, dict[str, str]] = {
+_T: dict[str, dict[str, str]] = {
     "en": {
         "and": "and",
         "count": "number of",
@@ -480,6 +680,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "features_header": "## Features\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) have multiple values of `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) have a non-empty value of `{feat}`. The feature is used with {num_pos_tags} part-of-speech tags: {pos_tags}\n",  # noqa: E501
+        "features_overview": "This corpus contains the following features:\n",
         "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent}% of all `{pos}` tokens) have a non-empty value of `{feat}`.\n",  # noqa: E501
         "features_pos_values": "`{pos}` tokens may have the following values of `{feat}`:\n",
         "features_subheader": "### Features: **{feat}**\n",
@@ -531,6 +732,18 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "tokenization_texts": "- This corpus is built from {num_texts} texts, over {num_documents} documents, in {num_files} files.\n",  # noqa: E501
         "top_lemmas": "## Top 10 base forms\n",
         "value": "value",
+        "Degree": "Degree",
+        "Gender": "Gender",
+        "Number": "Number",
+        "Definiteness": "Definiteness",
+        "Case": "Case",
+        "Tense": "Tense",
+        "Voice": "Voice",
+        "Mood": "Mood",
+        "Particle Form": "Particle Form",
+        "Pronoun Form": "Pronoun Form",
+        "Delimiter": "Delimiter",
+        "Abbreviation": "Abbreviation",
     },
     "sv": {
         "and": "och",
@@ -541,6 +754,7 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "features_header": "## Särdrag\n",
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av `{feat}`.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av `{feat}`. Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser: {pos_tags}\n",  # noqa: E501
+        "features_overview": "Denna korpus innehåller följande särdrag:\n",
         "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent}% av alla `{pos}` tokens) har `{feat}`.\n",
         "features_pos_values": "`{pos}` tokens har följande värden av `{feat}`:\n",
         "features_subheader": "### Särdrag: **{feat}**\n",
@@ -593,8 +807,22 @@ STATS_TEMPLATE: dict[str, dict[str, str]] = {
         "top_lemmas": "## Topp-10 grundformer\n",
         "value": "värde",
         "Yes": "Ja (`Yes`)",
+        "Degree": "Komparation",
+        "Gender": "Genus",
+        "Number": "Numerus",
+        "Definiteness": "Bestämdhet",
+        "Case": "Kasus",
+        "Tense": "Tempus",
+        "Voice": "Diates",
+        "Mood": "Modus",
+        "Particle Form": "Partikelform",
+        "Pronoun Form": "Pronomform",
+        "Delimiter": "Interpunktion",
+        "Abbreviation": "Förkortning",
     },
 }
+
+STATS_TEMPLATE: dict[str, dict[str, str]] = _T
 
 
 def _format_description(name: str, measure: str, lang: str) -> str:
@@ -635,6 +863,7 @@ def write_stat_highlights(
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
     pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]],
+    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
     stats2: dict[str, dict[str, Stats]],
     lemma_attribute: t.Any,
@@ -665,8 +894,10 @@ def write_stat_highlights(
             pos_feats_freqs_flat=pos_ufeats_freqs_flat,
             lang=lang,
         )
+        # fp.write("\n")
+        # _write_features(fp, freqs["segment.token"], ufeat_pos_freqs_flat, lang=lang)
         fp.write("\n")
-        _write_features(fp, freqs["segment.token"], ufeat_pos_freqs_flat, lang=lang)
+        _write_suc_features(fp, freqs["segment.token"], pos_suc_feats_freqs_flat, lang=lang)
         # fp.write("\n")
         # _write_readability(fp, all_stats, lang=lang)
         fp.write("\n")
@@ -917,6 +1148,117 @@ def _write_features(
             )
         fp.write("\n")
 
+        fp.write("\n\n")
+
+
+def _write_suc_features(
+    fp: TextIO,
+    token_freqs: dict[str, dict[str, int]],
+    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
+    lang: str,
+) -> None:
+    # fp.write("## Features\n")
+    fp.write(_T[lang]["features_header"])
+    fp.write("\n")
+    fp.write(_T[lang]["features_overview"])
+
+    fp.write("\n")
+    features = defaultdict(lambda: defaultdict(int))
+
+    total = 0
+    for suc_feats in pos_suc_feats_freqs_flat.values():
+        for suc_feat, value_freq in suc_feats.items():
+            for value, freq in value_freq.items():
+                total += freq
+                features[suc_feat][value] += freq
+        # features.update(STATS_TEMPLATE[lang][suc_feat] for suc_feat in suc_feats)
+
+    print(f"{features=}")
+    logger.debug("features=%s", features)
+    features_sorted = sorted(features.keys(), key=lambda x: _T[lang][x])
+    fp.write("-".join(_T[lang][suc_feat] for suc_feat in features_sorted))
+    fp.write("\n")
+    fp.write("\n")
+
+    for feat in features_sorted:
+        logger.debug("writing ### Features: %s", feat)
+        # fp.write(f"### Features: **{feat}**\n")
+        fp.write("<details>\n")
+        fp.write("<summary>\n")
+        fp.write(_T[lang]["features_subheader"].format(feat=_T[lang][feat]))
+        feat_values = set()
+        for values in features[feat]:
+            feat_values.update(f"`{value}`" for value in values.split("/"))
+
+        # fp.write(f" It occurs with {len(feat_values)} different values: ")
+        num_feat_values = len(feat_values)
+        if num_feat_values == 1:
+            fp.write(
+                _T[lang]["features_diff_values, singular"].format(feat=_T[lang][feat], num_diff_values=num_feat_values)
+            )
+        else:
+            num_feat_values_str = f.fmt_number_signific(num_feat_values, 0)
+            fp.write(
+                _T[lang]["features_diff_values, plural"].format(
+                    feat=_T[lang][feat], num_diff_values=num_feat_values_str
+                )
+            )
+        fp.write(", ".join(sorted(feat_values)))
+        fp.write(".\n")
+        fp.write("\n")
+
+        fp.write("</summary>\n")
+        feat_token = sum(features[feat].values())
+        feat_token_percent = round(feat_token / total * 100)
+        multi_feat_token = sum(v for k, v in features[feat].items() if "/" in k)
+        multi_feat_token_percent = round(multi_feat_token / feat_token * 100)
+        feat_pos_freqs = defaultdict(int)
+
+        pos_value_freqs = defaultdict(lambda: defaultdict(int))
+        for pos, suc_feat_values in pos_suc_feats_freqs_flat.items():
+            for values, freq in suc_feat_values.get(feat, {}).items():
+                feat_pos_freqs[pos] += freq
+                for value in values.split("/"):
+                    pos_value_freqs[pos][value] += freq
+        # for values, value_pos_freq in pos_suc_feats_freqs_flat[feat].items():
+        #     for pos, pos_freq in value_pos_freq.items():
+        #         feat_pos_freqs[pos] += pos_freq
+        #         for value in values.split(","):
+        #             pos_value_freqs[pos][value] += pos_freq
+        logger.debug("feat_pos_freqs=%s", feat_pos_freqs)
+        print(f"{feat_pos_freqs=}")
+        logger.debug("pos_value_freqs=%s", pos_value_freqs)
+        print(f"{pos_value_freqs=}")
+        tmp1 = []
+        for pos, freqs in feat_pos_freqs.items():
+            tmp1.append((pos, freqs, freqs / total * 100))
+        pos_tags = sorted(tmp1, key=operator.itemgetter(1), reverse=True)
+        tmp3 = (
+            f"`{pos}` ({f.fmt_number_signific(count, 0)}; {f.fmt_number_decimals(perc, 0)}% {_T[lang]['instances']})"
+            for pos, count, perc in pos_tags
+        )
+        pos_tags_str = ", ".join(tmp3)
+
+        fp.write(
+            _T[lang]["features_nonempty_tokens"].format(
+                feat_token=f.fmt_number_signific(feat_token),
+                feat_token_percent=feat_token_percent,
+                feat=_T[lang][feat],
+                num_pos_tags=len(pos_tags),
+                pos_tags=pos_tags_str,
+            )
+        )
+        if multi_feat_token > 0:
+            fp.write(
+                STATS_TEMPLATE[lang]["features_multi_tokens"].format(
+                    multi_feat_token=f.fmt_number_signific(multi_feat_token),
+                    multi_feat_token_percent=f.fmt_number_decimals(multi_feat_token_percent, 0),
+                    feat=_T[lang][feat],
+                )
+            )
+        fp.write("\n")
+
+        fp.write("</details>\n")
         fp.write("\n\n")
 
 
