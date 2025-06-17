@@ -883,140 +883,558 @@ De 5 mest frekventa `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
 
 Denna korpus innehåller följande särdrag:
 
-Bestämdhet-Diates-Förkortning-Genus-Interpunktion-Kasus-Komparation-Modus-Numerus-Partikelform-Pronomform-Tempus
+[Bestämdhet](#särdrag-bestämdhet) - [Diates](#särdrag-diates) - [Förkortning](#särdrag-förkortning) - [Genus](#särdrag-genus) - [Interpunktion](#särdrag-interpunktion) - [Kasus](#särdrag-kasus) - [Komparation](#särdrag-komparation) - [Modus](#särdrag-modus) - [Numerus](#särdrag-numerus) - [Partikelform](#särdrag-partikelform) - [Pronomform](#särdrag-pronomform) - [Tempus](#särdrag-tempus)
 
-<details>
-<summary>
 ### Särdrag: **Bestämdhet**
-`Bestämdhet` förekommer med 2 olika värden: `DEF`, `IND`.
+<details>
+<summary>
+<code>Bestämdhet</code> förekommer med 2 olika värden: <code>DEF</code>, <code>IND</code>.
 
 </summary>
-1 089 053 tokens (18%) har ett icke-tomt värde av `Bestämdhet`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5; < 1% instanser)
- 90 405 tokens (8%) har multipla värden av `Bestämdhet`.
+
+1 089 053 tokens (18%) har ett icke-tomt värde av <code>Bestämdhet</code>.
+ Detta särdrag är använt tillsammans med 10 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">693 943</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132 532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101 631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98 041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47 212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9 633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4 463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1 407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HS</code></td>
+<td align="right">186</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1 089 053</td>
+<td align="right">18%</td>
+</tbody>
+</table>
+
+ 90 405 tokens (8%) har multipla värden av <code>Bestämdhet</code>.
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Diates**
-`Diates` förekommer med 2 olika värden: `AKT`, `SFO`.
+<details>
+<summary>
+<code>Diates</code> förekommer med 2 olika värden: <code>AKT</code>, <code>SFO</code>.
 
 </summary>
-380 257 tokens (6%) har ett icke-tomt värde av `Diates`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+
+380 257 tokens (6%) har ett icke-tomt värde av <code>Diates</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">380 257</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Förkortning**
-`Förkortning` förekommer med 1 värde: `AN`.
+<details>
+<summary>
+<code>Förkortning</code> förekommer med 1 värde: <code>AN</code>.
 
 </summary>
-59 873 tokens (1%) har ett icke-tomt värde av `Förkortning`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (37 351; < 1% instanser), `AB` (22 440; < 1% instanser), `VB` (28; < 1% instanser), `KN` (24; < 1% instanser), `JJ` (20; < 1% instanser), `PP` (10; < 1% instanser)
+
+59 873 tokens (1%) har ett icke-tomt värde av <code>Förkortning</code>.
+ Detta särdrag är använt tillsammans med 6 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">37 351</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>AB</code></td>
+<td align="right">22 440</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>VB</code></td>
+<td align="right">28</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>KN</code></td>
+<td align="right">24</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">20</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PP</code></td>
+<td align="right">10</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">59 873</td>
+<td align="right">1%</td>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Genus**
-`Genus` förekommer med 3 olika värden: `MAS`, `NEU`, `UTR`.
+<details>
+<summary>
+<code>Genus</code> förekommer med 3 olika värden: <code>MAS</code>, <code>NEU</code>, <code>UTR</code>.
 
 </summary>
-1 093 911 tokens (19%) har ett icke-tomt värde av `Genus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 987; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
- 157 285 tokens (14%) har multipla värden av `Genus`.
+
+1 093 911 tokens (19%) har ett icke-tomt värde av <code>Genus</code>.
+ Detta särdrag är använt tillsammans med 9 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">698 987</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132 532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101 631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98 041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47 212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9 633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4 463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1 407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1 093 911</td>
+<td align="right">19%</td>
+</tbody>
+</table>
+
+ 157 285 tokens (14%) har multipla värden av <code>Genus</code>.
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Interpunktion**
-`Interpunktion` förekommer med 3 olika värden: `MAD`, `MID`, `PAD`.
+<details>
+<summary>
+<code>Interpunktion</code> förekommer med 3 olika värden: <code>MAD</code>, <code>MID</code>, <code>PAD</code>.
 
 </summary>
-326 671 tokens (6%) har ett icke-tomt värde av `Interpunktion`. Detta särdrag är använt tillsammans med 1 ordklasser: `Delimiter` (326 671; 6% instanser)
+
+326 671 tokens (6%) har ett icke-tomt värde av <code>Interpunktion</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Delimiter</code></td>
+<td align="right">326 671</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Kasus**
-`Kasus` förekommer med 3 olika värden: `GEN`, `NOM`, `SMS`.
+<details>
+<summary>
+<code>Kasus</code> förekommer med 3 olika värden: <code>GEN</code>, <code>NOM</code>, <code>SMS</code>.
 
 </summary>
-1 167 765 tokens (20%) har ett icke-tomt värde av `Kasus`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (698 788; 12% instanser), `RG` (180 321; 3% instanser), `JJ` (132 532; 2% instanser), `PM` (106 015; 2% instanser), `PC` (47 212; < 1% instanser), `RO` (2 897; < 1% instanser)
+
+1 167 765 tokens (20%) har ett icke-tomt värde av <code>Kasus</code>.
+ Detta särdrag är använt tillsammans med 6 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">698 788</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>RG</code></td>
+<td align="right">180 321</td>
+<td align="right">3%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132 532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PM</code></td>
+<td align="right">106 015</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47 212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">2 897</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1 167 765</td>
+<td align="right">20%</td>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Komparation**
-`Komparation` förekommer med 3 olika värden: `KOM`, `POS`, `SUV`.
+<details>
+<summary>
+<code>Komparation</code> förekommer med 3 olika värden: <code>KOM</code>, <code>POS</code>, <code>SUV</code>.
 
 </summary>
-160 860 tokens (3%) har ett icke-tomt värde av `Komparation`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 532; 2% instanser), `AB` (28 328; < 1% instanser)
+
+160 860 tokens (3%) har ett icke-tomt värde av <code>Komparation</code>.
+ Detta särdrag är använt tillsammans med 2 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132 532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>AB</code></td>
+<td align="right">28 328</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">160 860</td>
+<td align="right">3%</td>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Modus**
-`Modus` förekommer med 1 värde: `KON`.
+<details>
+<summary>
+<code>Modus</code> förekommer med 1 värde: <code>KON</code>.
 
 </summary>
-162 tokens (0%) har ett icke-tomt värde av `Modus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (162; < 1% instanser)
+
+162 tokens (0%) har ett icke-tomt värde av <code>Modus</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">162</td>
+<td align="right">&lt; 1%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Numerus**
-`Numerus` förekommer med 2 olika värden: `PLU`, `SIN`.
+<details>
+<summary>
+<code>Numerus</code> förekommer med 2 olika värden: <code>PLU</code>, <code>SIN</code>.
 
 </summary>
-1 088 867 tokens (18%) har ett icke-tomt värde av `Numerus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
- 45 832 tokens (4%) har multipla värden av `Numerus`.
+
+1 088 867 tokens (18%) har ett icke-tomt värde av <code>Numerus</code>.
+ Detta särdrag är använt tillsammans med 9 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">693 943</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132 532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101 631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98 041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47 212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9 633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4 463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1 407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1 088 867</td>
+<td align="right">18%</td>
+</tbody>
+</table>
+
+ 45 832 tokens (4%) har multipla värden av <code>Numerus</code>.
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Partikelform**
-`Partikelform` förekommer med 2 olika värden: `PRF`, `PRS`.
+<details>
+<summary>
+<code>Partikelform</code> förekommer med 2 olika värden: <code>PRF</code>, <code>PRS</code>.
 
 </summary>
-47 212 tokens (1%) har ett icke-tomt värde av `Partikelform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PC` (47 212; < 1% instanser)
+
+47 212 tokens (1%) har ett icke-tomt värde av <code>Partikelform</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47 212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Särdrag: **Pronomform**
-`Pronomform` förekommer med 2 olika värden: `OBJ`, `SUB`.
+<details>
+<summary>
+<code>Pronomform</code> förekommer med 2 olika värden: <code>OBJ</code>, <code>SUB</code>.
 
 </summary>
-98 041 tokens (2%) har ett icke-tomt värde av `Pronomform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PN` (98 041; 2% instanser)
- 56 045 tokens (57%) har multipla värden av `Pronomform`.
+
+98 041 tokens (2%) har ett icke-tomt värde av <code>Pronomform</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98 041</td>
+<td align="right">2%</td>
+</tr>
+</tbody>
+</table>
+
+ 56 045 tokens (57%) har multipla värden av <code>Pronomform</code>.
 
 </details>
 
 
+### Särdrag: **Tempus**
 <details>
 <summary>
-### Särdrag: **Tempus**
-`Tempus` förekommer med 5 olika värden: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+<code>Tempus</code> förekommer med 5 olika värden: <code>IMP</code>, <code>INF</code>, <code>PRS</code>, <code>PRT</code>, <code>SUP</code>.
 
 </summary>
-380 257 tokens (6%) har ett icke-tomt värde av `Tempus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+
+380 257 tokens (6%) har ett icke-tomt värde av <code>Tempus</code>.
+ Detta särdrag är använt tillsammans med 1 ordklasser:
+<table>
+<thead>
+<tr>
+<th>Ordklass</th>
+<th align="right">Antal</th>
+<th align="right">Procentandel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">380 257</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 

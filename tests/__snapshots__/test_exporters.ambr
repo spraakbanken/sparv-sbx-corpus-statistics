@@ -5,83 +5,94 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Features: **Abbr**
-  `Abbr` occurs with 1 value: `Yes`.
+  <code>Abbr</code> occurs with 1 value: `Yes`.
   
-  57,883 tokens (2%) have a non-empty value of `Abbr`. The feature is used with 6 part-of-speech tags: `NN` (35,393; 1% instances), `AB` (22,438; < 1% instances), `VB` (18.0; < 1% instances), `KN` (17.0; < 1% instances), `JJ` (12.0; < 1% instances), `PP` (5.00; < 1% instances)
+  57,883 tokens (2%) have a non-empty value of <code>Abbr</code>.
+   The feature is used with 6 part-of-speech tags:
   
   
   
   ### Features: **Case**
-  `Case` occurs with 3 different values: `Acc`, `Gen`, `Nom`.
+  <code>Case</code> occurs with 3 different values: `Acc`, `Gen`, `Nom`.
   
-  1,262,438 tokens (44%) have a non-empty value of `Case`. The feature is used with 7 part-of-speech tags: `NN` (695,434; 24% instances), `RG` (180,310; 6% instances), `JJ` (132,538; 5% instances), `PM` (106,006; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `RO` (2,897; < 1% instances)
+  1,262,438 tokens (44%) have a non-empty value of <code>Case</code>.
+   The feature is used with 7 part-of-speech tags:
    56,044 tokens (4%) have multiple values of `Case`.
   
   
   
   ### Features: **Compound**
-  `Compound` occurs with 1 value: `Yes`.
+  <code>Compound</code> occurs with 1 value: `Yes`.
   
-  4,847 tokens (0%) have a non-empty value of `Compound`. The feature is used with 3 part-of-speech tags: `NN` (4,826; < 1% instances), `RG` (11.0; < 1% instances), `PM` (10.0; < 1% instances)
+  4,847 tokens (0%) have a non-empty value of <code>Compound</code>.
+   The feature is used with 3 part-of-speech tags:
   
   
   
   ### Features: **Definite**
-  `Definite` occurs with 2 different values: `Def`, `Ind`.
+  <code>Definite</code> occurs with 2 different values: `Def`, `Ind`.
   
-  1,089,520 tokens (38%) have a non-empty value of `Definite`. The feature is used with 10 part-of-speech tags: `NN` (694,413; 24% instances), `JJ` (132,529; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5.00; < 1% instances)
+  1,089,520 tokens (38%) have a non-empty value of <code>Definite</code>.
+   The feature is used with 10 part-of-speech tags:
    90,435 tokens (8%) have multiple values of `Definite`.
   
   
   
   ### Features: **Degree**
-  `Degree` occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
+  <code>Degree</code> occurs with 3 different values: `Cmp`, `Pos`, `Sup`.
   
-  160,898 tokens (6%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,541; 5% instances), `AB` (28,357; < 1% instances)
+  160,898 tokens (6%) have a non-empty value of <code>Degree</code>.
+   The feature is used with 2 part-of-speech tags:
   
   
   
   ### Features: **Gender**
-  `Gender` occurs with 3 different values: `Com`, `Masc`, `Neut`.
+  <code>Gender</code> occurs with 3 different values: `Com`, `Masc`, `Neut`.
   
-  1,093,722 tokens (38%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,790; 24% instances), `JJ` (132,540; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5.00; < 1% instances)
+  1,093,722 tokens (38%) have a non-empty value of <code>Gender</code>.
+   The feature is used with 9 part-of-speech tags:
    157,296 tokens (14%) have multiple values of `Gender`.
   
   
   
   ### Features: **Mood**
-  `Mood` occurs with 3 different values: `Imp`, `Ind`, `Sub`.
+  <code>Mood</code> occurs with 3 different values: `Imp`, `Ind`, `Sub`.
   
-  244,612 tokens (8%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (244,612; 8% instances)
+  244,612 tokens (8%) have a non-empty value of <code>Mood</code>.
+   The feature is used with 1 part-of-speech tags:
   
   
   
   ### Features: **Number**
-  `Number` occurs with 2 different values: `Plur`, `Sing`.
+  <code>Number</code> occurs with 2 different values: `Plur`, `Sing`.
   
-  1,089,833 tokens (38%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (694,905; 24% instances), `JJ` (132,536; 5% instances), `DT` (101,631; 4% instances), `PN` (98,041; 3% instances), `PC` (47,212; 2% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5.00; < 1% instances)
+  1,089,833 tokens (38%) have a non-empty value of <code>Number</code>.
+   The feature is used with 9 part-of-speech tags:
    45,832 tokens (4%) have multiple values of `Number`.
   
   
   
   ### Features: **Tense**
-  `Tense` occurs with 2 different values: `Past`, `Pres`.
+  <code>Tense</code> occurs with 2 different values: `Past`, `Pres`.
   
-  290,132 tokens (10%) have a non-empty value of `Tense`. The feature is used with 2 part-of-speech tags: `VB` (242,920; 8% instances), `PC` (47,212; 2% instances)
+  290,132 tokens (10%) have a non-empty value of <code>Tense</code>.
+   The feature is used with 2 part-of-speech tags:
   
   
   
   ### Features: **VerbForm**
-  `VerbForm` occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
+  <code>VerbForm</code> occurs with 4 different values: `Fin`, `Inf`, `Part`, `Sup`.
   
-  427,473 tokens (15%) have a non-empty value of `VerbForm`. The feature is used with 2 part-of-speech tags: `VB` (380,261; 13% instances), `PC` (47,212; 2% instances)
+  427,473 tokens (15%) have a non-empty value of <code>VerbForm</code>.
+   The feature is used with 2 part-of-speech tags:
   
   
   
   ### Features: **Voice**
-  `Voice` occurs with 2 different values: `Act`, `Pass`.
+  <code>Voice</code> occurs with 2 different values: `Act`, `Pass`.
   
-  380,257 tokens (13%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 13% instances)
+  380,257 tokens (13%) have a non-empty value of <code>Voice</code>.
+   The feature is used with 1 part-of-speech tags:
   
   
   
@@ -94,83 +105,94 @@
   Abbr - Case - Compound - Definite - Degree - Gender - Mood - Number - Tense - VerbForm - Voice
   
   ### Särdrag: **Abbr**
-  `Abbr` förekommer med 1 värde: `Yes`.
+  <code>Abbr</code> förekommer med 1 värde: `Yes`.
   
-  57 883 tokens (2%) har ett icke-tomt värde av `Abbr`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (35 393; 1% instanser), `AB` (22 438; < 1% instanser), `VB` (18,0; < 1% instanser), `KN` (17,0; < 1% instanser), `JJ` (12,0; < 1% instanser), `PP` (5,00; < 1% instanser)
+  57 883 tokens (2%) har ett icke-tomt värde av <code>Abbr</code>.
+   Detta särdrag är använt tillsammans med 6 ordklasser:
   
   
   
   ### Särdrag: **Case**
-  `Case` förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
+  <code>Case</code> förekommer med 3 olika värden: `Acc`, `Gen`, `Nom`.
   
-  1 262 438 tokens (44%) har ett icke-tomt värde av `Case`. Detta särdrag är använt tillsammans med 7 ordklasser: `NN` (695 434; 24% instanser), `RG` (180 310; 6% instanser), `JJ` (132 538; 5% instanser), `PM` (106 006; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `RO` (2 897; < 1% instanser)
-   56 044 tokens (4%) har multipla värden av `Case`.
+  1 262 438 tokens (44%) har ett icke-tomt värde av <code>Case</code>.
+   Detta särdrag är använt tillsammans med 7 ordklasser:
+   56 044 tokens (4%) har multipla värden av <code>Case</code>.
   
   
   
   ### Särdrag: **Compound**
-  `Compound` förekommer med 1 värde: `Yes`.
+  <code>Compound</code> förekommer med 1 värde: `Yes`.
   
-  4 847 tokens (0%) har ett icke-tomt värde av `Compound`. Detta särdrag är använt tillsammans med 3 ordklasser: `NN` (4 826; < 1% instanser), `RG` (11,0; < 1% instanser), `PM` (10,0; < 1% instanser)
+  4 847 tokens (0%) har ett icke-tomt värde av <code>Compound</code>.
+   Detta särdrag är använt tillsammans med 3 ordklasser:
   
   
   
   ### Särdrag: **Definite**
-  `Definite` förekommer med 2 olika värden: `Def`, `Ind`.
+  <code>Definite</code> förekommer med 2 olika värden: `Def`, `Ind`.
   
-  1 089 520 tokens (38%) har ett icke-tomt värde av `Definite`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (694 413; 24% instanser), `JJ` (132 529; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5,00; < 1% instanser)
-   90 435 tokens (8%) har multipla värden av `Definite`.
+  1 089 520 tokens (38%) har ett icke-tomt värde av <code>Definite</code>.
+   Detta särdrag är använt tillsammans med 10 ordklasser:
+   90 435 tokens (8%) har multipla värden av <code>Definite</code>.
   
   
   
   ### Särdrag: **Degree**
-  `Degree` förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
+  <code>Degree</code> förekommer med 3 olika värden: `Cmp`, `Pos`, `Sup`.
   
-  160 898 tokens (6%) har ett icke-tomt värde av `Degree`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 541; 5% instanser), `AB` (28 357; < 1% instanser)
+  160 898 tokens (6%) har ett icke-tomt värde av <code>Degree</code>.
+   Detta särdrag är använt tillsammans med 2 ordklasser:
   
   
   
   ### Särdrag: **Gender**
-  `Gender` förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
+  <code>Gender</code> förekommer med 3 olika värden: `Com`, `Masc`, `Neut`.
   
-  1 093 722 tokens (38%) har ett icke-tomt värde av `Gender`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 790; 24% instanser), `JJ` (132 540; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5,00; < 1% instanser)
-   157 296 tokens (14%) har multipla värden av `Gender`.
+  1 093 722 tokens (38%) har ett icke-tomt värde av <code>Gender</code>.
+   Detta särdrag är använt tillsammans med 9 ordklasser:
+   157 296 tokens (14%) har multipla värden av <code>Gender</code>.
   
   
   
   ### Särdrag: **Mood**
-  `Mood` förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
+  <code>Mood</code> förekommer med 3 olika värden: `Imp`, `Ind`, `Sub`.
   
-  244 612 tokens (8%) har ett icke-tomt värde av `Mood`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (244 612; 8% instanser)
+  244 612 tokens (8%) har ett icke-tomt värde av <code>Mood</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
   
   
   
   ### Särdrag: **Number**
-  `Number` förekommer med 2 olika värden: `Plur`, `Sing`.
+  <code>Number</code> förekommer med 2 olika värden: `Plur`, `Sing`.
   
-  1 089 833 tokens (38%) har ett icke-tomt värde av `Number`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (694 905; 24% instanser), `JJ` (132 536; 5% instanser), `DT` (101 631; 4% instanser), `PN` (98 041; 3% instanser), `PC` (47 212; 2% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5,00; < 1% instanser)
-   45 832 tokens (4%) har multipla värden av `Number`.
+  1 089 833 tokens (38%) har ett icke-tomt värde av <code>Number</code>.
+   Detta särdrag är använt tillsammans med 9 ordklasser:
+   45 832 tokens (4%) har multipla värden av <code>Number</code>.
   
   
   
   ### Särdrag: **Tense**
-  `Tense` förekommer med 2 olika värden: `Past`, `Pres`.
+  <code>Tense</code> förekommer med 2 olika värden: `Past`, `Pres`.
   
-  290 132 tokens (10%) har ett icke-tomt värde av `Tense`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (242 920; 8% instanser), `PC` (47 212; 2% instanser)
+  290 132 tokens (10%) har ett icke-tomt värde av <code>Tense</code>.
+   Detta särdrag är använt tillsammans med 2 ordklasser:
   
   
   
   ### Särdrag: **VerbForm**
-  `VerbForm` förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
+  <code>VerbForm</code> förekommer med 4 olika värden: `Fin`, `Inf`, `Part`, `Sup`.
   
-  427 473 tokens (15%) har ett icke-tomt värde av `VerbForm`. Detta särdrag är använt tillsammans med 2 ordklasser: `VB` (380 261; 13% instanser), `PC` (47 212; 2% instanser)
+  427 473 tokens (15%) har ett icke-tomt värde av <code>VerbForm</code>.
+   Detta särdrag är använt tillsammans med 2 ordklasser:
   
   
   
   ### Särdrag: **Voice**
-  `Voice` förekommer med 2 olika värden: `Act`, `Pass`.
+  <code>Voice</code> förekommer med 2 olika värden: `Act`, `Pass`.
   
-  380 257 tokens (13%) har ett icke-tomt värde av `Voice`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 13% instanser)
+  380 257 tokens (13%) har ett icke-tomt värde av <code>Voice</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
   
   
   
@@ -2195,140 +2217,558 @@
   
   This corpus contains the following features:
   
-  Abbreviation-Case-Definiteness-Degree-Delimiter-Gender-Mood-Number-Particle Form-Pronoun Form-Tense-Voice
+  [Abbreviation](#features-abbreviation) - [Case](#features-case) - [Definiteness](#features-definiteness) - [Degree](#features-degree) - [Delimiter](#features-delimiter) - [Gender](#features-gender) - [Mood](#features-mood) - [Number](#features-number) - [Particle Form](#features-particle-form) - [Pronoun Form](#features-pronoun-form) - [Tense](#features-tense) - [Voice](#features-voice)
   
-  <details>
-  <summary>
   ### Features: **Abbreviation**
-  `Abbreviation` occurs with 1 value: `AN`.
+  <details>
+  <summary>
+  <code>Abbreviation</code> occurs with 1 value: <code>AN</code>.
   
   </summary>
-  59,873 tokens (1%) have a non-empty value of `Abbreviation`. The feature is used with 6 part-of-speech tags: `NN` (37,351; < 1% instances), `AB` (22,440; < 1% instances), `VB` (28; < 1% instances), `KN` (24; < 1% instances), `JJ` (20; < 1% instances), `PP` (10; < 1% instances)
+  
+  59,873 tokens (1%) have a non-empty value of <code>Abbreviation</code>.
+   The feature is used with 6 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">37,351</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>AB</code></td>
+  <td align="right">22,440</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">28</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>KN</code></td>
+  <td align="right">24</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">20</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PP</code></td>
+  <td align="right">10</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">59,873</td>
+  <td align="right">1%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Features: **Case**
-  `Case` occurs with 3 different values: `GEN`, `NOM`, `SMS`.
+  <details>
+  <summary>
+  <code>Case</code> occurs with 3 different values: <code>GEN</code>, <code>NOM</code>, <code>SMS</code>.
   
   </summary>
-  1,167,765 tokens (20%) have a non-empty value of `Case`. The feature is used with 6 part-of-speech tags: `NN` (698,788; 12% instances), `RG` (180,321; 3% instances), `JJ` (132,532; 2% instances), `PM` (106,015; 2% instances), `PC` (47,212; < 1% instances), `RO` (2,897; < 1% instances)
+  
+  1,167,765 tokens (20%) have a non-empty value of <code>Case</code>.
+   The feature is used with 6 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">698,788</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>RG</code></td>
+  <td align="right">180,321</td>
+  <td align="right">3%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132,532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PM</code></td>
+  <td align="right">106,015</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47,212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">2,897</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1,167,765</td>
+  <td align="right">20%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
+  ### Features: **Definiteness**
   <details>
   <summary>
-  ### Features: **Definiteness**
-  `Definiteness` occurs with 2 different values: `DEF`, `IND`.
+  <code>Definiteness</code> occurs with 2 different values: <code>DEF</code>, <code>IND</code>.
   
   </summary>
-  1,089,053 tokens (18%) have a non-empty value of `Definiteness`. The feature is used with 10 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5; < 1% instances)
+  
+  1,089,053 tokens (18%) have a non-empty value of <code>Definiteness</code>.
+   The feature is used with 10 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">693,943</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132,532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101,631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98,041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47,212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9,633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4,463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1,407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HS</code></td>
+  <td align="right">186</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1,089,053</td>
+  <td align="right">18%</td>
+  </tbody>
+  </table>
+  
    90,405 tokens (8%) have multiple values of `Definiteness`.
   
   </details>
   
   
-  <details>
-  <summary>
   ### Features: **Degree**
-  `Degree` occurs with 3 different values: `KOM`, `POS`, `SUV`.
+  <details>
+  <summary>
+  <code>Degree</code> occurs with 3 different values: <code>KOM</code>, <code>POS</code>, <code>SUV</code>.
   
   </summary>
-  160,860 tokens (3%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,532; 2% instances), `AB` (28,328; < 1% instances)
+  
+  160,860 tokens (3%) have a non-empty value of <code>Degree</code>.
+   The feature is used with 2 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132,532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>AB</code></td>
+  <td align="right">28,328</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">160,860</td>
+  <td align="right">3%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Features: **Delimiter**
-  `Delimiter` occurs with 3 different values: `MAD`, `MID`, `PAD`.
+  <details>
+  <summary>
+  <code>Delimiter</code> occurs with 3 different values: <code>MAD</code>, <code>MID</code>, <code>PAD</code>.
   
   </summary>
-  326,671 tokens (6%) have a non-empty value of `Delimiter`. The feature is used with 1 part-of-speech tags: `Delimiter` (326,671; 6% instances)
+  
+  326,671 tokens (6%) have a non-empty value of <code>Delimiter</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>Delimiter</code></td>
+  <td align="right">326,671</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
+  ### Features: **Gender**
   <details>
   <summary>
-  ### Features: **Gender**
-  `Gender` occurs with 3 different values: `MAS`, `NEU`, `UTR`.
+  <code>Gender</code> occurs with 3 different values: <code>MAS</code>, <code>NEU</code>, <code>UTR</code>.
   
   </summary>
-  1,093,911 tokens (19%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,987; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+  
+  1,093,911 tokens (19%) have a non-empty value of <code>Gender</code>.
+   The feature is used with 9 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">698,987</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132,532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101,631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98,041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47,212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9,633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4,463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1,407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1,093,911</td>
+  <td align="right">19%</td>
+  </tbody>
+  </table>
+  
    157,285 tokens (14%) have multiple values of `Gender`.
   
   </details>
   
   
+  ### Features: **Mood**
   <details>
   <summary>
-  ### Features: **Mood**
-  `Mood` occurs with 1 value: `KON`.
+  <code>Mood</code> occurs with 1 value: <code>KON</code>.
   
   </summary>
-  162 tokens (0%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (162; < 1% instances)
+  
+  162 tokens (0%) have a non-empty value of <code>Mood</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">162</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
+  ### Features: **Number**
   <details>
   <summary>
-  ### Features: **Number**
-  `Number` occurs with 2 different values: `PLU`, `SIN`.
+  <code>Number</code> occurs with 2 different values: <code>PLU</code>, <code>SIN</code>.
   
   </summary>
-  1,088,867 tokens (18%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+  
+  1,088,867 tokens (18%) have a non-empty value of <code>Number</code>.
+   The feature is used with 9 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">693,943</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132,532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101,631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98,041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47,212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9,633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4,463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1,407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1,088,867</td>
+  <td align="right">18%</td>
+  </tbody>
+  </table>
+  
    45,832 tokens (4%) have multiple values of `Number`.
   
   </details>
   
   
+  ### Features: **Particle Form**
   <details>
   <summary>
-  ### Features: **Particle Form**
-  `Particle Form` occurs with 2 different values: `PRF`, `PRS`.
+  <code>Particle Form</code> occurs with 2 different values: <code>PRF</code>, <code>PRS</code>.
   
   </summary>
-  47,212 tokens (1%) have a non-empty value of `Particle Form`. The feature is used with 1 part-of-speech tags: `PC` (47,212; < 1% instances)
+  
+  47,212 tokens (1%) have a non-empty value of <code>Particle Form</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47,212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
+  ### Features: **Pronoun Form**
   <details>
   <summary>
-  ### Features: **Pronoun Form**
-  `Pronoun Form` occurs with 2 different values: `OBJ`, `SUB`.
+  <code>Pronoun Form</code> occurs with 2 different values: <code>OBJ</code>, <code>SUB</code>.
   
   </summary>
-  98,041 tokens (2%) have a non-empty value of `Pronoun Form`. The feature is used with 1 part-of-speech tags: `PN` (98,041; 2% instances)
+  
+  98,041 tokens (2%) have a non-empty value of <code>Pronoun Form</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98,041</td>
+  <td align="right">2%</td>
+  </tr>
+  </tbody>
+  </table>
+  
    56,045 tokens (57%) have multiple values of `Pronoun Form`.
   
   </details>
   
   
+  ### Features: **Tense**
   <details>
   <summary>
-  ### Features: **Tense**
-  `Tense` occurs with 5 different values: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+  <code>Tense</code> occurs with 5 different values: <code>IMP</code>, <code>INF</code>, <code>PRS</code>, <code>PRT</code>, <code>SUP</code>.
   
   </summary>
-  380,257 tokens (6%) have a non-empty value of `Tense`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+  
+  380,257 tokens (6%) have a non-empty value of <code>Tense</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">380,257</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
+  ### Features: **Voice**
   <details>
   <summary>
-  ### Features: **Voice**
-  `Voice` occurs with 2 different values: `AKT`, `SFO`.
+  <code>Voice</code> occurs with 2 different values: <code>AKT</code>, <code>SFO</code>.
   
   </summary>
-  380,257 tokens (6%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+  
+  380,257 tokens (6%) have a non-empty value of <code>Voice</code>.
+   The feature is used with 1 part-of-speech tags:
+  <table>
+  <thead>
+  <tr>
+  <th>Part of Speech</th>
+  <th align="right">Count</th>
+  <th align="right">Percentage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">380,257</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
@@ -2342,140 +2782,558 @@
   
   Denna korpus innehåller följande särdrag:
   
-  Bestämdhet-Diates-Förkortning-Genus-Interpunktion-Kasus-Komparation-Modus-Numerus-Partikelform-Pronomform-Tempus
+  [Bestämdhet](#särdrag-bestämdhet) - [Diates](#särdrag-diates) - [Förkortning](#särdrag-förkortning) - [Genus](#särdrag-genus) - [Interpunktion](#särdrag-interpunktion) - [Kasus](#särdrag-kasus) - [Komparation](#särdrag-komparation) - [Modus](#särdrag-modus) - [Numerus](#särdrag-numerus) - [Partikelform](#särdrag-partikelform) - [Pronomform](#särdrag-pronomform) - [Tempus](#särdrag-tempus)
   
-  <details>
-  <summary>
   ### Särdrag: **Bestämdhet**
-  `Bestämdhet` förekommer med 2 olika värden: `DEF`, `IND`.
+  <details>
+  <summary>
+  <code>Bestämdhet</code> förekommer med 2 olika värden: <code>DEF</code>, <code>IND</code>.
   
   </summary>
-  1 089 053 tokens (18%) har ett icke-tomt värde av `Bestämdhet`. Detta särdrag är använt tillsammans med 10 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `HS` (186; < 1% instanser), `RO` (5; < 1% instanser)
-   90 405 tokens (8%) har multipla värden av `Bestämdhet`.
+  
+  1 089 053 tokens (18%) har ett icke-tomt värde av <code>Bestämdhet</code>.
+   Detta särdrag är använt tillsammans med 10 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">693 943</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132 532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101 631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98 041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47 212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9 633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4 463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1 407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HS</code></td>
+  <td align="right">186</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1 089 053</td>
+  <td align="right">18%</td>
+  </tbody>
+  </table>
+  
+   90 405 tokens (8%) har multipla värden av <code>Bestämdhet</code>.
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Diates**
-  `Diates` förekommer med 2 olika värden: `AKT`, `SFO`.
+  <details>
+  <summary>
+  <code>Diates</code> förekommer med 2 olika värden: <code>AKT</code>, <code>SFO</code>.
   
   </summary>
-  380 257 tokens (6%) har ett icke-tomt värde av `Diates`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+  
+  380 257 tokens (6%) har ett icke-tomt värde av <code>Diates</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">380 257</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Förkortning**
-  `Förkortning` förekommer med 1 värde: `AN`.
+  <details>
+  <summary>
+  <code>Förkortning</code> förekommer med 1 värde: <code>AN</code>.
   
   </summary>
-  59 873 tokens (1%) har ett icke-tomt värde av `Förkortning`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (37 351; < 1% instanser), `AB` (22 440; < 1% instanser), `VB` (28; < 1% instanser), `KN` (24; < 1% instanser), `JJ` (20; < 1% instanser), `PP` (10; < 1% instanser)
+  
+  59 873 tokens (1%) har ett icke-tomt värde av <code>Förkortning</code>.
+   Detta särdrag är använt tillsammans med 6 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">37 351</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>AB</code></td>
+  <td align="right">22 440</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">28</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>KN</code></td>
+  <td align="right">24</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">20</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PP</code></td>
+  <td align="right">10</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">59 873</td>
+  <td align="right">1%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Genus**
-  `Genus` förekommer med 3 olika värden: `MAS`, `NEU`, `UTR`.
+  <details>
+  <summary>
+  <code>Genus</code> förekommer med 3 olika värden: <code>MAS</code>, <code>NEU</code>, <code>UTR</code>.
   
   </summary>
-  1 093 911 tokens (19%) har ett icke-tomt värde av `Genus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (698 987; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
-   157 285 tokens (14%) har multipla värden av `Genus`.
+  
+  1 093 911 tokens (19%) har ett icke-tomt värde av <code>Genus</code>.
+   Detta särdrag är använt tillsammans med 9 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">698 987</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132 532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101 631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98 041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47 212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9 633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4 463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1 407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1 093 911</td>
+  <td align="right">19%</td>
+  </tbody>
+  </table>
+  
+   157 285 tokens (14%) har multipla värden av <code>Genus</code>.
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Interpunktion**
-  `Interpunktion` förekommer med 3 olika värden: `MAD`, `MID`, `PAD`.
+  <details>
+  <summary>
+  <code>Interpunktion</code> förekommer med 3 olika värden: <code>MAD</code>, <code>MID</code>, <code>PAD</code>.
   
   </summary>
-  326 671 tokens (6%) har ett icke-tomt värde av `Interpunktion`. Detta särdrag är använt tillsammans med 1 ordklasser: `Delimiter` (326 671; 6% instanser)
+  
+  326 671 tokens (6%) har ett icke-tomt värde av <code>Interpunktion</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>Delimiter</code></td>
+  <td align="right">326 671</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Kasus**
-  `Kasus` förekommer med 3 olika värden: `GEN`, `NOM`, `SMS`.
+  <details>
+  <summary>
+  <code>Kasus</code> förekommer med 3 olika värden: <code>GEN</code>, <code>NOM</code>, <code>SMS</code>.
   
   </summary>
-  1 167 765 tokens (20%) har ett icke-tomt värde av `Kasus`. Detta särdrag är använt tillsammans med 6 ordklasser: `NN` (698 788; 12% instanser), `RG` (180 321; 3% instanser), `JJ` (132 532; 2% instanser), `PM` (106 015; 2% instanser), `PC` (47 212; < 1% instanser), `RO` (2 897; < 1% instanser)
+  
+  1 167 765 tokens (20%) har ett icke-tomt värde av <code>Kasus</code>.
+   Detta särdrag är använt tillsammans med 6 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">698 788</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>RG</code></td>
+  <td align="right">180 321</td>
+  <td align="right">3%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132 532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PM</code></td>
+  <td align="right">106 015</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47 212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">2 897</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1 167 765</td>
+  <td align="right">20%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Komparation**
-  `Komparation` förekommer med 3 olika värden: `KOM`, `POS`, `SUV`.
+  <details>
+  <summary>
+  <code>Komparation</code> förekommer med 3 olika värden: <code>KOM</code>, <code>POS</code>, <code>SUV</code>.
   
   </summary>
-  160 860 tokens (3%) har ett icke-tomt värde av `Komparation`. Detta särdrag är använt tillsammans med 2 ordklasser: `JJ` (132 532; 2% instanser), `AB` (28 328; < 1% instanser)
+  
+  160 860 tokens (3%) har ett icke-tomt värde av <code>Komparation</code>.
+   Detta särdrag är använt tillsammans med 2 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132 532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>AB</code></td>
+  <td align="right">28 328</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">160 860</td>
+  <td align="right">3%</td>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Modus**
-  `Modus` förekommer med 1 värde: `KON`.
+  <details>
+  <summary>
+  <code>Modus</code> förekommer med 1 värde: <code>KON</code>.
   
   </summary>
-  162 tokens (0%) har ett icke-tomt värde av `Modus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (162; < 1% instanser)
+  
+  162 tokens (0%) har ett icke-tomt värde av <code>Modus</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">162</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Numerus**
-  `Numerus` förekommer med 2 olika värden: `PLU`, `SIN`.
+  <details>
+  <summary>
+  <code>Numerus</code> förekommer med 2 olika värden: <code>PLU</code>, <code>SIN</code>.
   
   </summary>
-  1 088 867 tokens (18%) har ett icke-tomt värde av `Numerus`. Detta särdrag är använt tillsammans med 9 ordklasser: `NN` (693 943; 12% instanser), `JJ` (132 532; 2% instanser), `DT` (101 631; 2% instanser), `PN` (98 041; 2% instanser), `PC` (47 212; < 1% instanser), `PS` (9 633; < 1% instanser), `HP` (4 463; < 1% instanser), `HD` (1 407; < 1% instanser), `RO` (5; < 1% instanser)
-   45 832 tokens (4%) har multipla värden av `Numerus`.
+  
+  1 088 867 tokens (18%) har ett icke-tomt värde av <code>Numerus</code>.
+   Detta särdrag är använt tillsammans med 9 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>NN</code></td>
+  <td align="right">693 943</td>
+  <td align="right">12%</td>
+  </tr>
+  <tr>
+  <td><code>JJ</code></td>
+  <td align="right">132 532</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>DT</code></td>
+  <td align="right">101 631</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98 041</td>
+  <td align="right">2%</td>
+  </tr>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47 212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>PS</code></td>
+  <td align="right">9 633</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HP</code></td>
+  <td align="right">4 463</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>HD</code></td>
+  <td align="right">1 407</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <tr>
+  <td><code>RO</code></td>
+  <td align="right">5</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  <td>Σ</td>
+  <td align="right">1 088 867</td>
+  <td align="right">18%</td>
+  </tbody>
+  </table>
+  
+   45 832 tokens (4%) har multipla värden av <code>Numerus</code>.
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Partikelform**
-  `Partikelform` förekommer med 2 olika värden: `PRF`, `PRS`.
+  <details>
+  <summary>
+  <code>Partikelform</code> förekommer med 2 olika värden: <code>PRF</code>, <code>PRS</code>.
   
   </summary>
-  47 212 tokens (1%) har ett icke-tomt värde av `Partikelform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PC` (47 212; < 1% instanser)
+  
+  47 212 tokens (1%) har ett icke-tomt värde av <code>Partikelform</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>PC</code></td>
+  <td align="right">47 212</td>
+  <td align="right">&lt; 1%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   
   
-  <details>
-  <summary>
   ### Särdrag: **Pronomform**
-  `Pronomform` förekommer med 2 olika värden: `OBJ`, `SUB`.
+  <details>
+  <summary>
+  <code>Pronomform</code> förekommer med 2 olika värden: <code>OBJ</code>, <code>SUB</code>.
   
   </summary>
-  98 041 tokens (2%) har ett icke-tomt värde av `Pronomform`. Detta särdrag är använt tillsammans med 1 ordklasser: `PN` (98 041; 2% instanser)
-   56 045 tokens (57%) har multipla värden av `Pronomform`.
+  
+  98 041 tokens (2%) har ett icke-tomt värde av <code>Pronomform</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>PN</code></td>
+  <td align="right">98 041</td>
+  <td align="right">2%</td>
+  </tr>
+  </tbody>
+  </table>
+  
+   56 045 tokens (57%) har multipla värden av <code>Pronomform</code>.
   
   </details>
   
   
+  ### Särdrag: **Tempus**
   <details>
   <summary>
-  ### Särdrag: **Tempus**
-  `Tempus` förekommer med 5 olika värden: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+  <code>Tempus</code> förekommer med 5 olika värden: <code>IMP</code>, <code>INF</code>, <code>PRS</code>, <code>PRT</code>, <code>SUP</code>.
   
   </summary>
-  380 257 tokens (6%) har ett icke-tomt värde av `Tempus`. Detta särdrag är använt tillsammans med 1 ordklasser: `VB` (380 257; 6% instanser)
+  
+  380 257 tokens (6%) har ett icke-tomt värde av <code>Tempus</code>.
+   Detta särdrag är använt tillsammans med 1 ordklasser:
+  <table>
+  <thead>
+  <tr>
+  <th>Ordklass</th>
+  <th align="right">Antal</th>
+  <th align="right">Procentandel</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code>VB</code></td>
+  <td align="right">380 257</td>
+  <td align="right">6%</td>
+  </tr>
+  </tbody>
+  </table>
   
   </details>
   

@@ -383,9 +383,9 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         definiteness = SucDefiniteness(msds[2].replace("+", "/"))
         return MsdWPos.pos_hd(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.HP:
-        gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
-        number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
-        definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+        gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None  # type: ignore[assignment]
+        number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None  # type: ignore[assignment]
+        definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None  # type: ignore[assignment]
         return MsdWPos.pos_hp(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.HS:
         definiteness = SucDefiniteness(msds[0].replace("+", "/"))
@@ -401,10 +401,10 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         )
     if pos == SucPos.NN:
         try:
-            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            case = SucCase(msds[3]) if msds[3] != "-" else None
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None  # type: ignore[assignment]
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None  # type: ignore[assignment]
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None  # type: ignore[assignment]
+            case = SucCase(msds[3]) if msds[3] != "-" else None  # type: ignore[assignment]
         except ValueError as exc:
             raise UnsupportedValueError from exc
         return MsdWPos.pos_nn(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
@@ -425,9 +425,9 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         return MsdWPos.pos_pm(pos=pos, case=case)
     if pos == SucPos.PN:
         try:
-            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None  # type: ignore[assignment]
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None  # type: ignore[assignment]
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None  # type: ignore[assignment]
             pronoun_form = SucPronounForm(msds[3].replace("+", "/"))
         except ValueError as exc:
             raise UnsupportedValueError from exc
@@ -444,10 +444,10 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         return MsdWPos.pos_rg(pos=pos, case=case)
     if pos == SucPos.RO:
         try:
-            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None
-            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
-            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
-            case = SucCase(msds[3]) if msds[3] != "-" else None
+            gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None  # type: ignore[assignment]
+            number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None  # type: ignore[assignment]
+            definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None  # type: ignore[assignment]
+            case = SucCase(msds[3]) if msds[3] != "-" else None  # type: ignore[assignment]
         except ValueError as exc:
             try:
                 case = SucCase(msds[0])

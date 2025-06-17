@@ -883,140 +883,558 @@ The 5 most frequent `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
 
 This corpus contains the following features:
 
-Abbreviation-Case-Definiteness-Degree-Delimiter-Gender-Mood-Number-Particle Form-Pronoun Form-Tense-Voice
+[Abbreviation](#features-abbreviation) - [Case](#features-case) - [Definiteness](#features-definiteness) - [Degree](#features-degree) - [Delimiter](#features-delimiter) - [Gender](#features-gender) - [Mood](#features-mood) - [Number](#features-number) - [Particle Form](#features-particle-form) - [Pronoun Form](#features-pronoun-form) - [Tense](#features-tense) - [Voice](#features-voice)
 
-<details>
-<summary>
 ### Features: **Abbreviation**
-`Abbreviation` occurs with 1 value: `AN`.
+<details>
+<summary>
+<code>Abbreviation</code> occurs with 1 value: <code>AN</code>.
 
 </summary>
-59,873 tokens (1%) have a non-empty value of `Abbreviation`. The feature is used with 6 part-of-speech tags: `NN` (37,351; < 1% instances), `AB` (22,440; < 1% instances), `VB` (28; < 1% instances), `KN` (24; < 1% instances), `JJ` (20; < 1% instances), `PP` (10; < 1% instances)
+
+59,873 tokens (1%) have a non-empty value of <code>Abbreviation</code>.
+ The feature is used with 6 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">37,351</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>AB</code></td>
+<td align="right">22,440</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>VB</code></td>
+<td align="right">28</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>KN</code></td>
+<td align="right">24</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">20</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PP</code></td>
+<td align="right">10</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">59,873</td>
+<td align="right">1%</td>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Features: **Case**
-`Case` occurs with 3 different values: `GEN`, `NOM`, `SMS`.
+<details>
+<summary>
+<code>Case</code> occurs with 3 different values: <code>GEN</code>, <code>NOM</code>, <code>SMS</code>.
 
 </summary>
-1,167,765 tokens (20%) have a non-empty value of `Case`. The feature is used with 6 part-of-speech tags: `NN` (698,788; 12% instances), `RG` (180,321; 3% instances), `JJ` (132,532; 2% instances), `PM` (106,015; 2% instances), `PC` (47,212; < 1% instances), `RO` (2,897; < 1% instances)
+
+1,167,765 tokens (20%) have a non-empty value of <code>Case</code>.
+ The feature is used with 6 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">698,788</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>RG</code></td>
+<td align="right">180,321</td>
+<td align="right">3%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132,532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PM</code></td>
+<td align="right">106,015</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47,212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">2,897</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1,167,765</td>
+<td align="right">20%</td>
+</tbody>
+</table>
 
 </details>
 
 
+### Features: **Definiteness**
 <details>
 <summary>
-### Features: **Definiteness**
-`Definiteness` occurs with 2 different values: `DEF`, `IND`.
+<code>Definiteness</code> occurs with 2 different values: <code>DEF</code>, <code>IND</code>.
 
 </summary>
-1,089,053 tokens (18%) have a non-empty value of `Definiteness`. The feature is used with 10 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `HS` (186; < 1% instances), `RO` (5; < 1% instances)
+
+1,089,053 tokens (18%) have a non-empty value of <code>Definiteness</code>.
+ The feature is used with 10 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">693,943</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132,532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101,631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98,041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47,212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9,633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4,463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1,407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HS</code></td>
+<td align="right">186</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1,089,053</td>
+<td align="right">18%</td>
+</tbody>
+</table>
+
  90,405 tokens (8%) have multiple values of `Definiteness`.
 
 </details>
 
 
-<details>
-<summary>
 ### Features: **Degree**
-`Degree` occurs with 3 different values: `KOM`, `POS`, `SUV`.
+<details>
+<summary>
+<code>Degree</code> occurs with 3 different values: <code>KOM</code>, <code>POS</code>, <code>SUV</code>.
 
 </summary>
-160,860 tokens (3%) have a non-empty value of `Degree`. The feature is used with 2 part-of-speech tags: `JJ` (132,532; 2% instances), `AB` (28,328; < 1% instances)
+
+160,860 tokens (3%) have a non-empty value of <code>Degree</code>.
+ The feature is used with 2 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132,532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>AB</code></td>
+<td align="right">28,328</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">160,860</td>
+<td align="right">3%</td>
+</tbody>
+</table>
 
 </details>
 
 
-<details>
-<summary>
 ### Features: **Delimiter**
-`Delimiter` occurs with 3 different values: `MAD`, `MID`, `PAD`.
+<details>
+<summary>
+<code>Delimiter</code> occurs with 3 different values: <code>MAD</code>, <code>MID</code>, <code>PAD</code>.
 
 </summary>
-326,671 tokens (6%) have a non-empty value of `Delimiter`. The feature is used with 1 part-of-speech tags: `Delimiter` (326,671; 6% instances)
+
+326,671 tokens (6%) have a non-empty value of <code>Delimiter</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Delimiter</code></td>
+<td align="right">326,671</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
+### Features: **Gender**
 <details>
 <summary>
-### Features: **Gender**
-`Gender` occurs with 3 different values: `MAS`, `NEU`, `UTR`.
+<code>Gender</code> occurs with 3 different values: <code>MAS</code>, <code>NEU</code>, <code>UTR</code>.
 
 </summary>
-1,093,911 tokens (19%) have a non-empty value of `Gender`. The feature is used with 9 part-of-speech tags: `NN` (698,987; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+
+1,093,911 tokens (19%) have a non-empty value of <code>Gender</code>.
+ The feature is used with 9 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">698,987</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132,532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101,631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98,041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47,212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9,633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4,463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1,407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1,093,911</td>
+<td align="right">19%</td>
+</tbody>
+</table>
+
  157,285 tokens (14%) have multiple values of `Gender`.
 
 </details>
 
 
+### Features: **Mood**
 <details>
 <summary>
-### Features: **Mood**
-`Mood` occurs with 1 value: `KON`.
+<code>Mood</code> occurs with 1 value: <code>KON</code>.
 
 </summary>
-162 tokens (0%) have a non-empty value of `Mood`. The feature is used with 1 part-of-speech tags: `VB` (162; < 1% instances)
+
+162 tokens (0%) have a non-empty value of <code>Mood</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">162</td>
+<td align="right">&lt; 1%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
+### Features: **Number**
 <details>
 <summary>
-### Features: **Number**
-`Number` occurs with 2 different values: `PLU`, `SIN`.
+<code>Number</code> occurs with 2 different values: <code>PLU</code>, <code>SIN</code>.
 
 </summary>
-1,088,867 tokens (18%) have a non-empty value of `Number`. The feature is used with 9 part-of-speech tags: `NN` (693,943; 12% instances), `JJ` (132,532; 2% instances), `DT` (101,631; 2% instances), `PN` (98,041; 2% instances), `PC` (47,212; < 1% instances), `PS` (9,633; < 1% instances), `HP` (4,463; < 1% instances), `HD` (1,407; < 1% instances), `RO` (5; < 1% instances)
+
+1,088,867 tokens (18%) have a non-empty value of <code>Number</code>.
+ The feature is used with 9 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NN</code></td>
+<td align="right">693,943</td>
+<td align="right">12%</td>
+</tr>
+<tr>
+<td><code>JJ</code></td>
+<td align="right">132,532</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>DT</code></td>
+<td align="right">101,631</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98,041</td>
+<td align="right">2%</td>
+</tr>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47,212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>PS</code></td>
+<td align="right">9,633</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HP</code></td>
+<td align="right">4,463</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>HD</code></td>
+<td align="right">1,407</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<tr>
+<td><code>RO</code></td>
+<td align="right">5</td>
+<td align="right">&lt; 1%</td>
+</tr>
+<td>Σ</td>
+<td align="right">1,088,867</td>
+<td align="right">18%</td>
+</tbody>
+</table>
+
  45,832 tokens (4%) have multiple values of `Number`.
 
 </details>
 
 
+### Features: **Particle Form**
 <details>
 <summary>
-### Features: **Particle Form**
-`Particle Form` occurs with 2 different values: `PRF`, `PRS`.
+<code>Particle Form</code> occurs with 2 different values: <code>PRF</code>, <code>PRS</code>.
 
 </summary>
-47,212 tokens (1%) have a non-empty value of `Particle Form`. The feature is used with 1 part-of-speech tags: `PC` (47,212; < 1% instances)
+
+47,212 tokens (1%) have a non-empty value of <code>Particle Form</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PC</code></td>
+<td align="right">47,212</td>
+<td align="right">&lt; 1%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
+### Features: **Pronoun Form**
 <details>
 <summary>
-### Features: **Pronoun Form**
-`Pronoun Form` occurs with 2 different values: `OBJ`, `SUB`.
+<code>Pronoun Form</code> occurs with 2 different values: <code>OBJ</code>, <code>SUB</code>.
 
 </summary>
-98,041 tokens (2%) have a non-empty value of `Pronoun Form`. The feature is used with 1 part-of-speech tags: `PN` (98,041; 2% instances)
+
+98,041 tokens (2%) have a non-empty value of <code>Pronoun Form</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PN</code></td>
+<td align="right">98,041</td>
+<td align="right">2%</td>
+</tr>
+</tbody>
+</table>
+
  56,045 tokens (57%) have multiple values of `Pronoun Form`.
 
 </details>
 
 
+### Features: **Tense**
 <details>
 <summary>
-### Features: **Tense**
-`Tense` occurs with 5 different values: `IMP`, `INF`, `PRS`, `PRT`, `SUP`.
+<code>Tense</code> occurs with 5 different values: <code>IMP</code>, <code>INF</code>, <code>PRS</code>, <code>PRT</code>, <code>SUP</code>.
 
 </summary>
-380,257 tokens (6%) have a non-empty value of `Tense`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+
+380,257 tokens (6%) have a non-empty value of <code>Tense</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">380,257</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 
+### Features: **Voice**
 <details>
 <summary>
-### Features: **Voice**
-`Voice` occurs with 2 different values: `AKT`, `SFO`.
+<code>Voice</code> occurs with 2 different values: <code>AKT</code>, <code>SFO</code>.
 
 </summary>
-380,257 tokens (6%) have a non-empty value of `Voice`. The feature is used with 1 part-of-speech tags: `VB` (380,257; 6% instances)
+
+380,257 tokens (6%) have a non-empty value of <code>Voice</code>.
+ The feature is used with 1 part-of-speech tags:
+<table>
+<thead>
+<tr>
+<th>Part of Speech</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VB</code></td>
+<td align="right">380,257</td>
+<td align="right">6%</td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
