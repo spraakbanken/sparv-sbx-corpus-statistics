@@ -564,24 +564,24 @@ def stat_highlights(
     logger.debug("pos_lemma_freqs = %s", pos_lemma_freqs)
 
     all_stats = _combine_all_stats(stats, stats_2)
-    with Path("all_stats.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(all_stats, fp, cls=StatsJsonEncoder)
-    with Path("stats2.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(stats_2, fp, cls=StatsJsonEncoder)
-    with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(freqs, fp, cls=StatsJsonEncoder)
-    with Path("pos_token_freqs.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(pos_token_freqs, fp, cls=StatsJsonEncoder)
-    with Path("pos_lemma_freqs.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(pos_lemma_freqs, fp, cls=StatsJsonEncoder)
-    with Path("pos_lemma_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(pos_lemma_freqs_flat, fp, cls=StatsJsonEncoder)
-    with Path("ufeat_pos_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(ufeat_pos_freqs_flat, fp, cls=StatsJsonEncoder)
-    with Path("pos_ufeats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(pos_ufeats_freqs_flat, fp, cls=StatsJsonEncoder)
-    with Path("pos_suc_feats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(pos_suc_feats_freqs_flat, fp, cls=StatsJsonEncoder)
+    # with Path("all_stats.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(all_stats, fp, cls=StatsJsonEncoder)
+    # with Path("stats2.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(stats_2, fp, cls=StatsJsonEncoder)
+    # with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(freqs, fp, cls=StatsJsonEncoder)
+    # with Path("pos_token_freqs.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(pos_token_freqs, fp, cls=StatsJsonEncoder)
+    # with Path("pos_lemma_freqs.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(pos_lemma_freqs, fp, cls=StatsJsonEncoder)
+    # with Path("pos_lemma_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(pos_lemma_freqs_flat, fp, cls=StatsJsonEncoder)
+    # with Path("ufeat_pos_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(ufeat_pos_freqs_flat, fp, cls=StatsJsonEncoder)
+    # with Path("pos_ufeats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(pos_ufeats_freqs_flat, fp, cls=StatsJsonEncoder)
+    # with Path("pos_suc_feats_freqs_flat.json").open(mode="w", encoding="utf-8") as fp:
+    #     json.dump(pos_suc_feats_freqs_flat, fp, cls=StatsJsonEncoder)
     write_all_stats(
         out_all,
         all_stats=all_stats,
@@ -681,7 +681,7 @@ _T: dict[str, dict[str, str]] = {
         "instances": "instances",
         "length (characters)": "length (characters)",
         "length (in words)": "length (in words)",
-        "missing": "<missing>",
+        "missing": "&lt;missing&gt;",
         "morphology_header": "## Morphology\n",
         "morphology_msd_header": "### Morphosyntactic descriptors (MSD)\n",
         "morphology_msd_table_header": "MSD | Frequency | Percent\n",
@@ -689,13 +689,13 @@ _T: dict[str, dict[str, str]] = {
         "no features for pos": "{pos_tag} not present among features\n",
         "no POS": "Found no POS tags.\n",
         "of non-empty": "of non-empty",
-        "POS_descr": "There are {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Out of {pos_stats_num_tags} observed tags, the rank of `{pos_tag}` is: {pos_stats_rank_of_tokens} in number of tokens.\n",  # noqa: E501
+        "POS_descr": "There are {pos_tag_freqs} ({pos_tag_precent}%) <em>{pos_tag_translated}</em> (<code>{pos_tag}</code>) tokens. Out of {pos_stats_num_tags} observed tags, the rank of <em>{pos_tag_translated}</em> is: {pos_stats_rank_of_tokens} in number of tokens.\n",  # noqa: E501
         "POS_header": "## POS Tags\n",
-        "POS_no_lemmas": "Contains no base forms with `{pos_tag}`.\n",
+        "POS_no_lemmas": "Contains no base forms with <code>{pos_tag}</code>.\n",
         "POS_subheader": "### POS Tag: **{pos_tag}**\n",
         "POS_tags_description": "The following POS tags is present in this corpus:\n",
-        "POS_top_lemmas": "The {number} most frequent `{pos_tag}` base forms: {top_lemmas}\n",
-        "POS_top_tokens": "The {number} most frequent `{pos_tag}` tokens: {top_tokens}\n",
+        "POS_top_lemmas": "The {number} most frequent <code>{pos_tag}</code> base forms: {top_lemmas}\n",
+        "POS_top_tokens": "The {number} most frequent <code>{pos_tag}</code> tokens: {top_tokens}\n",
         "pos_distribution_header": "### Distribution of POS-tags\n",
         "pos_distribution_table_header": "Part-Of-Speech | Frequency | Percent (%)\n",
         "pos_feature_overview": "#### POS Tag: **{pos_tag}**, features\n",
@@ -749,8 +749,8 @@ _T: dict[str, dict[str, str]] = {
         "features_multi_tokens": " {multi_feat_token} tokens ({multi_feat_token_percent}%) har multipla värden av <code>{feat}</code>.\n",  # noqa: E501
         "features_nonempty_tokens": "{feat_token} tokens ({feat_token_percent}%) har ett icke-tomt värde av <code>{feat}</code>.\n Detta särdrag är använt tillsammans med {num_pos_tags} ordklasser:\n",  # noqa: E501
         "features_overview": "Denna korpus innehåller följande särdrag:\n",
-        "features_pos_feat": "{freqs} `{pos}` tokens ({freq_percent}% av alla `{pos}` tokens) har `{feat}`.\n",
-        "features_pos_values": "`{pos}` tokens har följande värden av `{feat}`:\n",
+        "features_pos_feat": "{freqs} <code>{pos}</code> tokens ({freq_percent}% av alla <code>{pos}</code> tokens) har <code>{feat}</code>.\n",  # noqa: E501
+        "features_pos_values": "<code>{pos}</code> tokens har följande värden av <code>{feat}</code>:\n",
         "features_subheader": "### Särdrag: **{feat}**\n",
         "file": "filer",
         "file length (characters)": "fillängd, i tecken",
@@ -758,7 +758,7 @@ _T: dict[str, dict[str, str]] = {
         "instances": "instanser",
         "length (characters)": "längd (tecken)",
         "length (in words)": "längd (i ord)",
-        "missing": "<saknas>",
+        "missing": "&lt;saknas&gt;",
         "morphology_header": "## Morfologi\n",
         "morphology_msd_header": "### Fördelning av ordklassernas särdrag\n",
         "morphology_msd_table_header": "Ordklassernas särdrag | Frequency | Percent\n",
@@ -768,13 +768,13 @@ _T: dict[str, dict[str, str]] = {
         "of non-empty": "av icke-tomma",
         "Part of Speech": "Ordklass",
         "Percentage": "Procentandel",
-        "POS_descr": "Det finns {pos_tag_freqs} ({pos_tag_precent}%) `{pos_tag}` tokens. Av {pos_stats_num_tags} observerade ordklasser, så är `{pos_tag}`:s rank: {pos_stats_rank_of_tokens} i antalet tokens.\n",  # noqa: E501
+        "POS_descr": "Det finns {pos_tag_freqs} ({pos_tag_precent}%) <em>{pos_tag_translated}</em> (<code>{pos_tag}</code>) tokens. Av {pos_stats_num_tags} observerade ordklasser, så är <em>{pos_tag_translated}</em>:s rank: {pos_stats_rank_of_tokens} i antalet tokens.\n",  # noqa: E501
         "POS_header": "## Ordklasser\n",
-        "POS_no_lemmas": "Innhåller inga grundformer med `{pos_tag}`.\n",
+        "POS_no_lemmas": "Innhåller inga grundformer med <code>{pos_tag}</code>.\n",
         "POS_subheader": "### Ordklass: **{pos_tag}**\n",
         "POS_tags_description": "Följande ordklasser förekommer i korpusen:\n",
-        "POS_top_lemmas": "De {number} mest frekventa `{pos_tag}` grundformer: {top_lemmas}\n",
-        "POS_top_tokens": "De {number} mest frekventa `{pos_tag}` tokens: {top_tokens}\n",
+        "POS_top_lemmas": "De {number} mest frekventa <code>{pos_tag}</code> grundformer: {top_lemmas}\n",
+        "POS_top_tokens": "De {number} mest frekventa <code>{pos_tag}</code> tokens: {top_tokens}\n",
         "pos_distribution_header": "### Fördelning av ordklasser\n",
         "pos_distribution_table_header": "Ordklass | Antal | Andel (%)\n",
         "pos_feature_overview": "#### Ordklass: **{pos_tag}**, särdrag\n",
@@ -888,7 +888,7 @@ def write_stat_highlights(
             token_freqs=freqs["segment.token"],
             pos_token_freqs=pos_token_freqs,
             pos_lemma_freqs_flat=pos_lemma_freqs_flat,
-            pos_feats_freqs_flat=pos_ufeats_freqs_flat,
+            pos_feats_freqs_flat=pos_suc_feats_freqs_flat,
             lang=lang,
         )
         # fp.write("\n")
@@ -1024,16 +1024,20 @@ def _write_pos_tags(
 
     pos_stats = PosStats(pos_freqs)
     # pos_feature_stats = PosFeatureStats(feat_pos_freqs_flat)
-    fp.write(" - ".join(pos_stats.tags))
+    fp.write("\n")
+    fp.write(
+        " - ".join(f"[{tag}]({_mklink(_t(lang, 'Part of Speech'), tag)})" for tag in pos_stats.translated_tags(lang))
+    )
     fp.write("\n")
     fp.write("\n")
     _write_pos_distribution(fp, pos_stats=pos_stats, lang=lang)
     fp.write("\n")
-    for pos_tag in pos_stats.tags:
+    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):
         fp.write("\n")
         _write_pos_tag(
             fp,
             pos_tag=pos_tag,
+            pos_tag_translated=pos_tag_translated,
             pos_stats=pos_stats,
             pos_token_freqs=pos_token_freqs,
             pos_lemma_freqs_flat=pos_lemma_freqs_flat,
@@ -1041,8 +1045,14 @@ def _write_pos_tags(
         )
         fp.write("\n")
         _write_pos_feature_overview(
-            fp, pos_tag=pos_tag, pos_stats=pos_stats, pos_feats_freqs_flat=pos_feats_freqs_flat, lang=lang
+            fp,
+            pos_tag=pos_tag,
+            pos_tag_translated=pos_tag_translated,
+            pos_stats=pos_stats,
+            pos_feats_freqs_flat=pos_feats_freqs_flat,
+            lang=lang,
         )
+        fp.write("</details>\n")
 
 
 def _write_features(
@@ -1141,9 +1151,8 @@ def _write_features(
 
 
 def _mklink(level: str, name: str) -> str:
-    link = f"#{level}-{name.lower()}"
-    link = link.replace(" ", "-")
-    return link
+    link = f"#{level.lower()}-{name.lower()}"
+    return link.replace(" ", "-").replace(":", "").replace(",", "")
 
 
 def _write_suc_features(
@@ -1307,6 +1316,12 @@ class PosStats:
     def num_tags(self) -> int:
         return len(self.tags)
 
+    def translated_tags(self, lang: str) -> list[str]:
+        return sorted(_MSD_MAP[lang][tag] for tag in self.freqs)
+
+    def tags_and_translation(self, lang: str) -> list[str]:
+        return sorted(((tag, _MSD_MAP[lang][tag]) for tag in self.freqs), key=operator.itemgetter(1))
+
     def rank_of_tokens(self, tag: str) -> int:
         for rank, stat_tag in enumerate(self.stats, 1):
             if stat_tag == tag:
@@ -1339,7 +1354,7 @@ def _write_pos_distribution(fp: TextIO, pos_stats: PosStats, lang: str) -> None:
     fp.write(_T[lang]["pos_distribution_table_header"])
     fp.write("--- | ---: | ---:\n")
     fp.writelines(
-        f"{pos_tag} | {pos_stats.freqs[pos_tag]} | {pos_tag_percent:.2f}%\n"
+        f"{_MSD_MAP[lang][pos_tag]} (`{pos_tag}`) | {f.fmt_number_signific(pos_stats.freqs[pos_tag], 0)} | {f.fmt_number_decimals(pos_tag_percent, 0)}%\n"  # noqa: E501
         for pos_tag, pos_tag_percent in pos_stats.stats.items()
     )
 
@@ -1347,13 +1362,17 @@ def _write_pos_distribution(fp: TextIO, pos_stats: PosStats, lang: str) -> None:
 def _write_pos_tag(
     fp: TextIO,
     pos_tag: str,
+    pos_tag_translated: str,
     pos_stats: PosStats,
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
     lang: str,
 ) -> None:
     # fp.write(f"### POS Tags: **{pos_tag}**\n")
-    fp.write(_T[lang]["POS_subheader"].format(pos_tag=pos_tag))
+    fp.write(_T[lang]["POS_subheader"].format(pos_tag=pos_tag_translated))
+
+    fp.write("<details>\n")
+    fp.write("<summary>\n")
     pos_tag_precent = f.fmt_number_decimals(pos_stats.stats[pos_tag], 0)
 
     fp.write(
@@ -1361,11 +1380,15 @@ def _write_pos_tag(
             pos_tag_freqs=f.fmt_number_signific(pos_stats.freqs[pos_tag], 0),
             pos_tag_precent=pos_tag_precent,
             pos_tag=pos_tag,
+            pos_tag_translated=pos_tag_translated.lower(),
             pos_stats_num_tags=pos_stats.num_tags,
             pos_stats_rank_of_tokens=pos_stats.rank_of_tokens(pos_tag),
         )
     )
 
+    fp.write("\n")
+    fp.write("</summary>\n")
+    fp.write("\n")
     fp.write("\n")
     if pos_tag in pos_lemma_freqs_flat:
         top_lemmas = sorted(
@@ -1373,14 +1396,15 @@ def _write_pos_tag(
             key=operator.itemgetter(1, 0),
             reverse=True,
         )[:5]
-        top_lemmas = [f"`{w}`" for w, _f in top_lemmas]
-        top_lemmas_str = ", ".join(top_lemmas)
-        # fp.write(f"The 5 most frequent `{pos_tag}` lemmas: {top_5_lemmas_flat}\n")
         if len(top_lemmas) == 0:
-            fp.write(_T[lang]["POS_no_lemmas"].format(pos_tag=pos_tag))
+            fp.write(_T[lang]["POS_no_lemmas"].format(pos_tag=pos_tag_translated))
         else:
+            top_lemmas = [f"<code>{w}</code>" for w, _f in top_lemmas]
+            top_lemmas_str = ", ".join(top_lemmas)
             fp.write(
-                _T[lang]["POS_top_lemmas"].format(number=len(top_lemmas), pos_tag=pos_tag, top_lemmas=top_lemmas_str)
+                _T[lang]["POS_top_lemmas"].format(
+                    number=len(top_lemmas), pos_tag=pos_tag_translated, top_lemmas=top_lemmas_str
+                )
             )
 
         fp.write("\n")
@@ -1390,23 +1414,28 @@ def _write_pos_tag(
             key=operator.itemgetter(1, 0),
             reverse=True,
         )[:5]
-        top_tokens = [f"`{w}`" for w, _f in top_tokens]
+        top_tokens = [f"<code>{w}</code>" for w, _f in top_tokens]
         top_tokens_str = ", ".join(top_tokens)
         # fp.write(f"The 5 most frequent `{pos_tag}` tokens: {top_tokens}\n")
-        fp.write(_T[lang]["POS_top_tokens"].format(number=len(top_tokens), pos_tag=pos_tag, top_tokens=top_tokens_str))
+        fp.write(
+            _T[lang]["POS_top_tokens"].format(
+                number=len(top_tokens), pos_tag=pos_tag_translated, top_tokens=top_tokens_str
+            )
+        )
         fp.write("\n")
 
 
 def _write_pos_feature_overview(
     fp: TextIO,
     pos_tag: str,
+    pos_tag_translated: str,
     pos_stats: PosStats,
     # pos_feature_stats: PosFeatureStats,
     pos_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
 ) -> None:
     # fp.write("#### ")
-    fp.write(_T[lang]["pos_feature_overview"].format(pos_tag=pos_tag))
+    fp.write(_T[lang]["pos_feature_overview"].format(pos_tag=pos_tag_translated))
 
     fp.write(_T[lang]["pos_feature_text"])
 
@@ -1414,27 +1443,28 @@ def _write_pos_feature_overview(
         # fp.write(f"{pos_tag} not present among features\n")
         fp.write(_T[lang]["no features for pos"].format(pos_tag=pos_tag))
         return
-    for feat, feat_values in sorted(pos_feats_freqs_flat[pos_tag].items()):
+    for feat, feat_values in sorted(pos_feats_freqs_flat[pos_tag].items(), key=lambda x: _t(lang, x[0])):
         logger.debug("feat=%s, feat_values=%s", feat, feat_values)
         freqs = sum(feat_values.values())
         total_pos_freqs = pos_stats.freqs[pos_tag]
-        fp.write(f"##### {pos_tag} {_T[lang]['and']} {feat}\n")
+        feat_translated = _t(lang, feat)
+        fp.write(f"##### {pos_tag_translated} {_t(lang, 'and')} {feat_translated}\n")
         fp.write("\n")
         freq_precent_str = f.fmt_number_decimals(freqs / total_pos_freqs * 100.0, 0)
         fp.write(
             _T[lang]["features_pos_feat"].format(
                 freqs=f.fmt_number_signific(freqs, 0),
-                pos=pos_tag,
+                pos=pos_tag_translated,
                 freq_percent=freq_precent_str,
-                feat=feat,
+                feat=feat_translated,
             )
         )
         fp.write("\n")
-        fp.write(_T[lang]["features_pos_values"].format(pos=pos_tag, feat=feat))
+        fp.write(_T[lang]["features_pos_values"].format(pos=pos_tag_translated, feat=feat_translated))
         fp.write("\n")
         fp.writelines(
-            f"- `{_T[lang].get(feat_category) or feat_category}` ({f.fmt_number_signific(feat_value, 0)}; {f.fmt_number_decimals(feat_value / total_pos_freqs * 100, 0)}%)\n"  # noqa: E501
-            for feat_category, feat_value in sorted(feat_values.items(), key=operator.itemgetter(1))
+            f"- <code>{_t(lang, feat_category)}</code> ({f.fmt_number_signific(feat_value, 0)}; {f.fmt_number_decimals(feat_value / total_pos_freqs * 100, 0)}%)\n"  # noqa: E501
+            for feat_category, feat_value in sorted(feat_values.items(), key=operator.itemgetter(1), reverse=True)
         )
         num_missing_tags = total_pos_freqs - freqs
         num_missing_tags_str = f.fmt_number_signific(num_missing_tags, 0)
@@ -1444,7 +1474,7 @@ def _write_pos_feature_overview(
         else:
             num_missing_percent_str = "0"
 
-        fp.write(f"- `{_T[lang]['missing']}` ({num_missing_tags_str}; {num_missing_percent_str}%)\n")
+        fp.write(f"- <code>{_t(lang, 'missing')}</code> ({num_missing_tags_str}; {num_missing_percent_str}%)\n")
         fp.write("\n")
 
 

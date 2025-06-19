@@ -43,841 +43,949 @@ NK värde (`text:readability.nk`) | - | 2,18 | 1,71
 ## Ordklasser
 
 Följande ordklasser förekommer i korpusen:
-AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+
+[Adjektiv](#ordklass-adjektiv) - [Adverb](#ordklass-adverb) - [Determinerare, bestämningsord](#ordklass-determinerare-bestämningsord) - [Egennamn](#ordklass-egennamn) - [Frågande/relativ bestämning](#ordklass-frågande/relativ-bestämning) - [Frågande/relativt adverb](#ordklass-frågande/relativt-adverb) - [Frågande/relativt possessivuttryck](#ordklass-frågande/relativt-possessivuttryck) - [Frågande/relativt pronomen](#ordklass-frågande/relativt-pronomen) - [Infinitivmärke](#ordklass-infinitivmärke) - [Interjektion](#ordklass-interjektion) - [Interpunktion](#ordklass-interpunktion) - [Interpunktion](#ordklass-interpunktion) - [Konjunktion](#ordklass-konjunktion) - [Meningsskiljande interpunktion](#ordklass-meningsskiljande-interpunktion) - [Particip](#ordklass-particip) - [Partikel](#ordklass-partikel) - [Possessivuttryck](#ordklass-possessivuttryck) - [Preposition](#ordklass-preposition) - [Pronomen](#ordklass-pronomen) - [Räkneord: grundtal](#ordklass-räkneord-grundtal) - [Räkneord: ordningstal](#ordklass-räkneord-ordningstal) - [Subjunktion](#ordklass-subjunktion) - [Substantiv](#ordklass-substantiv) - [Utländskt ord](#ordklass-utländskt-ord) - [Verb](#ordklass-verb)
 
 ### Fördelning av ordklasser
 
 Ordklass | Antal | Andel (%)
 --- | ---: | ---:
-NN | 736544 | 25.42%
-VB | 380285 | 13.13%
-PP | 358848 | 12.39%
-RG | 180321 | 6.22%
-JJ | 132552 | 4.58%
-MAD | 131026 | 4.52%
-AB | 121224 | 4.18%
-KN | 117972 | 4.07%
-PM | 106015 | 3.66%
-MID | 101646 | 3.51%
-DT | 101631 | 3.51%
-PN | 98041 | 3.38%
-PAD | 93999 | 3.24%
-SN | 53560 | 1.85%
-PC | 47212 | 1.63%
-IE | 45393 | 1.57%
-HP | 44722 | 1.54%
-PL | 15486 | 0.53%
-HA | 13218 | 0.46%
-PS | 9633 | 0.33%
-RO | 2897 | 0.10%
-UO | 2274 | 0.08%
-HD | 1407 | 0.05%
-IN | 840 | 0.03%
-HS | 186 | 0.01%
+Substantiv (`NN`) | 736 544 | 25%
+Verb (`VB`) | 380 285 | 13%
+Preposition (`PP`) | 358 848 | 12%
+Räkneord: grundtal (`RG`) | 180 321 | 6%
+Adjektiv (`JJ`) | 132 552 | 5%
+Meningsskiljande interpunktion (`MAD`) | 131 026 | 5%
+Adverb (`AB`) | 121 224 | 4%
+Konjunktion (`KN`) | 117 972 | 4%
+Egennamn (`PM`) | 106 015 | 4%
+Interpunktion (`MID`) | 101 646 | 4%
+Determinerare, bestämningsord (`DT`) | 101 631 | 4%
+Pronomen (`PN`) | 98 041 | 3%
+Interpunktion (`PAD`) | 93 999 | 3%
+Subjunktion (`SN`) | 53 560 | 2%
+Particip (`PC`) | 47 212 | 2%
+Infinitivmärke (`IE`) | 45 393 | 2%
+Frågande/relativt pronomen (`HP`) | 44 722 | 2%
+Partikel (`PL`) | 15 486 | < 1%
+Frågande/relativt adverb (`HA`) | 13 218 | < 1%
+Possessivuttryck (`PS`) | 9 633 | < 1%
+Räkneord: ordningstal (`RO`) | 2 897 | < 1%
+Utländskt ord (`UO`) | 2 274 | < 1%
+Frågande/relativ bestämning (`HD`) | 1 407 | < 1%
+Interjektion (`IN`) | 840 | < 1%
+Frågande/relativt possessivuttryck (`HS`) | 186 | < 1%
 
 
-### Ordklass: **AB**
-Det finns 121 224 (4%) `AB` tokens. Av 25 observerade ordklasser, så är `AB`:s rank: 7 i antalet tokens.
+### Ordklass: **Adjektiv**
+<details>
+<summary>
+Det finns 132 552 (5%) <em>adjektiv</em> (<code>JJ</code>) tokens. Av 25 observerade ordklasser, så är <em>adjektiv</em>:s rank: 5 i antalet tokens.
 
-De 5 mest frekventa `AB` grundformer: `m.fl.`, `inte`, `också`, `även`, `bl.a.`
-
-De 5 mest frekventa `AB` tokens: `m.fl.`, `inte`, `också`, `även`, `bl.a.`
-
-
-#### Ordklass: **AB**, särdrag
-
-##### AB och Abbr
-
-22 438 `AB` tokens (19% av alla `AB` tokens) har `Abbr`.
-
-`AB` tokens har följande värden av `Abbr`:
-
-- `Ja (`Yes`)` (22 438; 19%)
-- `<saknas>` (98 786; 81%)
-
-##### AB och Degree
-
-28 357 `AB` tokens (23% av alla `AB` tokens) har `Degree`.
-
-`AB` tokens har följande värden av `Degree`:
-
-- `Sup` (3 890; 3%)
-- `Cmp` (8 987; 7%)
-- `Pos` (15 480; 13%)
-- `<saknas>` (92 867; 77%)
+</summary>
 
 
-### Ordklass: **DT**
-Det finns 101 631 (4%) `DT` tokens. Av 25 observerade ordklasser, så är `DT`:s rank: 11 i antalet tokens.
+De 5 mest frekventa <code>Adjektiv</code> grundformer: <code>annan</code>, <code>stor</code>, <code>ny</code>, <code>andra</code>, <code>viktig</code>
 
-De 5 mest frekventa `DT` grundformer: `en`, `den`, `denna`, `någon`, `all`
-
-De 5 mest frekventa `DT` tokens: `en`, `ett`, `den`, `de`, `det`
+De 5 mest frekventa <code>Adjektiv</code> tokens: <code>andra</code>, <code>olika</code>, <code>fler</code>, <code>vissa</code>, <code>nya</code>
 
 
-#### Ordklass: **DT**, särdrag
+#### Ordklass: **Adjektiv**, särdrag
 
-##### DT och Definite
+##### Adjektiv och Bestämdhet
 
-101 631 `DT` tokens (100% av alla `DT` tokens) har `Definite`.
+132 532 <code>Adjektiv</code> tokens (100% av alla <code>Adjektiv</code> tokens) har <code>Bestämdhet</code>.
 
-`DT` tokens har följande värden av `Definite`:
+<code>Adjektiv</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-- `Def,Ind` (2 654; 3%)
-- `Def` (41 722; 41%)
-- `Ind` (57 255; 56%)
-- `<saknas>` (0; 0%)
+- <code>IND/DEF</code> (58 672; 44%)
+- <code>IND</code> (54 388; 41%)
+- <code>DEF</code> (19 472; 15%)
+- <code>&lt;saknas&gt;</code> (20; < 1%)
 
-##### DT och Gender
+##### Adjektiv och Förkortning
 
-101 631 `DT` tokens (100% av alla `DT` tokens) har `Gender`.
+20 <code>Adjektiv</code> tokens (< 1% av alla <code>Adjektiv</code> tokens) har <code>Förkortning</code>.
 
-`DT` tokens har följande värden av `Gender`:
+<code>Adjektiv</code> tokens har följande värden av <code>Förkortning</code>:
 
-- `Masc` (1; < 1%)
-- `Com,Neut` (19 491; 19%)
-- `Neut` (29 637; 29%)
-- `Com` (52 502; 52%)
-- `<saknas>` (0; 0%)
+- <code>AN</code> (20; < 1%)
+- <code>&lt;saknas&gt;</code> (132 532; 100%)
 
-##### DT och Number
+##### Adjektiv och Genus
 
-101 631 `DT` tokens (100% av alla `DT` tokens) har `Number`.
+132 532 <code>Adjektiv</code> tokens (100% av alla <code>Adjektiv</code> tokens) har <code>Genus</code>.
 
-`DT` tokens har följande värden av `Number`:
+<code>Adjektiv</code> tokens har följande värden av <code>Genus</code>:
 
-- `Plur,Sing` (1 170; 1%)
-- `Plur` (17 483; 17%)
-- `Sing` (82 978; 82%)
-- `<saknas>` (0; 0%)
+- <code>UTR/NEU</code> (82 252; 62%)
+- <code>UTR</code> (32 014; 24%)
+- <code>NEU</code> (17 902; 14%)
+- <code>MAS</code> (364; < 1%)
+- <code>&lt;saknas&gt;</code> (20; < 1%)
+
+##### Adjektiv och Kasus
+
+132 532 <code>Adjektiv</code> tokens (100% av alla <code>Adjektiv</code> tokens) har <code>Kasus</code>.
+
+<code>Adjektiv</code> tokens har följande värden av <code>Kasus</code>:
+
+- <code>NOM</code> (132 178; 100%)
+- <code>GEN</code> (354; < 1%)
+- <code>&lt;saknas&gt;</code> (20; < 1%)
+
+##### Adjektiv och Komparation
+
+132 532 <code>Adjektiv</code> tokens (100% av alla <code>Adjektiv</code> tokens) har <code>Komparation</code>.
+
+<code>Adjektiv</code> tokens har följande värden av <code>Komparation</code>:
+
+- <code>POS</code> (118 922; 90%)
+- <code>KOM</code> (10 870; 8%)
+- <code>SUV</code> (2 740; 2%)
+- <code>&lt;saknas&gt;</code> (20; < 1%)
+
+##### Adjektiv och Numerus
+
+132 532 <code>Adjektiv</code> tokens (100% av alla <code>Adjektiv</code> tokens) har <code>Numerus</code>.
+
+<code>Adjektiv</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>SIN</code> (66 973; 51%)
+- <code>PLU</code> (48 858; 37%)
+- <code>SIN/PLU</code> (16 701; 13%)
+- <code>&lt;saknas&gt;</code> (20; < 1%)
+
+</details>
+
+### Ordklass: **Adverb**
+<details>
+<summary>
+Det finns 121 224 (4%) <em>adverb</em> (<code>AB</code>) tokens. Av 25 observerade ordklasser, så är <em>adverb</em>:s rank: 7 i antalet tokens.
+
+</summary>
 
 
-### Ordklass: **HA**
-Det finns 13 218 (< 1%) `HA` tokens. Av 25 observerade ordklasser, så är `HA`:s rank: 19 i antalet tokens.
+De 5 mest frekventa <code>Adverb</code> grundformer: <code>m.fl.</code>, <code>inte</code>, <code>också</code>, <code>även</code>, <code>bl.a.</code>
 
-De 5 mest frekventa `HA` grundformer: `när`, `hur`, `där`, `som`, `då`
-
-De 5 mest frekventa `HA` tokens: `när`, `hur`, `där`, `När`, `som`
+De 5 mest frekventa <code>Adverb</code> tokens: <code>m.fl.</code>, <code>inte</code>, <code>också</code>, <code>även</code>, <code>bl.a.</code>
 
 
-#### Ordklass: **HA**, särdrag
+#### Ordklass: **Adverb**, särdrag
+
+##### Adverb och Förkortning
+
+22 440 <code>Adverb</code> tokens (19% av alla <code>Adverb</code> tokens) har <code>Förkortning</code>.
+
+<code>Adverb</code> tokens har följande värden av <code>Förkortning</code>:
+
+- <code>AN</code> (22 440; 19%)
+- <code>&lt;saknas&gt;</code> (98 784; 81%)
+
+##### Adverb och Komparation
+
+28 328 <code>Adverb</code> tokens (23% av alla <code>Adverb</code> tokens) har <code>Komparation</code>.
+
+<code>Adverb</code> tokens har följande värden av <code>Komparation</code>:
+
+- <code>POS</code> (15 452; 13%)
+- <code>KOM</code> (8 987; 7%)
+- <code>SUV</code> (3 889; 3%)
+- <code>&lt;saknas&gt;</code> (92 896; 77%)
+
+</details>
+
+### Ordklass: **Determinerare, bestämningsord**
+<details>
+<summary>
+Det finns 101 631 (4%) <em>determinerare, bestämningsord</em> (<code>DT</code>) tokens. Av 25 observerade ordklasser, så är <em>determinerare, bestämningsord</em>:s rank: 11 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Determinerare, bestämningsord</code> grundformer: <code>en</code>, <code>den</code>, <code>denna</code>, <code>någon</code>, <code>all</code>
+
+De 5 mest frekventa <code>Determinerare, bestämningsord</code> tokens: <code>en</code>, <code>ett</code>, <code>den</code>, <code>de</code>, <code>det</code>
+
+
+#### Ordklass: **Determinerare, bestämningsord**, särdrag
+
+##### Determinerare, bestämningsord och Bestämdhet
+
+101 631 <code>Determinerare, bestämningsord</code> tokens (100% av alla <code>Determinerare, bestämningsord</code> tokens) har <code>Bestämdhet</code>.
+
+<code>Determinerare, bestämningsord</code> tokens har följande värden av <code>Bestämdhet</code>:
+
+- <code>IND</code> (57 254; 56%)
+- <code>DEF</code> (41 723; 41%)
+- <code>IND/DEF</code> (2 654; 3%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Determinerare, bestämningsord och Genus
+
+101 631 <code>Determinerare, bestämningsord</code> tokens (100% av alla <code>Determinerare, bestämningsord</code> tokens) har <code>Genus</code>.
+
+<code>Determinerare, bestämningsord</code> tokens har följande värden av <code>Genus</code>:
+
+- <code>UTR</code> (52 500; 52%)
+- <code>NEU</code> (29 637; 29%)
+- <code>UTR/NEU</code> (19 493; 19%)
+- <code>MAS</code> (1; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Determinerare, bestämningsord och Numerus
+
+101 631 <code>Determinerare, bestämningsord</code> tokens (100% av alla <code>Determinerare, bestämningsord</code> tokens) har <code>Numerus</code>.
+
+<code>Determinerare, bestämningsord</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>SIN</code> (82 978; 82%)
+- <code>PLU</code> (17 483; 17%)
+- <code>SIN/PLU</code> (1 170; 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+</details>
+
+### Ordklass: **Egennamn**
+<details>
+<summary>
+Det finns 106 015 (4%) <em>egennamn</em> (<code>PM</code>) tokens. Av 25 observerade ordklasser, så är <em>egennamn</em>:s rank: 9 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Egennamn</code> grundformer: <code>SD</code>, <code>Sverige</code>, <code>Johan</code>, <code>Jan</code>, <code>Johansson</code>
+
+De 5 mest frekventa <code>Egennamn</code> tokens: <code>SD</code>, <code>KD</code>, <code>Sverige</code>, <code>MP</code>, <code>Johan</code>
+
+
+#### Ordklass: **Egennamn**, särdrag
+
+##### Egennamn och Kasus
+
+106 015 <code>Egennamn</code> tokens (100% av alla <code>Egennamn</code> tokens) har <code>Kasus</code>.
+
+<code>Egennamn</code> tokens har följande värden av <code>Kasus</code>:
+
+- <code>NOM</code> (102 747; 97%)
+- <code>GEN</code> (3 258; 3%)
+- <code>SMS</code> (10; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+</details>
+
+### Ordklass: **Frågande/relativ bestämning**
+<details>
+<summary>
+Det finns 1 407 (< 1%) <em>frågande/relativ bestämning</em> (<code>HD</code>) tokens. Av 25 observerade ordklasser, så är <em>frågande/relativ bestämning</em>:s rank: 23 i antalet tokens.
+
+</summary>
+
+
+De 2 mest frekventa <code>Frågande/relativ bestämning</code> grundformer: <code>i vilken mån:7</code>, <code>i vilken mån:3</code>
+
+De 5 mest frekventa <code>Frågande/relativ bestämning</code> tokens: <code>vilka</code>, <code>vilken</code>, <code>vilket</code>, <code>Vilka</code>, <code>Vilken</code>
+
+
+#### Ordklass: **Frågande/relativ bestämning**, särdrag
+
+##### Frågande/relativ bestämning och Bestämdhet
+
+1 407 <code>Frågande/relativ bestämning</code> tokens (100% av alla <code>Frågande/relativ bestämning</code> tokens) har <code>Bestämdhet</code>.
+
+<code>Frågande/relativ bestämning</code> tokens har följande värden av <code>Bestämdhet</code>:
+
+- <code>IND</code> (1 407; 100%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Frågande/relativ bestämning och Genus
+
+1 407 <code>Frågande/relativ bestämning</code> tokens (100% av alla <code>Frågande/relativ bestämning</code> tokens) har <code>Genus</code>.
+
+<code>Frågande/relativ bestämning</code> tokens har följande värden av <code>Genus</code>:
+
+- <code>UTR/NEU</code> (823; 58%)
+- <code>UTR</code> (420; 30%)
+- <code>NEU</code> (164; 12%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Frågande/relativ bestämning och Numerus
+
+1 407 <code>Frågande/relativ bestämning</code> tokens (100% av alla <code>Frågande/relativ bestämning</code> tokens) har <code>Numerus</code>.
+
+<code>Frågande/relativ bestämning</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>PLU</code> (823; 58%)
+- <code>SIN</code> (584; 42%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+</details>
+
+### Ordklass: **Frågande/relativt adverb**
+<details>
+<summary>
+Det finns 13 218 (< 1%) <em>frågande/relativt adverb</em> (<code>HA</code>) tokens. Av 25 observerade ordklasser, så är <em>frågande/relativt adverb</em>:s rank: 19 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Frågande/relativt adverb</code> grundformer: <code>när</code>, <code>hur</code>, <code>där</code>, <code>som</code>, <code>då</code>
+
+De 5 mest frekventa <code>Frågande/relativt adverb</code> tokens: <code>när</code>, <code>hur</code>, <code>där</code>, <code>När</code>, <code>som</code>
+
+
+#### Ordklass: **Frågande/relativt adverb**, särdrag
 
 Hittade inga särdrag för HA
+</details>
 
-### Ordklass: **HD**
-Det finns 1 407 (< 1%) `HD` tokens. Av 25 observerade ordklasser, så är `HD`:s rank: 23 i antalet tokens.
+### Ordklass: **Frågande/relativt possessivuttryck**
+<details>
+<summary>
+Det finns 186 (< 1%) <em>frågande/relativt possessivuttryck</em> (<code>HS</code>) tokens. Av 25 observerade ordklasser, så är <em>frågande/relativt possessivuttryck</em>:s rank: 25 i antalet tokens.
 
-De 2 mest frekventa `HD` grundformer: `i vilken mån:7`, `i vilken mån:3`
-
-De 5 mest frekventa `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
-
-
-#### Ordklass: **HD**, särdrag
-
-##### HD och Definite
-
-1 407 `HD` tokens (100% av alla `HD` tokens) har `Definite`.
-
-`HD` tokens har följande värden av `Definite`:
-
-- `Ind` (1 407; 100%)
-- `<saknas>` (0; 0%)
-
-##### HD och Gender
-
-1 407 `HD` tokens (100% av alla `HD` tokens) har `Gender`.
-
-`HD` tokens har följande värden av `Gender`:
-
-- `Neut` (164; 12%)
-- `Com` (420; 30%)
-- `Com,Neut` (823; 58%)
-- `<saknas>` (0; 0%)
-
-##### HD och Number
-
-1 407 `HD` tokens (100% av alla `HD` tokens) har `Number`.
-
-`HD` tokens har följande värden av `Number`:
-
-- `Sing` (584; 42%)
-- `Plur` (823; 58%)
-- `<saknas>` (0; 0%)
+</summary>
 
 
-### Ordklass: **HP**
-Det finns 44 722 (2%) `HP` tokens. Av 25 observerade ordklasser, så är `HP`:s rank: 17 i antalet tokens.
+De 2 mest frekventa <code>Frågande/relativt possessivuttryck</code> grundformer: <code>vars</code>, <code>vem</code>
 
-De 5 mest frekventa `HP` grundformer: `vad`, `vad för`, `vem`, `vad än`, `vad som helst`
-
-De 5 mest frekventa `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
+De 3 mest frekventa <code>Frågande/relativt possessivuttryck</code> tokens: <code>vars</code>, <code>vilkas</code>, <code>vems</code>
 
 
-#### Ordklass: **HP**, särdrag
+#### Ordklass: **Frågande/relativt possessivuttryck**, särdrag
 
-##### HP och Definite
+##### Frågande/relativt possessivuttryck och Bestämdhet
 
-4 463 `HP` tokens (10% av alla `HP` tokens) har `Definite`.
+186 <code>Frågande/relativt possessivuttryck</code> tokens (100% av alla <code>Frågande/relativt possessivuttryck</code> tokens) har <code>Bestämdhet</code>.
 
-`HP` tokens har följande värden av `Definite`:
+<code>Frågande/relativt possessivuttryck</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-- `Ind` (4 463; 10%)
-- `<saknas>` (40 259; 90%)
+- <code>DEF</code> (186; 100%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-##### HP och Gender
+</details>
 
-4 463 `HP` tokens (10% av alla `HP` tokens) har `Gender`.
+### Ordklass: **Frågande/relativt pronomen**
+<details>
+<summary>
+Det finns 44 722 (2%) <em>frågande/relativt pronomen</em> (<code>HP</code>) tokens. Av 25 observerade ordklasser, så är <em>frågande/relativt pronomen</em>:s rank: 17 i antalet tokens.
 
-`HP` tokens har följande värden av `Gender`:
-
-- `Com,Neut` (205; < 1%)
-- `Com` (262; < 1%)
-- `Neut` (3 996; 9%)
-- `<saknas>` (40 259; 90%)
-
-##### HP och Number
-
-4 463 `HP` tokens (10% av alla `HP` tokens) har `Number`.
-
-`HP` tokens har följande värden av `Number`:
-
-- `Plur` (205; < 1%)
-- `Sing` (4 258; 10%)
-- `<saknas>` (40 259; 90%)
+</summary>
 
 
-### Ordklass: **HS**
-Det finns 186 (< 1%) `HS` tokens. Av 25 observerade ordklasser, så är `HS`:s rank: 25 i antalet tokens.
+De 5 mest frekventa <code>Frågande/relativt pronomen</code> grundformer: <code>vad</code>, <code>vad för</code>, <code>vem</code>, <code>vad än</code>, <code>vad som helst</code>
 
-De 2 mest frekventa `HS` grundformer: `vars`, `vem`
-
-De 3 mest frekventa `HS` tokens: `vars`, `vilkas`, `vems`
+De 5 mest frekventa <code>Frågande/relativt pronomen</code> tokens: <code>som</code>, <code>vad</code>, <code>vilket</code>, <code>Vad</code>, <code>Som</code>
 
 
-#### Ordklass: **HS**, särdrag
+#### Ordklass: **Frågande/relativt pronomen**, särdrag
 
-##### HS och Definite
+##### Frågande/relativt pronomen och Bestämdhet
 
-186 `HS` tokens (100% av alla `HS` tokens) har `Definite`.
+4 463 <code>Frågande/relativt pronomen</code> tokens (10% av alla <code>Frågande/relativt pronomen</code> tokens) har <code>Bestämdhet</code>.
 
-`HS` tokens har följande värden av `Definite`:
+<code>Frågande/relativt pronomen</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-- `Def` (186; 100%)
-- `<saknas>` (0; 0%)
+- <code>IND</code> (4 463; 10%)
+- <code>&lt;saknas&gt;</code> (40 259; 90%)
+
+##### Frågande/relativt pronomen och Genus
+
+4 463 <code>Frågande/relativt pronomen</code> tokens (10% av alla <code>Frågande/relativt pronomen</code> tokens) har <code>Genus</code>.
+
+<code>Frågande/relativt pronomen</code> tokens har följande värden av <code>Genus</code>:
+
+- <code>NEU</code> (3 996; 9%)
+- <code>UTR</code> (262; < 1%)
+- <code>UTR/NEU</code> (205; < 1%)
+- <code>&lt;saknas&gt;</code> (40 259; 90%)
+
+##### Frågande/relativt pronomen och Numerus
+
+4 463 <code>Frågande/relativt pronomen</code> tokens (10% av alla <code>Frågande/relativt pronomen</code> tokens) har <code>Numerus</code>.
+
+<code>Frågande/relativt pronomen</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>SIN</code> (4 258; 10%)
+- <code>PLU</code> (205; < 1%)
+- <code>&lt;saknas&gt;</code> (40 259; 90%)
+
+</details>
+
+### Ordklass: **Infinitivmärke**
+<details>
+<summary>
+Det finns 45 393 (2%) <em>infinitivmärke</em> (<code>IE</code>) tokens. Av 25 observerade ordklasser, så är <em>infinitivmärke</em>:s rank: 16 i antalet tokens.
+
+</summary>
 
 
-### Ordklass: **IE**
-Det finns 45 393 (2%) `IE` tokens. Av 25 observerade ordklasser, så är `IE`:s rank: 16 i antalet tokens.
+De 5 mest frekventa <code>Infinitivmärke</code> grundformer: <code>att</code>, <code>ha att göra:2</code>, <code>ha att göra:3</code>, <code>ha att göra:8</code>, <code>ha att göra:11</code>
 
-De 5 mest frekventa `IE` grundformer: `att`, `ha att göra:2`, `ha att göra:3`, `ha att göra:8`, `ha att göra:11`
-
-De 5 mest frekventa `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
+De 5 mest frekventa <code>Infinitivmärke</code> tokens: <code>att</code>, <code>Att</code>, <code>geno</code>, <code>at</code>, <code>–</code>
 
 
-#### Ordklass: **IE**, särdrag
+#### Ordklass: **Infinitivmärke**, särdrag
 
 Hittade inga särdrag för IE
+</details>
 
-### Ordklass: **IN**
-Det finns 840 (< 1%) `IN` tokens. Av 25 observerade ordklasser, så är `IN`:s rank: 24 i antalet tokens.
+### Ordklass: **Interjektion**
+<details>
+<summary>
+Det finns 840 (< 1%) <em>interjektion</em> (<code>IN</code>) tokens. Av 25 observerade ordklasser, så är <em>interjektion</em>:s rank: 24 i antalet tokens.
 
-De 5 mest frekventa `IN` grundformer: `nej`, `ja`, `jo`, `tack`, `nä`
-
-De 5 mest frekventa `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
+</summary>
 
 
-#### Ordklass: **IN**, särdrag
+De 5 mest frekventa <code>Interjektion</code> grundformer: <code>nej</code>, <code>ja</code>, <code>jo</code>, <code>tack</code>, <code>nä</code>
+
+De 5 mest frekventa <code>Interjektion</code> tokens: <code>nej</code>, <code>ja</code>, <code>Nej</code>, <code>Ja</code>, <code>Tack</code>
+
+
+#### Ordklass: **Interjektion**, särdrag
 
 Hittade inga särdrag för IN
+</details>
 
-### Ordklass: **JJ**
-Det finns 132 552 (5%) `JJ` tokens. Av 25 observerade ordklasser, så är `JJ`:s rank: 5 i antalet tokens.
+### Ordklass: **Interpunktion**
+<details>
+<summary>
+Det finns 101 646 (4%) <em>interpunktion</em> (<code>MID</code>) tokens. Av 25 observerade ordklasser, så är <em>interpunktion</em>:s rank: 10 i antalet tokens.
 
-De 5 mest frekventa `JJ` grundformer: `annan`, `stor`, `ny`, `andra`, `viktig`
-
-De 5 mest frekventa `JJ` tokens: `andra`, `olika`, `fler`, `vissa`, `nya`
-
-
-#### Ordklass: **JJ**, särdrag
-
-##### JJ och Abbr
-
-12 `JJ` tokens (< 1% av alla `JJ` tokens) har `Abbr`.
-
-`JJ` tokens har följande värden av `Abbr`:
-
-- `Ja (`Yes`)` (12; < 1%)
-- `<saknas>` (132 540; 100%)
-
-##### JJ och Case
-
-132 538 `JJ` tokens (100% av alla `JJ` tokens) har `Case`.
-
-`JJ` tokens har följande värden av `Case`:
-
-- `Gen` (348; < 1%)
-- `Nom` (132 190; 100%)
-- `<saknas>` (14; < 1%)
-
-##### JJ och Definite
-
-132 529 `JJ` tokens (100% av alla `JJ` tokens) har `Definite`.
-
-`JJ` tokens har följande värden av `Definite`:
-
-- `Def` (19 453; 15%)
-- `Ind` (54 397; 41%)
-- `Def,Ind` (58 679; 44%)
-- `<saknas>` (23; < 1%)
-
-##### JJ och Degree
-
-132 541 `JJ` tokens (100% av alla `JJ` tokens) har `Degree`.
-
-`JJ` tokens har följande värden av `Degree`:
-
-- `Sup` (2 742; 2%)
-- `Cmp` (10 868; 8%)
-- `Pos` (118 931; 90%)
-- `<saknas>` (11; < 1%)
-
-##### JJ och Gender
-
-132 540 `JJ` tokens (100% av alla `JJ` tokens) har `Gender`.
-
-`JJ` tokens har följande värden av `Gender`:
-
-- `Masc` (378; < 1%)
-- `Neut` (17 920; 14%)
-- `Com` (31 973; 24%)
-- `Com,Neut` (82 269; 62%)
-- `<saknas>` (12; < 1%)
-
-##### JJ och Number
-
-132 536 `JJ` tokens (100% av alla `JJ` tokens) har `Number`.
-
-`JJ` tokens har följande värden av `Number`:
-
-- `Plur,Sing` (16 702; 13%)
-- `Plur` (48 694; 37%)
-- `Sing` (67 140; 51%)
-- `<saknas>` (16; < 1%)
+</summary>
 
 
-### Ordklass: **KN**
-Det finns 117 972 (4%) `KN` tokens. Av 25 observerade ordklasser, så är `KN`:s rank: 8 i antalet tokens.
-
-De 5 mest frekventa `KN` grundformer: `och`, `eller`, `samt`, `men`, `både och`
-
-De 5 mest frekventa `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
+De 5 mest frekventa <code>Interpunktion</code> tokens: <code>,</code>, <code>/</code>, <code>:</code>, <code>-</code>, <code>–</code>
 
 
-#### Ordklass: **KN**, särdrag
-
-##### KN och Abbr
-
-17 `KN` tokens (< 1% av alla `KN` tokens) har `Abbr`.
-
-`KN` tokens har följande värden av `Abbr`:
-
-- `Ja (`Yes`)` (17; < 1%)
-- `<saknas>` (117 955; 100%)
-
-
-### Ordklass: **MAD**
-Det finns 131 026 (5%) `MAD` tokens. Av 25 observerade ordklasser, så är `MAD`:s rank: 6 i antalet tokens.
-
-De 5 mest frekventa `MAD` tokens: `.`, `:`, `!`, `?`, `–`
-
-
-#### Ordklass: **MAD**, särdrag
-
-Hittade inga särdrag för MAD
-
-### Ordklass: **MID**
-Det finns 101 646 (4%) `MID` tokens. Av 25 observerade ordklasser, så är `MID`:s rank: 10 i antalet tokens.
-
-De 5 mest frekventa `MID` tokens: `,`, `/`, `:`, `-`, `–`
-
-
-#### Ordklass: **MID**, särdrag
+#### Ordklass: **Interpunktion**, särdrag
 
 Hittade inga särdrag för MID
+</details>
 
-### Ordklass: **NN**
-Det finns 736 544 (25%) `NN` tokens. Av 25 observerade ordklasser, så är `NN`:s rank: 1 i antalet tokens.
+### Ordklass: **Interpunktion**
+<details>
+<summary>
+Det finns 93 999 (3%) <em>interpunktion</em> (<code>PAD</code>) tokens. Av 25 observerade ordklasser, så är <em>interpunktion</em>:s rank: 13 i antalet tokens.
 
-De 5 mest frekventa `NN` grundformer: `regering`, `yrkande`, `riksdag`, `motion`, `förslag`
-
-De 5 mest frekventa `NN` tokens: `regeringen`, `yrkande`, `Riksdagen`, `M`, `förslag`
-
-
-#### Ordklass: **NN**, särdrag
-
-##### NN och Abbr
-
-35 393 `NN` tokens (5% av alla `NN` tokens) har `Abbr`.
-
-`NN` tokens har följande värden av `Abbr`:
-
-- `Ja (`Yes`)` (35 393; 5%)
-- `<saknas>` (701 151; 95%)
-
-##### NN och Case
-
-695 434 `NN` tokens (94% av alla `NN` tokens) har `Case`.
-
-`NN` tokens har följande värden av `Case`:
-
-- `Gen` (33 556; 5%)
-- `Nom` (661 878; 90%)
-- `<saknas>` (41 110; 6%)
-
-##### NN och Compound
-
-4 826 `NN` tokens (< 1% av alla `NN` tokens) har `Compound`.
-
-`NN` tokens har följande värden av `Compound`:
-
-- `Ja (`Yes`)` (4 826; < 1%)
-- `<saknas>` (731 718; 99%)
-
-##### NN och Definite
-
-694 413 `NN` tokens (94% av alla `NN` tokens) har `Definite`.
-
-`NN` tokens har följande värden av `Definite`:
-
-- `Def` (246 895; 34%)
-- `Ind` (447 518; 61%)
-- `<saknas>` (42 131; 6%)
-
-##### NN och Gender
-
-698 790 `NN` tokens (95% av alla `NN` tokens) har `Gender`.
-
-`NN` tokens har följande värden av `Gender`:
-
-- `Neut` (234 585; 32%)
-- `Com` (464 205; 63%)
-- `<saknas>` (37 754; 5%)
-
-##### NN och Number
-
-694 905 `NN` tokens (94% av alla `NN` tokens) har `Number`.
-
-`NN` tokens har följande värden av `Number`:
-
-- `Plur` (188 599; 26%)
-- `Sing` (506 306; 69%)
-- `<saknas>` (41 639; 6%)
+</summary>
 
 
-### Ordklass: **PAD**
-Det finns 93 999 (3%) `PAD` tokens. Av 25 observerade ordklasser, så är `PAD`:s rank: 13 i antalet tokens.
-
-De 5 mest frekventa `PAD` tokens: `)`, `(`, `"`, `]`, `[`
+De 5 mest frekventa <code>Interpunktion</code> tokens: <code>)</code>, <code>(</code>, <code>"</code>, <code>]</code>, <code>[</code>
 
 
-#### Ordklass: **PAD**, särdrag
+#### Ordklass: **Interpunktion**, särdrag
 
 Hittade inga särdrag för PAD
+</details>
 
-### Ordklass: **PC**
-Det finns 47 212 (2%) `PC` tokens. Av 25 observerade ordklasser, så är `PC`:s rank: 15 i antalet tokens.
+### Ordklass: **Konjunktion**
+<details>
+<summary>
+Det finns 117 972 (4%) <em>konjunktion</em> (<code>KN</code>) tokens. Av 25 observerade ordklasser, så är <em>konjunktion</em>:s rank: 8 i antalet tokens.
 
-De 5 mest frekventa `PC` grundformer: `särskilja`, `särskild`, `följa`, `följande`, `öka`
-
-De 5 mest frekventa `PC` tokens: `följande`, `nyanlända`, `särskilda`, `ökad`, `utsatta`
-
-
-#### Ordklass: **PC**, särdrag
-
-##### PC och Case
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `Case`.
-
-`PC` tokens har följande värden av `Case`:
-
-- `Gen` (30; < 1%)
-- `Nom` (47 182; 100%)
-- `<saknas>` (0; 0%)
-
-##### PC och Definite
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `Definite`.
-
-`PC` tokens har följande värden av `Definite`:
-
-- `Def` (2 759; 6%)
-- `Ind` (15 356; 33%)
-- `Def,Ind` (29 097; 62%)
-- `<saknas>` (0; 0%)
-
-##### PC och Gender
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `Gender`.
-
-`PC` tokens har följande värden av `Gender`:
-
-- `Masc` (62; < 1%)
-- `Neut` (5 647; 12%)
-- `Com` (9 709; 21%)
-- `Com,Neut` (31 794; 67%)
-- `<saknas>` (0; 0%)
-
-##### PC och Number
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `Number`.
-
-`PC` tokens har följande värden av `Number`:
-
-- `Plur` (13 587; 29%)
-- `Plur,Sing` (15 494; 33%)
-- `Sing` (18 131; 38%)
-- `<saknas>` (0; 0%)
-
-##### PC och Tense
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `Tense`.
-
-`PC` tokens har följande värden av `Tense`:
-
-- `Pres` (15 494; 33%)
-- `Past` (31 718; 67%)
-- `<saknas>` (0; 0%)
-
-##### PC och VerbForm
-
-47 212 `PC` tokens (100% av alla `PC` tokens) har `VerbForm`.
-
-`PC` tokens har följande värden av `VerbForm`:
-
-- `Part` (47 212; 100%)
-- `<saknas>` (0; 0%)
+</summary>
 
 
-### Ordklass: **PL**
-Det finns 15 486 (< 1%) `PL` tokens. Av 25 observerade ordklasser, så är `PL`:s rank: 18 i antalet tokens.
+De 5 mest frekventa <code>Konjunktion</code> grundformer: <code>och</code>, <code>eller</code>, <code>samt</code>, <code>men</code>, <code>både och</code>
 
-De 5 mest frekventa `PL` grundformer: `fram`, `upp`, `ut`, `över`, `in`
-
-De 5 mest frekventa `PL` tokens: `fram`, `upp`, `ut`, `över`, `in`
+De 5 mest frekventa <code>Konjunktion</code> tokens: <code>och</code>, <code>eller</code>, <code>som</code>, <code>samt</code>, <code>men</code>
 
 
-#### Ordklass: **PL**, särdrag
+#### Ordklass: **Konjunktion**, särdrag
+
+##### Konjunktion och Förkortning
+
+24 <code>Konjunktion</code> tokens (< 1% av alla <code>Konjunktion</code> tokens) har <code>Förkortning</code>.
+
+<code>Konjunktion</code> tokens har följande värden av <code>Förkortning</code>:
+
+- <code>AN</code> (24; < 1%)
+- <code>&lt;saknas&gt;</code> (117 948; 100%)
+
+</details>
+
+### Ordklass: **Meningsskiljande interpunktion**
+<details>
+<summary>
+Det finns 131 026 (5%) <em>meningsskiljande interpunktion</em> (<code>MAD</code>) tokens. Av 25 observerade ordklasser, så är <em>meningsskiljande interpunktion</em>:s rank: 6 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Meningsskiljande interpunktion</code> tokens: <code>.</code>, <code>:</code>, <code>!</code>, <code>?</code>, <code>–</code>
+
+
+#### Ordklass: **Meningsskiljande interpunktion**, särdrag
+
+Hittade inga särdrag för MAD
+</details>
+
+### Ordklass: **Particip**
+<details>
+<summary>
+Det finns 47 212 (2%) <em>particip</em> (<code>PC</code>) tokens. Av 25 observerade ordklasser, så är <em>particip</em>:s rank: 15 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Particip</code> grundformer: <code>särskilja</code>, <code>särskild</code>, <code>följa</code>, <code>följande</code>, <code>öka</code>
+
+De 5 mest frekventa <code>Particip</code> tokens: <code>följande</code>, <code>nyanlända</code>, <code>särskilda</code>, <code>ökad</code>, <code>utsatta</code>
+
+
+#### Ordklass: **Particip**, särdrag
+
+##### Particip och Bestämdhet
+
+47 212 <code>Particip</code> tokens (100% av alla <code>Particip</code> tokens) har <code>Bestämdhet</code>.
+
+<code>Particip</code> tokens har följande värden av <code>Bestämdhet</code>:
+
+- <code>IND/DEF</code> (29 074; 62%)
+- <code>IND</code> (15 356; 33%)
+- <code>DEF</code> (2 782; 6%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Particip och Genus
+
+47 212 <code>Particip</code> tokens (100% av alla <code>Particip</code> tokens) har <code>Genus</code>.
+
+<code>Particip</code> tokens har följande värden av <code>Genus</code>:
+
+- <code>UTR/NEU</code> (31 797; 67%)
+- <code>UTR</code> (9 691; 21%)
+- <code>NEU</code> (5 665; 12%)
+- <code>MAS</code> (59; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Particip och Kasus
+
+47 212 <code>Particip</code> tokens (100% av alla <code>Particip</code> tokens) har <code>Kasus</code>.
+
+<code>Particip</code> tokens har följande värden av <code>Kasus</code>:
+
+- <code>NOM</code> (47 182; 100%)
+- <code>GEN</code> (30; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Particip och Numerus
+
+47 212 <code>Particip</code> tokens (100% av alla <code>Particip</code> tokens) har <code>Numerus</code>.
+
+<code>Particip</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>SIN</code> (18 138; 38%)
+- <code>SIN/PLU</code> (15 494; 33%)
+- <code>PLU</code> (13 580; 29%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+##### Particip och Partikelform
+
+47 212 <code>Particip</code> tokens (100% av alla <code>Particip</code> tokens) har <code>Partikelform</code>.
+
+<code>Particip</code> tokens har följande värden av <code>Partikelform</code>:
+
+- <code>PRF</code> (31 718; 67%)
+- <code>PRS</code> (15 494; 33%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
+
+</details>
+
+### Ordklass: **Partikel**
+<details>
+<summary>
+Det finns 15 486 (< 1%) <em>partikel</em> (<code>PL</code>) tokens. Av 25 observerade ordklasser, så är <em>partikel</em>:s rank: 18 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Partikel</code> grundformer: <code>fram</code>, <code>upp</code>, <code>ut</code>, <code>över</code>, <code>in</code>
+
+De 5 mest frekventa <code>Partikel</code> tokens: <code>fram</code>, <code>upp</code>, <code>ut</code>, <code>över</code>, <code>in</code>
+
+
+#### Ordklass: **Partikel**, särdrag
 
 Hittade inga särdrag för PL
+</details>
 
-### Ordklass: **PM**
-Det finns 106 015 (4%) `PM` tokens. Av 25 observerade ordklasser, så är `PM`:s rank: 9 i antalet tokens.
+### Ordklass: **Possessivuttryck**
+<details>
+<summary>
+Det finns 9 633 (< 1%) <em>possessivuttryck</em> (<code>PS</code>) tokens. Av 25 observerade ordklasser, så är <em>possessivuttryck</em>:s rank: 20 i antalet tokens.
 
-De 5 mest frekventa `PM` grundformer: `SD`, `Sverige`, `Johan`, `Jan`, `Johansson`
+</summary>
 
-De 5 mest frekventa `PM` tokens: `SD`, `KD`, `Sverige`, `MP`, `Johan`
 
+De 5 mest frekventa <code>Possessivuttryck</code> grundformer: <code>sig</code>, <code>vi</code>, <code>jag</code>, <code>de</code>, <code>den</code>
 
-#### Ordklass: **PM**, särdrag
+De 5 mest frekventa <code>Possessivuttryck</code> tokens: <code>sin</code>, <code>sitt</code>, <code>sina</code>, <code>vår</code>, <code>vårt</code>
 
-##### PM och Case
 
-106 006 `PM` tokens (100% av alla `PM` tokens) har `Case`.
+#### Ordklass: **Possessivuttryck**, särdrag
 
-`PM` tokens har följande värden av `Case`:
+##### Possessivuttryck och Bestämdhet
 
-- `Gen` (3 206; 3%)
-- `Nom` (102 800; 97%)
-- `<saknas>` (9; < 1%)
+9 633 <code>Possessivuttryck</code> tokens (100% av alla <code>Possessivuttryck</code> tokens) har <code>Bestämdhet</code>.
 
-##### PM och Compound
+<code>Possessivuttryck</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-10 `PM` tokens (< 1% av alla `PM` tokens) har `Compound`.
+- <code>DEF</code> (9 633; 100%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-`PM` tokens har följande värden av `Compound`:
+##### Possessivuttryck och Genus
 
-- `Ja (`Yes`)` (10; < 1%)
-- `<saknas>` (106 005; 100%)
+9 633 <code>Possessivuttryck</code> tokens (100% av alla <code>Possessivuttryck</code> tokens) har <code>Genus</code>.
 
+<code>Possessivuttryck</code> tokens har följande värden av <code>Genus</code>:
 
-### Ordklass: **PN**
-Det finns 98 041 (3%) `PN` tokens. Av 25 observerade ordklasser, så är `PN`:s rank: 12 i antalet tokens.
+- <code>UTR</code> (3 894; 40%)
+- <code>UTR/NEU</code> (3 394; 35%)
+- <code>NEU</code> (2 345; 24%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-De 5 mest frekventa `PN` grundformer: `den`, `vi`, `sig`, `denna`, `jag`
+##### Possessivuttryck och Numerus
 
-De 5 mest frekventa `PN` tokens: `det`, `sig`, `detta`, `Det`, `vi`
+9 633 <code>Possessivuttryck</code> tokens (100% av alla <code>Possessivuttryck</code> tokens) har <code>Numerus</code>.
 
+<code>Possessivuttryck</code> tokens har följande värden av <code>Numerus</code>:
 
-#### Ordklass: **PN**, särdrag
+- <code>SIN</code> (6 239; 65%)
+- <code>PLU</code> (1 976; 21%)
+- <code>SIN/PLU</code> (1 418; 15%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-##### PN och Case
+</details>
 
-98 041 `PN` tokens (100% av alla `PN` tokens) har `Case`.
+### Ordklass: **Preposition**
+<details>
+<summary>
+Det finns 358 848 (12%) <em>preposition</em> (<code>PP</code>) tokens. Av 25 observerade ordklasser, så är <em>preposition</em>:s rank: 3 i antalet tokens.
 
-`PN` tokens har följande värden av `Case`:
+</summary>
 
-- `Acc` (14 305; 15%)
-- `Nom` (27 692; 28%)
-- `Acc,Nom` (56 044; 57%)
-- `<saknas>` (0; 0%)
 
-##### PN och Definite
+De 5 mest frekventa <code>Preposition</code> grundformer: <code>i</code>, <code>för</code>, <code>av</code>, <code>till</code>, <code>om</code>
 
-98 041 `PN` tokens (100% av alla `PN` tokens) har `Definite`.
+De 5 mest frekventa <code>Preposition</code> tokens: <code>i</code>, <code>för</code>, <code>av</code>, <code>till</code>, <code>om</code>
 
-`PN` tokens har följande värden av `Definite`:
 
-- `Ind` (11 172; 11%)
-- `Def` (86 869; 89%)
-- `<saknas>` (0; 0%)
+#### Ordklass: **Preposition**, särdrag
 
-##### PN och Gender
+##### Preposition och Förkortning
 
-98 041 `PN` tokens (100% av alla `PN` tokens) har `Gender`.
+10 <code>Preposition</code> tokens (< 1% av alla <code>Preposition</code> tokens) har <code>Förkortning</code>.
 
-`PN` tokens har följande värden av `Gender`:
+<code>Preposition</code> tokens har följande värden av <code>Förkortning</code>:
 
-- `Masc` (31; < 1%)
-- `Com,Neut` (19 321; 20%)
-- `Com` (30 928; 32%)
-- `Neut` (47 761; 49%)
-- `<saknas>` (0; 0%)
+- <code>AN</code> (10; < 1%)
+- <code>&lt;saknas&gt;</code> (358 838; 100%)
 
-##### PN och Number
+</details>
 
-98 041 `PN` tokens (100% av alla `PN` tokens) har `Number`.
+### Ordklass: **Pronomen**
+<details>
+<summary>
+Det finns 98 041 (3%) <em>pronomen</em> (<code>PN</code>) tokens. Av 25 observerade ordklasser, så är <em>pronomen</em>:s rank: 12 i antalet tokens.
 
-`PN` tokens har följande värden av `Number`:
+</summary>
 
-- `Plur,Sing` (11 049; 11%)
-- `Plur` (21 168; 22%)
-- `Sing` (65 824; 67%)
-- `<saknas>` (0; 0%)
 
+De 5 mest frekventa <code>Pronomen</code> grundformer: <code>den</code>, <code>vi</code>, <code>sig</code>, <code>denna</code>, <code>jag</code>
 
-### Ordklass: **PP**
-Det finns 358 848 (12%) `PP` tokens. Av 25 observerade ordklasser, så är `PP`:s rank: 3 i antalet tokens.
+De 5 mest frekventa <code>Pronomen</code> tokens: <code>det</code>, <code>sig</code>, <code>detta</code>, <code>Det</code>, <code>vi</code>
 
-De 5 mest frekventa `PP` grundformer: `i`, `för`, `av`, `till`, `om`
 
-De 5 mest frekventa `PP` tokens: `i`, `för`, `av`, `till`, `om`
+#### Ordklass: **Pronomen**, särdrag
 
+##### Pronomen och Bestämdhet
 
-#### Ordklass: **PP**, särdrag
+98 041 <code>Pronomen</code> tokens (100% av alla <code>Pronomen</code> tokens) har <code>Bestämdhet</code>.
 
-##### PP och Abbr
+<code>Pronomen</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-5 `PP` tokens (< 1% av alla `PP` tokens) har `Abbr`.
+- <code>DEF</code> (86 868; 89%)
+- <code>IND</code> (11 173; 11%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-`PP` tokens har följande värden av `Abbr`:
+##### Pronomen och Genus
 
-- `Ja (`Yes`)` (5; < 1%)
-- `<saknas>` (358 843; 100%)
+98 041 <code>Pronomen</code> tokens (100% av alla <code>Pronomen</code> tokens) har <code>Genus</code>.
 
+<code>Pronomen</code> tokens har följande värden av <code>Genus</code>:
 
-### Ordklass: **PS**
-Det finns 9 633 (< 1%) `PS` tokens. Av 25 observerade ordklasser, så är `PS`:s rank: 20 i antalet tokens.
+- <code>NEU</code> (47 761; 49%)
+- <code>UTR</code> (30 928; 32%)
+- <code>UTR/NEU</code> (19 321; 20%)
+- <code>MAS</code> (31; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-De 5 mest frekventa `PS` grundformer: `sig`, `vi`, `jag`, `de`, `den`
+##### Pronomen och Numerus
 
-De 5 mest frekventa `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
+98 041 <code>Pronomen</code> tokens (100% av alla <code>Pronomen</code> tokens) har <code>Numerus</code>.
 
+<code>Pronomen</code> tokens har följande värden av <code>Numerus</code>:
 
-#### Ordklass: **PS**, särdrag
+- <code>SIN</code> (65 910; 67%)
+- <code>PLU</code> (21 082; 22%)
+- <code>SIN/PLU</code> (11 049; 11%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-##### PS och Definite
+##### Pronomen och Pronomform
 
-9 633 `PS` tokens (100% av alla `PS` tokens) har `Definite`.
+98 041 <code>Pronomen</code> tokens (100% av alla <code>Pronomen</code> tokens) har <code>Pronomform</code>.
 
-`PS` tokens har följande värden av `Definite`:
+<code>Pronomen</code> tokens har följande värden av <code>Pronomform</code>:
 
-- `Def` (9 633; 100%)
-- `<saknas>` (0; 0%)
+- <code>SUB/OBJ</code> (56 045; 57%)
+- <code>SUB</code> (27 692; 28%)
+- <code>OBJ</code> (14 304; 15%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-##### PS och Gender
+</details>
 
-9 633 `PS` tokens (100% av alla `PS` tokens) har `Gender`.
+### Ordklass: **Räkneord: grundtal**
+<details>
+<summary>
+Det finns 180 321 (6%) <em>räkneord: grundtal</em> (<code>RG</code>) tokens. Av 25 observerade ordklasser, så är <em>räkneord: grundtal</em>:s rank: 4 i antalet tokens.
 
-`PS` tokens har följande värden av `Gender`:
+</summary>
 
-- `Neut` (2 345; 24%)
-- `Com,Neut` (3 393; 35%)
-- `Com` (3 895; 40%)
-- `<saknas>` (0; 0%)
 
-##### PS och Number
+De 5 mest frekventa <code>Räkneord: grundtal</code> grundformer: <code>V</code>, <code>två</code>, <code>tre</code>, <code>fyra</code>, <code>sex</code>
 
-9 633 `PS` tokens (100% av alla `PS` tokens) har `Number`.
+De 5 mest frekventa <code>Räkneord: grundtal</code> tokens: <code>2018</code>, <code>2019</code>, <code>1</code>, <code>2</code>, <code>000</code>
 
-`PS` tokens har följande värden av `Number`:
 
-- `Plur,Sing` (1 417; 15%)
-- `Plur` (1 976; 21%)
-- `Sing` (6 240; 65%)
-- `<saknas>` (0; 0%)
+#### Ordklass: **Räkneord: grundtal**, särdrag
 
+##### Räkneord: grundtal och Kasus
 
-### Ordklass: **RG**
-Det finns 180 321 (6%) `RG` tokens. Av 25 observerade ordklasser, så är `RG`:s rank: 4 i antalet tokens.
+180 321 <code>Räkneord: grundtal</code> tokens (100% av alla <code>Räkneord: grundtal</code> tokens) har <code>Kasus</code>.
 
-De 5 mest frekventa `RG` grundformer: `V`, `två`, `tre`, `fyra`, `sex`
+<code>Räkneord: grundtal</code> tokens har följande värden av <code>Kasus</code>:
 
-De 5 mest frekventa `RG` tokens: `2018`, `2019`, `1`, `2`, `000`
+- <code>NOM</code> (180 310; 100%)
+- <code>SMS</code> (11; < 1%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
+</details>
 
-#### Ordklass: **RG**, särdrag
+### Ordklass: **Räkneord: ordningstal**
+<details>
+<summary>
+Det finns 2 897 (< 1%) <em>räkneord: ordningstal</em> (<code>RO</code>) tokens. Av 25 observerade ordklasser, så är <em>räkneord: ordningstal</em>:s rank: 21 i antalet tokens.
 
-##### RG och Case
+</summary>
 
-180 310 `RG` tokens (100% av alla `RG` tokens) har `Case`.
 
-`RG` tokens har följande värden av `Case`:
+De 5 mest frekventa <code>Räkneord: ordningstal</code> grundformer: <code>fyra</code>, <code>första gången</code>, <code>i första hand:7</code>, <code>i första hand:4</code>, <code>i första hand:3</code>
 
-- `Nom` (180 310; 100%)
-- `<saknas>` (11; < 1%)
+De 5 mest frekventa <code>Räkneord: ordningstal</code> tokens: <code>första</code>, <code>1</code>, <code>andra</code>, <code>tredje</code>, <code>12</code>
 
-##### RG och Compound
 
-11 `RG` tokens (< 1% av alla `RG` tokens) har `Compound`.
+#### Ordklass: **Räkneord: ordningstal**, särdrag
 
-`RG` tokens har följande värden av `Compound`:
+##### Räkneord: ordningstal och Bestämdhet
 
-- `Ja (`Yes`)` (11; < 1%)
-- `<saknas>` (180 310; 100%)
+5 <code>Räkneord: ordningstal</code> tokens (< 1% av alla <code>Räkneord: ordningstal</code> tokens) har <code>Bestämdhet</code>.
 
+<code>Räkneord: ordningstal</code> tokens har följande värden av <code>Bestämdhet</code>:
 
-### Ordklass: **RO**
-Det finns 2 897 (< 1%) `RO` tokens. Av 25 observerade ordklasser, så är `RO`:s rank: 21 i antalet tokens.
+- <code>IND/DEF</code> (5; < 1%)
+- <code>&lt;saknas&gt;</code> (2 892; 100%)
 
-De 5 mest frekventa `RO` grundformer: `fyra`, `första gången`, `i första hand:7`, `i första hand:4`, `i första hand:3`
+##### Räkneord: ordningstal och Genus
 
-De 5 mest frekventa `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
+5 <code>Räkneord: ordningstal</code> tokens (< 1% av alla <code>Räkneord: ordningstal</code> tokens) har <code>Genus</code>.
 
+<code>Räkneord: ordningstal</code> tokens har följande värden av <code>Genus</code>:
 
-#### Ordklass: **RO**, särdrag
+- <code>MAS</code> (5; < 1%)
+- <code>&lt;saknas&gt;</code> (2 892; 100%)
 
-##### RO och Case
+##### Räkneord: ordningstal och Kasus
 
-2 897 `RO` tokens (100% av alla `RO` tokens) har `Case`.
+2 897 <code>Räkneord: ordningstal</code> tokens (100% av alla <code>Räkneord: ordningstal</code> tokens) har <code>Kasus</code>.
 
-`RO` tokens har följande värden av `Case`:
+<code>Räkneord: ordningstal</code> tokens har följande värden av <code>Kasus</code>:
 
-- `Nom` (2 897; 100%)
-- `<saknas>` (0; 0%)
+- <code>NOM</code> (2 897; 100%)
+- <code>&lt;saknas&gt;</code> (0; 0%)
 
-##### RO och Definite
+##### Räkneord: ordningstal och Numerus
 
-5 `RO` tokens (< 1% av alla `RO` tokens) har `Definite`.
+5 <code>Räkneord: ordningstal</code> tokens (< 1% av alla <code>Räkneord: ordningstal</code> tokens) har <code>Numerus</code>.
 
-`RO` tokens har följande värden av `Definite`:
+<code>Räkneord: ordningstal</code> tokens har följande värden av <code>Numerus</code>:
 
-- `Def,Ind` (5; < 1%)
-- `<saknas>` (2 892; 100%)
+- <code>SIN</code> (5; < 1%)
+- <code>&lt;saknas&gt;</code> (2 892; 100%)
 
-##### RO och Gender
+</details>
 
-5 `RO` tokens (< 1% av alla `RO` tokens) har `Gender`.
+### Ordklass: **Subjunktion**
+<details>
+<summary>
+Det finns 53 560 (2%) <em>subjunktion</em> (<code>SN</code>) tokens. Av 25 observerade ordklasser, så är <em>subjunktion</em>:s rank: 14 i antalet tokens.
 
-`RO` tokens har följande värden av `Gender`:
+</summary>
 
-- `Masc` (5; < 1%)
-- `<saknas>` (2 892; 100%)
 
-##### RO och Number
+De 5 mest frekventa <code>Subjunktion</code> grundformer: <code>att</code>, <code>om</code>, <code>eftersom</code>, <code>innan</code>, <code>medan</code>
 
-5 `RO` tokens (< 1% av alla `RO` tokens) har `Number`.
+De 5 mest frekventa <code>Subjunktion</code> tokens: <code>att</code>, <code>om</code>, <code>Om</code>, <code>eftersom</code>, <code>Att</code>
 
-`RO` tokens har följande värden av `Number`:
 
-- `Sing` (5; < 1%)
-- `<saknas>` (2 892; 100%)
-
-
-### Ordklass: **SN**
-Det finns 53 560 (2%) `SN` tokens. Av 25 observerade ordklasser, så är `SN`:s rank: 14 i antalet tokens.
-
-De 5 mest frekventa `SN` grundformer: `att`, `om`, `eftersom`, `innan`, `medan`
-
-De 5 mest frekventa `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
-
-
-#### Ordklass: **SN**, särdrag
+#### Ordklass: **Subjunktion**, särdrag
 
 Hittade inga särdrag för SN
+</details>
 
-### Ordklass: **UO**
-Det finns 2 274 (< 1%) `UO` tokens. Av 25 observerade ordklasser, så är `UO`:s rank: 22 i antalet tokens.
+### Ordklass: **Substantiv**
+<details>
+<summary>
+Det finns 736 544 (25%) <em>substantiv</em> (<code>NN</code>) tokens. Av 25 observerade ordklasser, så är <em>substantiv</em>:s rank: 1 i antalet tokens.
 
-De 5 mest frekventa `UO` grundformer: `public service`, `au pair`, `à la:16`, `à la`, `walk over:29`
-
-De 5 mest frekventa `UO` tokens: `et`, `na`, `public`, `science`, `as`
+</summary>
 
 
-#### Ordklass: **UO**, särdrag
+De 5 mest frekventa <code>Substantiv</code> grundformer: <code>regering</code>, <code>yrkande</code>, <code>riksdag</code>, <code>motion</code>, <code>förslag</code>
+
+De 5 mest frekventa <code>Substantiv</code> tokens: <code>regeringen</code>, <code>yrkande</code>, <code>Riksdagen</code>, <code>M</code>, <code>förslag</code>
+
+
+#### Ordklass: **Substantiv**, särdrag
+
+##### Substantiv och Bestämdhet
+
+693 943 <code>Substantiv</code> tokens (94% av alla <code>Substantiv</code> tokens) har <code>Bestämdhet</code>.
+
+<code>Substantiv</code> tokens har följande värden av <code>Bestämdhet</code>:
+
+- <code>IND</code> (446 922; 61%)
+- <code>DEF</code> (247 021; 34%)
+- <code>&lt;saknas&gt;</code> (42 601; 6%)
+
+##### Substantiv och Förkortning
+
+37 351 <code>Substantiv</code> tokens (5% av alla <code>Substantiv</code> tokens) har <code>Förkortning</code>.
+
+<code>Substantiv</code> tokens har följande värden av <code>Förkortning</code>:
+
+- <code>AN</code> (37 351; 5%)
+- <code>&lt;saknas&gt;</code> (699 193; 95%)
+
+##### Substantiv och Genus
+
+698 987 <code>Substantiv</code> tokens (95% av alla <code>Substantiv</code> tokens) har <code>Genus</code>.
+
+<code>Substantiv</code> tokens har följande värden av <code>Genus</code>:
+
+- <code>UTR</code> (464 514; 63%)
+- <code>NEU</code> (234 473; 32%)
+- <code>&lt;saknas&gt;</code> (37 557; 5%)
+
+##### Substantiv och Kasus
+
+698 788 <code>Substantiv</code> tokens (95% av alla <code>Substantiv</code> tokens) har <code>Kasus</code>.
+
+<code>Substantiv</code> tokens har följande värden av <code>Kasus</code>:
+
+- <code>NOM</code> (660 459; 90%)
+- <code>GEN</code> (33 484; 5%)
+- <code>SMS</code> (4 845; < 1%)
+- <code>&lt;saknas&gt;</code> (37 756; 5%)
+
+##### Substantiv och Numerus
+
+693 943 <code>Substantiv</code> tokens (94% av alla <code>Substantiv</code> tokens) har <code>Numerus</code>.
+
+<code>Substantiv</code> tokens har följande värden av <code>Numerus</code>:
+
+- <code>SIN</code> (502 837; 68%)
+- <code>PLU</code> (191 106; 26%)
+- <code>&lt;saknas&gt;</code> (42 601; 6%)
+
+</details>
+
+### Ordklass: **Utländskt ord**
+<details>
+<summary>
+Det finns 2 274 (< 1%) <em>utländskt ord</em> (<code>UO</code>) tokens. Av 25 observerade ordklasser, så är <em>utländskt ord</em>:s rank: 22 i antalet tokens.
+
+</summary>
+
+
+De 5 mest frekventa <code>Utländskt ord</code> grundformer: <code>public service</code>, <code>au pair</code>, <code>à la:16</code>, <code>à la</code>, <code>walk over:29</code>
+
+De 5 mest frekventa <code>Utländskt ord</code> tokens: <code>et</code>, <code>na</code>, <code>public</code>, <code>science</code>, <code>as</code>
+
+
+#### Ordklass: **Utländskt ord**, särdrag
 
 Hittade inga särdrag för UO
+</details>
 
-### Ordklass: **VB**
-Det finns 380 285 (13%) `VB` tokens. Av 25 observerade ordklasser, så är `VB`:s rank: 2 i antalet tokens.
+### Ordklass: **Verb**
+<details>
+<summary>
+Det finns 380 285 (13%) <em>verb</em> (<code>VB</code>) tokens. Av 25 observerade ordklasser, så är <em>verb</em>:s rank: 2 i antalet tokens.
 
-De 5 mest frekventa `VB` grundformer: `vara`, `ha`, `skola`, `kunna`, `böra`
-
-De 5 mest frekventa `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
+</summary>
 
 
-#### Ordklass: **VB**, särdrag
+De 5 mest frekventa <code>Verb</code> grundformer: <code>vara</code>, <code>ha</code>, <code>skola</code>, <code>kunna</code>, <code>böra</code>
 
-##### VB och Abbr
+De 5 mest frekventa <code>Verb</code> tokens: <code>är</code>, <code>har</code>, <code>ska</code>, <code>kan</code>, <code>bör</code>
 
-18 `VB` tokens (< 1% av alla `VB` tokens) har `Abbr`.
 
-`VB` tokens har följande värden av `Abbr`:
+#### Ordklass: **Verb**, särdrag
 
-- `Ja (`Yes`)` (18; < 1%)
-- `<saknas>` (380 267; 100%)
+##### Verb och Diates
 
-##### VB och Mood
+380 257 <code>Verb</code> tokens (100% av alla <code>Verb</code> tokens) har <code>Diates</code>.
 
-244 612 `VB` tokens (64% av alla `VB` tokens) har `Mood`.
+<code>Verb</code> tokens har följande värden av <code>Diates</code>:
 
-`VB` tokens har följande värden av `Mood`:
+- <code>AKT</code> (315 859; 83%)
+- <code>SFO</code> (64 398; 17%)
+- <code>&lt;saknas&gt;</code> (28; < 1%)
 
-- `Sub` (161; < 1%)
-- `Imp` (1 616; < 1%)
-- `Ind` (242 835; 64%)
-- `<saknas>` (135 673; 36%)
+##### Verb och Förkortning
 
-##### VB och Tense
+28 <code>Verb</code> tokens (< 1% av alla <code>Verb</code> tokens) har <code>Förkortning</code>.
 
-242 920 `VB` tokens (64% av alla `VB` tokens) har `Tense`.
+<code>Verb</code> tokens har följande värden av <code>Förkortning</code>:
 
-`VB` tokens har följande värden av `Tense`:
+- <code>AN</code> (28; < 1%)
+- <code>&lt;saknas&gt;</code> (380 257; 100%)
 
-- `Past` (22 610; 6%)
-- `Pres` (220 310; 58%)
-- `<saknas>` (137 365; 36%)
+##### Verb och Modus
 
-##### VB och VerbForm
+162 <code>Verb</code> tokens (< 1% av alla <code>Verb</code> tokens) har <code>Modus</code>.
 
-380 261 `VB` tokens (100% av alla `VB` tokens) har `VerbForm`.
+<code>Verb</code> tokens har följande värden av <code>Modus</code>:
 
-`VB` tokens har följande värden av `VerbForm`:
+- <code>KON</code> (162; < 1%)
+- <code>&lt;saknas&gt;</code> (380 123; 100%)
 
-- `Sup` (20 211; 5%)
-- `Inf` (115 019; 30%)
-- `Fin` (245 031; 64%)
-- `<saknas>` (24; < 1%)
+##### Verb och Tempus
 
-##### VB och Voice
+380 257 <code>Verb</code> tokens (100% av alla <code>Verb</code> tokens) har <code>Tempus</code>.
 
-380 257 `VB` tokens (100% av alla `VB` tokens) har `Voice`.
+<code>Verb</code> tokens har följande värden av <code>Tempus</code>:
 
-`VB` tokens har följande värden av `Voice`:
+- <code>PRS</code> (220 371; 58%)
+- <code>INF</code> (115 243; 30%)
+- <code>PRT</code> (22 662; 6%)
+- <code>SUP</code> (20 216; 5%)
+- <code>IMP</code> (1 765; < 1%)
+- <code>&lt;saknas&gt;</code> (28; < 1%)
 
-- `Pass` (64 399; 17%)
-- `Act` (315 858; 83%)
-- `<saknas>` (28; < 1%)
-
+</details>
 
 ## Särdrag
 

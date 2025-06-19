@@ -43,841 +43,949 @@ NK value (`text:readability.nk`) | - | 2.18 | 1.71
 ## POS Tags
 
 The following POS tags is present in this corpus:
-AB - DT - HA - HD - HP - HS - IE - IN - JJ - KN - MAD - MID - NN - PAD - PC - PL - PM - PN - PP - PS - RG - RO - SN - UO - VB
+
+[Adjective](#part-of-speech-adjective) - [Adverb](#part-of-speech-adverb) - [Cardinal Number](#part-of-speech-cardinal-number) - [Conjunction](#part-of-speech-conjunction) - [Determiner](#part-of-speech-determiner) - [Foreign Word](#part-of-speech-foreign-word) - [Infinitive Marker](#part-of-speech-infinitive-marker) - [Interjection](#part-of-speech-interjection) - [Interrogative/Relative Adverb](#part-of-speech-interrogative/relative-adverb) - [Interrogative/Relative Determiner](#part-of-speech-interrogative/relative-determiner) - [Interrogative/Relative Possessive](#part-of-speech-interrogative/relative-possessive) - [Interrogative/Relative Pronoun](#part-of-speech-interrogative/relative-pronoun) - [Major Delimiter](#part-of-speech-major-delimiter) - [Minor Delimiter](#part-of-speech-minor-delimiter) - [Noun](#part-of-speech-noun) - [Ordinal Number](#part-of-speech-ordinal-number) - [Pairwise Delimiter](#part-of-speech-pairwise-delimiter) - [Participle](#part-of-speech-participle) - [Particle](#part-of-speech-particle) - [Possessive](#part-of-speech-possessive) - [Preposition](#part-of-speech-preposition) - [Pronoun](#part-of-speech-pronoun) - [Proper Noun](#part-of-speech-proper-noun) - [Subjunction](#part-of-speech-subjunction) - [Verb](#part-of-speech-verb)
 
 ### Distribution of POS-tags
 
 Part-Of-Speech | Frequency | Percent (%)
 --- | ---: | ---:
-NN | 736544 | 25.42%
-VB | 380285 | 13.13%
-PP | 358848 | 12.39%
-RG | 180321 | 6.22%
-JJ | 132552 | 4.58%
-MAD | 131026 | 4.52%
-AB | 121224 | 4.18%
-KN | 117972 | 4.07%
-PM | 106015 | 3.66%
-MID | 101646 | 3.51%
-DT | 101631 | 3.51%
-PN | 98041 | 3.38%
-PAD | 93999 | 3.24%
-SN | 53560 | 1.85%
-PC | 47212 | 1.63%
-IE | 45393 | 1.57%
-HP | 44722 | 1.54%
-PL | 15486 | 0.53%
-HA | 13218 | 0.46%
-PS | 9633 | 0.33%
-RO | 2897 | 0.10%
-UO | 2274 | 0.08%
-HD | 1407 | 0.05%
-IN | 840 | 0.03%
-HS | 186 | 0.01%
+Noun (`NN`) | 736,544 | 25%
+Verb (`VB`) | 380,285 | 13%
+Preposition (`PP`) | 358,848 | 12%
+Cardinal Number (`RG`) | 180,321 | 6%
+Adjective (`JJ`) | 132,552 | 5%
+Major Delimiter (`MAD`) | 131,026 | 5%
+Adverb (`AB`) | 121,224 | 4%
+Conjunction (`KN`) | 117,972 | 4%
+Proper Noun (`PM`) | 106,015 | 4%
+Minor Delimiter (`MID`) | 101,646 | 4%
+Determiner (`DT`) | 101,631 | 4%
+Pronoun (`PN`) | 98,041 | 3%
+Pairwise Delimiter (`PAD`) | 93,999 | 3%
+Subjunction (`SN`) | 53,560 | 2%
+Participle (`PC`) | 47,212 | 2%
+Infinitive Marker (`IE`) | 45,393 | 2%
+Interrogative/Relative Pronoun (`HP`) | 44,722 | 2%
+Particle (`PL`) | 15,486 | < 1%
+Interrogative/Relative Adverb (`HA`) | 13,218 | < 1%
+Possessive (`PS`) | 9,633 | < 1%
+Ordinal Number (`RO`) | 2,897 | < 1%
+Foreign Word (`UO`) | 2,274 | < 1%
+Interrogative/Relative Determiner (`HD`) | 1,407 | < 1%
+Interjection (`IN`) | 840 | < 1%
+Interrogative/Relative Possessive (`HS`) | 186 | < 1%
 
 
-### POS Tag: **AB**
-There are 121,224 (4%) `AB` tokens. Out of 25 observed tags, the rank of `AB` is: 7 in number of tokens.
+### POS Tag: **Adjective**
+<details>
+<summary>
+There are 132,552 (5%) <em>adjective</em> (<code>JJ</code>) tokens. Out of 25 observed tags, the rank of <em>adjective</em> is: 5 in number of tokens.
 
-The 5 most frequent `AB` base forms: `m.fl.`, `inte`, `också`, `även`, `bl.a.`
+</summary>
 
-The 5 most frequent `AB` tokens: `m.fl.`, `inte`, `också`, `även`, `bl.a.`
 
+The 5 most frequent <code>Adjective</code> base forms: <code>annan</code>, <code>stor</code>, <code>ny</code>, <code>andra</code>, <code>viktig</code>
 
-#### POS Tag: **AB**, features
+The 5 most frequent <code>Adjective</code> tokens: <code>andra</code>, <code>olika</code>, <code>fler</code>, <code>vissa</code>, <code>nya</code>
 
-##### AB and Abbr
 
-22,438 `AB` tokens (19% of all `AB` tokens) have a non-empty value of `Abbr`.
+#### POS Tag: **Adjective**, features
 
-`AB` tokens may have the following values of `Abbr`:
+##### Adjective and Abbreviation
 
-- `Yes` (22,438; 19%)
-- `<missing>` (98,786; 81%)
+20 `Adjective` tokens (< 1% of all `Adjective` tokens) have a non-empty value of `Abbreviation`.
 
-##### AB and Degree
+`Adjective` tokens may have the following values of `Abbreviation`:
 
-28,357 `AB` tokens (23% of all `AB` tokens) have a non-empty value of `Degree`.
+- <code>AN</code> (20; < 1%)
+- <code>&lt;missing&gt;</code> (132,532; 100%)
 
-`AB` tokens may have the following values of `Degree`:
+##### Adjective and Case
 
-- `Sup` (3,890; 3%)
-- `Cmp` (8,987; 7%)
-- `Pos` (15,480; 13%)
-- `<missing>` (92,867; 77%)
+132,532 `Adjective` tokens (100% of all `Adjective` tokens) have a non-empty value of `Case`.
 
+`Adjective` tokens may have the following values of `Case`:
 
-### POS Tag: **DT**
-There are 101,631 (4%) `DT` tokens. Out of 25 observed tags, the rank of `DT` is: 11 in number of tokens.
+- <code>NOM</code> (132,178; 100%)
+- <code>GEN</code> (354; < 1%)
+- <code>&lt;missing&gt;</code> (20; < 1%)
 
-The 5 most frequent `DT` base forms: `en`, `den`, `denna`, `någon`, `all`
+##### Adjective and Definiteness
 
-The 5 most frequent `DT` tokens: `en`, `ett`, `den`, `de`, `det`
+132,532 `Adjective` tokens (100% of all `Adjective` tokens) have a non-empty value of `Definiteness`.
 
+`Adjective` tokens may have the following values of `Definiteness`:
 
-#### POS Tag: **DT**, features
+- <code>IND/DEF</code> (58,672; 44%)
+- <code>IND</code> (54,388; 41%)
+- <code>DEF</code> (19,472; 15%)
+- <code>&lt;missing&gt;</code> (20; < 1%)
 
-##### DT and Definite
+##### Adjective and Degree
 
-101,631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Definite`.
+132,532 `Adjective` tokens (100% of all `Adjective` tokens) have a non-empty value of `Degree`.
 
-`DT` tokens may have the following values of `Definite`:
+`Adjective` tokens may have the following values of `Degree`:
 
-- `Def,Ind` (2,654; 3%)
-- `Def` (41,722; 41%)
-- `Ind` (57,255; 56%)
-- `<missing>` (0; 0%)
+- <code>POS</code> (118,922; 90%)
+- <code>KOM</code> (10,870; 8%)
+- <code>SUV</code> (2,740; 2%)
+- <code>&lt;missing&gt;</code> (20; < 1%)
 
-##### DT and Gender
+##### Adjective and Gender
 
-101,631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Gender`.
+132,532 `Adjective` tokens (100% of all `Adjective` tokens) have a non-empty value of `Gender`.
 
-`DT` tokens may have the following values of `Gender`:
+`Adjective` tokens may have the following values of `Gender`:
 
-- `Masc` (1; < 1%)
-- `Com,Neut` (19,491; 19%)
-- `Neut` (29,637; 29%)
-- `Com` (52,502; 52%)
-- `<missing>` (0; 0%)
+- <code>UTR/NEU</code> (82,252; 62%)
+- <code>UTR</code> (32,014; 24%)
+- <code>NEU</code> (17,902; 14%)
+- <code>MAS</code> (364; < 1%)
+- <code>&lt;missing&gt;</code> (20; < 1%)
 
-##### DT and Number
+##### Adjective and Number
 
-101,631 `DT` tokens (100% of all `DT` tokens) have a non-empty value of `Number`.
+132,532 `Adjective` tokens (100% of all `Adjective` tokens) have a non-empty value of `Number`.
 
-`DT` tokens may have the following values of `Number`:
+`Adjective` tokens may have the following values of `Number`:
 
-- `Plur,Sing` (1,170; 1%)
-- `Plur` (17,483; 17%)
-- `Sing` (82,978; 82%)
-- `<missing>` (0; 0%)
+- <code>SIN</code> (66,973; 51%)
+- <code>PLU</code> (48,858; 37%)
+- <code>SIN/PLU</code> (16,701; 13%)
+- <code>&lt;missing&gt;</code> (20; < 1%)
 
+</details>
 
-### POS Tag: **HA**
-There are 13,218 (< 1%) `HA` tokens. Out of 25 observed tags, the rank of `HA` is: 19 in number of tokens.
+### POS Tag: **Adverb**
+<details>
+<summary>
+There are 121,224 (4%) <em>adverb</em> (<code>AB</code>) tokens. Out of 25 observed tags, the rank of <em>adverb</em> is: 7 in number of tokens.
 
-The 5 most frequent `HA` base forms: `när`, `hur`, `där`, `som`, `då`
+</summary>
 
-The 5 most frequent `HA` tokens: `när`, `hur`, `där`, `När`, `som`
 
+The 5 most frequent <code>Adverb</code> base forms: <code>m.fl.</code>, <code>inte</code>, <code>också</code>, <code>även</code>, <code>bl.a.</code>
 
-#### POS Tag: **HA**, features
+The 5 most frequent <code>Adverb</code> tokens: <code>m.fl.</code>, <code>inte</code>, <code>också</code>, <code>även</code>, <code>bl.a.</code>
 
-HA not present among features
 
-### POS Tag: **HD**
-There are 1,407 (< 1%) `HD` tokens. Out of 25 observed tags, the rank of `HD` is: 23 in number of tokens.
+#### POS Tag: **Adverb**, features
 
-The 2 most frequent `HD` base forms: `i vilken mån:7`, `i vilken mån:3`
+##### Adverb and Abbreviation
 
-The 5 most frequent `HD` tokens: `vilka`, `vilken`, `vilket`, `Vilka`, `Vilken`
+22,440 `Adverb` tokens (19% of all `Adverb` tokens) have a non-empty value of `Abbreviation`.
 
+`Adverb` tokens may have the following values of `Abbreviation`:
 
-#### POS Tag: **HD**, features
+- <code>AN</code> (22,440; 19%)
+- <code>&lt;missing&gt;</code> (98,784; 81%)
 
-##### HD and Definite
+##### Adverb and Degree
 
-1,407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Definite`.
+28,328 `Adverb` tokens (23% of all `Adverb` tokens) have a non-empty value of `Degree`.
 
-`HD` tokens may have the following values of `Definite`:
+`Adverb` tokens may have the following values of `Degree`:
 
-- `Ind` (1,407; 100%)
-- `<missing>` (0; 0%)
+- <code>POS</code> (15,452; 13%)
+- <code>KOM</code> (8,987; 7%)
+- <code>SUV</code> (3,889; 3%)
+- <code>&lt;missing&gt;</code> (92,896; 77%)
 
-##### HD and Gender
+</details>
 
-1,407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Gender`.
+### POS Tag: **Cardinal Number**
+<details>
+<summary>
+There are 180,321 (6%) <em>cardinal number</em> (<code>RG</code>) tokens. Out of 25 observed tags, the rank of <em>cardinal number</em> is: 4 in number of tokens.
 
-`HD` tokens may have the following values of `Gender`:
+</summary>
 
-- `Neut` (164; 12%)
-- `Com` (420; 30%)
-- `Com,Neut` (823; 58%)
-- `<missing>` (0; 0%)
 
-##### HD and Number
+The 5 most frequent <code>Cardinal Number</code> base forms: <code>V</code>, <code>två</code>, <code>tre</code>, <code>fyra</code>, <code>sex</code>
 
-1,407 `HD` tokens (100% of all `HD` tokens) have a non-empty value of `Number`.
+The 5 most frequent <code>Cardinal Number</code> tokens: <code>2018</code>, <code>2019</code>, <code>1</code>, <code>2</code>, <code>000</code>
 
-`HD` tokens may have the following values of `Number`:
 
-- `Sing` (584; 42%)
-- `Plur` (823; 58%)
-- `<missing>` (0; 0%)
+#### POS Tag: **Cardinal Number**, features
 
+##### Cardinal Number and Case
 
-### POS Tag: **HP**
-There are 44,722 (2%) `HP` tokens. Out of 25 observed tags, the rank of `HP` is: 17 in number of tokens.
+180,321 `Cardinal Number` tokens (100% of all `Cardinal Number` tokens) have a non-empty value of `Case`.
 
-The 5 most frequent `HP` base forms: `vad`, `vad för`, `vem`, `vad än`, `vad som helst`
+`Cardinal Number` tokens may have the following values of `Case`:
 
-The 5 most frequent `HP` tokens: `som`, `vad`, `vilket`, `Vad`, `Som`
+- <code>NOM</code> (180,310; 100%)
+- <code>SMS</code> (11; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
 
+</details>
 
-#### POS Tag: **HP**, features
+### POS Tag: **Conjunction**
+<details>
+<summary>
+There are 117,972 (4%) <em>conjunction</em> (<code>KN</code>) tokens. Out of 25 observed tags, the rank of <em>conjunction</em> is: 8 in number of tokens.
 
-##### HP and Definite
+</summary>
 
-4,463 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Definite`.
 
-`HP` tokens may have the following values of `Definite`:
+The 5 most frequent <code>Conjunction</code> base forms: <code>och</code>, <code>eller</code>, <code>samt</code>, <code>men</code>, <code>både och</code>
 
-- `Ind` (4,463; 10%)
-- `<missing>` (40,259; 90%)
+The 5 most frequent <code>Conjunction</code> tokens: <code>och</code>, <code>eller</code>, <code>som</code>, <code>samt</code>, <code>men</code>
 
-##### HP and Gender
 
-4,463 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Gender`.
+#### POS Tag: **Conjunction**, features
 
-`HP` tokens may have the following values of `Gender`:
+##### Conjunction and Abbreviation
 
-- `Com,Neut` (205; < 1%)
-- `Com` (262; < 1%)
-- `Neut` (3,996; 9%)
-- `<missing>` (40,259; 90%)
+24 `Conjunction` tokens (< 1% of all `Conjunction` tokens) have a non-empty value of `Abbreviation`.
 
-##### HP and Number
+`Conjunction` tokens may have the following values of `Abbreviation`:
 
-4,463 `HP` tokens (10% of all `HP` tokens) have a non-empty value of `Number`.
+- <code>AN</code> (24; < 1%)
+- <code>&lt;missing&gt;</code> (117,948; 100%)
 
-`HP` tokens may have the following values of `Number`:
+</details>
 
-- `Plur` (205; < 1%)
-- `Sing` (4,258; 10%)
-- `<missing>` (40,259; 90%)
+### POS Tag: **Determiner**
+<details>
+<summary>
+There are 101,631 (4%) <em>determiner</em> (<code>DT</code>) tokens. Out of 25 observed tags, the rank of <em>determiner</em> is: 11 in number of tokens.
 
+</summary>
 
-### POS Tag: **HS**
-There are 186 (< 1%) `HS` tokens. Out of 25 observed tags, the rank of `HS` is: 25 in number of tokens.
 
-The 2 most frequent `HS` base forms: `vars`, `vem`
+The 5 most frequent <code>Determiner</code> base forms: <code>en</code>, <code>den</code>, <code>denna</code>, <code>någon</code>, <code>all</code>
 
-The 3 most frequent `HS` tokens: `vars`, `vilkas`, `vems`
+The 5 most frequent <code>Determiner</code> tokens: <code>en</code>, <code>ett</code>, <code>den</code>, <code>de</code>, <code>det</code>
 
 
-#### POS Tag: **HS**, features
+#### POS Tag: **Determiner**, features
 
-##### HS and Definite
+##### Determiner and Definiteness
 
-186 `HS` tokens (100% of all `HS` tokens) have a non-empty value of `Definite`.
+101,631 `Determiner` tokens (100% of all `Determiner` tokens) have a non-empty value of `Definiteness`.
 
-`HS` tokens may have the following values of `Definite`:
+`Determiner` tokens may have the following values of `Definiteness`:
 
-- `Def` (186; 100%)
-- `<missing>` (0; 0%)
+- <code>IND</code> (57,254; 56%)
+- <code>DEF</code> (41,723; 41%)
+- <code>IND/DEF</code> (2,654; 3%)
+- <code>&lt;missing&gt;</code> (0; 0%)
 
+##### Determiner and Gender
 
-### POS Tag: **IE**
-There are 45,393 (2%) `IE` tokens. Out of 25 observed tags, the rank of `IE` is: 16 in number of tokens.
+101,631 `Determiner` tokens (100% of all `Determiner` tokens) have a non-empty value of `Gender`.
 
-The 5 most frequent `IE` base forms: `att`, `ha att göra:2`, `ha att göra:3`, `ha att göra:8`, `ha att göra:11`
+`Determiner` tokens may have the following values of `Gender`:
 
-The 5 most frequent `IE` tokens: `att`, `Att`, `geno`, `at`, `–`
+- <code>UTR</code> (52,500; 52%)
+- <code>NEU</code> (29,637; 29%)
+- <code>UTR/NEU</code> (19,493; 19%)
+- <code>MAS</code> (1; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
 
+##### Determiner and Number
 
-#### POS Tag: **IE**, features
+101,631 `Determiner` tokens (100% of all `Determiner` tokens) have a non-empty value of `Number`.
 
-IE not present among features
+`Determiner` tokens may have the following values of `Number`:
 
-### POS Tag: **IN**
-There are 840 (< 1%) `IN` tokens. Out of 25 observed tags, the rank of `IN` is: 24 in number of tokens.
+- <code>SIN</code> (82,978; 82%)
+- <code>PLU</code> (17,483; 17%)
+- <code>SIN/PLU</code> (1,170; 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
 
-The 5 most frequent `IN` base forms: `nej`, `ja`, `jo`, `tack`, `nä`
+</details>
 
-The 5 most frequent `IN` tokens: `nej`, `ja`, `Nej`, `Ja`, `Tack`
+### POS Tag: **Foreign Word**
+<details>
+<summary>
+There are 2,274 (< 1%) <em>foreign word</em> (<code>UO</code>) tokens. Out of 25 observed tags, the rank of <em>foreign word</em> is: 22 in number of tokens.
 
+</summary>
 
-#### POS Tag: **IN**, features
 
-IN not present among features
+The 5 most frequent <code>Foreign Word</code> base forms: <code>public service</code>, <code>au pair</code>, <code>à la:16</code>, <code>à la</code>, <code>walk over:29</code>
 
-### POS Tag: **JJ**
-There are 132,552 (5%) `JJ` tokens. Out of 25 observed tags, the rank of `JJ` is: 5 in number of tokens.
+The 5 most frequent <code>Foreign Word</code> tokens: <code>et</code>, <code>na</code>, <code>public</code>, <code>science</code>, <code>as</code>
 
-The 5 most frequent `JJ` base forms: `annan`, `stor`, `ny`, `andra`, `viktig`
 
-The 5 most frequent `JJ` tokens: `andra`, `olika`, `fler`, `vissa`, `nya`
-
-
-#### POS Tag: **JJ**, features
-
-##### JJ and Abbr
-
-12 `JJ` tokens (< 1% of all `JJ` tokens) have a non-empty value of `Abbr`.
-
-`JJ` tokens may have the following values of `Abbr`:
-
-- `Yes` (12; < 1%)
-- `<missing>` (132,540; 100%)
-
-##### JJ and Case
-
-132,538 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Case`.
-
-`JJ` tokens may have the following values of `Case`:
-
-- `Gen` (348; < 1%)
-- `Nom` (132,190; 100%)
-- `<missing>` (14; < 1%)
-
-##### JJ and Definite
-
-132,529 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Definite`.
-
-`JJ` tokens may have the following values of `Definite`:
-
-- `Def` (19,453; 15%)
-- `Ind` (54,397; 41%)
-- `Def,Ind` (58,679; 44%)
-- `<missing>` (23; < 1%)
-
-##### JJ and Degree
-
-132,541 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Degree`.
-
-`JJ` tokens may have the following values of `Degree`:
-
-- `Sup` (2,742; 2%)
-- `Cmp` (10,868; 8%)
-- `Pos` (118,931; 90%)
-- `<missing>` (11; < 1%)
-
-##### JJ and Gender
-
-132,540 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Gender`.
-
-`JJ` tokens may have the following values of `Gender`:
-
-- `Masc` (378; < 1%)
-- `Neut` (17,920; 14%)
-- `Com` (31,973; 24%)
-- `Com,Neut` (82,269; 62%)
-- `<missing>` (12; < 1%)
-
-##### JJ and Number
-
-132,536 `JJ` tokens (100% of all `JJ` tokens) have a non-empty value of `Number`.
-
-`JJ` tokens may have the following values of `Number`:
-
-- `Plur,Sing` (16,702; 13%)
-- `Plur` (48,694; 37%)
-- `Sing` (67,140; 51%)
-- `<missing>` (16; < 1%)
-
-
-### POS Tag: **KN**
-There are 117,972 (4%) `KN` tokens. Out of 25 observed tags, the rank of `KN` is: 8 in number of tokens.
-
-The 5 most frequent `KN` base forms: `och`, `eller`, `samt`, `men`, `både och`
-
-The 5 most frequent `KN` tokens: `och`, `eller`, `som`, `samt`, `men`
-
-
-#### POS Tag: **KN**, features
-
-##### KN and Abbr
-
-17 `KN` tokens (< 1% of all `KN` tokens) have a non-empty value of `Abbr`.
-
-`KN` tokens may have the following values of `Abbr`:
-
-- `Yes` (17; < 1%)
-- `<missing>` (117,955; 100%)
-
-
-### POS Tag: **MAD**
-There are 131,026 (5%) `MAD` tokens. Out of 25 observed tags, the rank of `MAD` is: 6 in number of tokens.
-
-The 5 most frequent `MAD` tokens: `.`, `:`, `!`, `?`, `–`
-
-
-#### POS Tag: **MAD**, features
-
-MAD not present among features
-
-### POS Tag: **MID**
-There are 101,646 (4%) `MID` tokens. Out of 25 observed tags, the rank of `MID` is: 10 in number of tokens.
-
-The 5 most frequent `MID` tokens: `,`, `/`, `:`, `-`, `–`
-
-
-#### POS Tag: **MID**, features
-
-MID not present among features
-
-### POS Tag: **NN**
-There are 736,544 (25%) `NN` tokens. Out of 25 observed tags, the rank of `NN` is: 1 in number of tokens.
-
-The 5 most frequent `NN` base forms: `regering`, `yrkande`, `riksdag`, `motion`, `förslag`
-
-The 5 most frequent `NN` tokens: `regeringen`, `yrkande`, `Riksdagen`, `M`, `förslag`
-
-
-#### POS Tag: **NN**, features
-
-##### NN and Abbr
-
-35,393 `NN` tokens (5% of all `NN` tokens) have a non-empty value of `Abbr`.
-
-`NN` tokens may have the following values of `Abbr`:
-
-- `Yes` (35,393; 5%)
-- `<missing>` (701,151; 95%)
-
-##### NN and Case
-
-695,434 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Case`.
-
-`NN` tokens may have the following values of `Case`:
-
-- `Gen` (33,556; 5%)
-- `Nom` (661,878; 90%)
-- `<missing>` (41,110; 6%)
-
-##### NN and Compound
-
-4,826 `NN` tokens (< 1% of all `NN` tokens) have a non-empty value of `Compound`.
-
-`NN` tokens may have the following values of `Compound`:
-
-- `Yes` (4,826; < 1%)
-- `<missing>` (731,718; 99%)
-
-##### NN and Definite
-
-694,413 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Definite`.
-
-`NN` tokens may have the following values of `Definite`:
-
-- `Def` (246,895; 34%)
-- `Ind` (447,518; 61%)
-- `<missing>` (42,131; 6%)
-
-##### NN and Gender
-
-698,790 `NN` tokens (95% of all `NN` tokens) have a non-empty value of `Gender`.
-
-`NN` tokens may have the following values of `Gender`:
-
-- `Neut` (234,585; 32%)
-- `Com` (464,205; 63%)
-- `<missing>` (37,754; 5%)
-
-##### NN and Number
-
-694,905 `NN` tokens (94% of all `NN` tokens) have a non-empty value of `Number`.
-
-`NN` tokens may have the following values of `Number`:
-
-- `Plur` (188,599; 26%)
-- `Sing` (506,306; 69%)
-- `<missing>` (41,639; 6%)
-
-
-### POS Tag: **PAD**
-There are 93,999 (3%) `PAD` tokens. Out of 25 observed tags, the rank of `PAD` is: 13 in number of tokens.
-
-The 5 most frequent `PAD` tokens: `)`, `(`, `"`, `]`, `[`
-
-
-#### POS Tag: **PAD**, features
-
-PAD not present among features
-
-### POS Tag: **PC**
-There are 47,212 (2%) `PC` tokens. Out of 25 observed tags, the rank of `PC` is: 15 in number of tokens.
-
-The 5 most frequent `PC` base forms: `särskilja`, `särskild`, `följa`, `följande`, `öka`
-
-The 5 most frequent `PC` tokens: `följande`, `nyanlända`, `särskilda`, `ökad`, `utsatta`
-
-
-#### POS Tag: **PC**, features
-
-##### PC and Case
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Case`.
-
-`PC` tokens may have the following values of `Case`:
-
-- `Gen` (30; < 1%)
-- `Nom` (47,182; 100%)
-- `<missing>` (0; 0%)
-
-##### PC and Definite
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Definite`.
-
-`PC` tokens may have the following values of `Definite`:
-
-- `Def` (2,759; 6%)
-- `Ind` (15,356; 33%)
-- `Def,Ind` (29,097; 62%)
-- `<missing>` (0; 0%)
-
-##### PC and Gender
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Gender`.
-
-`PC` tokens may have the following values of `Gender`:
-
-- `Masc` (62; < 1%)
-- `Neut` (5,647; 12%)
-- `Com` (9,709; 21%)
-- `Com,Neut` (31,794; 67%)
-- `<missing>` (0; 0%)
-
-##### PC and Number
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Number`.
-
-`PC` tokens may have the following values of `Number`:
-
-- `Plur` (13,587; 29%)
-- `Plur,Sing` (15,494; 33%)
-- `Sing` (18,131; 38%)
-- `<missing>` (0; 0%)
-
-##### PC and Tense
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `Tense`.
-
-`PC` tokens may have the following values of `Tense`:
-
-- `Pres` (15,494; 33%)
-- `Past` (31,718; 67%)
-- `<missing>` (0; 0%)
-
-##### PC and VerbForm
-
-47,212 `PC` tokens (100% of all `PC` tokens) have a non-empty value of `VerbForm`.
-
-`PC` tokens may have the following values of `VerbForm`:
-
-- `Part` (47,212; 100%)
-- `<missing>` (0; 0%)
-
-
-### POS Tag: **PL**
-There are 15,486 (< 1%) `PL` tokens. Out of 25 observed tags, the rank of `PL` is: 18 in number of tokens.
-
-The 5 most frequent `PL` base forms: `fram`, `upp`, `ut`, `över`, `in`
-
-The 5 most frequent `PL` tokens: `fram`, `upp`, `ut`, `över`, `in`
-
-
-#### POS Tag: **PL**, features
-
-PL not present among features
-
-### POS Tag: **PM**
-There are 106,015 (4%) `PM` tokens. Out of 25 observed tags, the rank of `PM` is: 9 in number of tokens.
-
-The 5 most frequent `PM` base forms: `SD`, `Sverige`, `Johan`, `Jan`, `Johansson`
-
-The 5 most frequent `PM` tokens: `SD`, `KD`, `Sverige`, `MP`, `Johan`
-
-
-#### POS Tag: **PM**, features
-
-##### PM and Case
-
-106,006 `PM` tokens (100% of all `PM` tokens) have a non-empty value of `Case`.
-
-`PM` tokens may have the following values of `Case`:
-
-- `Gen` (3,206; 3%)
-- `Nom` (102,800; 97%)
-- `<missing>` (9; < 1%)
-
-##### PM and Compound
-
-10 `PM` tokens (< 1% of all `PM` tokens) have a non-empty value of `Compound`.
-
-`PM` tokens may have the following values of `Compound`:
-
-- `Yes` (10; < 1%)
-- `<missing>` (106,005; 100%)
-
-
-### POS Tag: **PN**
-There are 98,041 (3%) `PN` tokens. Out of 25 observed tags, the rank of `PN` is: 12 in number of tokens.
-
-The 5 most frequent `PN` base forms: `den`, `vi`, `sig`, `denna`, `jag`
-
-The 5 most frequent `PN` tokens: `det`, `sig`, `detta`, `Det`, `vi`
-
-
-#### POS Tag: **PN**, features
-
-##### PN and Case
-
-98,041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Case`.
-
-`PN` tokens may have the following values of `Case`:
-
-- `Acc` (14,305; 15%)
-- `Nom` (27,692; 28%)
-- `Acc,Nom` (56,044; 57%)
-- `<missing>` (0; 0%)
-
-##### PN and Definite
-
-98,041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Definite`.
-
-`PN` tokens may have the following values of `Definite`:
-
-- `Ind` (11,172; 11%)
-- `Def` (86,869; 89%)
-- `<missing>` (0; 0%)
-
-##### PN and Gender
-
-98,041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Gender`.
-
-`PN` tokens may have the following values of `Gender`:
-
-- `Masc` (31; < 1%)
-- `Com,Neut` (19,321; 20%)
-- `Com` (30,928; 32%)
-- `Neut` (47,761; 49%)
-- `<missing>` (0; 0%)
-
-##### PN and Number
-
-98,041 `PN` tokens (100% of all `PN` tokens) have a non-empty value of `Number`.
-
-`PN` tokens may have the following values of `Number`:
-
-- `Plur,Sing` (11,049; 11%)
-- `Plur` (21,168; 22%)
-- `Sing` (65,824; 67%)
-- `<missing>` (0; 0%)
-
-
-### POS Tag: **PP**
-There are 358,848 (12%) `PP` tokens. Out of 25 observed tags, the rank of `PP` is: 3 in number of tokens.
-
-The 5 most frequent `PP` base forms: `i`, `för`, `av`, `till`, `om`
-
-The 5 most frequent `PP` tokens: `i`, `för`, `av`, `till`, `om`
-
-
-#### POS Tag: **PP**, features
-
-##### PP and Abbr
-
-5 `PP` tokens (< 1% of all `PP` tokens) have a non-empty value of `Abbr`.
-
-`PP` tokens may have the following values of `Abbr`:
-
-- `Yes` (5; < 1%)
-- `<missing>` (358,843; 100%)
-
-
-### POS Tag: **PS**
-There are 9,633 (< 1%) `PS` tokens. Out of 25 observed tags, the rank of `PS` is: 20 in number of tokens.
-
-The 5 most frequent `PS` base forms: `sig`, `vi`, `jag`, `de`, `den`
-
-The 5 most frequent `PS` tokens: `sin`, `sitt`, `sina`, `vår`, `vårt`
-
-
-#### POS Tag: **PS**, features
-
-##### PS and Definite
-
-9,633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Definite`.
-
-`PS` tokens may have the following values of `Definite`:
-
-- `Def` (9,633; 100%)
-- `<missing>` (0; 0%)
-
-##### PS and Gender
-
-9,633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Gender`.
-
-`PS` tokens may have the following values of `Gender`:
-
-- `Neut` (2,345; 24%)
-- `Com,Neut` (3,393; 35%)
-- `Com` (3,895; 40%)
-- `<missing>` (0; 0%)
-
-##### PS and Number
-
-9,633 `PS` tokens (100% of all `PS` tokens) have a non-empty value of `Number`.
-
-`PS` tokens may have the following values of `Number`:
-
-- `Plur,Sing` (1,417; 15%)
-- `Plur` (1,976; 21%)
-- `Sing` (6,240; 65%)
-- `<missing>` (0; 0%)
-
-
-### POS Tag: **RG**
-There are 180,321 (6%) `RG` tokens. Out of 25 observed tags, the rank of `RG` is: 4 in number of tokens.
-
-The 5 most frequent `RG` base forms: `V`, `två`, `tre`, `fyra`, `sex`
-
-The 5 most frequent `RG` tokens: `2018`, `2019`, `1`, `2`, `000`
-
-
-#### POS Tag: **RG**, features
-
-##### RG and Case
-
-180,310 `RG` tokens (100% of all `RG` tokens) have a non-empty value of `Case`.
-
-`RG` tokens may have the following values of `Case`:
-
-- `Nom` (180,310; 100%)
-- `<missing>` (11; < 1%)
-
-##### RG and Compound
-
-11 `RG` tokens (< 1% of all `RG` tokens) have a non-empty value of `Compound`.
-
-`RG` tokens may have the following values of `Compound`:
-
-- `Yes` (11; < 1%)
-- `<missing>` (180,310; 100%)
-
-
-### POS Tag: **RO**
-There are 2,897 (< 1%) `RO` tokens. Out of 25 observed tags, the rank of `RO` is: 21 in number of tokens.
-
-The 5 most frequent `RO` base forms: `fyra`, `första gången`, `i första hand:7`, `i första hand:4`, `i första hand:3`
-
-The 5 most frequent `RO` tokens: `första`, `1`, `andra`, `tredje`, `12`
-
-
-#### POS Tag: **RO**, features
-
-##### RO and Case
-
-2,897 `RO` tokens (100% of all `RO` tokens) have a non-empty value of `Case`.
-
-`RO` tokens may have the following values of `Case`:
-
-- `Nom` (2,897; 100%)
-- `<missing>` (0; 0%)
-
-##### RO and Definite
-
-5 `RO` tokens (< 1% of all `RO` tokens) have a non-empty value of `Definite`.
-
-`RO` tokens may have the following values of `Definite`:
-
-- `Def,Ind` (5; < 1%)
-- `<missing>` (2,892; 100%)
-
-##### RO and Gender
-
-5 `RO` tokens (< 1% of all `RO` tokens) have a non-empty value of `Gender`.
-
-`RO` tokens may have the following values of `Gender`:
-
-- `Masc` (5; < 1%)
-- `<missing>` (2,892; 100%)
-
-##### RO and Number
-
-5 `RO` tokens (< 1% of all `RO` tokens) have a non-empty value of `Number`.
-
-`RO` tokens may have the following values of `Number`:
-
-- `Sing` (5; < 1%)
-- `<missing>` (2,892; 100%)
-
-
-### POS Tag: **SN**
-There are 53,560 (2%) `SN` tokens. Out of 25 observed tags, the rank of `SN` is: 14 in number of tokens.
-
-The 5 most frequent `SN` base forms: `att`, `om`, `eftersom`, `innan`, `medan`
-
-The 5 most frequent `SN` tokens: `att`, `om`, `Om`, `eftersom`, `Att`
-
-
-#### POS Tag: **SN**, features
-
-SN not present among features
-
-### POS Tag: **UO**
-There are 2,274 (< 1%) `UO` tokens. Out of 25 observed tags, the rank of `UO` is: 22 in number of tokens.
-
-The 5 most frequent `UO` base forms: `public service`, `au pair`, `à la:16`, `à la`, `walk over:29`
-
-The 5 most frequent `UO` tokens: `et`, `na`, `public`, `science`, `as`
-
-
-#### POS Tag: **UO**, features
+#### POS Tag: **Foreign Word**, features
 
 UO not present among features
+</details>
 
-### POS Tag: **VB**
-There are 380,285 (13%) `VB` tokens. Out of 25 observed tags, the rank of `VB` is: 2 in number of tokens.
+### POS Tag: **Infinitive Marker**
+<details>
+<summary>
+There are 45,393 (2%) <em>infinitive marker</em> (<code>IE</code>) tokens. Out of 25 observed tags, the rank of <em>infinitive marker</em> is: 16 in number of tokens.
 
-The 5 most frequent `VB` base forms: `vara`, `ha`, `skola`, `kunna`, `böra`
-
-The 5 most frequent `VB` tokens: `är`, `har`, `ska`, `kan`, `bör`
+</summary>
 
 
-#### POS Tag: **VB**, features
+The 5 most frequent <code>Infinitive Marker</code> base forms: <code>att</code>, <code>ha att göra:2</code>, <code>ha att göra:3</code>, <code>ha att göra:8</code>, <code>ha att göra:11</code>
 
-##### VB and Abbr
+The 5 most frequent <code>Infinitive Marker</code> tokens: <code>att</code>, <code>Att</code>, <code>geno</code>, <code>at</code>, <code>–</code>
 
-18 `VB` tokens (< 1% of all `VB` tokens) have a non-empty value of `Abbr`.
 
-`VB` tokens may have the following values of `Abbr`:
+#### POS Tag: **Infinitive Marker**, features
 
-- `Yes` (18; < 1%)
-- `<missing>` (380,267; 100%)
+IE not present among features
+</details>
 
-##### VB and Mood
+### POS Tag: **Interjection**
+<details>
+<summary>
+There are 840 (< 1%) <em>interjection</em> (<code>IN</code>) tokens. Out of 25 observed tags, the rank of <em>interjection</em> is: 24 in number of tokens.
 
-244,612 `VB` tokens (64% of all `VB` tokens) have a non-empty value of `Mood`.
+</summary>
 
-`VB` tokens may have the following values of `Mood`:
 
-- `Sub` (161; < 1%)
-- `Imp` (1,616; < 1%)
-- `Ind` (242,835; 64%)
-- `<missing>` (135,673; 36%)
+The 5 most frequent <code>Interjection</code> base forms: <code>nej</code>, <code>ja</code>, <code>jo</code>, <code>tack</code>, <code>nä</code>
 
-##### VB and Tense
+The 5 most frequent <code>Interjection</code> tokens: <code>nej</code>, <code>ja</code>, <code>Nej</code>, <code>Ja</code>, <code>Tack</code>
 
-242,920 `VB` tokens (64% of all `VB` tokens) have a non-empty value of `Tense`.
 
-`VB` tokens may have the following values of `Tense`:
+#### POS Tag: **Interjection**, features
 
-- `Past` (22,610; 6%)
-- `Pres` (220,310; 58%)
-- `<missing>` (137,365; 36%)
+IN not present among features
+</details>
 
-##### VB and VerbForm
+### POS Tag: **Interrogative/Relative Adverb**
+<details>
+<summary>
+There are 13,218 (< 1%) <em>interrogative/relative adverb</em> (<code>HA</code>) tokens. Out of 25 observed tags, the rank of <em>interrogative/relative adverb</em> is: 19 in number of tokens.
 
-380,261 `VB` tokens (100% of all `VB` tokens) have a non-empty value of `VerbForm`.
+</summary>
 
-`VB` tokens may have the following values of `VerbForm`:
 
-- `Sup` (20,211; 5%)
-- `Inf` (115,019; 30%)
-- `Fin` (245,031; 64%)
-- `<missing>` (24; < 1%)
+The 5 most frequent <code>Interrogative/Relative Adverb</code> base forms: <code>när</code>, <code>hur</code>, <code>där</code>, <code>som</code>, <code>då</code>
 
-##### VB and Voice
+The 5 most frequent <code>Interrogative/Relative Adverb</code> tokens: <code>när</code>, <code>hur</code>, <code>där</code>, <code>När</code>, <code>som</code>
 
-380,257 `VB` tokens (100% of all `VB` tokens) have a non-empty value of `Voice`.
 
-`VB` tokens may have the following values of `Voice`:
+#### POS Tag: **Interrogative/Relative Adverb**, features
 
-- `Pass` (64,399; 17%)
-- `Act` (315,858; 83%)
-- `<missing>` (28; < 1%)
+HA not present among features
+</details>
 
+### POS Tag: **Interrogative/Relative Determiner**
+<details>
+<summary>
+There are 1,407 (< 1%) <em>interrogative/relative determiner</em> (<code>HD</code>) tokens. Out of 25 observed tags, the rank of <em>interrogative/relative determiner</em> is: 23 in number of tokens.
+
+</summary>
+
+
+The 2 most frequent <code>Interrogative/Relative Determiner</code> base forms: <code>i vilken mån:7</code>, <code>i vilken mån:3</code>
+
+The 5 most frequent <code>Interrogative/Relative Determiner</code> tokens: <code>vilka</code>, <code>vilken</code>, <code>vilket</code>, <code>Vilka</code>, <code>Vilken</code>
+
+
+#### POS Tag: **Interrogative/Relative Determiner**, features
+
+##### Interrogative/Relative Determiner and Definiteness
+
+1,407 `Interrogative/Relative Determiner` tokens (100% of all `Interrogative/Relative Determiner` tokens) have a non-empty value of `Definiteness`.
+
+`Interrogative/Relative Determiner` tokens may have the following values of `Definiteness`:
+
+- <code>IND</code> (1,407; 100%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Interrogative/Relative Determiner and Gender
+
+1,407 `Interrogative/Relative Determiner` tokens (100% of all `Interrogative/Relative Determiner` tokens) have a non-empty value of `Gender`.
+
+`Interrogative/Relative Determiner` tokens may have the following values of `Gender`:
+
+- <code>UTR/NEU</code> (823; 58%)
+- <code>UTR</code> (420; 30%)
+- <code>NEU</code> (164; 12%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Interrogative/Relative Determiner and Number
+
+1,407 `Interrogative/Relative Determiner` tokens (100% of all `Interrogative/Relative Determiner` tokens) have a non-empty value of `Number`.
+
+`Interrogative/Relative Determiner` tokens may have the following values of `Number`:
+
+- <code>PLU</code> (823; 58%)
+- <code>SIN</code> (584; 42%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Interrogative/Relative Possessive**
+<details>
+<summary>
+There are 186 (< 1%) <em>interrogative/relative possessive</em> (<code>HS</code>) tokens. Out of 25 observed tags, the rank of <em>interrogative/relative possessive</em> is: 25 in number of tokens.
+
+</summary>
+
+
+The 2 most frequent <code>Interrogative/Relative Possessive</code> base forms: <code>vars</code>, <code>vem</code>
+
+The 3 most frequent <code>Interrogative/Relative Possessive</code> tokens: <code>vars</code>, <code>vilkas</code>, <code>vems</code>
+
+
+#### POS Tag: **Interrogative/Relative Possessive**, features
+
+##### Interrogative/Relative Possessive and Definiteness
+
+186 `Interrogative/Relative Possessive` tokens (100% of all `Interrogative/Relative Possessive` tokens) have a non-empty value of `Definiteness`.
+
+`Interrogative/Relative Possessive` tokens may have the following values of `Definiteness`:
+
+- <code>DEF</code> (186; 100%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Interrogative/Relative Pronoun**
+<details>
+<summary>
+There are 44,722 (2%) <em>interrogative/relative pronoun</em> (<code>HP</code>) tokens. Out of 25 observed tags, the rank of <em>interrogative/relative pronoun</em> is: 17 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Interrogative/Relative Pronoun</code> base forms: <code>vad</code>, <code>vad för</code>, <code>vem</code>, <code>vad än</code>, <code>vad som helst</code>
+
+The 5 most frequent <code>Interrogative/Relative Pronoun</code> tokens: <code>som</code>, <code>vad</code>, <code>vilket</code>, <code>Vad</code>, <code>Som</code>
+
+
+#### POS Tag: **Interrogative/Relative Pronoun**, features
+
+##### Interrogative/Relative Pronoun and Definiteness
+
+4,463 `Interrogative/Relative Pronoun` tokens (10% of all `Interrogative/Relative Pronoun` tokens) have a non-empty value of `Definiteness`.
+
+`Interrogative/Relative Pronoun` tokens may have the following values of `Definiteness`:
+
+- <code>IND</code> (4,463; 10%)
+- <code>&lt;missing&gt;</code> (40,259; 90%)
+
+##### Interrogative/Relative Pronoun and Gender
+
+4,463 `Interrogative/Relative Pronoun` tokens (10% of all `Interrogative/Relative Pronoun` tokens) have a non-empty value of `Gender`.
+
+`Interrogative/Relative Pronoun` tokens may have the following values of `Gender`:
+
+- <code>NEU</code> (3,996; 9%)
+- <code>UTR</code> (262; < 1%)
+- <code>UTR/NEU</code> (205; < 1%)
+- <code>&lt;missing&gt;</code> (40,259; 90%)
+
+##### Interrogative/Relative Pronoun and Number
+
+4,463 `Interrogative/Relative Pronoun` tokens (10% of all `Interrogative/Relative Pronoun` tokens) have a non-empty value of `Number`.
+
+`Interrogative/Relative Pronoun` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (4,258; 10%)
+- <code>PLU</code> (205; < 1%)
+- <code>&lt;missing&gt;</code> (40,259; 90%)
+
+</details>
+
+### POS Tag: **Major Delimiter**
+<details>
+<summary>
+There are 131,026 (5%) <em>major delimiter</em> (<code>MAD</code>) tokens. Out of 25 observed tags, the rank of <em>major delimiter</em> is: 6 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Major Delimiter</code> tokens: <code>.</code>, <code>:</code>, <code>!</code>, <code>?</code>, <code>–</code>
+
+
+#### POS Tag: **Major Delimiter**, features
+
+MAD not present among features
+</details>
+
+### POS Tag: **Minor Delimiter**
+<details>
+<summary>
+There are 101,646 (4%) <em>minor delimiter</em> (<code>MID</code>) tokens. Out of 25 observed tags, the rank of <em>minor delimiter</em> is: 10 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Minor Delimiter</code> tokens: <code>,</code>, <code>/</code>, <code>:</code>, <code>-</code>, <code>–</code>
+
+
+#### POS Tag: **Minor Delimiter**, features
+
+MID not present among features
+</details>
+
+### POS Tag: **Noun**
+<details>
+<summary>
+There are 736,544 (25%) <em>noun</em> (<code>NN</code>) tokens. Out of 25 observed tags, the rank of <em>noun</em> is: 1 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Noun</code> base forms: <code>regering</code>, <code>yrkande</code>, <code>riksdag</code>, <code>motion</code>, <code>förslag</code>
+
+The 5 most frequent <code>Noun</code> tokens: <code>regeringen</code>, <code>yrkande</code>, <code>Riksdagen</code>, <code>M</code>, <code>förslag</code>
+
+
+#### POS Tag: **Noun**, features
+
+##### Noun and Abbreviation
+
+37,351 `Noun` tokens (5% of all `Noun` tokens) have a non-empty value of `Abbreviation`.
+
+`Noun` tokens may have the following values of `Abbreviation`:
+
+- <code>AN</code> (37,351; 5%)
+- <code>&lt;missing&gt;</code> (699,193; 95%)
+
+##### Noun and Case
+
+698,788 `Noun` tokens (95% of all `Noun` tokens) have a non-empty value of `Case`.
+
+`Noun` tokens may have the following values of `Case`:
+
+- <code>NOM</code> (660,459; 90%)
+- <code>GEN</code> (33,484; 5%)
+- <code>SMS</code> (4,845; < 1%)
+- <code>&lt;missing&gt;</code> (37,756; 5%)
+
+##### Noun and Definiteness
+
+693,943 `Noun` tokens (94% of all `Noun` tokens) have a non-empty value of `Definiteness`.
+
+`Noun` tokens may have the following values of `Definiteness`:
+
+- <code>IND</code> (446,922; 61%)
+- <code>DEF</code> (247,021; 34%)
+- <code>&lt;missing&gt;</code> (42,601; 6%)
+
+##### Noun and Gender
+
+698,987 `Noun` tokens (95% of all `Noun` tokens) have a non-empty value of `Gender`.
+
+`Noun` tokens may have the following values of `Gender`:
+
+- <code>UTR</code> (464,514; 63%)
+- <code>NEU</code> (234,473; 32%)
+- <code>&lt;missing&gt;</code> (37,557; 5%)
+
+##### Noun and Number
+
+693,943 `Noun` tokens (94% of all `Noun` tokens) have a non-empty value of `Number`.
+
+`Noun` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (502,837; 68%)
+- <code>PLU</code> (191,106; 26%)
+- <code>&lt;missing&gt;</code> (42,601; 6%)
+
+</details>
+
+### POS Tag: **Ordinal Number**
+<details>
+<summary>
+There are 2,897 (< 1%) <em>ordinal number</em> (<code>RO</code>) tokens. Out of 25 observed tags, the rank of <em>ordinal number</em> is: 21 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Ordinal Number</code> base forms: <code>fyra</code>, <code>första gången</code>, <code>i första hand:7</code>, <code>i första hand:4</code>, <code>i första hand:3</code>
+
+The 5 most frequent <code>Ordinal Number</code> tokens: <code>första</code>, <code>1</code>, <code>andra</code>, <code>tredje</code>, <code>12</code>
+
+
+#### POS Tag: **Ordinal Number**, features
+
+##### Ordinal Number and Case
+
+2,897 `Ordinal Number` tokens (100% of all `Ordinal Number` tokens) have a non-empty value of `Case`.
+
+`Ordinal Number` tokens may have the following values of `Case`:
+
+- <code>NOM</code> (2,897; 100%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Ordinal Number and Definiteness
+
+5 `Ordinal Number` tokens (< 1% of all `Ordinal Number` tokens) have a non-empty value of `Definiteness`.
+
+`Ordinal Number` tokens may have the following values of `Definiteness`:
+
+- <code>IND/DEF</code> (5; < 1%)
+- <code>&lt;missing&gt;</code> (2,892; 100%)
+
+##### Ordinal Number and Gender
+
+5 `Ordinal Number` tokens (< 1% of all `Ordinal Number` tokens) have a non-empty value of `Gender`.
+
+`Ordinal Number` tokens may have the following values of `Gender`:
+
+- <code>MAS</code> (5; < 1%)
+- <code>&lt;missing&gt;</code> (2,892; 100%)
+
+##### Ordinal Number and Number
+
+5 `Ordinal Number` tokens (< 1% of all `Ordinal Number` tokens) have a non-empty value of `Number`.
+
+`Ordinal Number` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (5; < 1%)
+- <code>&lt;missing&gt;</code> (2,892; 100%)
+
+</details>
+
+### POS Tag: **Pairwise Delimiter**
+<details>
+<summary>
+There are 93,999 (3%) <em>pairwise delimiter</em> (<code>PAD</code>) tokens. Out of 25 observed tags, the rank of <em>pairwise delimiter</em> is: 13 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Pairwise Delimiter</code> tokens: <code>)</code>, <code>(</code>, <code>"</code>, <code>]</code>, <code>[</code>
+
+
+#### POS Tag: **Pairwise Delimiter**, features
+
+PAD not present among features
+</details>
+
+### POS Tag: **Participle**
+<details>
+<summary>
+There are 47,212 (2%) <em>participle</em> (<code>PC</code>) tokens. Out of 25 observed tags, the rank of <em>participle</em> is: 15 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Participle</code> base forms: <code>särskilja</code>, <code>särskild</code>, <code>följa</code>, <code>följande</code>, <code>öka</code>
+
+The 5 most frequent <code>Participle</code> tokens: <code>följande</code>, <code>nyanlända</code>, <code>särskilda</code>, <code>ökad</code>, <code>utsatta</code>
+
+
+#### POS Tag: **Participle**, features
+
+##### Participle and Case
+
+47,212 `Participle` tokens (100% of all `Participle` tokens) have a non-empty value of `Case`.
+
+`Participle` tokens may have the following values of `Case`:
+
+- <code>NOM</code> (47,182; 100%)
+- <code>GEN</code> (30; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Participle and Definiteness
+
+47,212 `Participle` tokens (100% of all `Participle` tokens) have a non-empty value of `Definiteness`.
+
+`Participle` tokens may have the following values of `Definiteness`:
+
+- <code>IND/DEF</code> (29,074; 62%)
+- <code>IND</code> (15,356; 33%)
+- <code>DEF</code> (2,782; 6%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Participle and Gender
+
+47,212 `Participle` tokens (100% of all `Participle` tokens) have a non-empty value of `Gender`.
+
+`Participle` tokens may have the following values of `Gender`:
+
+- <code>UTR/NEU</code> (31,797; 67%)
+- <code>UTR</code> (9,691; 21%)
+- <code>NEU</code> (5,665; 12%)
+- <code>MAS</code> (59; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Participle and Number
+
+47,212 `Participle` tokens (100% of all `Participle` tokens) have a non-empty value of `Number`.
+
+`Participle` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (18,138; 38%)
+- <code>SIN/PLU</code> (15,494; 33%)
+- <code>PLU</code> (13,580; 29%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Participle and Particle Form
+
+47,212 `Participle` tokens (100% of all `Participle` tokens) have a non-empty value of `Particle Form`.
+
+`Participle` tokens may have the following values of `Particle Form`:
+
+- <code>PRF</code> (31,718; 67%)
+- <code>PRS</code> (15,494; 33%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Particle**
+<details>
+<summary>
+There are 15,486 (< 1%) <em>particle</em> (<code>PL</code>) tokens. Out of 25 observed tags, the rank of <em>particle</em> is: 18 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Particle</code> base forms: <code>fram</code>, <code>upp</code>, <code>ut</code>, <code>över</code>, <code>in</code>
+
+The 5 most frequent <code>Particle</code> tokens: <code>fram</code>, <code>upp</code>, <code>ut</code>, <code>över</code>, <code>in</code>
+
+
+#### POS Tag: **Particle**, features
+
+PL not present among features
+</details>
+
+### POS Tag: **Possessive**
+<details>
+<summary>
+There are 9,633 (< 1%) <em>possessive</em> (<code>PS</code>) tokens. Out of 25 observed tags, the rank of <em>possessive</em> is: 20 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Possessive</code> base forms: <code>sig</code>, <code>vi</code>, <code>jag</code>, <code>de</code>, <code>den</code>
+
+The 5 most frequent <code>Possessive</code> tokens: <code>sin</code>, <code>sitt</code>, <code>sina</code>, <code>vår</code>, <code>vårt</code>
+
+
+#### POS Tag: **Possessive**, features
+
+##### Possessive and Definiteness
+
+9,633 `Possessive` tokens (100% of all `Possessive` tokens) have a non-empty value of `Definiteness`.
+
+`Possessive` tokens may have the following values of `Definiteness`:
+
+- <code>DEF</code> (9,633; 100%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Possessive and Gender
+
+9,633 `Possessive` tokens (100% of all `Possessive` tokens) have a non-empty value of `Gender`.
+
+`Possessive` tokens may have the following values of `Gender`:
+
+- <code>UTR</code> (3,894; 40%)
+- <code>UTR/NEU</code> (3,394; 35%)
+- <code>NEU</code> (2,345; 24%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Possessive and Number
+
+9,633 `Possessive` tokens (100% of all `Possessive` tokens) have a non-empty value of `Number`.
+
+`Possessive` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (6,239; 65%)
+- <code>PLU</code> (1,976; 21%)
+- <code>SIN/PLU</code> (1,418; 15%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Preposition**
+<details>
+<summary>
+There are 358,848 (12%) <em>preposition</em> (<code>PP</code>) tokens. Out of 25 observed tags, the rank of <em>preposition</em> is: 3 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Preposition</code> base forms: <code>i</code>, <code>för</code>, <code>av</code>, <code>till</code>, <code>om</code>
+
+The 5 most frequent <code>Preposition</code> tokens: <code>i</code>, <code>för</code>, <code>av</code>, <code>till</code>, <code>om</code>
+
+
+#### POS Tag: **Preposition**, features
+
+##### Preposition and Abbreviation
+
+10 `Preposition` tokens (< 1% of all `Preposition` tokens) have a non-empty value of `Abbreviation`.
+
+`Preposition` tokens may have the following values of `Abbreviation`:
+
+- <code>AN</code> (10; < 1%)
+- <code>&lt;missing&gt;</code> (358,838; 100%)
+
+</details>
+
+### POS Tag: **Pronoun**
+<details>
+<summary>
+There are 98,041 (3%) <em>pronoun</em> (<code>PN</code>) tokens. Out of 25 observed tags, the rank of <em>pronoun</em> is: 12 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Pronoun</code> base forms: <code>den</code>, <code>vi</code>, <code>sig</code>, <code>denna</code>, <code>jag</code>
+
+The 5 most frequent <code>Pronoun</code> tokens: <code>det</code>, <code>sig</code>, <code>detta</code>, <code>Det</code>, <code>vi</code>
+
+
+#### POS Tag: **Pronoun**, features
+
+##### Pronoun and Definiteness
+
+98,041 `Pronoun` tokens (100% of all `Pronoun` tokens) have a non-empty value of `Definiteness`.
+
+`Pronoun` tokens may have the following values of `Definiteness`:
+
+- <code>DEF</code> (86,868; 89%)
+- <code>IND</code> (11,173; 11%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Pronoun and Gender
+
+98,041 `Pronoun` tokens (100% of all `Pronoun` tokens) have a non-empty value of `Gender`.
+
+`Pronoun` tokens may have the following values of `Gender`:
+
+- <code>NEU</code> (47,761; 49%)
+- <code>UTR</code> (30,928; 32%)
+- <code>UTR/NEU</code> (19,321; 20%)
+- <code>MAS</code> (31; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Pronoun and Number
+
+98,041 `Pronoun` tokens (100% of all `Pronoun` tokens) have a non-empty value of `Number`.
+
+`Pronoun` tokens may have the following values of `Number`:
+
+- <code>SIN</code> (65,910; 67%)
+- <code>PLU</code> (21,082; 22%)
+- <code>SIN/PLU</code> (11,049; 11%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+##### Pronoun and Pronoun Form
+
+98,041 `Pronoun` tokens (100% of all `Pronoun` tokens) have a non-empty value of `Pronoun Form`.
+
+`Pronoun` tokens may have the following values of `Pronoun Form`:
+
+- <code>SUB/OBJ</code> (56,045; 57%)
+- <code>SUB</code> (27,692; 28%)
+- <code>OBJ</code> (14,304; 15%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Proper Noun**
+<details>
+<summary>
+There are 106,015 (4%) <em>proper noun</em> (<code>PM</code>) tokens. Out of 25 observed tags, the rank of <em>proper noun</em> is: 9 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Proper Noun</code> base forms: <code>SD</code>, <code>Sverige</code>, <code>Johan</code>, <code>Jan</code>, <code>Johansson</code>
+
+The 5 most frequent <code>Proper Noun</code> tokens: <code>SD</code>, <code>KD</code>, <code>Sverige</code>, <code>MP</code>, <code>Johan</code>
+
+
+#### POS Tag: **Proper Noun**, features
+
+##### Proper Noun and Case
+
+106,015 `Proper Noun` tokens (100% of all `Proper Noun` tokens) have a non-empty value of `Case`.
+
+`Proper Noun` tokens may have the following values of `Case`:
+
+- <code>NOM</code> (102,747; 97%)
+- <code>GEN</code> (3,258; 3%)
+- <code>SMS</code> (10; < 1%)
+- <code>&lt;missing&gt;</code> (0; 0%)
+
+</details>
+
+### POS Tag: **Subjunction**
+<details>
+<summary>
+There are 53,560 (2%) <em>subjunction</em> (<code>SN</code>) tokens. Out of 25 observed tags, the rank of <em>subjunction</em> is: 14 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Subjunction</code> base forms: <code>att</code>, <code>om</code>, <code>eftersom</code>, <code>innan</code>, <code>medan</code>
+
+The 5 most frequent <code>Subjunction</code> tokens: <code>att</code>, <code>om</code>, <code>Om</code>, <code>eftersom</code>, <code>Att</code>
+
+
+#### POS Tag: **Subjunction**, features
+
+SN not present among features
+</details>
+
+### POS Tag: **Verb**
+<details>
+<summary>
+There are 380,285 (13%) <em>verb</em> (<code>VB</code>) tokens. Out of 25 observed tags, the rank of <em>verb</em> is: 2 in number of tokens.
+
+</summary>
+
+
+The 5 most frequent <code>Verb</code> base forms: <code>vara</code>, <code>ha</code>, <code>skola</code>, <code>kunna</code>, <code>böra</code>
+
+The 5 most frequent <code>Verb</code> tokens: <code>är</code>, <code>har</code>, <code>ska</code>, <code>kan</code>, <code>bör</code>
+
+
+#### POS Tag: **Verb**, features
+
+##### Verb and Abbreviation
+
+28 `Verb` tokens (< 1% of all `Verb` tokens) have a non-empty value of `Abbreviation`.
+
+`Verb` tokens may have the following values of `Abbreviation`:
+
+- <code>AN</code> (28; < 1%)
+- <code>&lt;missing&gt;</code> (380,257; 100%)
+
+##### Verb and Mood
+
+162 `Verb` tokens (< 1% of all `Verb` tokens) have a non-empty value of `Mood`.
+
+`Verb` tokens may have the following values of `Mood`:
+
+- <code>KON</code> (162; < 1%)
+- <code>&lt;missing&gt;</code> (380,123; 100%)
+
+##### Verb and Tense
+
+380,257 `Verb` tokens (100% of all `Verb` tokens) have a non-empty value of `Tense`.
+
+`Verb` tokens may have the following values of `Tense`:
+
+- <code>PRS</code> (220,371; 58%)
+- <code>INF</code> (115,243; 30%)
+- <code>PRT</code> (22,662; 6%)
+- <code>SUP</code> (20,216; 5%)
+- <code>IMP</code> (1,765; < 1%)
+- <code>&lt;missing&gt;</code> (28; < 1%)
+
+##### Verb and Voice
+
+380,257 `Verb` tokens (100% of all `Verb` tokens) have a non-empty value of `Voice`.
+
+`Verb` tokens may have the following values of `Voice`:
+
+- <code>AKT</code> (315,859; 83%)
+- <code>SFO</code> (64,398; 17%)
+- <code>&lt;missing&gt;</code> (28; < 1%)
+
+</details>
 
 ## Features
 
