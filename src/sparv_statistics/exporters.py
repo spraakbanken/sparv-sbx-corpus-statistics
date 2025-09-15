@@ -10,7 +10,7 @@ from collections import defaultdict
 from collections.abc import Iterable
 from pathlib import Path
 from tempfile import NamedTemporaryFile, _TemporaryFileWrapper
-from typing import Any, TextIO, TypedDict, TypeVar
+from typing import Any, TextIO
 
 import sparv.api as sparv_api
 from running_stats.running_stats import RunningMeanVar
@@ -42,14 +42,14 @@ NUM_TOPS: int = 20
 TOP_NUM_LABEL: str = f"top_{NUM_TOPS}"
 
 
-class Stats(TypedDict):
+class Stats(t.TypedDict):
     """Stats for attribute_name."""
 
     stats: RunningMeanVar
     toplist: list[str]
 
 
-T = TypeVar("T")
+T = t.TypeVar("T")
 
 
 _SUC_FEAT_MAP: dict[str, str] = {
@@ -239,14 +239,14 @@ def stat_highlights(
         if export_name == "lemma":
             lemma_name = name
 
-    attributes = defaultdict(list)
+    attributes: dict[str, list[AnnotationAllSourceFiles]] = defaultdict(list)
     pos_attribute: AnnotationAllSourceFiles | None = None
     lemma_attribute: AnnotationAllSourceFiles | None = None
     ufeats_attribute: AnnotationAllSourceFiles | None = None
     suc_feats_attribute: AnnotationAllSourceFiles | None = None
     for a in annotation_list:
         if ":" not in a.name:
-            attributes["spans"].append(a)
+            attributes["spans"].append(t.cast(AnnotationAllSourceFiles, a))
             continue
         if a.name.startswith(f"{token.name}:stanza.pos"):
             if pos_attribute is not None:
@@ -283,7 +283,7 @@ def stat_highlights(
                 )
             lemma_attribute = t.cast(AnnotationAllSourceFiles, a)
         annotation, _attribute = a.name.split(":")
-        attributes[annotation].append(a)
+        attributes[annotation].append(t.cast(AnnotationAllSourceFiles, a))
 
     logger.debug(
         "pos_attribute = %s",
@@ -625,20 +625,20 @@ def running_mean_var_to_dict(m: RunningMeanVar) -> dict[str, int | float]:
 
 
 def _combine_all_stats(
-    stats: dict[str, dict[str, Stats]],
+    stats: dict[str, dict[str, RunningMeanVar]],
     stats2: dict[str, dict[str, Stats]],
 ) -> dict[str, dict[str, Stats]]:
-    all_stats: dict[str, dict[str, Stats]] = defaultdict(lambda: defaultdict(dict))
+    all_stats: dict[str, dict[str, Stats]] = defaultdict(lambda: defaultdict(dict))  # type: ignore [arg-type]
     for astats in stats.values():
         for attr, stats_ in astats.items():
             attr_, attr_feat = attr.split(" ", maxsplit=1)
             all_stats[attr_][attr_feat]["stats"] = stats_
         # all_stats.update(astats)
     for attr2, stats2_ in stats2.items():
-        for attr, stats_ in stats2_.items():
+        for attr, stats_2 in stats2_.items():
             all_stats[attr2][attr] = {
-                "stats": stats_["stats"],
-                "toplist": stats_["toplist"],
+                "stats": stats_2["stats"],
+                "toplist": stats_2["toplist"],
             }
     return all_stats
 
@@ -656,7 +656,7 @@ def write_all_stats(
 ) -> None:
     """Write all stats."""
     out_path = Path(out)
-    with out_path.open("w") as fp:
+    with out_path.open("w", encoding="utf-8") as fp:
         json.dump(all_stats, fp, cls=StatsJsonEncoder)
 
 
@@ -859,7 +859,7 @@ def write_stat_highlights(
     all_stats: dict[str, dict[str, Stats]],
     pos_token_freqs: dict[str, dict[str, int]],
     pos_lemma_freqs_flat: dict[str, dict[str, int]],
-    pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]],
+    pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]],  # noqa: ARG001
     pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
     stats2: dict[str, dict[str, Stats]],
@@ -873,7 +873,7 @@ def write_stat_highlights(
     logger.debug("locale.setlocale=%s", loc)
     with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
         json.dump(freqs, fp)
-    with out_path.open("w") as fp:
+    with out_path.open("w", encoding="utf-8") as fp:
         # fp.write(f"# Statistics of {corpus_id}\n")
         fp.write(_T[lang]["header"].format(corpus_id=corpus_id))
         fp.write("\n")
@@ -1032,7 +1032,7 @@ def _write_pos_tags(
     fp.write("\n")
     _write_pos_distribution(fp, pos_stats=pos_stats, lang=lang)
     fp.write("\n")
-    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):
+    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):  # type: ignore [misc]
         fp.write("\n")
         _write_pos_tag(
             fp,
@@ -1063,7 +1063,7 @@ def _write_features(
 ) -> None:
     # fp.write("## Features\n")
     fp.write(_T[lang]["features_header"])
-    features = defaultdict(lambda: defaultdict(int))
+    features: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     total = 0
     for feats_raw, freq in token_freqs["segment.token:stanza.ufeats"].items():
         total += freq
@@ -1077,7 +1077,7 @@ def _write_features(
 
     logger.debug("features=%s", features)
     features_sorted = sorted(features.keys())
-    pos_freqs = defaultdict(int)
+    pos_freqs: dict[str, int] = defaultdict(int)
     for values_pos_freq in ufeat_pos_freqs_flat.values():
         for pos_freq in values_pos_freq.values():
             for pos, freq in pos_freq.items():
@@ -1090,7 +1090,7 @@ def _write_features(
         logger.debug("writing ### Features: %s", feat)
         # fp.write(f"### Features: **{feat}**\n")
         fp.write(_T[lang]["features_subheader"].format(feat=feat))
-        feat_values = set()
+        feat_values: set[str] = set()
         for values in features[feat]:
             feat_values.update(f"`{value}`" for value in values.split(","))
 
@@ -1108,14 +1108,14 @@ def _write_features(
         feat_token_percent = round(feat_token / total * 100)
         multi_feat_token = sum(v for k, v in features[feat].items() if "," in k)
         multi_feat_token_percent = round(multi_feat_token / feat_token * 100)
-        feat_pos_freqs = defaultdict(int)
+        feat_pos_freqs: dict[str, int] = defaultdict(int)
 
-        pos_value_freqs = defaultdict(lambda: defaultdict(int))
+        pos_value_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
         for values, value_pos_freq in ufeat_pos_freqs_flat[feat].items():
-            for pos, pos_freq in value_pos_freq.items():
-                feat_pos_freqs[pos] += pos_freq
+            for pos, pos_freq_ in value_pos_freq.items():
+                feat_pos_freqs[pos] += pos_freq_
                 for value in values.split(","):
-                    pos_value_freqs[pos][value] += pos_freq
+                    pos_value_freqs[pos][value] += pos_freq_
         logger.debug("feat_pos_freqs=%s", feat_pos_freqs)
         logger.debug("pos_value_freqs=%s", pos_value_freqs)
         tmp1 = []
@@ -1166,7 +1166,7 @@ def _write_suc_features(
     fp.write(_T[lang]["features_overview"])
 
     fp.write("\n")
-    features = defaultdict(lambda: defaultdict(int))
+    features: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     total = 0
     for suc_feats in pos_suc_feats_freqs_flat.values():
@@ -1193,7 +1193,7 @@ def _write_suc_features(
 
         fp.write("<details>\n")
         fp.write("<summary>\n")
-        feat_values = set()
+        feat_values: set[str] = set()
         for values in features[feat]:
             feat_values.update(f"<code>{value}</code>" for value in values.split("/"))
 
@@ -1219,9 +1219,9 @@ def _write_suc_features(
         feat_token_percent = round(feat_token / total * 100)
         multi_feat_token = sum(v for k, v in features[feat].items() if "/" in k)
         multi_feat_token_percent = round(multi_feat_token / feat_token * 100)
-        feat_pos_freqs = defaultdict(int)
+        feat_pos_freqs: dict[str, int] = defaultdict(int)
 
-        pos_value_freqs = defaultdict(lambda: defaultdict(int))
+        pos_value_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
         for pos, suc_feat_values in pos_suc_feats_freqs_flat.items():
             for values, freq in suc_feat_values.get(feat, {}).items():
                 feat_pos_freqs[pos] += freq
@@ -1246,7 +1246,7 @@ def _write_suc_features(
         _write_table_html(
             fp,
             headers=[_t(lang, "Part of Speech"), _t(lang, "Count"), _t(lang, "Percentage")],
-            rows=((f"<code>{pos}</code>", count, perc) for pos, count, perc in pos_tags),
+            rows=({"label": f"<code>{pos}</code>", "columns": [count, perc]} for pos, count, perc in pos_tags),
             formatters=[lambda x: f.fmt_number_signific(x, 0), lambda x: f"{f.fmt_number_decimals(x, 0)}%"],
         )
         if multi_feat_token > 0:
@@ -1264,10 +1264,15 @@ def _write_suc_features(
         fp.write("\n\n")
 
 
+class TableHtmlRow(t.TypedDict):
+    label: str
+    columns: list[float | int]
+
+
 def _write_table_html(
     fp: TextIO,
     headers: list[str],
-    rows: Iterable[tuple[str, int | float, ...]],
+    rows: Iterable[TableHtmlRow],
     formatters: list[t.Callable[[int | float], str]],
 ) -> None:
     fp.write("<table>\n")
@@ -1281,12 +1286,12 @@ def _write_table_html(
     fp.write("</thead>\n")
     fp.write("<tbody>\n")
     n_rows = 0
-    totals = []
+    totals: list[float | int] = []
     for row in rows:
         n_rows += 1
         fp.write("<tr>\n")
-        fp.write(f"<td>{row[0]}</td>\n")
-        for i, (column, formatter) in enumerate(zip(row[1:], formatters, strict=True)):
+        fp.write(f"<td>{row['label']}</td>\n")
+        for i, (column, formatter) in enumerate(zip(row["columns"], formatters, strict=True)):
             while i >= len(totals):
                 totals.append(0.0)
             totals[i] += column
@@ -1319,7 +1324,7 @@ class PosStats:
     def translated_tags(self, lang: str) -> list[str]:
         return sorted(_MSD_MAP[lang][tag] for tag in self.freqs)
 
-    def tags_and_translation(self, lang: str) -> list[str]:
+    def tags_and_translation(self, lang: str) -> list[tuple[str, str]]:
         return sorted(((tag, _MSD_MAP[lang][tag]) for tag in self.freqs), key=operator.itemgetter(1))
 
     def rank_of_tokens(self, tag: str) -> int:
@@ -1399,11 +1404,11 @@ def _write_pos_tag(
         if len(top_lemmas) == 0:
             fp.write(_T[lang]["POS_no_lemmas"].format(pos_tag=pos_tag_translated))
         else:
-            top_lemmas = [f"<code>{w}</code>" for w, _f in top_lemmas]
-            top_lemmas_str = ", ".join(top_lemmas)
+            top_lemmas_ = [f"<code>{w}</code>" for w, _f in top_lemmas]
+            top_lemmas_str = ", ".join(top_lemmas_)
             fp.write(
                 _T[lang]["POS_top_lemmas"].format(
-                    number=len(top_lemmas), pos_tag=pos_tag_translated, top_lemmas=top_lemmas_str
+                    number=len(top_lemmas_), pos_tag=pos_tag_translated, top_lemmas=top_lemmas_str
                 )
             )
 
@@ -1414,12 +1419,12 @@ def _write_pos_tag(
             key=operator.itemgetter(1, 0),
             reverse=True,
         )[:5]
-        top_tokens = [f"<code>{w}</code>" for w, _f in top_tokens]
-        top_tokens_str = ", ".join(top_tokens)
+        top_tokens_ = [f"<code>{w}</code>" for w, _f in top_tokens]
+        top_tokens_str = ", ".join(top_tokens_)
         # fp.write(f"The 5 most frequent `{pos_tag}` tokens: {top_tokens}\n")
         fp.write(
             _T[lang]["POS_top_tokens"].format(
-                number=len(top_tokens), pos_tag=pos_tag_translated, top_tokens=top_tokens_str
+                number=len(top_tokens_), pos_tag=pos_tag_translated, top_tokens=top_tokens_str
             )
         )
         fp.write("\n")
@@ -1556,7 +1561,7 @@ def _write_msd(fp: TextIO, token_freqs: dict[str, dict[str, int]], lang: str) ->
         fp.write(_T[lang]["morphology_no_msd"])
         return
 
-    toplevel_freqs = defaultdict(int)
+    toplevel_freqs: dict[str, int] = defaultdict(int)
     num_toplevels = 0
     for msd, value in msd_freqs.items():
         toplevel_msd = msd.split(".", maxsplit=1)[0]
