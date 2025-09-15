@@ -3,9 +3,9 @@
 appdirs==1.4.4
     # via
     #   snakemake
-    #   sparv-pipeline
+    #   sparv
 argcomplete==3.6.2
-    # via sparv-pipeline
+    # via sparv
 attrs==25.3.0
     # via
     #   jsonschema
@@ -34,7 +34,7 @@ datrie==0.8.2
 docutils==0.21.2
     # via snakemake
 docx2python==1.27.1
-    # via sparv-pipeline
+    # via sparv
 dpath==2.2.0
     # via yte
 emoji==2.14.1
@@ -67,7 +67,7 @@ jsonschema==4.23.0
     # via
     #   nbformat
     #   snakemake
-    #   sparv-pipeline
+    #   sparv
 jsonschema-specifications==2025.4.1
     # via jsonschema
 jupyter-core==5.8.1
@@ -96,7 +96,7 @@ networkx==3.5 ; python_full_version >= '3.11'
     #   stanza
     #   torch
 nltk==3.9.1
-    # via sparv-pipeline
+    # via sparv
 numpy==2.2.6 ; python_full_version < '3.11'
     # via
     #   sparv-statistics
@@ -146,7 +146,7 @@ packaging==25.0
     # via
     #   pytest
     #   snakemake
-    #   sparv-pipeline
+    #   sparv
 pathspec==0.12.1
     # via mypy
 plac==1.4.5
@@ -161,20 +161,20 @@ prompt-toolkit==3.0.51
     # via questionary
 protobuf==3.20.3
     # via
-    #   sparv-pipeline
+    #   sparv
     #   stanza
 psutil==7.0.0
     # via snakemake
 pulp==3.2.1
     # via snakemake
 pycountry==24.6.1
-    # via sparv-pipeline
+    # via sparv
 pygments==2.19.1
     # via
     #   pytest
     #   rich
-pypdfium2==4.30.1
-    # via sparv-pipeline
+pypdfium2==4.30.0
+    # via sparv
 pyreadline3==3.5.4 ; sys_platform == 'win32'
     # via humanfriendly
 pytest==8.4.0
@@ -183,18 +183,18 @@ pytest==8.4.0
     #   syrupy
 pytest-cov==6.2.1
 python-dateutil==2.9.0
-    # via sparv-pipeline
+    # via sparv
 python-json-logger==3.3.0
-    # via sparv-pipeline
+    # via sparv
 pywin32==310 ; platform_python_implementation != 'PyPy' and sys_platform == 'win32'
     # via jupyter-core
 pyyaml==6.0.2
     # via
     #   snakemake
-    #   sparv-pipeline
+    #   sparv
     #   yte
 questionary==1.10.0
-    # via sparv-pipeline
+    # via sparv
 referencing==0.36.2
     # via
     #   jsonschema
@@ -204,16 +204,16 @@ regex==2024.11.6
 requests==2.32.4
     # via
     #   snakemake
-    #   sparv-pipeline
+    #   sparv
     #   stanza
 reretry==0.11.8
     # via snakemake
 rich==14.0.0
     # via
     #   rich-argparse
-    #   sparv-pipeline
+    #   sparv
 rich-argparse==1.7.0
-    # via sparv-pipeline
+    # via sparv
 rpds-py==0.25.1
     # via
     #   jsonschema
@@ -232,11 +232,11 @@ smart-open==7.1.0
 smmap==5.0.2
     # via gitdb
 snakemake==7.32.3
-    # via sparv-pipeline
-sparv-pipeline @ git+https://github.com/spraakbanken/sparv-pipeline@ec2a5d7e2a09c5d1c73de04a69b0b64388591703
+    # via sparv
+sparv==5.3.1
     # via sparv-statistics
 stanza==1.10.1
-    # via sparv-pipeline
+    # via sparv
 stopit==1.1.2
     # via snakemake
 strenum==0.4.15
@@ -258,7 +258,7 @@ toposort==1.10
     # via snakemake
 torch==2.7.1
     # via
-    #   sparv-pipeline
+    #   sparv
     #   stanza
 tqdm==4.67.1
     # via
@@ -279,7 +279,7 @@ typing-extensions==4.14.0
     #   torch
     #   typing-inspect
 typing-inspect==0.9.0
-    # via sparv-pipeline
+    # via sparv
 urllib3==2.4.0
     # via requests
 wcwidth==0.2.13
