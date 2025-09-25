@@ -307,11 +307,14 @@ class MsdWPos(Msd):
     def pos_rg(
         cls,
         pos: SucPos,
-        case: SucCase | None,
+        case: SucCase,
+        gender: SucGender | None = None,
+        number: SucNumber | None = None,
+        definiteness: SucDefiniteness | None = None,
     ) -> "MsdWPos":
         """Create MSD with POS='RG'."""
         _check_given_pos(pos, SucPos.RG)
-        return cls(pos=pos, case=case)
+        return cls(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
 
     @classmethod
     def pos_ro(
@@ -440,8 +443,16 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         definiteness = SucDefiniteness(msds[2].replace("+", "/"))
         return MsdWPos.pos_ps(pos=pos, gender=gender, number=number, definiteness=definiteness)
     if pos == SucPos.RG:
-        case = SucCase(msds[0])
-        return MsdWPos.pos_rg(pos=pos, case=case)
+        if len(msds) == 1:
+            case = SucCase(msds[0])
+            return MsdWPos.pos_rg(pos=pos, case=case)
+        if len(msds) == 4:  # noqa: PLR2004
+            gender = SucGender(msds[0].replace("+", "/"))
+            number = SucNumber(msds[1].replace("+", "/"))
+            definiteness = SucDefiniteness(msds[2].replace("+", "/"))
+            case = SucCase(msds[3])
+            return MsdWPos.pos_rg(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
+        raise NotImplementedError(f"Unsupported RG {msds=}")
     if pos == SucPos.RO:
         try:
             gender = SucGender(msds[0].replace("+", "/")) if msds[0] != "-" else None  # type: ignore[assignment]

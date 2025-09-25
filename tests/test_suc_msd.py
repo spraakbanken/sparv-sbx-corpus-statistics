@@ -112,6 +112,7 @@ SUC_MSD_FREQ: dict[str, int] = {
     "PS.UTR.SIN.DEF": 3894,
     "RG.NOM": 180310,
     "RG.SMS": 11,
+    "RG.UTR.SIN.IND.NOM": 1,
     "RO.MAS.SIN.IND+DEF.NOM": 5,
     "RO.NOM": 2892,
     "SN": 53560,

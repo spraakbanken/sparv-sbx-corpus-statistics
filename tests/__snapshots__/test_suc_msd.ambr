@@ -323,6 +323,9 @@
 # name: test_parse[RG.SMS]
   MsdWPos(pos=<SucPos.RG: 'RG'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
+# name: test_parse[RG.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
 # name: test_parse[RO.MAS.SIN.IND+DEF.NOM]
   MsdWPos(pos=<SucPos.RO: 'RO'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
