@@ -200,6 +200,51 @@ jobs:
       - name: make test
         run: make test
 
+  test-example:
+    # This action runs all examples and verifies that the export is as expected.
+    #
+
+    runs-on: ubuntu-latest
+    name: ubuntu / 3.11 / test-example / ${{ matrix.example-name }}
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        example-name:
+          - segreg-rd-bet
+
+    steps:
+      - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
+        with:
+          persist-credentials: false
+          submodules: true
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@4e1e303f7dafb1a3ec7770a507052543f593ad96 # v6.6.0
+        with:
+          version: ${{ env.UV_VERSION }}
+          enable-cache: true
+
+      - name: Set up Python ${{ env.MINIMUM_PYTHON_VERSION }}
+        id: setup-python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: ${{ env.MINIMUM_PYTHON_VERSION }}
+
+      - name: Add swedish locale
+        run: |
+          sudo locale-gen sv_SE.utf8
+          locale -a
+
+      - name: install dependencies
+        run: make install-dev
+
+      - name: sparv setup
+        run: echo "" | .venv/bin/sparv setup
+
+      - name: make test-example-${{ matrix.example-name }}
+        run: make test-example-${{ matrix.example-name }}
+
   # https://github.com/marketplace/actions/alls-green#why used for branch protection checks
   test-check:
     if: always()
@@ -207,6 +252,7 @@ jobs:
       - coverage
       - doctests
       - minimal
+      - test-example
     runs-on: ubuntu-latest
     permissions: {}
     steps:
