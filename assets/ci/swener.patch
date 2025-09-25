@@ -1,0 +1,15 @@
+--- convert-namex-tags.py
++++ convert-namex-tags.py
+@@ -1 +1 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python3
+@@ -34 +34 @@
+-        elif isinstance(files, basestring):
++        elif isinstance(files, str):
+@@ -73 +73 @@
+-        return [s[start:start+partlen] for start in xrange(0, len(s), partlen)]
++        return [s[start:start+partlen] for start in range(0, len(s), partlen)]
+@@ -132,3 +131,0 @@
+-    sys.stdin = codecs.getreader('utf-8')(sys.stdin)
+-    sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+-    sys.stderr = codecs.getwriter('utf-8')(sys.stderr)

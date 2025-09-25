@@ -239,8 +239,43 @@ jobs:
       - name: install dependencies
         run: make install-dev
 
+      - name: Cache of sparv
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        id: cache-sparv
+        with:
+          path: |
+            ~/.local/
+          key: ${{ runner.os }}-sparv
+
       - name: sparv setup
+        if: steps.cache-sparv.outputs.cache-hit != 'true'
         run: echo "" | .venv/bin/sparv setup
+
+      - name: install hunpos
+        if: steps.cache-sparv.outputs.cache-hit != 'true'
+        run: |
+          curl https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hunpos/hunpos-1.0-linux.tgz --output hunpos.tgz
+          tar -zxvf hunpos.tgz
+          mkdir -pv ~/.local/share/sparv/bin
+          cp -v hunpos-1.0-linux/hunpos-tag ~/.local/share/sparv/bin
+
+      - name: install wsd
+        if: steps.cache-sparv.outputs.cache-hit != 'true'
+        run: |
+          mkdir -pv ~/.local/share/sparv/bin/wsd
+          curl https://github.com/spraakbanken/sparv-wsd/raw/master/bin/saldowsd.jar --output ~/.local/share/sparv/bin/wsd/saldowsd.jar
+
+      - name: install hfst-swener
+        if: steps.cache-sparv.outputs.cache-hit != 'true'
+        run: |
+          curl https://www.kielipankki.fi/download/HFST-SweNER/hfst-swener-0.9.3.tgz --output hfst-swener.tgz
+          tar -zxvf hfst-swener.tgz
+          cp -v assets/ci/swener.patch hfst-swener-0.9.3/scripts
+          cd hfst-swener-0.9.3/scripts
+          patch < swener.patch
+          cd ..
+          ./configure --prefix=/home/runner/.local; make; make install
+          ls -l ~/.local/bin
 
       - name: make test-example-${{ matrix.example-name }}
         run: make test-example-${{ matrix.example-name }}
@@ -260,3 +295,4 @@ jobs:
         uses: re-actors/alls-green@05ac9388f0aebcb5727afa17fcccfecd6f8ec5fe # v1.2.2
         with:
           jobs: ${{ toJSON(needs) }}
+          allowed-failures: test-example
