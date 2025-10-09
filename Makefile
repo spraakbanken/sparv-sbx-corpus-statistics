@@ -185,3 +185,24 @@ update-example-segreg-rd-bet-snapshot:
 	    assets/stat_highlights_sv_segreg-rd-bet.gold.md
 	cp examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md \
 	    assets/stat_highlights_en_segreg-rd-bet.gold.md
+
+
+test-example-small:
+	rm -rf examples/small/export/sparv_statistics.stat_highlights
+	cd examples/small; ${INVENV} sparv run --stats
+	diff assets/small/stat_highlights_sv_small.gold.md \
+	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
+					diff assets/small/stat_highlights_en_small.gold.md \
+	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_en_small.md
+
+update-example-small-snapshot: \
+	assets/small/stat_highlights_en_small.gold.md \
+	assets/small/stat_highlights_sv_small.gold.md
+
+assets/small/stat_highlights_en_small.gold.md: \
+	examples/small/export/sparv_statistics.stat_highlights/stat_highlights_en_small.md
+	@cp $< $@
+
+assets/small/stat_highlights_sv_small.gold.md: \
+	examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
+	@cp $< $@
