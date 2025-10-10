@@ -270,7 +270,7 @@ jobs:
         if: steps.cache-sparv.outputs.cache-hit != 'true'
         run: |
           mkdir -pv ~/.local/share/sparv/bin/wsd
-          curl https://github.com/spraakbanken/sparv-wsd/raw/master/bin/saldowsd.jar --output ~/.local/share/sparv/bin/wsd/saldowsd.jar
+          curl https://raw.githubusercontent.com/spraakbanken/sparv-wsd/bin/saldowsd.jar --output ~/.local/share/sparv/bin/wsd/saldowsd.jar
 
       - name: install hfst-swener
         if: steps.cache-sparv.outputs.cache-hit != 'true'
