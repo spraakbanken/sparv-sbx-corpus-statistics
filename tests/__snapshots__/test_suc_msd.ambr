@@ -1,0 +1,376 @@
+# serializer version: 1
+# name: test_parse[AB.AN]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[AB.KOM]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=<SucDegree.KOM: 'KOM'>, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[AB.POS]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=<SucDegree.POS: 'POS'>, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[AB.SUV]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=<SucDegree.SUV: 'SUV'>, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[AB]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.MAS.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.NEU.SIN.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN+PLU.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR+NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR.SIN.DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR.SIN.IND+DEF]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[DT.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.DT: 'DT'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HA]
+  MsdWPos(pos=<SucPos.HA: 'HA'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HD.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HD.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HD.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.HD: 'HD'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HP.-.-.-]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HP.NEU.SIN.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HP.UTR+NEU.PLU.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HP.UTR.SIN.IND]
+  MsdWPos(pos=<SucPos.HP: 'HP'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[HS.DEF]
+  MsdWPos(pos=<SucPos.HS: 'HS'>, degree=None, gender=None, number=None, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[IE]
+  MsdWPos(pos=<SucPos.IE: 'IE'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[IN]
+  MsdWPos(pos=<SucPos.IN: 'IN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.AN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[JJ.KOM.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.KOM: 'KOM'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.MAS.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.NEU.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND+DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR+NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.SUV.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.SUV: 'SUV'>, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.SUV: 'SUV'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.SUV: 'SUV'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.SIN+PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.SUV: 'SUV'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.SUV.UTR+NEU.SIN+PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.SUV: 'SUV'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[KN.AN]
+  MsdWPos(pos=<SucPos.KN: 'KN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[KN]
+  MsdWPos(pos=<SucPos.KN: 'KN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[MAD]
+  MsdWDelimiter(delimiter=<SucDelimiter.MAD: 'MAD'>)
+# ---
+# name: test_parse[MID]
+  MsdWDelimiter(delimiter=<SucDelimiter.MID: 'MID'>)
+# ---
+# name: test_parse[NN.-.-.-.-]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.AN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[NN.NEU.PLU.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.PLU.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.SIN.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.-.-.-]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.-.-.SMS]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.PLU.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.PLU.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.PLU.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.PLU.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.SIN.IND.GEN]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[NN.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.NN: 'NN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PAD]
+  MsdWDelimiter(delimiter=<SucDelimiter.PAD: 'PAD'>)
+# ---
+# name: test_parse[PC.PRF.MAS.SIN.DEF.GEN]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.MAS.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.NEU.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.PLU.IND+DEF.GEN]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.UTR+NEU.SIN.DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRF.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRF: 'PRF'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PC.PRS.UTR+NEU.SIN+PLU.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.PC: 'PC'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=<SucParticleForm.PRS: 'PRS'>, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PL]
+  MsdWPos(pos=<SucPos.PL: 'PL'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PM.GEN]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.GEN: 'GEN'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PM.NOM]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PM.SMS]
+  MsdWPos(pos=<SucPos.PM: 'PM'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PN.MAS.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.NEU.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.NEU.SIN.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.OBJ: 'OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB: 'SUB'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR+NEU.PLU.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR+NEU.SIN+PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.OBJ: 'OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.PLU.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.OBJ: 'OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.PLU.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB: 'SUB'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.OBJ: 'OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.SIN.DEF.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB: 'SUB'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.SIN.IND.SUB+OBJ]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB_OBJ: 'SUB/OBJ'>, is_abbreviation=False)
+# ---
+# name: test_parse[PN.UTR.SIN.IND.SUB]
+  MsdWPos(pos=<SucPos.PN: 'PN'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=<SucPronounForm.SUB: 'SUB'>, is_abbreviation=False)
+# ---
+# name: test_parse[PP.AN]
+  MsdWPos(pos=<SucPos.PP: 'PP'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[PP]
+  MsdWPos(pos=<SucPos.PP: 'PP'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PS.NEU.SIN.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, degree=None, gender=<SucGender.NEU: 'NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PS.UTR+NEU.PLU.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.PLU: 'PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PS.UTR+NEU.SIN+PLU.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, degree=None, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN_PLU: 'SIN/PLU'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[PS.UTR.SIN.DEF]
+  MsdWPos(pos=<SucPos.PS: 'PS'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[RG.NOM]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[RG.SMS]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[RG.UTR.SIN.IND.NOM]
+  MsdWPos(pos=<SucPos.RG: 'RG'>, degree=None, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND: 'IND'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[RO.MAS.SIN.IND+DEF.NOM]
+  MsdWPos(pos=<SucPos.RO: 'RO'>, degree=None, gender=<SucGender.MAS: 'MAS'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[RO.NOM]
+  MsdWPos(pos=<SucPos.RO: 'RO'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[SN]
+  MsdWPos(pos=<SucPos.SN: 'SN'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[UO]
+  MsdWPos(pos=<SucPos.UO: 'UO'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.AN]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
+# ---
+# name: test_parse[VB.IMP.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.IMP: 'IMP'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.INF.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.INF: 'INF'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.INF.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.INF: 'INF'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.KON.PRS.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRS: 'PRS'>, voice=<SucVoice.AKT: 'AKT'>, mood=<SucMood.KON: 'KON'>, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.KON.PRT.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRT: 'PRT'>, voice=<SucVoice.AKT: 'AKT'>, mood=<SucMood.KON: 'KON'>, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.PRS.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRS: 'PRS'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.PRS.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRS: 'PRS'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.PRT.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRT: 'PRT'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.PRT.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRT: 'PRT'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.SUP.AKT]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.SUP: 'SUP'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[VB.SUP.SFO]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.SUP: 'SUP'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---

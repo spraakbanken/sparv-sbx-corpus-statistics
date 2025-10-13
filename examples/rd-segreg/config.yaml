@@ -1,0 +1,61 @@
+metadata:
+  description:
+    swe: Texter som nämner segregation
+    eng: Texts that treat segregation
+  short_description: {}
+  language: swe
+
+# sbx_metadata:
+#   xml_export: original
+
+# preload:
+#   - saldo:annotate
+#   - saldo:compound
+
+import:
+  importer: xml_import:parse
+  text_annotation: text
+
+xml_import:
+  elements:
+    - text:datum
+    - text:datumtid as datum
+    - p
+
+segment:
+  existing_paragraphs: p
+
+dateformat:
+  datetime_from: <text>:datum
+  datetime_to: <text>:datum
+  datetime_informat: "%Y-%m-%d %H:%M:%S"
+
+export:
+  default:
+    # - cwb:vrt
+    # - cwb:encode
+    # - cwb:info
+    # - korp:lemgram_sql
+    # - korp:wordpicture_sql
+    # - korp:timespan_sql
+    # - korp:config
+    - xml_export:pretty
+    # - xml_export:compressed
+    - stats_export:sbx_freq_list
+    - stats_export:sbx_freq_list_date
+    - stats_export:sbx_freq_list_simple
+    - stats_export:sbx_freq_list_simple_swe
+    # - stats_export:freq_list
+    - sparv_statistics:stat_highlights
+    # - sbx_metadata:yaml_export
+  annotations:
+    - SBX_DEFAULT.paragraph
+    # - <sentence>
+    # - <text>
+    - <token>
+    # - <token>:wsd.sense
+    - <token>:stanza.pos
+  source_annotations:
+    - text:datum as date
+    - text:datumtid as date
+    - ...

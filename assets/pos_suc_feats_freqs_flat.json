@@ -1,0 +1,52 @@
+{
+  "NN": {
+    "Gender": { "NEU": 234473, "UTR": 464514 },
+    "Number": { "SIN": 502837, "PLU": 191106 },
+    "Definiteness": { "DEF": 247021, "IND": 446922 },
+    "Case": { "NOM": 660459, "GEN": 33484, "SMS": 4845 },
+    "Abbreviation": { "AN": 37351 }
+  },
+  "RG": { "Case": { "NOM": 180310, "SMS": 11 } },
+  "Delimiter": { "Delimiter": { "MID": 101646, "MAD": 131026, "PAD": 93999 } },
+  "PM": { "Case": { "NOM": 102747, "GEN": 3258, "SMS": 10 } },
+  "VB": {
+    "Tense": { "PRS": 220371, "SUP": 20216, "INF": 115243, "PRT": 22662, "IMP": 1765 },
+    "Voice": { "AKT": 315859, "SFO": 64398 },
+    "Abbreviation": { "AN": 28 },
+    "Mood": { "KON": 162 }
+  },
+  "DT": {
+    "Gender": { "NEU": 29637, "UTR/NEU": 19493, "UTR": 52500, "MAS": 1 },
+    "Number": { "SIN": 82978, "PLU": 17483, "SIN/PLU": 1170 },
+    "Definiteness": { "IND": 57254, "DEF": 41723, "IND/DEF": 2654 }
+  },
+  "AB": { "Degree": { "POS": 15452, "SUV": 3889, "KOM": 8987 }, "Abbreviation": { "AN": 22440 } },
+  "PC": {
+    "Gender": { "NEU": 5665, "UTR/NEU": 31797, "UTR": 9691, "MAS": 59 },
+    "Number": { "SIN": 18138, "PLU": 13580, "SIN/PLU": 15494 },
+    "Definiteness": { "IND": 15356, "IND/DEF": 29074, "DEF": 2782 },
+    "Case": { "NOM": 47182, "GEN": 30 },
+    "Particle Form": { "PRF": 31718, "PRS": 15494 }
+  },
+  "JJ": {
+    "Degree": { "POS": 118922, "KOM": 10870, "SUV": 2740 },
+    "Gender": { "UTR/NEU": 82252, "NEU": 17902, "UTR": 32014, "MAS": 364 },
+    "Number": { "SIN": 66973, "PLU": 48858, "SIN/PLU": 16701 },
+    "Definiteness": { "DEF": 19472, "IND/DEF": 58672, "IND": 54388 },
+    "Case": { "NOM": 132178, "GEN": 354 },
+    "Abbreviation": { "AN": 20 }
+  },
+  "PN": {
+    "Gender": { "NEU": 47761, "UTR/NEU": 19321, "UTR": 30928, "MAS": 31 },
+    "Number": { "SIN": 65910, "SIN/PLU": 11049, "PLU": 21082 },
+    "Definiteness": { "DEF": 86868, "IND": 11173 },
+    "Pronoun Form": { "SUB/OBJ": 56045, "OBJ": 14304, "SUB": 27692 }
+  },
+  "PS": { "Gender": { "UTR/NEU": 3394, "UTR": 3894, "NEU": 2345 }, "Number": { "PLU": 1976, "SIN/PLU": 1418, "SIN": 6239 }, "Definiteness": { "DEF": 9633 } },
+  "HP": { "Gender": { "NEU": 3996, "UTR/NEU": 205, "UTR": 262 }, "Number": { "SIN": 4258, "PLU": 205 }, "Definiteness": { "IND": 4463 } },
+  "RO": { "Case": { "NOM": 2897 }, "Gender": { "MAS": 5 }, "Number": { "SIN": 5 }, "Definiteness": { "IND/DEF": 5 } },
+  "HD": { "Gender": { "UTR/NEU": 823, "NEU": 164, "UTR": 420 }, "Number": { "PLU": 823, "SIN": 584 }, "Definiteness": { "IND": 1407 } },
+  "PP": { "Abbreviation": { "AN": 10 } },
+  "HS": { "Definiteness": { "DEF": 186 } },
+  "KN": { "Abbreviation": { "AN": 24 } }
+}
