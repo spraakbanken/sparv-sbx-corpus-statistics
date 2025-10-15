@@ -2,25 +2,29 @@
 
 ## Overview
 
+Feature | Number
+--- | ---: 
+number of files (`file`) | 1 
+number of texts (`text`) | 1 
+number of documents (`dokument`) | 1 
+number of paragraphs (`segment.paragraph`) | 8 
+number of sentences (`segment.sentence`) | 13 
+number of tokens (`segment.token`) | 215 
+
 Feature | Number | Mean | Standard deviation
 --- | ---: | ---: | ---:
-number of files (`file`) | 1 | | 
 file length, in characters (`file`) | 1,574 | 1,574 | 0.000
-number of texts (`text`) | 1 | | 
 text length, in characters (`text`) | 1,560 | 1,560 | 0.000
-number of documents (`dokument`) | 1 | | 
 document length, in characters (`dokument`) | 1,568 | 1,568 | 0.000
-number of paragraphs (`segment.paragraph`) | 8 | | 
 paragraph length, in characters (`segment.paragraph`) | 1,515 | 189 | 322
-number of sentences (`segment.sentence`) | 13 | | 
 sentence length, in characters (`segment.sentence`) | 1,510 | 116 | 101
 sentence length, in words (`segment.sentence`) | 192 | 14.8 | 12.7
-number of tokens (`segment.token`) | 215 | | 
 token length, in characters (`segment.token`) | 1,331 | 6.19 | 4.83
-READABILITY | ---: | ---: | ---:
-LIX value (`text:readability.lix`) | - | 62.5 | 0.000
-OVIX value (`text:readability.ovix`) | - | 81.2 | 0.000
-NK value (`text:readability.nk`) | - | 3.57 | 0.000
+READABILITY | Mean | Standard deviation
+--- | ---: | ---:
+LIX value (`text:readability.lix`) | 62.5 | 0.000
+OVIX value (`text:readability.ovix`) | 81.2 | 0.000
+NK value (`text:readability.nk`) | 3.57 | 0.000
 
 ## Tokenization and Word Segmentation
 - This corpus is built from 1 texts, over 1 documents, in 1 files.

@@ -464,7 +464,7 @@ def stat_highlights(
                         # elif attribute.name.startswith(f"{token.name}:stanza.msd"):
                         #     stats[attribute_name][f"{attribute.name} "]
                 except FileNotFoundError as exc:
-                    logger.warning("Suppressed error: %s", repr(exc))
+                    logger.info("Suppressed error: %s", repr(exc))
                 logger.debug(
                     "Writing temporary stats=%s for attribute=%s",
                     attribute_stats,
@@ -713,7 +713,8 @@ _T: dict[str, dict[str, str]] = {
         "segment.token length (characters)": "token length, in characters",
         "stats_header": "## Overview\n",
         "stats_table_header": "Feature | Number | Mean | Standard deviation\n",
-        "stats_table_readability": "READABILITY | ---: | ---: | ---:\n",
+        "stats_table_structure_header": "Feature | Number\n",
+        "stats_table_readability": "READABILITY | Mean | Standard deviation\n",
         "text": "texts",
         "text length (characters)": "text length, in characters",
         "tokenization_header": "## Tokenization and Word Segmentation\n",
@@ -792,7 +793,8 @@ _T: dict[str, dict[str, str]] = {
         "segment.token length (characters)": "tokenlängd, i tecken",
         "stats_header": "## Översikt\n",
         "stats_table_header": "Egenskap | Värde | Medelvärde | Standardavvikelse\n",
-        "stats_table_readability": "LÄSBARHET | ---: | ---: | ---:\n",
+        "stats_table_structure_header": "Egenskap | Värde\n",
+        "stats_table_readability": "LÄSBARHET | Medelvärde | Standardavvikelse\n",
         "text": "texter",
         "text length (characters)": "textlängd, i tecken",
         "tokenization_header": "## Tokenisering och segmentering\n",
@@ -910,22 +912,32 @@ def _write_statistical_overview(
 ) -> None:
     fp.write(_T[lang]["stats_header"])
     fp.write("\n")
+    fp.write(_T[lang]["stats_table_structure_header"])
+    fp.write("--- | ---: \n")
+    _write_table_row_attr_number_stats(fp, "file", stats, lang=lang)
+    _write_table_row_attr_number_stats(fp, "text", stats, lang=lang)
+    _write_table_row_attr_number_stats(fp, "dokument", stats, lang=lang)
+    _write_table_row_attr_number_stats(fp, "segment.paragraph", stats, lang=lang)
+    _write_table_row_attr_number_stats(fp, "segment.sentence", stats, lang=lang)
+    _write_table_row_attr_number_stats(fp, "segment.token", stats, lang=lang)
+    fp.write("\n")
     fp.write(_T[lang]["stats_table_header"])
     fp.write("--- | ---: | ---: | ---:\n")
-    _write_attr_stats(fp, "file", stats, lang=lang)
-    _write_attr_stats(fp, "text", stats, lang=lang)
-    _write_attr_stats(fp, "dokument", stats, lang=lang)
-    _write_attr_stats(fp, "segment.paragraph", stats, lang=lang)
-    _write_attr_stats(fp, "segment.sentence", stats, lang=lang)
-    _write_attr_stats(fp, "segment.token", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "file", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "text", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "dokument", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "segment.paragraph", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "segment.sentence", stats, lang=lang)
+    _write_table_row_attr_number_mean_deviation_stats(fp, "segment.token", stats, lang=lang)
 
     fp.write(_T[lang]["stats_table_readability"])
+    fp.write("--- | ---: | ---:\n")
     _write_readability_attr_stats(fp, "text:readability.lix", stats, lang=lang)
     _write_readability_attr_stats(fp, "text:readability.ovix", stats, lang=lang)
     _write_readability_attr_stats(fp, "text:readability.nk", stats, lang=lang)
 
 
-def _write_attr_stats(
+def _write_table_row_attr_number_stats(
     fp: TextIO,
     attr: str,
     stats: dict[str, dict[str, Stats]],
@@ -941,12 +953,29 @@ def _write_attr_stats(
         logger.debug("level=%s, level_stats=%s", level, level_stats)
         if level.startswith("length"):
             stats_ = level_stats["stats"]
-            # attr_count = f"{attr} {_T[lang]['count']}"
             attr_count = _format_description(attr, "count", lang=lang)
             if attr_count not in written_stats:
                 formatted_number = f.fmt_number_signific(stats_.num_values, 0)
-                fp.write(f"{attr_count} | {formatted_number} | | \n")
+                fp.write(f"{attr_count} | {formatted_number} \n")
                 written_stats.add(attr_count)
+
+
+def _write_table_row_attr_number_mean_deviation_stats(
+    fp: TextIO,
+    attr: str,
+    stats: dict[str, dict[str, Stats]],
+    lang: str,
+) -> None:
+    attr_feat_stats = stats.get(attr)
+    if attr_feat_stats is None:
+        return
+
+    logger.debug("attr=%s, attr_feat_stats=%s", attr, attr_feat_stats)
+    for level, level_stats in attr_feat_stats.items():
+        logger.debug("level=%s, level_stats=%s", level, level_stats)
+        if level.startswith("length"):
+            stats_ = level_stats["stats"]
+
             attr_level = _format_description_long(attr, level, lang=lang)
 
             formatted_number = f.fmt_number_signific(stats_.num_values * stats_.mean(), 0)
@@ -966,7 +995,6 @@ def _write_readability_attr_stats(
         return
 
     logger.debug("attr=%s, attr_feat_stats=%s", attr, attr_feat_stats)
-    # written_stats = set()
     for level, level_stats in attr_feat_stats.items():
         logger.debug("level=%s, level_stats=%s", level, level_stats)
         if level == "value":
@@ -975,7 +1003,7 @@ def _write_readability_attr_stats(
             index = attr.rsplit(".", maxsplit=1)[-1].upper()
             formatted_mean = f.fmt_number_signific(stats_.mean(), 3)
             formatted_std = f.fmt_number_signific(stats_.standard_deviation(), 3)
-            fp.write(f"{index} {_T[lang][level]} (`{attr}`) | - | {formatted_mean} | {formatted_std}\n")
+            fp.write(f"{index} {_T[lang][level]} (`{attr}`) | {formatted_mean} | {formatted_std}\n")
 
 
 def _write_top_10_lemmas(

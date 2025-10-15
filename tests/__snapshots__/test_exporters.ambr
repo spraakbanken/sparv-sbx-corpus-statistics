@@ -2379,25 +2379,29 @@
   '''
   ## Overview
   
+  Feature | Number
+  --- | ---: 
+  number of files (`file`) | 2 
+  number of texts (`text`) | 4,063 
+  number of documents (`dokument`) | 87 
+  number of paragraphs (`segment.paragraph`) | 115,542 
+  number of sentences (`segment.sentence`) | 194,785 
+  number of tokens (`segment.token`) | 2,896,932 
+  
   Feature | Number | Mean | Standard deviation
   --- | ---: | ---: | ---:
-  number of files (`file`) | 2 | | 
   file length, in characters (`file`) | 17,940,923 | 8,970,462 | 254,556
-  number of texts (`text`) | 4,063 | | 
   text length, in characters (`text`) | 17,928,556 | 4,413 | 31,685
-  number of documents (`dokument`) | 87 | | 
   document length, in characters (`dokument`) | 17,940,832 | 206,216 | 148,654
-  number of paragraphs (`segment.paragraph`) | 115,542 | | 
   paragraph length, in characters (`segment.paragraph`) | 17,309,621 | 150 | 240
-  number of sentences (`segment.sentence`) | 194,785 | | 
   sentence length, in characters (`segment.sentence`) | 17,228,487 | 88.4 | 81.5
   sentence length, in words (`segment.sentence`) | 2,558,418 | 13.1 | 12.0
-  number of tokens (`segment.token`) | 2,896,932 | | 
   token length, in characters (`segment.token`) | 14,864,325 | 5.13 | 3.99
-  READABILITY | ---: | ---: | ---:
-  LIX value (`text:readability.lix`) | - | 56.5 | 28.4
-  OVIX value (`text:readability.ovix`) | - | 59.2 | 25.2
-  NK value (`text:readability.nk`) | - | 2.18 | 1.71
+  READABILITY | Mean | Standard deviation
+  --- | ---: | ---:
+  LIX value (`text:readability.lix`) | 56.5 | 28.4
+  OVIX value (`text:readability.ovix`) | 59.2 | 25.2
+  NK value (`text:readability.nk`) | 2.18 | 1.71
   
   '''
 # ---
@@ -2405,25 +2409,29 @@
   '''
   ## Översikt
   
+  Egenskap | Värde
+  --- | ---: 
+  antal filer (`file`) | 2 
+  antal texter (`text`) | 4 063 
+  antal dokument (`dokument`) | 87 
+  antal stycken (`segment.paragraph`) | 115 542 
+  antal meningar (`segment.sentence`) | 194 785 
+  antal tokens (`segment.token`) | 2 896 932 
+  
   Egenskap | Värde | Medelvärde | Standardavvikelse
   --- | ---: | ---: | ---:
-  antal filer (`file`) | 2 | | 
   fillängd, i tecken (`file`) | 17 940 923 | 8 970 462 | 254 556
-  antal texter (`text`) | 4 063 | | 
   textlängd, i tecken (`text`) | 17 928 556 | 4 413 | 31 685
-  antal dokument (`dokument`) | 87 | | 
   dokumentlängd, i tecken (`dokument`) | 17 940 832 | 206 216 | 148 654
-  antal stycken (`segment.paragraph`) | 115 542 | | 
   styckeslängd, i tecken (`segment.paragraph`) | 17 309 621 | 150 | 240
-  antal meningar (`segment.sentence`) | 194 785 | | 
   meningslängd, i tecken (`segment.sentence`) | 17 228 487 | 88,4 | 81,5
   meningslängd, i ord (`segment.sentence`) | 2 558 418 | 13,1 | 12,0
-  antal tokens (`segment.token`) | 2 896 932 | | 
   tokenlängd, i tecken (`segment.token`) | 14 864 325 | 5,13 | 3,99
-  LÄSBARHET | ---: | ---: | ---:
-  LIX värde (`text:readability.lix`) | - | 56,5 | 28,4
-  OVIX värde (`text:readability.ovix`) | - | 59,2 | 25,2
-  NK värde (`text:readability.nk`) | - | 2,18 | 1,71
+  LÄSBARHET | Medelvärde | Standardavvikelse
+  --- | ---: | ---:
+  LIX värde (`text:readability.lix`) | 56,5 | 28,4
+  OVIX värde (`text:readability.ovix`) | 59,2 | 25,2
+  NK värde (`text:readability.nk`) | 2,18 | 1,71
   
   '''
 # ---

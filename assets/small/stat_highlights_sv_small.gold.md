@@ -2,25 +2,29 @@
 
 ## Översikt
 
+Egenskap | Värde
+--- | ---: 
+antal filer (`file`) | 1 
+antal texter (`text`) | 1 
+antal dokument (`dokument`) | 1 
+antal stycken (`segment.paragraph`) | 8 
+antal meningar (`segment.sentence`) | 13 
+antal tokens (`segment.token`) | 215 
+
 Egenskap | Värde | Medelvärde | Standardavvikelse
 --- | ---: | ---: | ---:
-antal filer (`file`) | 1 | | 
 fillängd, i tecken (`file`) | 1 574 | 1 574 | 0,000
-antal texter (`text`) | 1 | | 
 textlängd, i tecken (`text`) | 1 560 | 1 560 | 0,000
-antal dokument (`dokument`) | 1 | | 
 dokumentlängd, i tecken (`dokument`) | 1 568 | 1 568 | 0,000
-antal stycken (`segment.paragraph`) | 8 | | 
 styckeslängd, i tecken (`segment.paragraph`) | 1 515 | 189 | 322
-antal meningar (`segment.sentence`) | 13 | | 
 meningslängd, i tecken (`segment.sentence`) | 1 510 | 116 | 101
 meningslängd, i ord (`segment.sentence`) | 192 | 14,8 | 12,7
-antal tokens (`segment.token`) | 215 | | 
 tokenlängd, i tecken (`segment.token`) | 1 331 | 6,19 | 4,83
-LÄSBARHET | ---: | ---: | ---:
-LIX värde (`text:readability.lix`) | - | 62,5 | 0,000
-OVIX värde (`text:readability.ovix`) | - | 81,2 | 0,000
-NK värde (`text:readability.nk`) | - | 3,57 | 0,000
+LÄSBARHET | Medelvärde | Standardavvikelse
+--- | ---: | ---:
+LIX värde (`text:readability.lix`) | 62,5 | 0,000
+OVIX värde (`text:readability.ovix`) | 81,2 | 0,000
+NK värde (`text:readability.nk`) | 3,57 | 0,000
 
 ## Tokenisering och segmentering
 - Denna korpus är skapad från 1 texter, i 1 dokument, som finns i 1 filer.
