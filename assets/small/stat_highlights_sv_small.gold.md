@@ -74,6 +74,7 @@ Frågande/relativt pronomen (`HP`) | 1 | < 1%
 Infinitivmärke (`IE`) | 1 | < 1%
 Partikel (`PL`) | 1 | < 1%
 Possessivuttryck (`PS`) | 1 | < 1%
+Σ | 215 | 100% 
 
 
 ### Ordklass: **Adjektiv**
@@ -837,7 +838,7 @@ Denna korpus innehåller följande särdrag:
 </tr>
 <td>Σ</td>
 <td align="right">4</td>
-<td align="right">< 1%</td>
+<td align="right">&lt; 1%</td>
 </tbody>
 </table>
 

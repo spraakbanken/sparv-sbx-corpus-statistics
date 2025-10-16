@@ -79,6 +79,7 @@ Foreign Word (`UO`) | 2,269 | < 1%
 Interrogative/Relative Determiner (`HD`) | 1,406 | < 1%
 Interjection (`IN`) | 843 | < 1%
 Interrogative/Relative Possessive (`HS`) | 186 | < 1%
+Σ | 2,897,740 | 100% 
 
 
 ### POS Tag: **Adjective**
@@ -1074,7 +1075,7 @@ This corpus contains the following features:
 </tr>
 <td>Σ</td>
 <td align="right">58,596</td>
-<td align="right">< 1%</td>
+<td align="right">&lt; 1%</td>
 </tbody>
 </table>
 

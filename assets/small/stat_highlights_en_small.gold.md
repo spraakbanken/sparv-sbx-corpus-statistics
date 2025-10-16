@@ -74,6 +74,7 @@ Interrogative/Relative Pronoun (`HP`) | 1 | < 1%
 Infinitive Marker (`IE`) | 1 | < 1%
 Particle (`PL`) | 1 | < 1%
 Possessive (`PS`) | 1 | < 1%
+Σ | 215 | 100% 
 
 
 ### POS Tag: **Adjective**
@@ -749,7 +750,7 @@ This corpus contains the following features:
 </tr>
 <td>Σ</td>
 <td align="right">4</td>
-<td align="right">< 1%</td>
+<td align="right">&lt; 1%</td>
 </tbody>
 </table>
 
