@@ -253,7 +253,8 @@ jobs:
         with:
           path: |
             ~/.local/
-          key: ${{ runner.os }}-sparv
+            examples/small/export/
+          key: ${{ runner.os }}-${{ steps.setup-python.outputs.python-version}}-sparv
 
       - name: sparv setup
         if: steps.cache-sparv.outputs.cache-hit != 'true'
@@ -271,7 +272,7 @@ jobs:
         if: steps.cache-sparv.outputs.cache-hit != 'true'
         run: |
           mkdir -pv ~/.local/share/sparv/bin/wsd
-          curl https://raw.githubusercontent.com/spraakbanken/sparv-wsd/bin/saldowsd.jar --output ~/.local/share/sparv/bin/wsd/saldowsd.jar
+          cp -v assets/ci/saldowsd.jar ~/.local/share/sparv/bin/wsd/saldowsd.jar
 
       - name: install hfst-swener
         if: steps.cache-sparv.outputs.cache-hit != 'true'
@@ -303,4 +304,3 @@ jobs:
         uses: re-actors/alls-green@05ac9388f0aebcb5727afa17fcccfecd6f8ec5fe # v1.2.2
         with:
           jobs: ${{ toJSON(needs) }}
-          allowed-failures: test-example
