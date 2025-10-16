@@ -1329,7 +1329,7 @@ def _write_table_html(
     if n_rows > 1:
         fp.write("<td>Σ</td>\n")
         for column, formatter in zip(totals, formatters, strict=True):
-            column_str = formatter(column)
+            column_str = formatter(column).replace("<", "&lt;")
             fp.write(f'<td align="right">{column_str}</td>\n')
     fp.write("</tbody>\n")
     fp.write("</table>\n")
@@ -1390,6 +1390,9 @@ def _write_pos_distribution(fp: TextIO, pos_stats: PosStats, lang: str) -> None:
         f"{_MSD_MAP[lang][pos_tag]} (`{pos_tag}`) | {f.fmt_number_signific(pos_stats.freqs[pos_tag], 0)} | {f.fmt_number_decimals(pos_tag_percent, 0)}%\n"  # noqa: E501
         for pos_tag, pos_tag_percent in pos_stats.stats.items()
     )
+    total_freqs = sum(pos_stats.freqs[pos_tag] for pos_tag in pos_stats.stats)
+    total_percent = sum(pos_tag_percent for pos_tag_percent in pos_stats.stats.values())
+    fp.write(f"Σ | {f.fmt_number_signific(total_freqs, 0)} | {f.fmt_number_decimals(total_percent, 0)}% \n")
 
 
 def _write_pos_tag(

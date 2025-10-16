@@ -257,7 +257,6 @@ jobs:
           key: ${{ runner.os }}-${{ steps.setup-python.outputs.python-version}}-sparv
 
       - name: sparv setup
-        if: steps.cache-sparv.outputs.cache-hit != 'true'
         run: echo "" | .venv/bin/sparv setup
 
       - name: install hunpos
