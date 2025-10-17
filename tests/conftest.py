@@ -7,7 +7,7 @@ from sparv.api.classes import Annotation
 from syrupy.assertion import SnapshotAssertion
 from syrupy.extensions.json import JSONSnapshotExtension
 
-from sparv_statistics.exporters import Stats
+from sbx_corpus_statistics.exporters import Stats
 
 
 @pytest.fixture

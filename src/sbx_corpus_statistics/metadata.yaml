@@ -15,4 +15,4 @@ created: 2025-04-01
 updated: 2025-10-16
 type: utility
 license: MIT license
-sparv_processor: sparv_statistics:stat_highlights
+sparv_processor: sbx_corpus_statistics:stat_highlights

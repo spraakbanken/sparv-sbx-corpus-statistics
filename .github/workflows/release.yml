@@ -105,10 +105,10 @@ jobs:
           sudo locale-gen sv_SE.utf8
           locale -a
 
-      - run: rm -r src/sparv_statistics
+      - run: rm -r src/sbx_corpus_statistics
       - run: pip install typing-extensions
       - run: pip install -r tests/requirements-testing.lock
-      - run: pip install sparv-statistics --no-index --no-deps --find-links dist --force-reinstall
+      - run: pip install sparv-sbx-corpus-statistics --no-index --no-deps --find-links dist --force-reinstall
       - run: pytest
 
   # https://github.com/marketplace/actions/alls-green#why used for branch protection checks

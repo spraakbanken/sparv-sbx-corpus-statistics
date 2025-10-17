@@ -1,7 +1,7 @@
 import pytest
 from syrupy.assertion import SnapshotAssertion
 
-from sparv_statistics import suc_msd
+from sbx_corpus_statistics import suc_msd
 
 SUC_MSD_FREQ: dict[str, int] = {
     "AB": 70456,
