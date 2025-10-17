@@ -57,7 +57,7 @@ help:
 	@echo ""
 
 PLATFORM := `uname -o`
-REPO := sparv-statistics
+REPO := sparv-sbx-corpus-statistics
 PROJECT_SRC := src/sparv_statistics
 
 ifeq (${VIRTUAL_ENV},)

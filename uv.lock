@@ -1630,7 +1630,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "sparv-statistics"
+name = "sparv-sbx-corpus-statistics"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

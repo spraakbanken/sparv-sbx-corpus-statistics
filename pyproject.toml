@@ -1,5 +1,5 @@
 [project]
-name = "sparv-statistics"
+name = "sparv-sbx-corpus-statistics"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -42,8 +42,8 @@ sparv_statistics = "sparv_statistics"
 
 [project.urls]
 Homepage = "https://spraakbanken.gu.se"
-Repository = "https://github.com/spraakbanken/sparv-statistics"
-"Bug Tracker" = "https://github.com/spraakbanken/sparv-statistics/issues"
+Repository = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
+"Bug Tracker" = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
 
 [tool.hatch.build.targets.sdist]
 exclude = ["/.github", "/docs"]
