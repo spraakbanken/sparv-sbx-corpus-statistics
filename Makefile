@@ -192,7 +192,7 @@ test-example-small:
 	cd examples/small; ${INVENV} sparv run --stats
 	diff assets/small/stat_highlights_sv_small.gold.md \
 	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
-					diff assets/small/stat_highlights_en_small.gold.md \
+	diff assets/small/stat_highlights_en_small.gold.md \
 	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_en_small.md
 
 update-example-small-snapshot: \
@@ -206,3 +206,11 @@ assets/small/stat_highlights_en_small.gold.md: \
 assets/small/stat_highlights_sv_small.gold.md: \
 	examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
 	@cp $< $@
+
+install-dev-metadata:
+	uv sync --all-packages --group metadata --dev
+
+.PHONY: generate-metadata
+generate-metadata: install-dev-metadata src/sparv_statistics/metadata.yaml
+	rm -rf assets/metadata/export/sbx_metadata
+	cd assets/metadata; ${INVENV} sparv run sbx_metadata:plugin_analysis_metadata_export
