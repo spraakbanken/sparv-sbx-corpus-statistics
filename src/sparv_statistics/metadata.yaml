@@ -1,0 +1,18 @@
+id: sbx-mul-corpus_statistics-sparv
+short_description:
+  swe: Sammanställning av korpusstatistik, fullständig samt sammandrag på svenska och engelska.
+  eng: Gathering of corpus statistics, full and lighter.
+languages_codes:
+  - swe
+  - eng
+keywords:
+  - statistics
+  - "corpus-statistics"
+plugin_url: https://pypi.org/project/sparv-sbx-corpus-statistics
+other_references:
+  - "Repository: https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
+created: 2025-04-01
+updated: 2025-10-16
+type: utility
+license: MIT license
+sparv_processor: sparv_statistics:stat_highlights
