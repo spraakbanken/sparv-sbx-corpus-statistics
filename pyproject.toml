@@ -1,7 +1,7 @@
 [project]
 name = "sparv-sbx-corpus-statistics"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sparv plugin to collect statistics about the created corpus"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -34,22 +34,20 @@ classifiers = [
 ]
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["uv_build>=0.9.0,<0.10.0"]
+build-backend = "uv_build"
 
 [project.entry-points."sparv.plugin"]
-sparv_statistics = "sparv_statistics"
+sbx_corpus_statistics = "sbx_corpus_statistics"
 
 [project.urls]
 Homepage = "https://spraakbanken.gu.se"
 Repository = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
 "Bug Tracker" = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
 
-[tool.hatch.build.targets.sdist]
-exclude = ["/.github", "/docs"]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/sparv_statistics"]
+[tool.uv.build-backend]
+module-name = "sbx_corpus_statistics"
+source-exclude = ["/.github", "/docs"]
 
 [tool.hatch.metadata]
 allow-direct-references = true

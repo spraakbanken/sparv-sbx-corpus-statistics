@@ -26,8 +26,8 @@ from sparv.api import (
 )
 from sparv.api.classes import Annotation
 
-from sparv_statistics import formatting as f
-from sparv_statistics import suc_msd
+from sbx_corpus_statistics import formatting as f
+from sbx_corpus_statistics import suc_msd
 
 __all__ = ["set_locale_from_lang"]
 
@@ -213,9 +213,9 @@ def stat_highlights(
     export_annotations: ExportAnnotationsAllSourceFiles = ExportAnnotationsAllSourceFiles("export.annotations"),
     source_annotations: SourceAnnotationsAllSourceFiles = SourceAnnotationsAllSourceFiles("export.source_annotations"),
     # word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("[export]"),
-    out_highlights_en: Export = Export("sparv_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
-    out_highlights_sv: Export = Export("sparv_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
-    out_all: Export = Export("sparv_statistics.stat_highlights/all_stats_[metadata.id].json"),
+    out_highlights_en: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
+    out_highlights_sv: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
+    out_all: Export = Export("sbx_corpus_statistics.stat_highlights/all_stats_[metadata.id].json"),
 ) -> None:
     logger.progress(total=len(source_files) + 1)  # type: ignore
     logger.debug("export_annotations = %s", export_annotations)

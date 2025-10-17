@@ -58,7 +58,7 @@ help:
 
 PLATFORM := `uname -o`
 REPO := sparv-sbx-corpus-statistics
-PROJECT_SRC := src/sparv_statistics
+PROJECT_SRC := src/sbx_corpus_statistics
 
 ifeq (${VIRTUAL_ENV},)
   VENV_NAME = .venv
@@ -173,44 +173,44 @@ snapshot-update:
 ### === project targets below this line ===
 
 test-example-segreg-rd-bet:
-	rm -rf examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights
+	rm -rf examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights
 	cd examples/rd-segreg/segreg-rd-bet; ${INVENV} sparv run --stats
 	diff assets/stat_highlights_sv_segreg-rd-bet.gold.md \
-	    examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights/stat_highlights_sv_segreg-rd-bet.md
+	    examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_segreg-rd-bet.md
 	diff assets/stat_highlights_en_segreg-rd-bet.gold.md \
-	    examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md
+	    examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md
 
 update-example-segreg-rd-bet-snapshot:
-	cp examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights/stat_highlights_sv_segreg-rd-bet.md \
+	cp examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_segreg-rd-bet.md \
 	    assets/stat_highlights_sv_segreg-rd-bet.gold.md
-	cp examples/rd-segreg/segreg-rd-bet/export/sparv_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md \
+	cp examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md \
 	    assets/stat_highlights_en_segreg-rd-bet.gold.md
 
 
 test-example-small:
-	rm -rf examples/small/export/sparv_statistics.stat_highlights
+	rm -rf examples/small/export/sbx_corpus_statistics.stat_highlights
 	cd examples/small; ${INVENV} sparv run --stats
 	diff assets/small/stat_highlights_sv_small.gold.md \
-	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
+	    examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_small.md
 	diff assets/small/stat_highlights_en_small.gold.md \
-	    examples/small/export/sparv_statistics.stat_highlights/stat_highlights_en_small.md
+	    examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_small.md
 
 update-example-small-snapshot: \
 	assets/small/stat_highlights_en_small.gold.md \
 	assets/small/stat_highlights_sv_small.gold.md
 
 assets/small/stat_highlights_en_small.gold.md: \
-	examples/small/export/sparv_statistics.stat_highlights/stat_highlights_en_small.md
+	examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_small.md
 	@cp $< $@
 
 assets/small/stat_highlights_sv_small.gold.md: \
-	examples/small/export/sparv_statistics.stat_highlights/stat_highlights_sv_small.md
+	examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_small.md
 	@cp $< $@
 
 install-dev-metadata:
 	uv sync --all-packages --group metadata --dev
 
 .PHONY: generate-metadata
-generate-metadata: install-dev-metadata src/sparv_statistics/metadata.yaml
+generate-metadata: install-dev-metadata src/sbx_corpus_statistics/metadata.yaml
 	rm -rf assets/metadata/export/sbx_metadata
 	cd assets/metadata; ${INVENV} sparv run sbx_metadata:plugin_analysis_metadata_export
