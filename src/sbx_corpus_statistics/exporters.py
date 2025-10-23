@@ -26,8 +26,8 @@ from sparv.api import (
 )
 from sparv.api.classes import Annotation
 
-from sparv_statistics import formatting as f
-from sparv_statistics import suc_msd
+from sbx_corpus_statistics import formatting as f
+from sbx_corpus_statistics import suc_msd
 
 __all__ = ["set_locale_from_lang"]
 
@@ -213,9 +213,9 @@ def stat_highlights(
     export_annotations: ExportAnnotationsAllSourceFiles = ExportAnnotationsAllSourceFiles("export.annotations"),
     source_annotations: SourceAnnotationsAllSourceFiles = SourceAnnotationsAllSourceFiles("export.source_annotations"),
     # word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("[export]"),
-    out_highlights_en: Export = Export("sparv_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
-    out_highlights_sv: Export = Export("sparv_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
-    out_all: Export = Export("sparv_statistics.stat_highlights/all_stats_[metadata.id].json"),
+    out_highlights_en: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
+    out_highlights_sv: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
+    out_all: Export = Export("sbx_corpus_statistics.stat_highlights/all_stats_[metadata.id].json"),
 ) -> None:
     logger.progress(total=len(source_files) + 1)  # type: ignore
     logger.debug("export_annotations = %s", export_annotations)
@@ -720,7 +720,7 @@ _T: dict[str, dict[str, str]] = {
         "tokenization_header": "## Tokenization and Word Segmentation\n",
         "tokenization_paragraphs": "- This corpus contains {num_paragraphs} paragraphs in {num_documents} documents.\n",
         "tokenization_sentences": "- This corpus contains {num_sentences} sentences and {num_tokens} tokens.\n",
-        # "tokenization_sentences": "- This corpus contains {num_sentences} sentences and {num_tokens} tokens, where {unique_tokens} tokens are unique.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-statistics/issues/12
+        # "tokenization_sentences": "- This corpus contains {num_sentences} sentences and {num_tokens} tokens, where {unique_tokens} tokens are unique.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues/12
         "tokenization_texts": "- This corpus is built from {num_texts} texts, over {num_documents} documents, in {num_files} files.\n",  # noqa: E501
         "top_lemmas": "## Top 10 base forms\n",
         "value": "value",
@@ -800,7 +800,7 @@ _T: dict[str, dict[str, str]] = {
         "tokenization_header": "## Tokenisering och segmentering\n",
         "tokenization_paragraphs": "- Denna korpus innehåller {num_paragraphs} stycken i {num_documents} dokument.\n",
         "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens.\n",
-        # "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens, varav {unique_tokens} tokens är unika.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-statistics/issues/12
+        # "tokenization_sentences": "- Denna korpus innehåller {num_sentences} meningar och {num_tokens} tokens, varav {unique_tokens} tokens är unika.\n",  # noqa: E501 TODO: track unique tokens, https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues/12
         "tokenization_texts": "- Denna korpus är skapad från {num_texts} texter, i {num_documents} dokument, som finns i {num_files} filer.\n",  # noqa: E501
         "top_lemmas": "## Topp-10 grundformer\n",
         "value": "värde",
@@ -1547,7 +1547,7 @@ def _write_tokenization_and_word_segmentation(
         _T[lang]["tokenization_sentences"].format(
             num_sentences=num_sentences,
             num_tokens=num_tokens,
-            # unique_tokens=unique_tokens, TODO: track unique tokens, https://github.com/spraakbanken/sparv-statistics/issues/12
+            # unique_tokens=unique_tokens, TODO: track unique tokens, https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues/12
         )
     )
 

@@ -1,8 +1,8 @@
 import pytest
 from syrupy.assertion import SnapshotAssertion
 
-from sparv_statistics import exporters
-from sparv_statistics import formatting as f
+from sbx_corpus_statistics import exporters
+from sbx_corpus_statistics import formatting as f
 
 
 @pytest.mark.parametrize("lang", ["en", "sv"])

@@ -4,7 +4,7 @@ import pytest
 from sparv.api.classes import Annotation
 from syrupy.assertion import SnapshotAssertion
 
-from sparv_statistics import exporters
+from sbx_corpus_statistics import exporters
 
 
 @pytest.mark.parametrize("lang", ("en", "sv"))
