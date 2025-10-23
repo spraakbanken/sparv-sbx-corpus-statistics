@@ -117,6 +117,11 @@ This repo uses [conventional commits](https://www.conventionalcommits.org/en/v1.
 
 ### Release a new version
 
+> [!NOTE] Requirements
+> [`bump-my-version`](https://github.com/callowayproject/bump-my-version) for `make bumpversion`, install with `uv tool install bump-my-version`.
+> [`git-cliff`](https://git-cliff.org/) for `make prepare-release`
+> [`sparv-sbx-metadata`](https://github.com/spraakbanken/sparv-sbx-metadata) for `make generate-metadata`, installed automaticly.
+
 - Prepare the CHANGELOG: `make prepare-release`.
 - Edit `CHANGELOG.md` to your liking. Keep the header `[unreleased]`
 - Add to git: `git add --update`
