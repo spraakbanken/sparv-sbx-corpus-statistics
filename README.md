@@ -10,7 +10,7 @@ from 1.0 to 1.1 allows us to increase the Minimum Supported Python Version. User
 Python version can use an older minor version instead. Below is a list of sparv-sbx-corpus-statistics versions
 and their Minimum Supported Python Version:
 
-- v0.1: Python 3.9.
+- v0.1: Python 3.11.
 
 Note however that sparv-sbx-corpus-statistics also has dependencies, which might have different MSRV
 policies. We try to stick to the above policy when updating dependencies, but
