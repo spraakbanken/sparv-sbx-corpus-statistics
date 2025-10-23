@@ -53,6 +53,10 @@ jobs:
           version: ${{ env.UV_VERSION }}
           enable-cache: true
 
+      - name: Prepare README.md
+        run: |
+          python scripts/transform_readme.py --target pypi
+          cat README.md
       #----------------------------------------------
       #  -----  build distribution -----
       #----------------------------------------------
