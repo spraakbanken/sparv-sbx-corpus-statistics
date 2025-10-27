@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=../../.config/metadata-schema.json
 id: sbx-mul-corpus_statistics-sparv
 short_description:
   swe: Sammanställning av korpusstatistik, fullständig samt sammandrag på svenska och engelska.
