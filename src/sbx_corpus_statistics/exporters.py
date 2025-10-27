@@ -1527,7 +1527,11 @@ def _write_tokenization_and_word_segmentation(
     #     "segment.token", freqs["segment.token"]
     # )
     num_tokens = f.fmt_number_signific(all_stats["segment.token"]["raw"]["stats"].num_values, 0)
-    num_documents = f.fmt_number_signific(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+    try:
+        num_documents = f.fmt_number_signific(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+    except KeyError:
+        logger.exception("can't read 'stats' from all_stats['dokument']['raw']=%s", all_stats["dokument"]["raw"])
+        num_documents = "<MISSING>"
     num_files = f.fmt_number_signific(all_stats["file"]["raw"]["stats"].num_values, 0)
     num_paragraphs = (
         all_stats["segment.paragraph"]["raw"]["stats"].num_values if "segment.paragraph" in all_stats else 0
