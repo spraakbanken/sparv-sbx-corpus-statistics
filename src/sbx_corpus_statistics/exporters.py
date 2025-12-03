@@ -628,7 +628,9 @@ def _combine_all_stats(
     stats: dict[str, dict[str, RunningMeanVar]],
     stats2: dict[str, dict[str, Stats]],
 ) -> dict[str, dict[str, Stats]]:
-    all_stats: dict[str, dict[str, Stats]] = defaultdict(lambda: defaultdict(dict))  # type: ignore [arg-type]
+    all_stats: dict[str, dict[str, Stats]] = defaultdict(
+        lambda: defaultdict(lambda: {"stats": RunningMeanVar(), "toplist": []})
+    )
     for astats in stats.values():
         for attr, stats_ in astats.items():
             attr_, attr_feat = attr.split(" ", maxsplit=1)
@@ -636,10 +638,8 @@ def _combine_all_stats(
         # all_stats.update(astats)
     for attr2, stats2_ in stats2.items():
         for attr, stats_2 in stats2_.items():
-            all_stats[attr2][attr] = {
-                "stats": stats_2["stats"],
-                "toplist": stats_2["toplist"],
-            }
+            all_stats[attr2][attr]["stats"] += stats_2["stats"]
+            all_stats[attr2][attr]["toplist"].extend(stats_2["toplist"])
     return all_stats
 
 
