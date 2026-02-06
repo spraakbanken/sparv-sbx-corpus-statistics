@@ -34,8 +34,9 @@ dependencies = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
+Changelog = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/blob/main/CHANGELOG.md"
 Homepage = "https://spraakbanken.gu.se"
+Issues = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
 Repository = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
 
 [project.entry-points."sparv.plugin"]
