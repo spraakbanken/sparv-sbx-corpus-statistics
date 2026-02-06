@@ -1300,14 +1300,14 @@ wheels = [
 
 [[package]]
 name = "running-stats"
-version = "0.1.3"
+version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/49/76/ec0667cc062fd7e0ac0b6ae039a7004e9e2cb1d13d95c9a8c3a62e587d7b/running_stats-0.1.3.tar.gz", hash = "sha256:2017ddced7a13a10c1ea322559e562cb0cc585ff59a2a58a817d12ef5370b570", size = 30627, upload-time = "2025-02-27T13:12:22.52Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/94/6596d19522759c030b31e550650affa8f193adc4c1617e7c77235a73a6ac/running_stats-0.2.0.tar.gz", hash = "sha256:fe5769809c5c8d91bcdece528b846608500eccebb71dde18d9a6bbd63eefd3d7", size = 3784, upload-time = "2025-12-04T09:27:37.629Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c3/0f/aae80f1ccd11a9973be1eb9a2acdf6df7dacd2507301cac80c4f016fc967/running_stats-0.1.3-py3-none-any.whl", hash = "sha256:f7ff15bdd0007f1fac9c2f3b07900d62c24466616f70bd64c8c95bdc4b658d80", size = 3489, upload-time = "2025-02-27T13:12:18.796Z" },
+    { url = "https://files.pythonhosted.org/packages/27/2e/0eb4795643f48eb3af33f9e936fe1cad7890c86ab01b30f10798c255d08d/running_stats-0.2.0-py3-none-any.whl", hash = "sha256:d8afe39c2827fcb1d5be382525994a37d3af47fd69f15743adb10a60d79db16f", size = 4556, upload-time = "2025-12-04T09:27:36.462Z" },
 ]
 
 [[package]]
@@ -1439,7 +1439,7 @@ metadata = [
 requires-dist = [
     { name = "attrs", specifier = ">=25.3.0" },
     { name = "numpy", specifier = ">1.24.4" },
-    { name = "running-stats", specifier = ">=0.1.3" },
+    { name = "running-stats", specifier = ">=0.2.0" },
     { name = "sparv", specifier = ">=5.3.1" },
     { name = "strenum", specifier = ">=0.4.15" },
 ]
