@@ -464,7 +464,7 @@ def stat_highlights(
                         # elif attribute.name.startswith(f"{token.name}:stanza.msd"):
                         #     stats[attribute_name][f"{attribute.name} "]
                 except FileNotFoundError as exc:
-                    logger.info("Suppressed error: %s", repr(exc))
+                    logger.info("Suppressed error: %r", exc)
                 logger.debug(
                     "Writing temporary stats=%s for attribute=%s",
                     attribute_stats,
@@ -1060,7 +1060,7 @@ def _write_pos_tags(
     fp.write("\n")
     _write_pos_distribution(fp, pos_stats=pos_stats, lang=lang)
     fp.write("\n")
-    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):  # type: ignore [misc]
+    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):
         fp.write("\n")
         _write_pos_tag(
             fp,
@@ -1271,10 +1271,11 @@ def _write_suc_features(
                 num_pos_tags=len(pos_tags),
             )
         )
+        rows = ({"label": f"<code>{pos}</code>", "columns": [count, perc]} for pos, count, perc in pos_tags)
         _write_table_html(
             fp,
             headers=[_t(lang, "Part of Speech"), _t(lang, "Count"), _t(lang, "Percentage")],
-            rows=({"label": f"<code>{pos}</code>", "columns": [count, perc]} for pos, count, perc in pos_tags),
+            rows=rows,  # ty:ignore[invalid-argument-type]
             formatters=[lambda x: f.fmt_number_signific(x, 0), lambda x: f"{f.fmt_number_decimals(x, 0)}%"],
         )
         if multi_feat_token > 0:
