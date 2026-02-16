@@ -214,3 +214,4 @@ install-dev-metadata:
 generate-metadata: install-dev-metadata src/sbx_corpus_statistics/metadata.yaml
 	rm -rf assets/metadata/export/sbx_metadata
 	cd assets/metadata; ${INVENV} sparv run sbx_metadata:plugin_analysis_metadata_export
+	@uv run scripts/check-sbx-metadata-schema.py assets/metadata/export
