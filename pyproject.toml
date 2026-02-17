@@ -4,50 +4,65 @@ version = "0.1.0"
 description = "Sparv plugin to collect statistics about the created corpus"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "attrs>=25.3.0",
-    "numpy>1.24.4",
-    "running-stats>=0.1.3",
-    "sparv>=5.3.1",
-    "strenum>=0.4.15",
-]
 classifiers = [
-    "Development Status :: 3 - Alpha",
-    # "Development Status :: 4 - Beta",
-    # "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: Unix",
-    "Operating System :: POSIX",
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: MacOS",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Programming Language :: Python :: Implementation :: CPython",
-    # "uncomment if you test on these interpreters:",
-    # "Programming Language :: Python :: Implementation :: IronPython",
-    # "Programming Language :: Python :: Implementation :: Jython",
-    # "Programming Language :: Python :: Implementation :: Stackless",
-    "Topic :: Utilities",
-    "Typing :: Typed",
+  "Development Status :: 3 - Alpha",
+  # "Development Status :: 4 - Beta",
+  # "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  # "uncomment if you test on these interpreters:",
+  # "Programming Language :: Python :: Implementation :: IronPython",
+  # "Programming Language :: Python :: Implementation :: Jython",
+  # "Programming Language :: Python :: Implementation :: Stackless",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dependencies = [
+  "attrs>=25.3.0",
+  "numpy>1.24.4",
+  "running-stats>=0.2.0",
+  "sparv>=5.3.1",
+  "strenum>=0.4.15",
+]
+
+[project.urls]
+Changelog = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/blob/main/CHANGELOG.md"
+Homepage = "https://spraakbanken.gu.se"
+Issues = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
+Repository = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
+
+[project.entry-points."sparv.plugin"]
+sbx_corpus_statistics = "sbx_corpus_statistics"
+
+[dependency-groups]
+dev = [
+  { include-group = "lint" },
+  { include-group = "test" },
+]
+lint = [
+  "ruff>=0.11.13",
+  "ty>=0.0.15",
+]
+metadata = [
+  "sparv-sbx-metadata",
+]
+test = [
+  "pytest>=8.4.0",
+  "pytest-cov>=7.0.0",
+  "syrupy>=5.0.0",
 ]
 
 [build-system]
 requires = ["uv_build>=0.9.0,<0.10.0"]
 build-backend = "uv_build"
-
-[project.entry-points."sparv.plugin"]
-sbx_corpus_statistics = "sbx_corpus_statistics"
-
-[project.urls]
-Homepage = "https://spraakbanken.gu.se"
-Repository = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics"
-"Bug Tracker" = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics/issues"
-
-[tool.uv.build-backend]
-module-name = "sbx_corpus_statistics"
-source-exclude = ["/.github", "/docs"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
@@ -55,18 +70,9 @@ allow-direct-references = true
 [tool.uv]
 package = true
 
-[dependency-groups]
-dev = [
-    "mypy>=1.15.0",
-    "pytest>=8.3.5",
-    "pytest-cov>=6.1.1",
-    "ruff>=0.11.7",
-    "syrupy>=4.9.1",
-]
-metadata = [
-    "sparv-sbx-metadata",
-]
-
+[tool.uv.build-backend]
+module-name = "sbx_corpus_statistics"
+source-exclude = ["/.github", "/docs"]
 
 [tool.uv.sources]
 sparv-sbx-metadata = { git = "https://github.com/spraakbanken/sparv-sbx-metadata", tag = "v2.3.1" }

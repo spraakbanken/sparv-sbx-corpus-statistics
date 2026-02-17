@@ -115,7 +115,7 @@ doc-tests:
 .PHONY: type-check
 # check types
 type-check:
-	${INVENV} mypy ${PROJECT_SRC} ${tests}
+	${INVENV} ty check ${PROJECT_SRC} ${tests}
 
 .PHONY: lint
 # lint the code
@@ -214,3 +214,4 @@ install-dev-metadata:
 generate-metadata: install-dev-metadata src/sbx_corpus_statistics/metadata.yaml
 	rm -rf assets/metadata/export/sbx_metadata
 	cd assets/metadata; ${INVENV} sparv run sbx_metadata:plugin_analysis_metadata_export
+	@uv run scripts/check-sbx-metadata-schema.py assets/metadata/export

@@ -166,3 +166,4 @@ cython_debug/
 /examples/**/logs
 /examples/**/sparv-workdir
 coverage.lcov
+/assets/schemas/

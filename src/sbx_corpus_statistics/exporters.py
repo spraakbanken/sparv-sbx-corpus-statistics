@@ -464,7 +464,7 @@ def stat_highlights(
                         # elif attribute.name.startswith(f"{token.name}:stanza.msd"):
                         #     stats[attribute_name][f"{attribute.name} "]
                 except FileNotFoundError as exc:
-                    logger.info("Suppressed error: %s", repr(exc))
+                    logger.info("Suppressed error: %r", exc)
                 logger.debug(
                     "Writing temporary stats=%s for attribute=%s",
                     attribute_stats,
@@ -628,7 +628,9 @@ def _combine_all_stats(
     stats: dict[str, dict[str, RunningMeanVar]],
     stats2: dict[str, dict[str, Stats]],
 ) -> dict[str, dict[str, Stats]]:
-    all_stats: dict[str, dict[str, Stats]] = defaultdict(lambda: defaultdict(dict))  # type: ignore [arg-type]
+    all_stats: dict[str, dict[str, Stats]] = defaultdict(
+        lambda: defaultdict(lambda: {"stats": RunningMeanVar(), "toplist": []})
+    )
     for astats in stats.values():
         for attr, stats_ in astats.items():
             attr_, attr_feat = attr.split(" ", maxsplit=1)
@@ -636,10 +638,8 @@ def _combine_all_stats(
         # all_stats.update(astats)
     for attr2, stats2_ in stats2.items():
         for attr, stats_2 in stats2_.items():
-            all_stats[attr2][attr] = {
-                "stats": stats_2["stats"],
-                "toplist": stats_2["toplist"],
-            }
+            all_stats[attr2][attr]["stats"] += stats_2["stats"]
+            all_stats[attr2][attr]["toplist"].extend(stats_2["toplist"])
     return all_stats
 
 
@@ -1060,7 +1060,7 @@ def _write_pos_tags(
     fp.write("\n")
     _write_pos_distribution(fp, pos_stats=pos_stats, lang=lang)
     fp.write("\n")
-    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):  # type: ignore [misc]
+    for pos_tag, pos_tag_translated in pos_stats.tags_and_translation(lang):
         fp.write("\n")
         _write_pos_tag(
             fp,
@@ -1271,10 +1271,11 @@ def _write_suc_features(
                 num_pos_tags=len(pos_tags),
             )
         )
+        rows = ({"label": f"<code>{pos}</code>", "columns": [count, perc]} for pos, count, perc in pos_tags)
         _write_table_html(
             fp,
             headers=[_t(lang, "Part of Speech"), _t(lang, "Count"), _t(lang, "Percentage")],
-            rows=({"label": f"<code>{pos}</code>", "columns": [count, perc]} for pos, count, perc in pos_tags),
+            rows=rows,  # ty:ignore[invalid-argument-type]
             formatters=[lambda x: f.fmt_number_signific(x, 0), lambda x: f"{f.fmt_number_decimals(x, 0)}%"],
         )
         if multi_feat_token > 0:
@@ -1527,7 +1528,11 @@ def _write_tokenization_and_word_segmentation(
     #     "segment.token", freqs["segment.token"]
     # )
     num_tokens = f.fmt_number_signific(all_stats["segment.token"]["raw"]["stats"].num_values, 0)
-    num_documents = f.fmt_number_signific(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+    try:
+        num_documents = f.fmt_number_signific(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+    except KeyError:
+        logger.exception("can't read 'stats' from all_stats['dokument']['raw']=%s", all_stats["dokument"]["raw"])
+        num_documents = "<MISSING>"
     num_files = f.fmt_number_signific(all_stats["file"]["raw"]["stats"].num_values, 0)
     num_paragraphs = (
         all_stats["segment.paragraph"]["raw"]["stats"].num_values if "segment.paragraph" in all_stats else 0
