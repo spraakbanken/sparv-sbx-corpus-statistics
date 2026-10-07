@@ -2299,7 +2299,7 @@ dev = [
     { name = "pytest", specifier = ">=8.4.0" },
     { name = "pytest-cov", specifier = ">=7.0.0" },
     { name = "ruff", specifier = ">=0.16.9" },
-    { name = "syrupy", specifier = ">=5.0.0" },
+    { name = "syrupy", specifier = ">=6.0.0" },
     { name = "ty", specifier = ">=0.0.84" },
 ]
 lint = [
@@ -2310,7 +2310,7 @@ metadata = [{ name = "sparv-sbx-metadata", git = "https://github.com/spraakbanke
 test = [
     { name = "pytest", specifier = ">=8.4.0" },
     { name = "pytest-cov", specifier = ">=7.0.0" },
-    { name = "syrupy", specifier = ">=5.0.0" },
+    { name = "syrupy", specifier = ">=6.0.0" },
 ]
 
 [[package]]
