@@ -3,7 +3,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
-#     "httpx>=0.28.1",
+#     "httpx2>=2.12.1",
 #     "jsonschema-rs>=0.42.0",
 #     "pyyaml>=6.0.3",
 # ]
@@ -11,7 +11,7 @@
 import sys
 from pathlib import Path
 
-import httpx
+import httpx2 as httpx
 import jsonschema_rs
 import yaml
 
