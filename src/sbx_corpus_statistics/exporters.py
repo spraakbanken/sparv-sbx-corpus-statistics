@@ -217,7 +217,7 @@ def stat_highlights(
     out_highlights_sv: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
     out_all: Export = Export("sbx_corpus_statistics.stat_highlights/all_stats_[metadata.id].json"),
 ) -> None:
-    logger.progress(total=len(source_files) + 1)  # type: ignore
+    logger.progress(total=len(source_files) + 1)
     logger.debug("export_annotations = %s", export_annotations)
     logger.debug("export_annotations.items = %s", export_annotations.items)
     logger.debug("source_annotations = %s", source_annotations)
@@ -227,7 +227,7 @@ def stat_highlights(
     # Get annotations list and export names
     annotation_list, token_attribute_names, export_names = util.export.get_annotation_names(
         export_annotations,
-        source_annotations or [],  # type: ignore
+        source_annotations or [],
         token_name=token.name,
     )
     logger.debug("annotation_list = %s", annotation_list)
@@ -328,7 +328,7 @@ def stat_highlights(
     #     lambda: NamedTemporaryFile(mode="w+t")
     # )
 
-    for source_file in source_files:  # noqa: PLR1702
+    for source_file in source_files:
         for attribute_name, attribute_list in attributes.items():
             for attribute in attribute_list:
                 logger.debug(
@@ -532,7 +532,7 @@ def stat_highlights(
                 else:
                     raise RuntimeError(f"Unknown MSD={msd}")
 
-        logger.progress()  # type: ignore
+        logger.progress()
 
     # Collect statistics
     stats_2: dict[str, dict[str, Stats]] = defaultdict(
