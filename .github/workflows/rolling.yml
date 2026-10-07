@@ -19,7 +19,7 @@ concurrency:
 name: rolling
 
 env:
-  UV_VERSION: "0.12.9"
+  UV_VERSION: "0.12.21"
   UV_GIT_LFS: 1
 
 jobs:
