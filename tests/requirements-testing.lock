@@ -298,7 +298,7 @@ traitlets==5.14.3
     #   nbformat
 triton==3.4.0 ; platform_machine == 'x86_64' and sys_platform == 'linux'
     # via torch
-ty==0.0.15
+ty==0.0.84
 typing-extensions==4.16.0
     # via
     #   pydantic
