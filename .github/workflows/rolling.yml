@@ -20,7 +20,6 @@ name: rolling
 
 env:
   UV_VERSION: "0.12.21"
-  UV_GIT_LFS: 1
 
 jobs:
   # https://twitter.com/alcuadrado/status/1571291687837732873
