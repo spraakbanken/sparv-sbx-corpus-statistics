@@ -235,6 +235,19 @@ class MsdWPos(Msd):
         return cls(pos=pos, degree=degree, gender=gender, number=number, definiteness=definiteness, case=case)
 
     @classmethod
+    def pos_jj_sms(
+        cls,
+        pos: SucPos,
+        degree: SucDegree,
+        gender: SucGender,
+        case: SucCase,
+    ) -> "MsdWPos":
+        """Create MSD with POS='JJ' and CASE='SMS'."""
+        _check_given_pos(pos, SucPos.JJ)
+        _check_given_case(case, SucCase.SMS)
+        return cls(pos=pos, degree=degree, gender=gender, case=case)
+
+    @classmethod
     def pos_nn(
         cls,
         pos: SucPos,
@@ -352,6 +365,11 @@ def _check_given_pos(pos: SucPos, expected_pos: SucPos) -> None:
         raise ValueError(f"Got pos='{pos}', expected '{expected_pos}'")
 
 
+def _check_given_case(case: SucCase, expected_case: SucCase) -> None:
+    if case != expected_case:
+        raise ValueError(f"Got case='{case}', expected '{expected_case}'")
+
+
 def parse(msd: str) -> Msd:
     """Parse a str as a SUC MSD."""
     parts = msd.split(".")
@@ -396,9 +414,11 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
     if pos == SucPos.JJ:
         degree = SucDegree(msds[0])
         gender = SucGender(msds[1].replace("+", "/"))
+        case = SucCase(msds[4])
+        if case == SucCase.SMS:
+            return MsdWPos.pos_jj_sms(pos=pos, degree=degree, gender=gender, case=case)
         number = SucNumber(msds[2].replace("+", "/"))
         definiteness = SucDefiniteness(msds[3].replace("+", "/"))
-        case = SucCase(msds[4])
         return MsdWPos.pos_jj(
             pos=pos, degree=degree, gender=gender, number=number, definiteness=definiteness, case=case
         )

@@ -167,3 +167,5 @@ cython_debug/
 /examples/**/sparv-workdir
 coverage.lcov
 /assets/schemas/
+examples/small/freqs.json
+*.log.gz
