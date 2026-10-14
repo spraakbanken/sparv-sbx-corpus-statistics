@@ -2,6 +2,7 @@ import pytest
 from syrupy.assertion import SnapshotAssertion
 
 from sbx_corpus_statistics import suc_msd
+from sbx_corpus_statistics.suc_msd import MsdWPos, SucCase, SucDegree, SucGender, SucPos
 
 SUC_MSD_FREQ: dict[str, int] = {
     "AB": 70456,
@@ -45,6 +46,7 @@ SUC_MSD_FREQ: dict[str, int] = {
     "JJ.POS.UTR+NEU.SIN+PLU.IND+DEF.NOM": 3307,
     "JJ.POS.UTR+NEU.SIN.DEF.GEN": 29,
     "JJ.POS.UTR+NEU.SIN.DEF.NOM": 16664,
+    "JJ.POS.UTR.-.-.SMS": 1,
     "JJ.POS.UTR.SIN.IND+DEF.NOM": 430,
     "JJ.POS.UTR.SIN.IND.NOM": 31584,
     "JJ.SUV.MAS.SIN.DEF.NOM": 1,
@@ -137,3 +139,19 @@ def test_parse(msd: str, snapshot: SnapshotAssertion) -> None:
     answer = suc_msd.parse(msd)
 
     assert answer == snapshot
+
+
+class TestMsdWPos:
+    @pytest.mark.parametrize(
+        "pos, degree, gender, case",
+        [
+            (SucPos.JJ, SucDegree.POS, SucGender.UTR, SucCase.NOM),
+            (SucPos.RG, SucDegree.POS, SucGender.UTR, SucCase.SMS),
+        ],
+    )
+    def test_pos_jj_sms_raises_value_error_on_bad_input(
+        self, pos: SucPos, degree: SucDegree, gender: SucGender, case: SucCase, snapshot: SnapshotAssertion
+    ) -> None:
+        with pytest.raises(ValueError) as exc_info:
+            MsdWPos.pos_jj_sms(pos=pos, degree=degree, gender=gender, case=case)
+        assert exc_info.value == snapshot

@@ -1,4 +1,10 @@
 # serializer version: 1
+# name: TestMsdWPos.test_pos_jj_sms_raises_value_error_on_bad_input[JJ-POS-UTR-NOM]
+  ValueError("Got case='NOM', expected 'SMS'")
+# ---
+# name: TestMsdWPos.test_pos_jj_sms_raises_value_error_on_bad_input[RG-POS-UTR-SMS]
+  ValueError("Got pos='RG', expected 'JJ'")
+# ---
 # name: test_parse[AB.AN]
   MsdWPos(pos=<SucPos.AB: 'AB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=True)
 # ---
@@ -121,6 +127,9 @@
 # ---
 # name: test_parse[JJ.POS.UTR+NEU.SIN.DEF.NOM]
   MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR_NEU: 'UTR/NEU'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.DEF: 'DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse[JJ.POS.UTR.-.-.SMS]
+  MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR: 'UTR'>, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
 # name: test_parse[JJ.POS.UTR.SIN.IND+DEF.NOM]
   MsdWPos(pos=<SucPos.JJ: 'JJ'>, degree=<SucDegree.POS: 'POS'>, gender=<SucGender.UTR: 'UTR'>, number=<SucNumber.SIN: 'SIN'>, definiteness=<SucDefiniteness.IND_DEF: 'IND/DEF'>, case=<SucCase.NOM: 'NOM'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
