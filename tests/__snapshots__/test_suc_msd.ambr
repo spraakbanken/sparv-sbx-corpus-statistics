@@ -14,6 +14,9 @@
 # name: test_parse[AB.POS]
   MsdWPos(pos=<SucPos.AB: 'AB'>, degree=<SucDegree.POS: 'POS'>, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
+# name: test_parse[AB.SMS]
+  MsdWPos(pos=<SucPos.AB: 'AB'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
 # name: test_parse[AB.SUV]
   MsdWPos(pos=<SucPos.AB: 'AB'>, degree=<SucDegree.SUV: 'SUV'>, gender=None, number=None, definiteness=None, case=None, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---

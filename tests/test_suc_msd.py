@@ -9,6 +9,7 @@ SUC_MSDS: set[str] = {
     "AB.AN",
     "AB.KOM",
     "AB.POS",
+    "AB.SMS",
     "AB.SUV",
     "DT.MAS.SIN.DEF",
     "DT.NEU.SIN.DEF",
