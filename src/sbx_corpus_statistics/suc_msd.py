@@ -164,10 +164,12 @@ class MsdWPos(Msd):
     is_abbreviation: bool = False
 
     @classmethod
-    def pos_ab(cls, pos: SucPos, degree: SucDegree | None) -> "MsdWPos":
+    def pos_ab(cls, pos: SucPos, degree: SucDegree | None, case: SucCase | None) -> "MsdWPos":
         """Create MSD with POS='AB'."""
         _check_given_pos(pos, SucPos.AB)
-        return cls(pos=pos, degree=degree)
+        if case:
+            _check_given_case(case, SucCase.SMS)
+        return cls(pos=pos, degree=degree, case=case)
 
     @classmethod
     def pos_abbr(cls, pos: SucPos) -> "MsdWPos":
@@ -391,8 +393,14 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
     if msds and msds[0] == "AN":
         return MsdWPos.pos_abbr(pos=pos)
     if pos == SucPos.AB:
-        degree = SucDegree(msds[0]) if msds else None
-        return MsdWPos.pos_ab(pos=pos, degree=degree)
+        degree = None
+        case = None
+        if len(msds) == 1:
+            try:
+                degree = SucDegree(msds[0])
+            except ValueError:
+                case = SucCase(msds[0])
+        return MsdWPos.pos_ab(pos=pos, degree=degree, case=case)
     if pos == SucPos.DT:
         gender = SucGender(msds[0].replace("+", "/"))
         number = SucNumber(msds[1].replace("+", "/"))
