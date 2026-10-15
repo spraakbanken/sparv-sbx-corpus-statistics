@@ -380,9 +380,36 @@
 # name: test_parse[VB.PRT.SFO]
   MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.PRT: 'PRT'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
+# name: test_parse[VB.SMS]
+  MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=<SucCase.SMS: 'SMS'>, tense=None, voice=None, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
 # name: test_parse[VB.SUP.AKT]
   MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.SUP: 'SUP'>, voice=<SucVoice.AKT: 'AKT'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
 # ---
 # name: test_parse[VB.SUP.SFO]
   MsdWPos(pos=<SucPos.VB: 'VB'>, degree=None, gender=None, number=None, definiteness=None, case=None, tense=<SucTense.SUP: 'SUP'>, voice=<SucVoice.SFO: 'SFO'>, mood=None, particle_form=None, pronoun_form=None, is_abbreviation=False)
+# ---
+# name: test_parse_fails_on_bad_input[NN.X]
+  ValueError("Unknown msd='NN.X'")
+# ---
+# name: test_parse_fails_on_bad_input[PC.X]
+  ValueError("Unknown msd='PC.X'")
+# ---
+# name: test_parse_fails_on_bad_input[PN.X]
+  ValueError("Unknown msd='PN.X'")
+# ---
+# name: test_parse_fails_on_bad_input[RO.X]
+  ValueError("Unknown msd='RO.X'")
+# ---
+# name: test_parse_fails_on_bad_input[VB.INF.X]
+  ValueError("Unknown msd='VB.INF.X'")
+# ---
+# name: test_parse_fails_on_bad_input[VB.KON.X]
+  ValueError("Unknown msd='VB.KON.X'")
+# ---
+# name: test_parse_fails_on_bad_input[VB.X]
+  ValueError("Unknown msd='VB.X'")
+# ---
+# name: test_parse_fails_on_bad_input[X]
+  ValueError("Unknown msd='X'")
 # ---

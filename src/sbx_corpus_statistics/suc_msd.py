@@ -357,6 +357,13 @@ class MsdWPos(Msd):
         return cls(pos=pos, tense=tense, voice=voice, mood=mood)
 
     @classmethod
+    def pos_vb_sms(cls, pos: SucPos, case: SucCase) -> "MsdWPos":
+        """Create MSD with POS='VB'."""
+        _check_given_pos(pos, SucPos.VB)
+        _check_given_case(case, SucCase.SMS)
+        return cls(pos=pos, case=case)
+
+    @classmethod
     def with_pos(cls, pos: SucPos) -> "MsdWPos":
         """Create MSD with given pos."""
         return cls(pos=pos)
@@ -379,14 +386,14 @@ def parse(msd: str) -> Msd:
     try:
         pos = SucPos(parts[0])
         return _parse_from_pos(pos, tail)
-    except ValueError:
+    except (ValueError, UnsupportedValueError):
         pass
     try:
         delimiter = SucDelimiter(parts[0])
         return _parse_from_delimiter(delimiter, tail)
     except ValueError:
         pass
-    raise NotImplementedError(f"Unknown {msd=}")
+    raise ValueError(f"Unknown {msd=}")
 
 
 def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
@@ -487,13 +494,12 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
             number = SucNumber(msds[1].replace("+", "/")) if msds[1] != "-" else None
             definiteness = SucDefiniteness(msds[2].replace("+", "/")) if msds[2] != "-" else None
             case = SucCase(msds[3]) if msds[3] != "-" else None
-        except ValueError as exc:
+        except ValueError:
             try:
                 case = SucCase(msds[0])
                 return MsdWPos.pos_ro(pos=pos, gender=None, number=None, definiteness=None, case=case)
             except ValueError as exc:
                 raise UnsupportedValueError from exc
-            raise UnsupportedValueError from exc
         return MsdWPos.pos_ro(pos=pos, gender=gender, number=number, definiteness=definiteness, case=case)
 
     if pos == SucPos.VB:
@@ -503,6 +509,13 @@ def _parse_from_pos(pos: SucPos, msds: list[str]) -> Msd:
         except ValueError:
             try:
                 mood = SucMood(msds[0])
+            except ValueError:
+                try:
+                    case = SucCase(msds[0])
+                    return MsdWPos.pos_vb_sms(pos=pos, case=case)
+                except ValueError as exc:
+                    raise UnsupportedValueError from exc
+            try:
                 tense = SucTense(msds[1])
             except ValueError as exc:
                 raise UnsupportedValueError from exc
