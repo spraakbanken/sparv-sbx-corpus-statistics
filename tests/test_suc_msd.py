@@ -132,6 +132,7 @@ SUC_MSDS: set[str] = {
     "VB.PRT.SFO",
     "VB.SUP.AKT",
     "VB.SUP.SFO",
+    "VB.SMS",
 }
 
 
@@ -140,6 +141,14 @@ def test_parse(msd: str, snapshot: SnapshotAssertion) -> None:
     answer = suc_msd.parse(msd)
 
     assert answer == snapshot
+
+
+@pytest.mark.parametrize("text", ["X", "NN.X", "PC.X", "PN.X", "RO.X", "VB.X", "VB.KON.X", "VB.INF.X"])
+def test_parse_fails_on_bad_input(text: str, snapshot: SnapshotAssertion) -> None:
+    with pytest.raises(ValueError) as exc_info:
+        suc_msd.parse(text)
+
+    assert exc_info.value == snapshot
 
 
 class TestMsdWPos:
