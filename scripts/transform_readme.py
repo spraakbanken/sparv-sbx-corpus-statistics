@@ -60,7 +60,7 @@ def main(target: str) -> None:
         url = match.group(1)
         if not url.startswith("http"):
             url = urllib.parse.urljoin(
-                f"https://github.com/spraakbanken/sparv-sbx-corpus-statistics/blob/{version}/README.md",
+                f"https://github.com/spraakbanken/sparv-sbx-corpus-statistics/blob/v{version}/README.md",
                 url,
             )
         return f"]({url})"
