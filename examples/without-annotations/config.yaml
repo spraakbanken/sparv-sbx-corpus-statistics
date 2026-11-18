@@ -1,0 +1,16 @@
+metadata:
+  short_description:
+    swe: Exempelkorpus med statistik
+  language: swe
+  id: without-annotations
+
+import:
+  importer: text_import:parse
+
+export:
+  default:
+    - xml_export:pretty
+    - sbx_corpus_statistics:stat_highlights
+  annotations:
+    - <sentence>
+    - <token>

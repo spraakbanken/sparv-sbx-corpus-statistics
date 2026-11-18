@@ -24,7 +24,6 @@ from sparv.api import (
     exporter,
     util,
 )
-from sparv.api.classes import Annotation
 
 from sbx_corpus_statistics import formatting as f
 from sbx_corpus_statistics import suc_msd
@@ -40,6 +39,8 @@ WORDS: str = "words"
 WORDS_NON_EMPTY: str = "words (non-empty)"
 NUM_TOPS: int = 20
 TOP_NUM_LABEL: str = f"top_{NUM_TOPS}"
+
+DEBUG_DUMPS: bool = bool(os.environ.get("SPARV_SBX_CORPUS_STATISTICS_DEBUG", None))
 
 
 class Stats(t.TypedDict):
@@ -865,7 +866,7 @@ def write_stat_highlights(
     pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]],
     lang: str,
     stats2: dict[str, dict[str, Stats]],
-    lemma_attribute: t.Any,
+    lemma_attribute: AnnotationAllSourceFiles | None,
 ) -> None:
     """Write statistcs highlights."""
     out_path = Path(out)
@@ -873,8 +874,9 @@ def write_stat_highlights(
     old_locale = locale.getlocale(locale.LC_CTYPE)
     loc = set_locale_from_lang(lang)
     logger.debug("locale.setlocale=%s", loc)
-    with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
-        json.dump(freqs, fp)
+    if DEBUG_DUMPS:
+        with Path("freqs.json").open(mode="w", encoding="utf-8") as fp:
+            json.dump(freqs, fp)
     with out_path.open("w", encoding="utf-8") as fp:
         # fp.write(f"# Statistics of {corpus_id}\n")
         fp.write(_T[lang]["header"].format(corpus_id=corpus_id))
@@ -883,8 +885,9 @@ def write_stat_highlights(
         fp.write("\n")
         _write_tokenization_and_word_segmentation(fp, all_stats=all_stats, lang=lang)
         fp.write("\n")
-        _write_top_10_lemmas(fp, stats2, lemma_attribute, lang=lang)
-        fp.write("\n")
+        if lemma_attribute is not None:
+            _write_top_10_lemmas(fp, stats2, lemma_attribute, lang=lang)
+            fp.write("\n")
         _write_pos_tags(
             fp,
             token_freqs=freqs["segment.token"],
@@ -1007,7 +1010,7 @@ def _write_readability_attr_stats(
 
 
 def _write_top_10_lemmas(
-    fp: TextIO, all_stats: dict[str, dict[str, Stats]], lemma_attribute: Annotation, lang: str
+    fp: TextIO, all_stats: dict[str, dict[str, Stats]], lemma_attribute: AnnotationAllSourceFiles, lang: str
 ) -> None:
     fp.write(_T[lang]["top_lemmas"])
 

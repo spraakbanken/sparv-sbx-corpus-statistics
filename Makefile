@@ -36,6 +36,13 @@ else
   INVENV =
 endif
 
+DIFFT_EXISTS := $(shell command -v difft 2>/dev/null)
+
+ifeq (${DIFFT_EXISTS},)
+  DIFF = diff
+else
+  DIFF = difft --exit-code
+endif
 
 default_cov := "--cov=${PROJECT_SRC}"
 cov_report := "term-missing"
@@ -153,9 +160,9 @@ snapshot-update:
 test-example-segreg-rd-bet:
 	rm -rf examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights
 	cd examples/rd-segreg/segreg-rd-bet; ${INVENV} sparv run --stats
-	diff assets/stat_highlights_sv_segreg-rd-bet.gold.md \
+	${DIFF} assets/stat_highlights_sv_segreg-rd-bet.gold.md \
 	    examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_segreg-rd-bet.md
-	diff assets/stat_highlights_en_segreg-rd-bet.gold.md \
+	${DIFF} assets/stat_highlights_en_segreg-rd-bet.gold.md \
 	    examples/rd-segreg/segreg-rd-bet/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_segreg-rd-bet.md
 
 update-example-segreg-rd-bet-snapshot:
@@ -168,21 +175,33 @@ update-example-segreg-rd-bet-snapshot:
 test-example-small:
 	rm -rf examples/small/export/sbx_corpus_statistics.stat_highlights
 	cd examples/small; ${INVENV} sparv run --stats
-	diff assets/small/stat_highlights_sv_small.gold.md \
+	${DIFF} assets/small/stat_highlights_sv_small.gold.md \
 	    examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_small.md
-	diff assets/small/stat_highlights_en_small.gold.md \
+	${DIFF} assets/small/stat_highlights_en_small.gold.md \
 	    examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_small.md
 
 update-example-small-snapshot: \
 	assets/small/stat_highlights_en_small.gold.md \
 	assets/small/stat_highlights_sv_small.gold.md
 
-assets/small/stat_highlights_en_small.gold.md: \
-	examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_small.md
+assets/small/%.gold.md: \
+	examples/small/export/sbx_corpus_statistics.stat_highlights/%.md
 	@cp $< $@
 
-assets/small/stat_highlights_sv_small.gold.md: \
-	examples/small/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_small.md
+test-example-without-annotations:
+	rm -rf examples/without-annotations/export/sbx_corpus_statistics.stat_highlights
+	cd examples/without-annotations; ${INVENV} sparv run --stats
+	${DIFF} assets/without-annotations/stat_highlights_sv_without-annotations.gold.md \
+		examples/without-annotations/export/sbx_corpus_statistics.stat_highlights/stat_highlights_sv_without-annotations.md
+	${DIFF} assets/without-annotations/stat_highlights_en_without-annotations.gold.md \
+	    examples/without-annotations/export/sbx_corpus_statistics.stat_highlights/stat_highlights_en_without-annotations.md
+
+update-example-without-annotations-snapshot: \
+	assets/without-annotations/stat_highlights_en_without-annotations.gold.md \
+	assets/without-annotations/stat_highlights_sv_without-annotations.gold.md
+
+assets/without-annotations/%.gold.md: \
+	examples/without-annotations/export/sbx_corpus_statistics.stat_highlights/%.md
 	@cp $< $@
 
 install-dev-metadata:
