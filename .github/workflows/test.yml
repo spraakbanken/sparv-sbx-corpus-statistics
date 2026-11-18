@@ -217,6 +217,7 @@ jobs:
         example-name:
           # - segreg-rd-bet  # Too long to finish in Github Actions
           - small
+          - without-annotations
 
     steps:
       - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98 # v5.0.0
@@ -256,7 +257,7 @@ jobs:
         with:
           path: |
             ~/.local/
-            examples/small/export/
+            examples/${{ matrix.example-name }}/export/
           key: ${{ runner.os }}-${{ steps.setup-python.outputs.python-version}}-sparv
 
       - name: sparv setup

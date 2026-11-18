@@ -1,0 +1,1 @@
+../../../assets/without-annotations/small.txt

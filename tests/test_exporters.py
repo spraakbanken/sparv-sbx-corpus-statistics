@@ -1,7 +1,7 @@
 import io
 
 import pytest
-from sparv.api.classes import Annotation
+from sparv.api import AnnotationAllSourceFiles
 from syrupy.assertion import SnapshotAssertion
 
 from sbx_corpus_statistics import exporters
@@ -41,7 +41,7 @@ def test_write_top_10_lemmas(
     lang: str,
     snapshot: SnapshotAssertion,
     all_stats: dict[str, dict[str, exporters.Stats]],
-    lemma_attribute: Annotation,
+    lemma_attribute: AnnotationAllSourceFiles,
 ) -> None:
     data = io.StringIO()
 
