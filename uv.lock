@@ -2306,7 +2306,7 @@ lint = [
     { name = "ruff", specifier = ">=0.16.9" },
     { name = "ty", specifier = ">=0.0.84" },
 ]
-metadata = [{ name = "sparv-sbx-metadata", git = "https://github.com/spraakbanken/sparv-sbx-metadata?tag=v2.3.1" }]
+metadata = [{ name = "sparv-sbx-metadata", git = "https://github.com/spraakbanken/sparv-sbx-metadata?tag=v2.4.0" }]
 test = [
     { name = "pytest", specifier = ">=8.4.0" },
     { name = "pytest-cov", specifier = ">=7.0.0" },
@@ -2315,8 +2315,8 @@ test = [
 
 [[package]]
 name = "sparv-sbx-metadata"
-version = "2.3.1"
-source = { git = "https://github.com/spraakbanken/sparv-sbx-metadata?tag=v2.3.1#f8a83f74e72db2e7713fd7d2060c33ba74a1e001" }
+version = "2.4.0"
+source = { git = "https://github.com/spraakbanken/sparv-sbx-metadata?tag=v2.4.0#c33c776b9ac2ef49adb0b16873acd72344b6b6ed" }
 dependencies = [
     { name = "langcodes", extra = ["data"] },
     { name = "pyyaml" },
