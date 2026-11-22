@@ -1497,10 +1497,14 @@ def _write_tokenization_and_word_segmentation(
     #     "segment.token", freqs["segment.token"]
     # )
     num_tokens = f.fmt_number_signific(all_stats["segment.token"]["raw"]["stats"].num_values, 0)
+    # The document element is "document" in some corpora (e.g. from sparv-sbx-parquet-import), "dokument" in others
+    document_name = "document" if "document" in all_stats else "dokument"
     try:
-        num_documents = f.fmt_number_signific(all_stats["dokument"]["raw"]["stats"].num_values, 0)
+        num_documents = f.fmt_number_signific(all_stats[document_name]["raw"]["stats"].num_values, 0)
     except KeyError:
-        logger.exception("can't read 'stats' from all_stats['dokument']['raw']=%s", all_stats["dokument"]["raw"])
+        logger.exception(
+            "can't read 'stats' from all_stats[%r]['raw']=%s", document_name, all_stats[document_name]["raw"]
+        )
         num_documents = "<MISSING>"
     num_files = f.fmt_number_signific(all_stats["file"]["raw"]["stats"].num_values, 0)
     num_paragraphs = (
