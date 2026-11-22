@@ -9,7 +9,6 @@ import typing as t
 from collections import defaultdict
 from collections.abc import Iterable
 from pathlib import Path
-from tempfile import NamedTemporaryFile, _TemporaryFileWrapper
 from typing import Any, TextIO
 
 import sparv.api as sparv_api
@@ -324,40 +323,14 @@ def stat_highlights(
     )
     pos_token_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
-    attribute_temp_stat_file: dict[str, _TemporaryFileWrapper[str]] = {}
-    # defaultdict(
-    #     lambda: NamedTemporaryFile(mode="w+t")
-    # )
+    # Stats per attribute, kept in memory for all source files
+    all_attribute_stats: dict[str, dict[str, dict[str, int]]] = {}
 
     for source_file in source_files:
         for attribute_name, attribute_list in attributes.items():
             for attribute in attribute_list:
-                logger.debug(
-                    "attribute.name=%s, attribute_temp_stat_file=%s",
-                    attribute.name,
-                    attribute_temp_stat_file.keys(),
-                )
-                attribute_stats = {}
-                if attribute.name in attribute_temp_stat_file:
-                    logger.debug(
-                        "Loading stats for '%s' from '%s'",
-                        attribute.name,
-                        attribute_temp_stat_file[attribute.name].name,
-                    )
-
-                    attribute_temp_stat_file[attribute.name].seek(0, os.SEEK_SET)
-                    attribute_stats = json.load(attribute_temp_stat_file[attribute.name])
-                    logger.debug(
-                        "Read attribute_stats=%s for '%s'",
-                        attribute_stats,
-                        attribute.name,
-                    )
-                else:
-                    attribute_temp_stat_file[attribute.name] = NamedTemporaryFile(  # noqa: SIM115
-                        mode="w+t",
-                        delete=False,
-                        encoding="utf-8",
-                    )
+                logger.debug("attribute.name=%s", attribute.name)
+                attribute_stats = all_attribute_stats.setdefault(attribute.name, {})
                 try:
                     logger.debug(
                         "About to read attrbute='%s' from source_file='%s'",
@@ -466,13 +439,6 @@ def stat_highlights(
                         #     stats[attribute_name][f"{attribute.name} "]
                 except FileNotFoundError as exc:
                     logger.info("Suppressed error: %r", exc)
-                logger.debug(
-                    "Writing temporary stats=%s for attribute=%s",
-                    attribute_stats,
-                    attribute.name,
-                )
-                attribute_temp_stat_file[attribute.name].seek(0, os.SEEK_SET)
-                json.dump(attribute_stats, attribute_temp_stat_file[attribute.name])
         if pos_attribute is not None:
             for pos, token_ in zip(pos_attribute(source_file).read(), token(source_file).read(), strict=True):
                 pos_token_freqs[pos][token_] += 1
@@ -539,9 +505,7 @@ def stat_highlights(
     stats_2: dict[str, dict[str, Stats]] = defaultdict(
         lambda: defaultdict(lambda: {"stats": RunningMeanVar(), "toplist": []})
     )
-    for attribute_name, stats_file in attribute_temp_stat_file.items():
-        stats_file.seek(0, os.SEEK_SET)
-        attr_stats: dict[str, dict[str, int]] = json.load(stats_file)
+    for attribute_name, attr_stats in all_attribute_stats.items():
         for attr, afreqs in attr_stats.items():
             for aword, afreq in afreqs.items():
                 for _ in range(afreq):
