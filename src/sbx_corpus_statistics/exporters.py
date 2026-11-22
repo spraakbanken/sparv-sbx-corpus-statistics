@@ -350,6 +350,7 @@ def stat_highlights(
                             "segment.paragraph",
                             "p",
                             "file",
+                            "document",
                             "dokument",
                             "text",
                         }:
@@ -364,6 +365,7 @@ def stat_highlights(
                             "segment.token",
                             "p",
                             "file",
+                            "document",
                             "dokument",
                             "text",
                         }:
