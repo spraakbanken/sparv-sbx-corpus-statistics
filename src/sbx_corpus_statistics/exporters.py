@@ -510,8 +510,8 @@ def stat_highlights(
     for attribute_name, attr_stats in all_attribute_stats.items():
         for attr, afreqs in attr_stats.items():
             for aword, afreq in afreqs.items():
-                for _ in range(afreq):
-                    stats_2[attribute_name][attr]["stats"].push(float(len(aword)))
+                entry = stats_2[attribute_name][attr]
+                entry["stats"] = entry["stats"] + RunningMeanVar(num_values=afreq, M1=float(len(aword)))
             toplist = [x[0] for x in sorted(afreqs.items(), key=operator.itemgetter(1), reverse=True)[:NUM_TOPS]]
             logger.debug(
                 "attribute_name=%s, attr=%s, toplist=%s, freqs=%s",
