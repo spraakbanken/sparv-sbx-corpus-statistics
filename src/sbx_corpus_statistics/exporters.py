@@ -20,6 +20,7 @@ from sparv.api import (
     AllSourceFilenames,
     Annotation,
     AnnotationAllSourceFiles,
+    Config,
     Corpus,
     Export,
     ExportAnnotations,
@@ -610,7 +611,19 @@ def stat_counts(
         pickle.dump(counts.to_plain(), fp, protocol=pickle.HIGHEST_PROTOCOL)
 
 
-@exporter("Statistics highlights")
+@exporter(
+    "Statistics highlights",
+    config=[
+        Config(
+            "sbx_corpus_statistics.delete_counts",
+            default=False,
+            description="Delete the counts for each source file (sbx_corpus_statistics.stat_counts) when the "
+            "statistics are written. If the statistics are updated later, e.g. because a source file was added, all "
+            "source files are then counted again instead of only the new or changed ones.",
+            datatype=bool,
+        )
+    ],
+)
 def stat_highlights(
     corpus_id: Corpus = Corpus(),
     token: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<token>"),
@@ -626,6 +639,7 @@ def stat_highlights(
     out_highlights_en: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
     out_highlights_sv: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
     out_all: Export = Export("sbx_corpus_statistics.stat_highlights/all_stats_[metadata.id].json"),
+    delete_counts: bool = Config("sbx_corpus_statistics.delete_counts"),
 ) -> None:
     logger.progress(total=len(source_files) + 1)
     logger.debug("export_annotations = %s", export_annotations)
@@ -748,6 +762,10 @@ def stat_highlights(
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
     )
+
+    if delete_counts:
+        for count_file in count_files:
+            Path(count_file).unlink(missing_ok=True)
 
 
 def running_mean_var_to_dict(m: RunningMeanVar) -> dict[str, int | float]:
