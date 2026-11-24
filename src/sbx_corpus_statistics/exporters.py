@@ -1,10 +1,13 @@
 """Sparv exporter computing corpus statistics."""
 
+import dataclasses
+import gzip
 import json
 import locale
 import math
 import operator
 import os
+import pickle
 import typing as t
 from collections import defaultdict
 from collections.abc import Iterable
@@ -15,11 +18,17 @@ import sparv.api as sparv_api
 from running_stats.running_stats import RunningMeanVar
 from sparv.api import (
     AllSourceFilenames,
+    Annotation,
     AnnotationAllSourceFiles,
+    Config,
     Corpus,
     Export,
+    ExportAnnotations,
     ExportAnnotationsAllSourceFiles,
+    ExportInput,
+    SourceAnnotations,
     SourceAnnotationsAllSourceFiles,
+    SourceFilename,
     exporter,
     util,
 )
@@ -201,7 +210,420 @@ _MSD_MAP: dict[str, dict[str, str]] = {
 }
 
 
-@exporter("Statistics highlights")
+def _select_attributes(annotation_list: list[Any], token_name: str, export_names: dict[str, str]) -> "_Selection":
+    """Group the annotations to count, and find the annotations with part-of-speech tags, lemmas and features."""
+    lemma_name = None
+    for name, export_name in export_names.items():
+        if export_name == "lemma":
+            lemma_name = name
+
+    attributes: dict[str, list[Any]] = defaultdict(list)
+    pos_attribute: Any = None
+    lemma_attribute: Any = None
+    ufeats_attribute: Any = None
+    suc_feats_attribute: Any = None
+    for a in annotation_list:
+        if ":" not in a.name:
+            attributes["spans"].append(a)
+            continue
+        if a.name.startswith(f"{token_name}:stanza.pos"):
+            if pos_attribute is not None:
+                logger.warning(
+                    "pos_attribute '%s' already found, overwriting with '%s'",
+                    pos_attribute.name,
+                    a.name,
+                )
+            pos_attribute = a
+        elif a.name.startswith(f"{token_name}:stanza.ufeats"):
+            if ufeats_attribute is not None:
+                logger.warning(
+                    "ufeats_attribute '%s' already found, overwriting with '%s'",
+                    ufeats_attribute.name,
+                    a.name,
+                )
+            ufeats_attribute = a
+        elif a.name.startswith(f"{token_name}:stanza.msd"):
+            if suc_feats_attribute is not None:
+                if a.name.endswith("info"):
+                    continue
+                logger.warning(
+                    "suc_feats_attribute '%s' already found, overwriting with '%s'",
+                    suc_feats_attribute.name,
+                    a.name,
+                )
+            suc_feats_attribute = a
+        elif a.name == lemma_name:
+            if lemma_attribute is not None:
+                logger.warning(
+                    "lemma_attribute '%s' already found, overwriting with '%s'",
+                    lemma_attribute.name,
+                    a.name,
+                )
+            lemma_attribute = a
+        annotation, _attribute = a.name.split(":")
+        attributes[annotation].append(a)
+
+    logger.debug(
+        "pos_attribute = %s",
+        pos_attribute.name if pos_attribute is not None else "None",
+    )
+    logger.debug(
+        "lemma_attribute = %s",
+        lemma_attribute.name if lemma_attribute is not None else "None",
+    )
+    logger.debug("attributes=%s", attributes)
+
+    return _Selection(attributes, pos_attribute, lemma_attribute, ufeats_attribute, suc_feats_attribute)
+
+
+@dataclasses.dataclass
+class _Selection:
+    """Annotations to count, from `_select_attributes()`."""
+
+    attributes: dict[str, list[Any]]
+    pos_attribute: Any
+    lemma_attribute: Any
+    ufeats_attribute: Any
+    suc_feats_attribute: Any
+
+
+def _nested_counts(depth: int) -> Any:
+    """Return a defaultdict with `depth` levels, with int counts at the deepest level."""
+    if depth == 1:
+        return defaultdict(int)
+    return defaultdict(lambda: _nested_counts(depth - 1))
+
+
+def _to_plain(value: Any) -> Any:
+    """Convert nested defaultdicts to plain dicts (which can be pickled)."""
+    if isinstance(value, dict):
+        return {key: _to_plain(item) for key, item in value.items()}
+    return value
+
+
+def _add_counts(target: dict, source: dict) -> None:
+    """Add the counts in `source` (nested dicts) to `target` (nested defaultdicts)."""
+    for key, value in source.items():
+        if isinstance(value, dict):
+            _add_counts(target[key], value)
+        else:
+            target[key] += value
+
+
+_LENGTH_OF_WORDS = " length (of words)"
+
+
+@dataclasses.dataclass
+class _Counts:
+    """Counts and stats for one or more source files."""
+
+    freqs: dict[str, dict[str, dict[str, int]]] = dataclasses.field(default_factory=lambda: _nested_counts(3))
+    stats: dict[str, dict[str, RunningMeanVar]] = dataclasses.field(
+        default_factory=lambda: defaultdict(lambda: defaultdict(RunningMeanVar))
+    )
+    attribute_stats: dict[str, dict[str, dict[str, int]]] = dataclasses.field(default_factory=dict)
+    pos_lemma_freqs: dict[str, dict[str, int]] = dataclasses.field(default_factory=lambda: _nested_counts(2))
+    pos_lemma_freqs_flat: dict[str, dict[str, int]] = dataclasses.field(default_factory=lambda: _nested_counts(2))
+    ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]] = dataclasses.field(
+        default_factory=lambda: _nested_counts(3)
+    )
+    pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]] = dataclasses.field(
+        default_factory=lambda: _nested_counts(3)
+    )
+    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]] = dataclasses.field(
+        default_factory=lambda: _nested_counts(3)
+    )
+    pos_token_freqs: dict[str, dict[str, int]] = dataclasses.field(default_factory=lambda: _nested_counts(2))
+
+    def to_plain(self) -> dict[str, Any]:
+        """Return the counts as plain dicts, for saving to file."""
+        return {field.name: _to_plain(getattr(self, field.name)) for field in dataclasses.fields(self)}
+
+    def merge(self, partial: dict[str, Any]) -> None:
+        """Add the counts of a source file (from `to_plain()`) to these counts.
+
+        Source files must be merged in the order of the source files, to keep the order of values (which decides the
+        order of values with the same frequency in the top lists).
+        """
+        # Stats must be merged before attribute_stats, since "length (of words)" uses the words seen so far
+        for group, group_stats in partial["stats"].items():
+            target = self.stats[group]
+            for key, value in group_stats.items():
+                if key.endswith(_LENGTH_OF_WORDS):
+                    value = self._length_of_new_words(key, partial)  # noqa: PLW2901
+                if key not in target:
+                    target[key] = value
+                elif value.num_values:
+                    target[key] = target[key] + value
+        self._merge_attribute_stats(partial["attribute_stats"])
+        for name in (
+            "freqs",
+            "pos_lemma_freqs",
+            "pos_lemma_freqs_flat",
+            "ufeat_pos_freqs_flat",
+            "pos_ufeats_freqs_flat",
+            "pos_suc_feats_freqs_flat",
+            "pos_token_freqs",
+        ):
+            _add_counts(getattr(self, name), partial[name])
+
+    def _length_of_new_words(self, key: str, partial: dict[str, Any]) -> RunningMeanVar:
+        """Calculate the "length (of words)" stats of a source file, counting only words that are new to the corpus.
+
+        When counting, the length of each word is only added the first time the word occurs (plus 0 for each empty
+        value), so words seen in earlier source files must not be added again.
+        """
+        attribute_name = key.removesuffix(_LENGTH_OF_WORDS)
+        partial_words = partial["attribute_stats"][attribute_name][WORDS]
+        known_words = self.attribute_stats.get(attribute_name, {}).get(WORDS, {})
+        result = RunningMeanVar(num_values=partial_words.get(EMPTY, 0))
+        for word in partial_words:
+            if word != EMPTY and word not in known_words:
+                result.push(float(len(word)))
+        return result
+
+    def _merge_attribute_stats(self, partial: dict[str, dict[str, dict[str, int]]]) -> None:
+        """Add attribute stats. Words are only counted once for the whole corpus (except empty values)."""
+        for attribute_name, kinds in partial.items():
+            target = self.attribute_stats.setdefault(attribute_name, {})
+            for kind, values in kinds.items():
+                target_values = target.setdefault(kind, {})
+                once_per_corpus = kind in {WORDS, WORDS_NON_EMPTY}
+                for value, count in values.items():
+                    if once_per_corpus and value != EMPTY:
+                        target_values.setdefault(value, count)
+                    else:
+                        target_values[value] = target_values.get(value, 0) + count
+
+
+def _count_source_file(source_file: str, selection: _Selection, token: Any) -> _Counts:
+    """Count values and collect stats for one source file."""
+    counts = _Counts()
+    freqs = counts.freqs
+    stats = counts.stats
+    all_attribute_stats = counts.attribute_stats
+    pos_lemma_freqs = counts.pos_lemma_freqs
+    pos_lemma_freqs_flat = counts.pos_lemma_freqs_flat
+    ufeat_pos_freqs_flat = counts.ufeat_pos_freqs_flat
+    pos_ufeats_freqs_flat = counts.pos_ufeats_freqs_flat
+    pos_suc_feats_freqs_flat = counts.pos_suc_feats_freqs_flat
+    pos_token_freqs = counts.pos_token_freqs
+    attributes = selection.attributes
+    pos_attribute = selection.pos_attribute
+    lemma_attribute = selection.lemma_attribute
+    ufeats_attribute = selection.ufeats_attribute
+    suc_feats_attribute = selection.suc_feats_attribute
+
+    for attribute_name, attribute_list in attributes.items():
+        for attribute in attribute_list:
+            logger.debug("attribute.name=%s", attribute.name)
+            attribute_stats = all_attribute_stats.setdefault(attribute.name, {})
+            try:
+                logger.debug(
+                    "About to read attrbute='%s' from source_file='%s'",
+                    attribute.name,
+                    source_file,
+                )
+                for annot in attribute.read():
+                    # logger.debug("attribute_name=%s", attribute_name)
+                    # logger.debug(
+                    #     "attribute.name=%s, annot=%s, type(annot)=%s",
+                    #     attribute.name,
+                    #     annot,
+                    #     type(annot),
+                    # )
+                    if attribute.name in {
+                        "segment.sentence",
+                        "segment.paragraph",
+                        "p",
+                        "file",
+                        "document",
+                        "dokument",
+                        "text",
+                    }:
+                        freqs[attribute_name][attribute.name][TOKEN_COUNT] += 1
+                    else:
+                        freqs[attribute_name][attribute.name][annot] += 1
+                    if RAW not in attribute_stats:
+                        attribute_stats[RAW] = {}
+                    if attribute.name in {
+                        "segment.sentence",
+                        "segment.paragraph",
+                        "segment.token",
+                        "p",
+                        "file",
+                        "document",
+                        "dokument",
+                        "text",
+                    }:
+                        annot_name = TOKEN_COUNT
+                    else:
+                        annot_name = annot
+                    if annot_name not in attribute_stats[RAW]:
+                        attribute_stats[RAW][annot_name] = 0
+                    attribute_stats[RAW][annot_name] += 1
+                    if attribute.name.startswith("text:readability"):
+                        pass
+                    else:
+                        stats[attribute_name][f"{attribute.name} length (characters)"].push(float(len(annot)))
+
+                    if "|" in annot:
+                        if WORDS not in attribute_stats:
+                            attribute_stats[WORDS] = {}
+                        if WORDS_NON_EMPTY not in attribute_stats:
+                            attribute_stats[WORDS_NON_EMPTY] = {}
+                        words = annot.split("|")
+
+                        if len(words) < 3:  # noqa: PLR2004
+                            if EMPTY not in attribute_stats[WORDS]:
+                                attribute_stats[WORDS][EMPTY] = 0
+                            attribute_stats[WORDS][EMPTY] += 1
+                            stats[attribute_name][f"{attribute.name} length (of words)"].push(0.0)
+                            stats[attribute_name][f"{attribute.name} length (in words)"].push(1.0)
+                        else:
+                            stats[attribute_name][f"{attribute.name} length (in words)"].push(float(len(words) - 2))
+                            stats[attribute_name][f"{attribute.name} length (in non-empty words)"].push(
+                                float(len(words) - 2)
+                            )
+                            if attribute.name == "segment.token:wsd.sense":
+                                words = [word.split(":")[0] for word in words]
+                            for word_ in words:
+                                if not word_:
+                                    continue
+                                if word_ not in attribute_stats[WORDS]:
+                                    attribute_stats[WORDS][word_] = 0
+                                    if word_ not in attribute_stats[WORDS_NON_EMPTY]:
+                                        attribute_stats[WORDS_NON_EMPTY][word_] = 0
+                                        attribute_stats[WORDS][word_] += 1
+                                        attribute_stats[WORDS_NON_EMPTY][word_] += 1
+                                        stats[attribute_name][f"{attribute.name} length (of words)"].push(
+                                            float(len(word_))
+                                        )
+                                stats[attribute_name][f"{attribute.name} length (of non-empty words)"].push(
+                                    float(len(word_))
+                                )
+
+                    if attribute.name == "segment.sentence":
+                        stats[attribute_name][f"{attribute.name} length (in words)"].push(float(len(annot.split(" "))))
+                    elif attribute.name.startswith("text:readability"):
+                        annot_value = float(annot)
+                        # check if NaN or Inf
+                        if not math.isnan(annot_value) and not math.isinf(annot_value):
+                            logger.debug("%s = %s", attribute.name, annot_value)
+                            stats[attribute_name][f"{attribute.name} value"].push(annot_value)
+                            if (
+                                stats[attribute_name][f"{attribute.name} value"].M1
+                                != stats[attribute_name][f"{attribute.name} value"].M1
+                            ):
+                                logger.warning(
+                                    "Found NaN! stats[%s][%s].M1 = %s",
+                                    attribute_name,
+                                    f"{attribute.name} value",
+                                    stats[attribute_name][f"{attribute.name} value"].M1,
+                                )
+
+                    # elif attribute.name.startswith(f"{token.name}:stanza.msd"):
+                    #     stats[attribute_name][f"{attribute.name} "]
+            except FileNotFoundError as exc:
+                logger.info("Suppressed error: %r", exc)
+    if pos_attribute is not None:
+        for pos, token_ in zip(pos_attribute.read(), token.read(), strict=True):
+            pos_token_freqs[pos][token_] += 1
+        if lemma_attribute is not None:
+            for pos, lemma in zip(
+                pos_attribute.read(),
+                lemma_attribute.read(),
+                strict=True,
+            ):
+                pos_lemma_freqs[pos][lemma] += 1
+                for lemma_ in lemma.split("|"):
+                    if lemma_:
+                        pos_lemma_freqs_flat[pos][lemma_] += 1
+
+        if ufeats_attribute is not None:
+            for pos, ufeats in zip(
+                pos_attribute.read(),
+                ufeats_attribute.read(),
+                strict=True,
+            ):
+                for ufeat_value in ufeats.split("|"):
+                    if ufeat_value:
+                        ufeat, value = ufeat_value.split("=")
+                        ufeat_pos_freqs_flat[ufeat][value][pos] += 1
+                        pos_ufeats_freqs_flat[pos][ufeat][value] += 1
+                    # else:
+                    #     pos_ufeats_freqs_flat[pos][ufeat_value]["MISSING"] += 1
+
+    if suc_feats_attribute is not None:
+        for msd_raw in suc_feats_attribute.read():
+            msd = suc_msd.parse(msd_raw)
+            if isinstance(msd, suc_msd.MsdWPos):
+                if msd.is_abbreviation:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Abbreviation"]["AN"] += 1
+                    continue
+                if msd.degree:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Degree"][str(msd.degree)] += 1
+                if msd.gender:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Gender"][str(msd.gender)] += 1
+                if msd.number:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Number"][str(msd.number)] += 1
+                if msd.definiteness:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Definiteness"][str(msd.definiteness)] += 1
+                if msd.case:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Case"][str(msd.case)] += 1
+                if msd.tense:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Tense"][str(msd.tense)] += 1
+                if msd.voice:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Voice"][str(msd.voice)] += 1
+                if msd.mood:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Mood"][str(msd.mood)] += 1
+                if msd.particle_form:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Particle Form"][str(msd.particle_form)] += 1
+                if msd.pronoun_form:
+                    pos_suc_feats_freqs_flat[str(msd.pos)]["Pronoun Form"][str(msd.pronoun_form)] += 1
+            elif isinstance(msd, suc_msd.MsdWDelimiter):
+                pos_suc_feats_freqs_flat["Delimiter"]["Delimiter"][str(msd.delimiter)] += 1
+            else:
+                raise RuntimeError(f"Unknown MSD={msd}")
+
+    return counts
+
+
+@exporter("Statistics counts for one source file, used by stat_highlights")
+def stat_counts(
+    source_file: SourceFilename = SourceFilename(),
+    token: Annotation = Annotation("<token>"),
+    export_annotations: ExportAnnotations = ExportAnnotations("export.annotations"),
+    source_annotations: SourceAnnotations = SourceAnnotations("export.source_annotations"),
+    out: Export = Export("sbx_corpus_statistics.stat_counts/{file}.pickle.gz"),
+) -> None:
+    """Count values and collect stats for one source file, so that source files can be counted in parallel."""
+    annotation_list, _, export_names = util.export.get_annotation_names(
+        export_annotations,
+        source_annotations or [],
+        source_file=source_file,
+        token_name=token.name,
+    )
+    counts = _count_source_file(source_file, _select_attributes(annotation_list, token.name, export_names), token)
+    out_path = Path(out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with gzip.open(out_path, "wb", compresslevel=6) as fp:
+        pickle.dump(counts.to_plain(), fp, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+@exporter(
+    "Statistics highlights",
+    config=[
+        Config(
+            "sbx_corpus_statistics.delete_counts",
+            default=False,
+            description="Delete the counts for each source file (sbx_corpus_statistics.stat_counts) when the "
+            "statistics are written. If the statistics are updated later, e.g. because a source file was added, all "
+            "source files are then counted again instead of only the new or changed ones.",
+            datatype=bool,
+        )
+    ],
+)
 def stat_highlights(
     corpus_id: Corpus = Corpus(),
     token: AnnotationAllSourceFiles = AnnotationAllSourceFiles("<token>"),
@@ -213,9 +635,11 @@ def stat_highlights(
     export_annotations: ExportAnnotationsAllSourceFiles = ExportAnnotationsAllSourceFiles("export.annotations"),
     source_annotations: SourceAnnotationsAllSourceFiles = SourceAnnotationsAllSourceFiles("export.source_annotations"),
     # word: AnnotationAllSourceFiles = AnnotationAllSourceFiles("[export]"),
+    counts: ExportInput = ExportInput("sbx_corpus_statistics.stat_counts/{file}.pickle.gz", all_files=True),
     out_highlights_en: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_en_[metadata.id].md"),
     out_highlights_sv: Export = Export("sbx_corpus_statistics.stat_highlights/stat_highlights_sv_[metadata.id].md"),
     out_all: Export = Export("sbx_corpus_statistics.stat_highlights/all_stats_[metadata.id].json"),
+    delete_counts: bool = Config("sbx_corpus_statistics.delete_counts"),
 ) -> None:
     logger.progress(total=len(source_files) + 1)
     logger.debug("export_annotations = %s", export_annotations)
@@ -234,66 +658,8 @@ def stat_highlights(
     logger.debug("export_names = %s", export_names)
     logger.debug("token_attribute_names = %s", token_attribute_names)
 
-    lemma_name = None
-    for name, export_name in export_names.items():
-        if export_name == "lemma":
-            lemma_name = name
-
-    attributes: dict[str, list[AnnotationAllSourceFiles]] = defaultdict(list)
-    pos_attribute: AnnotationAllSourceFiles | None = None
-    lemma_attribute: AnnotationAllSourceFiles | None = None
-    ufeats_attribute: AnnotationAllSourceFiles | None = None
-    suc_feats_attribute: AnnotationAllSourceFiles | None = None
-    for a in annotation_list:
-        if ":" not in a.name:
-            attributes["spans"].append(t.cast(AnnotationAllSourceFiles, a))
-            continue
-        if a.name.startswith(f"{token.name}:stanza.pos"):
-            if pos_attribute is not None:
-                logger.warning(
-                    "pos_attribute '%s' already found, overwriting with '%s'",
-                    pos_attribute.name,
-                    a.name,
-                )
-            pos_attribute = t.cast(AnnotationAllSourceFiles, a)
-        elif a.name.startswith(f"{token.name}:stanza.ufeats"):
-            if ufeats_attribute is not None:
-                logger.warning(
-                    "ufeats_attribute '%s' already found, overwriting with '%s'",
-                    ufeats_attribute.name,
-                    a.name,
-                )
-            ufeats_attribute = t.cast(AnnotationAllSourceFiles, a)
-        elif a.name.startswith(f"{token.name}:stanza.msd"):
-            if suc_feats_attribute is not None:
-                if a.name.endswith("info"):
-                    continue
-                logger.warning(
-                    "suc_feats_attribute '%s' already found, overwriting with '%s'",
-                    suc_feats_attribute.name,
-                    a.name,
-                )
-            suc_feats_attribute = t.cast(AnnotationAllSourceFiles, a)
-        elif a.name == lemma_name:
-            if lemma_attribute is not None:
-                logger.warning(
-                    "lemma_attribute '%s' already found, overwriting with '%s'",
-                    lemma_attribute.name,
-                    a.name,
-                )
-            lemma_attribute = t.cast(AnnotationAllSourceFiles, a)
-        annotation, _attribute = a.name.split(":")
-        attributes[annotation].append(t.cast(AnnotationAllSourceFiles, a))
-
-    logger.debug(
-        "pos_attribute = %s",
-        pos_attribute.name if pos_attribute is not None else "None",
-    )
-    logger.debug(
-        "lemma_attribute = %s",
-        lemma_attribute.name if lemma_attribute is not None else "None",
-    )
-    logger.debug("attributes=%s", attributes)
+    selection = _select_attributes(annotation_list, token.name, export_names)
+    lemma_attribute = selection.lemma_attribute
     # Get all token and struct annotations (except the span annotations)
     token_attributes = [
         a for a in annotation_list if a.name.startswith(token.name) and a.attribute_name in token_attribute_names
@@ -304,204 +670,21 @@ def stat_highlights(
     logger.debug("struct_attributes = %s", struct_attributes)
     logger.debug("struct_spans = %s", struct_spans)
 
-    # Calculate token frequencies
-    # freq_dict = defaultdict(int)
-    # struct_freqs = defaultdict(lambda: defaultdict(int))
-    # token_freqs = defaultdict(lambda: defaultdict(int))
-    freqs: dict[str, dict[str, dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
-    stats: dict[str, dict[str, RunningMeanVar]] = defaultdict(lambda: defaultdict(RunningMeanVar))
-    pos_lemma_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-    pos_lemma_freqs_flat: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-    ufeat_pos_freqs_flat: dict[str, dict[str, dict[str, int]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(int))
-    )
-    pos_ufeats_freqs_flat: dict[str, dict[str, dict[str, int]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(int))
-    )
-    pos_suc_feats_freqs_flat: dict[str, dict[str, dict[str, int]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(int))
-    )
-    pos_token_freqs: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-
-    # Stats per attribute, kept in memory for all source files
-    all_attribute_stats: dict[str, dict[str, dict[str, int]]] = {}
-
-    for source_file in source_files:
-        for attribute_name, attribute_list in attributes.items():
-            for attribute in attribute_list:
-                logger.debug("attribute.name=%s", attribute.name)
-                attribute_stats = all_attribute_stats.setdefault(attribute.name, {})
-                try:
-                    logger.debug(
-                        "About to read attrbute='%s' from source_file='%s'",
-                        attribute.name,
-                        source_file,
-                    )
-                    for annot in attribute(source_file).read():
-                        # logger.debug("attribute_name=%s", attribute_name)
-                        # logger.debug(
-                        #     "attribute.name=%s, annot=%s, type(annot)=%s",
-                        #     attribute.name,
-                        #     annot,
-                        #     type(annot),
-                        # )
-                        if attribute.name in {
-                            "segment.sentence",
-                            "segment.paragraph",
-                            "p",
-                            "file",
-                            "document",
-                            "dokument",
-                            "text",
-                        }:
-                            freqs[attribute_name][attribute.name][TOKEN_COUNT] += 1
-                        else:
-                            freqs[attribute_name][attribute.name][annot] += 1
-                        if RAW not in attribute_stats:
-                            attribute_stats[RAW] = {}
-                        if attribute.name in {
-                            "segment.sentence",
-                            "segment.paragraph",
-                            "segment.token",
-                            "p",
-                            "file",
-                            "document",
-                            "dokument",
-                            "text",
-                        }:
-                            annot_name = TOKEN_COUNT
-                        else:
-                            annot_name = annot
-                        if annot_name not in attribute_stats[RAW]:
-                            attribute_stats[RAW][annot_name] = 0
-                        attribute_stats[RAW][annot_name] += 1
-                        if attribute.name.startswith("text:readability"):
-                            pass
-                        else:
-                            stats[attribute_name][f"{attribute.name} length (characters)"].push(float(len(annot)))
-
-                        if "|" in annot:
-                            if WORDS not in attribute_stats:
-                                attribute_stats[WORDS] = {}
-                            if WORDS_NON_EMPTY not in attribute_stats:
-                                attribute_stats[WORDS_NON_EMPTY] = {}
-                            words = annot.split("|")
-
-                            if len(words) < 3:  # noqa: PLR2004
-                                if EMPTY not in attribute_stats[WORDS]:
-                                    attribute_stats[WORDS][EMPTY] = 0
-                                attribute_stats[WORDS][EMPTY] += 1
-                                stats[attribute_name][f"{attribute.name} length (of words)"].push(0.0)
-                                stats[attribute_name][f"{attribute.name} length (in words)"].push(1.0)
-                            else:
-                                stats[attribute_name][f"{attribute.name} length (in words)"].push(float(len(words) - 2))
-                                stats[attribute_name][f"{attribute.name} length (in non-empty words)"].push(
-                                    float(len(words) - 2)
-                                )
-                                if attribute.name == "segment.token:wsd.sense":
-                                    words = [word.split(":")[0] for word in words]
-                                for word_ in words:
-                                    if not word_:
-                                        continue
-                                    if word_ not in attribute_stats[WORDS]:
-                                        attribute_stats[WORDS][word_] = 0
-                                        if word_ not in attribute_stats[WORDS_NON_EMPTY]:
-                                            attribute_stats[WORDS_NON_EMPTY][word_] = 0
-                                            attribute_stats[WORDS][word_] += 1
-                                            attribute_stats[WORDS_NON_EMPTY][word_] += 1
-                                            stats[attribute_name][f"{attribute.name} length (of words)"].push(
-                                                float(len(word_))
-                                            )
-                                    stats[attribute_name][f"{attribute.name} length (of non-empty words)"].push(
-                                        float(len(word_))
-                                    )
-
-                        if attribute.name == "segment.sentence":
-                            stats[attribute_name][f"{attribute.name} length (in words)"].push(
-                                float(len(annot.split(" ")))
-                            )
-                        elif attribute.name.startswith("text:readability"):
-                            annot_value = float(annot)
-                            # check if NaN or Inf
-                            if not math.isnan(annot_value) and not math.isinf(annot_value):
-                                logger.debug("%s = %s", attribute.name, annot_value)
-                                stats[attribute_name][f"{attribute.name} value"].push(annot_value)
-                                if (
-                                    stats[attribute_name][f"{attribute.name} value"].M1
-                                    != stats[attribute_name][f"{attribute.name} value"].M1
-                                ):
-                                    logger.warning(
-                                        "Found NaN! stats[%s][%s].M1 = %s",
-                                        attribute_name,
-                                        f"{attribute.name} value",
-                                        stats[attribute_name][f"{attribute.name} value"].M1,
-                                    )
-
-                        # elif attribute.name.startswith(f"{token.name}:stanza.msd"):
-                        #     stats[attribute_name][f"{attribute.name} "]
-                except FileNotFoundError as exc:
-                    logger.info("Suppressed error: %r", exc)
-        if pos_attribute is not None:
-            for pos, token_ in zip(pos_attribute(source_file).read(), token(source_file).read(), strict=True):
-                pos_token_freqs[pos][token_] += 1
-            if lemma_attribute is not None:
-                for pos, lemma in zip(
-                    pos_attribute(source_file).read(),
-                    lemma_attribute(source_file).read(),
-                    strict=True,
-                ):
-                    pos_lemma_freqs[pos][lemma] += 1
-                    for lemma_ in lemma.split("|"):
-                        if lemma_:
-                            pos_lemma_freqs_flat[pos][lemma_] += 1
-
-            if ufeats_attribute is not None:
-                for pos, ufeats in zip(
-                    pos_attribute(source_file).read(),
-                    ufeats_attribute(source_file).read(),
-                    strict=True,
-                ):
-                    for ufeat_value in ufeats.split("|"):
-                        if ufeat_value:
-                            ufeat, value = ufeat_value.split("=")
-                            ufeat_pos_freqs_flat[ufeat][value][pos] += 1
-                            pos_ufeats_freqs_flat[pos][ufeat][value] += 1
-                        # else:
-                        #     pos_ufeats_freqs_flat[pos][ufeat_value]["MISSING"] += 1
-
-        if suc_feats_attribute is not None:
-            for msd_raw in suc_feats_attribute(source_file).read():
-                msd = suc_msd.parse(msd_raw)
-                if isinstance(msd, suc_msd.MsdWPos):
-                    if msd.is_abbreviation:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Abbreviation"]["AN"] += 1
-                        continue
-                    if msd.degree:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Degree"][str(msd.degree)] += 1
-                    if msd.gender:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Gender"][str(msd.gender)] += 1
-                    if msd.number:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Number"][str(msd.number)] += 1
-                    if msd.definiteness:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Definiteness"][str(msd.definiteness)] += 1
-                    if msd.case:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Case"][str(msd.case)] += 1
-                    if msd.tense:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Tense"][str(msd.tense)] += 1
-                    if msd.voice:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Voice"][str(msd.voice)] += 1
-                    if msd.mood:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Mood"][str(msd.mood)] += 1
-                    if msd.particle_form:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Particle Form"][str(msd.particle_form)] += 1
-                    if msd.pronoun_form:
-                        pos_suc_feats_freqs_flat[str(msd.pos)]["Pronoun Form"][str(msd.pronoun_form)] += 1
-                elif isinstance(msd, suc_msd.MsdWDelimiter):
-                    pos_suc_feats_freqs_flat["Delimiter"]["Delimiter"][str(msd.delimiter)] += 1
-                else:
-                    raise RuntimeError(f"Unknown MSD={msd}")
-
+    # Merge the counts of all source files, in the order of the source files
+    total = _Counts()
+    count_files = [counts.replace("{file}", source_file) for source_file in source_files]
+    for count_file in count_files:
+        with gzip.open(count_file, "rb") as fp:
+            total.merge(pickle.load(fp))
         logger.progress()
+    freqs = total.freqs
+    stats = total.stats
+    all_attribute_stats = total.attribute_stats
+    pos_lemma_freqs = total.pos_lemma_freqs
+    pos_lemma_freqs_flat = total.pos_lemma_freqs_flat
+    pos_ufeats_freqs_flat = total.pos_ufeats_freqs_flat
+    pos_suc_feats_freqs_flat = total.pos_suc_feats_freqs_flat
+    pos_token_freqs = total.pos_token_freqs
 
     # Collect statistics
     stats_2: dict[str, dict[str, Stats]] = defaultdict(
@@ -579,6 +762,10 @@ def stat_highlights(
         stats2=stats_2,
         lemma_attribute=lemma_attribute,
     )
+
+    if delete_counts:
+        for count_file in count_files:
+            Path(count_file).unlink(missing_ok=True)
 
 
 def running_mean_var_to_dict(m: RunningMeanVar) -> dict[str, int | float]:

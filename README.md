@@ -64,6 +64,19 @@ export:
     # - more exports
 ```
 
+Each source file is counted in a separate job (`sbx_corpus_statistics:stat_counts`), so source files can be counted in
+parallel (e.g. `sparv run -j 8`). The counts are saved in `export/sbx_corpus_statistics.stat_counts/`, and
+`stat_highlights` adds them together. When source files are added or changed, only those files are counted again.
+
+To delete the counts when the statistics are written, set `delete_counts`:
+
+```yaml
+sbx_corpus_statistics:
+  delete_counts: true
+```
+
+If the statistics are then updated later, all source files are counted again.
+
 ## Minimum Supported Python Version Policy
 
 The Minimum Supported Python Version is fixed for a given minor (1.x)
